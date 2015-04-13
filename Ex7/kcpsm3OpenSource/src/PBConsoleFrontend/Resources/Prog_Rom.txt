@@ -1,0 +1,137 @@
+; --------------------------------------------------------------------
+; - Generic PicoBlaze/Nexys Starter File for Mediatronix PicoBlaze
+; - and KCPSM3 assembler. See the notes listed below. 
+; --------------------------------------------------------------------
+; --------------------------------------------------------------------
+; - Assembler Directives
+; --------------------------------------------------------------------
+; These are for the KCPSM3 assembler I/O port addressing
+; COMMENT these lines after "importing" to Mediatronix IDE; 
+; Leave them here if you use the KCPSM assembler. 
+; ---------------------------------------------------------------
+CONSTANT    SWITCHES,  24        ; in: switches address = port 24 (input)
+CONSTANT    BUTTONS,   20        ; in: button address: = port 20
+CONSTANT    KEYBOARD,  28        ; in: keyboard
+                                 ; VGA driver outputs
+CONSTANT    FB_LADD,   0A        ; out: lower 8b address to FB
+CONSTANT    FB_HADD,   0B        ; out: upper 3b address to FB
+CONSTANT    FB_COLOR,  0D        ; out: color vector out to FB
+
+CONSTANT    SSEG_DISP, 08        ; out: seven-segment display address = port 08
+CONSTANT    SSEG_EN,   04        ; out: display enable address = port 04
+CONSTANT    LEDS,      0C        ; out: LED address = port 0C 
+; --------------------------------------------------------------------
+
+
+
+address 000
+			  enable interrupt
+			  
+			  
+			  
+main:  
+
+           jump main
+
+			  
+isr:
+        
+			  returni enable
+
+
+
+
+; --------------------------------------------------------------------
+; function draw_dot - draws a 16x16 pixel block to the VGA framebuffer
+; --------------------------------------------------------------------
+; inputs: s4 = y coord, 1 <= y <= 30 
+;         s5 = x coord, 1 <= x <= 40
+;         s6 = rgb color vector R2:0|G2:0|B1:0    
+; returns: nothing 
+; uses:   sA, sB
+; the framebuffer is expecting a 11-bit address of the format row8:4| col9:4
+; All 6 bits of the col fits into sA, and the 2 lsbs or the row also fit in sA
+; The top 3 bits of the row are put in sB
+; --------------------------------------------------------------------
+            
+draw_dot:   load      sB, s4  ; sB = high byte
+            load      sA, s5  ; sA = low byte
+            and       sA, 3F  ; make sure top 2 bits cleared
+            and       sB, 1F  ; make sure top 3 bits cleared
+            sr0       sB
+            call      C, dd_add40
+            sr0       sB
+            call      C, dd_add80
+dd_out:     output    sA, FB_LADD ;
+            output    sB, FB_HADD ;
+            output    s6, FB_COLOR ;
+            return ;
+dd_add40:   or        sA, 40
+            return
+dd_add80:   or        sA, 80
+            return
+            
+; --------------------------------------------------------------------
+; function draw_hline - draws a hline w/ 16x16 pixel blocks to the VGA framebuffer
+; --------------------------------------------------------------------
+; inputs: s4 = y coord, 1 <= y <= 30 
+;         s5 = x coord, 1 <= x <= 40
+;         s6 = rgb color vector R2:0|G2:0|B1:0    
+;         s7 = length
+; returns: nothing 
+; uses:   sA, sB, sD, sE
+; --------------------------------------------------------------------
+draw_hline:     load   sD, s7
+                load   sE, s5
+hline_loop:     call   draw_dot  ;inputs: s4, s5, and s6
+                sub    sD, 01
+                jump   Z, exit_hline
+                add    s5, 01
+                jump   hline_loop
+exit_hline:     load   s5, sE
+                return
+
+; --------------------------------------------------------------------
+; function draw_vline - draws a hline w/ 16x16 pixel blocks to the VGA framebuffer
+; --------------------------------------------------------------------
+; inputs: s4 = y coord, 1 <= y <= 30 
+;         s5 = x coord, 1 <= x <= 40
+;         s6 = rgb color vector R2:0|G2:0|B1:0    
+;         s7 = length
+; returns: nothing 
+; uses:   sA, sB, sD, sE
+; --------------------------------------------------------------------
+draw_vline:     load   sD, s7
+                load   sE, s4
+vline_loop:     call   draw_dot  ;inputs: s4, s5, and s6
+                sub    sD, 01
+                jump   Z, exit_vline
+                add    s4, 01
+                jump   vline_loop
+exit_vline:     load   s4, sE
+                return
+
+; --------------------------------------------------------------------
+; function draw_box - draws a box w/ 16x16 pixel blocks to the VGA framebuffer
+; --------------------------------------------------------------------
+; inputs: s4 = y coord, 1 <= y <= 30 
+;         s5 = x coord, 1 <= x <= 40
+;         s6 = rgb color vector R2:0|G2:0|B1:0    
+;         s7 = width
+;         s8 = height
+; returns: nothing 
+; uses:   sA, sB, sD, sE, sF
+; --------------------------------------------------------------------   
+draw_box:       load      sF, s4
+box_loop:       call      draw_hline; inputs: s4, s5, s6 and s7
+                add       s4, 01
+                sub       s8, 01
+                jump      Z, exit_box
+                jump      box_loop
+exit_box:       load      s4, sF
+                return                
+
+
+address 3ff
+					jump isr
+

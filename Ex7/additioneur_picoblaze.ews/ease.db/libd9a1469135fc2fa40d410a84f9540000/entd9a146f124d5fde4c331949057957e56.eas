@@ -1,0 +1,347 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a146f124d5fde4c331949057957e56")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlfd9a146912efc2fa40d410a849a540000")
+      (PROPERTY "HDL_FILENAME" "U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/kcpsm3.vhd")
+      (PROPERTY "IMPORTED_LAST" "1354802040")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Thu Dec 06 14:54:06 2012")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1121845838")
+    )
+    (HDL_IDENT
+      (NAME "kcpsm3")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1536 896)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "yves.meyer")
+      (CREATED 1323261250 "Wed Dec 07 13:34:10 2011")
+      (MODIFIED 1354802046 "Thu Dec 06 14:54:06 2012")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "packd9a146e047ccacc48c100a8437270000")
+        (LIBRARY "unisim")
+        (NAME "VCOMPONENTS")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146f124d5fde4c331949067957e56")
+      (HDL_IDENT
+        (NAME "address")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "9" "0")
+          )
+        )
+      )
+      (GEOMETRY 1496 88 1576 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "address(9:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146f124d5fde4c331949077957e56")
+      (HDL_IDENT
+        (NAME "instruction")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "17" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "instruction(17:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146f124d5fde4c331949087957e56")
+      (HDL_IDENT
+        (NAME "port_id")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY 1496 216 1576 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "port_id(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146f124d5fde4c331949097957e56")
+      (HDL_IDENT
+        (NAME "write_strobe")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1496 344 1576 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "write_strobe")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146f124d5fde4c3319490a7957e56")
+      (HDL_IDENT
+        (NAME "out_port")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY 1496 472 1576 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "out_port(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146f124d5fde4c3319490b7957e56")
+      (HDL_IDENT
+        (NAME "read_strobe")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1496 600 1576 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "read_strobe")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146f124d5fde4c3319490c7957e56")
+      (HDL_IDENT
+        (NAME "in_port")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "in_port(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146f124d5fde4c3319490d7957e56")
+      (HDL_IDENT
+        (NAME "interrupt")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "interrupt")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146f124d5fde4c3319490e7957e56")
+      (HDL_IDENT
+        (NAME "interrupt_ack")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1496 728 1576 808)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1472 768)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "interrupt_ack")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146f124d5fde4c3319490f7957e56")
+      (HDL_IDENT
+        (NAME "reset")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146f124d5fde4c331949008957e56")
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a185b7873a0c05c290b5fcf8ad41e7" "low_level_definition")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a185b7873a0c05c290b5fcf8ad41e7")
+    (HDL_IDENT
+      (NAME "low_level_definition")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "filed9a185b7e73a0c05c290b5fc1ead41e7")
+        (NAME "low_level_definition.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'low_level_definition' of entity 'kcpsm3'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     address       : out    std_logic_vector(9 downto 0);"
+               "--     instruction   : in     std_logic_vector(17 downto 0);"
+               "--     port_id       : out    std_logic_vector(7 downto 0);"
+               "--     write_strobe  : out    std_logic;"
+               "--     out_port      : out    std_logic_vector(7 downto 0);"
+               "--     read_strobe   : out    std_logic;"
+               "--     in_port       : in     std_logic_vector(7 downto 0);"
+               "--     interrupt     : in     std_logic;"
+               "--     interrupt_ack : out    std_logic;"
+               "--     reset         : in     std_logic;"
+               "--     clk           : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture low_level_definition of kcpsm3 is"
+               ""
+               "begin"
+               ""
+               "end architecture low_level_definition ; -- of kcpsm3"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

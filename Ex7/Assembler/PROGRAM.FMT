@@ -1,0 +1,26 @@
+           ;====================================================================================================
+           ;Additionneur 8 bits
+           ;Fichier: program.asm
+           ;Projet: Additioneur
+           ;Date:  05.11.2009
+           ;====================================================================================================
+           CONSTANT nombre1, 01   ;adresse du registre nombre1
+           CONSTANT nombre2, 02   ;adresse du registre nombre2
+           CONSTANT resultat, 03  ;adresse du registre resultat1
+           CONSTANT carry_out, 04 ;adresse du registre carry_out
+           ;====================================================================================================
+           ; MAIN
+           ;====================================================================================================
+     MAIN: 
+           INPUT s0, nombre1      ;lecture nombre1 ,stocke valeur dans registre s0
+           INPUT s1, nombre2      ;lecture nombre2 ,stocke valeur dans registre s1
+           ADD s0, s1             ;additionne nombre1 et nombre2, resultat dans s0
+           JUMP NC, CLR_CARRY     ;saut à CLR_CARRY si pas de flag carry
+           LOAD s2, 01            ;set bit 0 du registre S2
+           JUMP RESULT            ;saut a RESULT
+CLR_CARRY: 
+           LOAD s2, 00            ;clear bit 0 du registre S2
+   RESULT: 
+           OUTPUT s2, carry_out   ;affiche cary
+           OUTPUT s0, resultat    ;affiche resultat
+           JUMP MAIN              ;retour a MAIN

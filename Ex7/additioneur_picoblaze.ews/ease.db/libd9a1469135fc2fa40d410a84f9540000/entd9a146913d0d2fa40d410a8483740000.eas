@@ -1,0 +1,151 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a146913d0d2fa40d410a8483740000")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlfd9a14691ecad3fa400500a84daf60000")
+      (PROPERTY "HDL_FILENAME" "U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/Assembler/PROGRAM.VHD")
+      (PROPERTY "IMPORTED_LAST" "1323261422")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 6")
+      (PROPERTY "STAMP_TIME" "Wed Dec 07 13:46:31 2011")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1323258790")
+    )
+    (HDL_IDENT
+      (NAME "program")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1600 512)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "YME")
+      (CREATED 1257427155 "Thu Nov 05 14:19:15 2009")
+      (MODIFIED 1323261990 "Wed Dec 07 13:46:30 2011")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "packd9a146e047ccacc48c100a8437270000")
+        (LIBRARY "unisim")
+        (NAME "VCOMPONENTS")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146912e0d2fa40d410a84bd740000")
+      (HDL_IDENT
+        (NAME "instruction")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "17" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "instruction(17:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a14691ee0d2fa40d410a843e740000")
+      (HDL_IDENT
+        (NAME "address")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "9" "0")
+          )
+        )
+      )
+      (GEOMETRY 1560 280 1640 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1536 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "address(9:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a14691001d2fa40d410a84be740000")
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a146f1fed5fde4c33194908ca57e56" "low_level_definition")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a146f1fed5fde4c33194908ca57e56")
+    (HDL_IDENT
+      (NAME "low_level_definition")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "filed9a146f17206fde4c3319490f1b57e56")
+        (NAME "low_level_definition.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'low_level_definition' of entity 'program'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port("
+               "--     instruction : out    std_logic_vector(17 downto 0);"
+               "--     address     : in     std_logic_vector(9 downto 0);"
+               "--     clk         : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture low_level_definition of program is"
+               ""
+               "begin"
+               ""
+               "end architecture low_level_definition ; -- of program"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

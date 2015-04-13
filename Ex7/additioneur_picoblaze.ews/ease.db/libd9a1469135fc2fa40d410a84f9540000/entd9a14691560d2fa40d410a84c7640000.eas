@@ -1,0 +1,332 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a14691560d2fa40d410a84c7640000")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Wed Dec 04 15:54:06 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "interfaces")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1344 1088)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "yves.meyer")
+      (CREATED 1257427045 "Thu Nov 05 14:17:25 2009")
+      (MODIFIED 1386168846 "Wed Dec 04 15:54:06 2013")
+    )
+    (PORT
+      (OBID "eprtd9a14691390d2fa40d410a84f1740000")
+      (HDL_IDENT
+        (NAME "in_port")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY 1304 408 1384 488)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1280 448)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "in_port(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a14691fa0d2fa40d410a84c2740000")
+      (HDL_IDENT
+        (NAME "reset")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1304 664 1384 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1280 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "reset")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a14691eb0d2fa40d410a8423740000")
+      (HDL_IDENT
+        (NAME "interrupt")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1304 536 1384 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1280 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "interrupt")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a14691061d2fa40d410a84ca840000")
+      (HDL_IDENT
+        (NAME "read_strobe")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 792 40 872)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 832)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "read_strobe")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a14691a61d2fa40d410a846b840000")
+      (HDL_IDENT
+        (NAME "interrupt_ack")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 920 40 1000)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 960)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "interrupt_ack")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a14691257d2fa40d410a8437940000")
+      (HDL_IDENT
+        (NAME "nombre1")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "nombre1(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a14691657d2fa40d410a8497940000")
+      (HDL_IDENT
+        (NAME "nombre2")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "nombre2(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146913d7d2fa40d410a843a940000")
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a14691ba9d2fa40d410a84bdb40000")
+      (HDL_IDENT
+        (NAME "port_id")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "port_id(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1469147386ec4c1110a844cd00000")
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a14691560d2fa40d410a84e7640000" "behaviour")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a14691560d2fa40d410a84e7640000")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "behaviour")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "filed9a14691560d2fa40d410a84dc640000")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behaviour' of entity 'interfaces'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     clk           : in     std_logic;"
+               "--     in_port       : out    std_logic_vector(7 downto 0);"
+               "--     interrupt     : out    std_logic;"
+               "--     interrupt_ack : in     std_logic;"
+               "--     nombre1       : in     std_logic_vector(7 downto 0);"
+               "--     nombre2       : in     std_logic_vector(7 downto 0);"
+               "--     port_id       : in     std_logic_vector(7 downto 0);"
+               "--     read_strobe   : in     std_logic;"
+               "--     reset         : out    std_logic;"
+               "--     reset_n       : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behaviour of interfaces is"
+               ""
+               "begin"
+               ""
+               "p1:PROCESS (clk,reset_n)"
+               "BEGIN"
+               "	IF reset_n = '0' THEN"
+               "		 IN_PORT <= (OTHERS => '0');"
+               "	ELSIF clk'EVENT AND clk = '1' THEN"
+               "		IF PORT_ID = X\"01\" THEN   "
+               "			 IN_PORT <= nombre1;"
+               "		ELSIF PORT_ID = X\"02\" THEN   "
+               "			 IN_PORT <= nombre2; "
+               "		ELSE "
+               "             IN_PORT <= (OTHERS => '0');"
+               "        END IF;"
+               "	END IF;"
+               "END PROCESS;"
+               ""
+               "--IN_PORT <= 	nombre1 WHEN PORT_ID = X\"01\" ELSE "
+               "--				nombre2 WHEN PORT_ID = X\"02\" ELSE "
+               "--				\"00000000\";"
+               ""
+               "RESET <= NOT reset_n;"
+               ""
+               "interrupt <= '0';"
+               ""
+               "end architecture behaviour ; -- of interfaces"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

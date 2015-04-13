@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/ISE/additioneur_tb_isim_beh.exe" -prj "U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/ISE/additioneur_tb_beh.prj" "work.additioneur_tb" 

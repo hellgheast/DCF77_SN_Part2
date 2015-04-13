@@ -1,0 +1,43 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a146e047ccacc48c100a8417270000")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Thu Dec 06 14:52:12 2012")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "Toplevel")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 576 576)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "yves.meyer")
+      (CREATED 1288359028 "Fri Oct 29 15:30:28 2010")
+      (MODIFIED 1288359028 "Fri Oct 29 15:30:28 2010")
+    )
+    (ARCH_DECLARATION 1 "archd9a146e047ccacc48c100a8427270000" "structure")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a146e047ccacc48c100a8427270000")
+    (HDL_IDENT
+      (NAME "structure")
+      (USERNAME 1)
+    )
+    (TYPE 1)
+    (SCHEMATIC
+      (OBID "diagd9a146e047ccacc48c100a8407270000")
+      (PROPERTIES
+        (PROPERTY "SheetInfoFontSize" "8")
+      )
+      (SHEETSIZE 0 0 6400 4266)
+    )
+  )
+)
+(END_OF_FILE)

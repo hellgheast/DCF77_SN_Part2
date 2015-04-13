@@ -1,0 +1,107 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a146e00dccacc48c100a84bb290000")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "VCOMPONENTS")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Thu Dec 06 14:52:21 2012")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "OBUFDS_LVDSEXT_33")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 384 384)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "yves.meyer")
+      (CREATED 1288359120 "Fri Oct 29 15:32:00 2010")
+      (MODIFIED 1354801931 "Thu Dec 06 14:52:11 2012")
+    )
+    (PORT
+      (OBID "eprtd9a146e00dccacc48c100a84cb290000")
+      (HDL_IDENT
+        (NAME "O")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 344 88 424 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 320 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "O")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146e00dccacc48c100a84db290000")
+      (HDL_IDENT
+        (NAME "OB")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 344 216 424 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 320 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "OB")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146e00dccacc48c100a84eb290000")
+      (HDL_IDENT
+        (NAME "I")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "I")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a185b7513a0c05c290b5fccf8d41e7" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a185b7513a0c05c290b5fccf8d41e7")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+    )
+  )
+)
+(END_OF_FILE)

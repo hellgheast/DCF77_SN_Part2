@@ -1,0 +1,41 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a146e0c1dcacc48c100a8402eb0000")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "VCOMPONENTS")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Thu Dec 06 14:52:26 2012")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "TIMESPEC")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 320 320)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "yves.meyer")
+      (CREATED 1288359196 "Fri Oct 29 15:33:16 2010")
+      (MODIFIED 1354801932 "Thu Dec 06 14:52:12 2012")
+    )
+    (ARCH_DECLARATION 2 "archd9a185b7a13a0c05c290b5fc07ad41e7" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a185b7a13a0c05c290b5fc07ad41e7")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+    )
+  )
+)
+(END_OF_FILE)

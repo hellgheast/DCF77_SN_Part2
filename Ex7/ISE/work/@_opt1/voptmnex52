@@ -1,0 +1,284 @@
+m255
+K3
+13
+cModel Technology
+Z0 dU:\Cours\Systemes_Numeriques\SolutionsExercices\Sequentiel\Ex7_PicoBlaze\ISE
+T_opt
+Z1 Vk3YWWMQ9KN^5?NQIU:6b93
+Z2 04 14 9 work additioneur_tb behaviour 1
+Z3 =1-002564934904-4cefa9c2-204-14e8
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 n@_opt
+Z6 OE;O;6.6b;45
+Z7 dU:\Cours\Systemes_Numeriques\SolutionsExercices\Sequentiel\Ex7_PicoBlaze\ISE
+T_opt1
+Z8 VbhI?S04^Ho4hn0DYdQgYU0
+R2
+Z9 =1-f04da238c92c-4edf5f0c-f8-ef0
+R4
+Z10 n@_opt1
+Z11 OL;O;10.0c;49
+R7
+Eadditioneur
+Z12 w1323261454
+Z13 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z14 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z15 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z16 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R7
+Z17 8../additioneur_picoblaze.ews/design.hdl/additioneur.vhd
+Z18 F../additioneur_picoblaze.ews/design.hdl/additioneur.vhd
+l0
+L29
+Z19 VnTBo8X9RmC<Q4zIlWfcg63
+Z20 OL;C;10.0c;49
+31
+Z21 !s108 1323261705.318000
+Z22 !s90 -reportprogress|300|-explicit|-93|../additioneur_picoblaze.ews/design.hdl/additioneur.vhd|
+Z23 !s107 ../additioneur_picoblaze.ews/design.hdl/additioneur.vhd|
+Z24 o-explicit -93
+Z25 tExplicit 1
+Z26 !s100 aN2mlb2aNhD9adEge]VB40
+Astructure
+R13
+R14
+R15
+R16
+Z27 DEx4 work 11 additioneur 0 22 nTBo8X9RmC<Q4zIlWfcg63
+l104
+L44
+Z28 V`QDg]d?n9M`fazGi]3A6z1
+R20
+31
+R21
+R22
+R23
+R24
+R25
+Z29 !s100 =7E3Vm<f6Q8N>2J_FUU:>2
+Eadditioneur_stimuli
+R12
+R13
+R14
+R15
+R16
+R7
+Z30 8../additioneur_picoblaze.ews/design.hdl/additioneur_stimuli.vhd
+Z31 F../additioneur_picoblaze.ews/design.hdl/additioneur_stimuli.vhd
+l0
+L29
+Z32 Vi9NTK:fnR0mP0@DC2:kOG1
+R20
+31
+Z33 !s108 1323261704.798000
+Z34 !s90 -reportprogress|300|-explicit|-93|../additioneur_picoblaze.ews/design.hdl/additioneur_stimuli.vhd|
+Z35 !s107 ../additioneur_picoblaze.ews/design.hdl/additioneur_stimuli.vhd|
+R24
+R25
+Z36 !s100 JYZC1boE9QLe5FoAi8BJ]0
+Abehaviour
+R13
+R14
+R15
+R16
+Z37 DEx4 work 19 additioneur_stimuli 0 22 i9NTK:fnR0mP0@DC2:kOG1
+l52
+L45
+Z38 V_0HI^1mV[b?<>45cI4aXC1
+R20
+31
+R33
+R34
+R35
+R24
+R25
+Z39 !s100 W2mbUTnR5nS`amW`]6Bzi0
+Eadditioneur_tb
+R12
+R13
+R14
+R15
+R16
+R7
+Z40 8../additioneur_picoblaze.ews/design.hdl/additioneur_tb.vhd
+Z41 F../additioneur_picoblaze.ews/design.hdl/additioneur_tb.vhd
+l0
+L29
+Z42 V:N@mZ>7g8CnTbknzBColj0
+R20
+31
+Z43 !s108 1323261705.818000
+Z44 !s90 -reportprogress|300|-explicit|-93|../additioneur_picoblaze.ews/design.hdl/additioneur_tb.vhd|
+Z45 !s107 ../additioneur_picoblaze.ews/design.hdl/additioneur_tb.vhd|
+R24
+R25
+Z46 !s100 b5;247=H@k16gbRJ5W39h2
+Abehaviour
+R13
+R14
+R15
+R16
+Z47 DEx4 work 14 additioneur_tb 0 22 :N@mZ>7g8CnTbknzBColj0
+l66
+L37
+Z48 Vhl>_UG4TK2kO?OPdgj@8k1
+R20
+31
+R43
+R44
+R45
+R24
+R25
+Z49 !s100 KA89kGaJ[6>4:de3O7ifN2
+Einterfaces
+R12
+R13
+R14
+R15
+R16
+R7
+Z50 8../additioneur_picoblaze.ews/design.hdl/interfaces.vhd
+Z51 F../additioneur_picoblaze.ews/design.hdl/interfaces.vhd
+l0
+L29
+Z52 V<23=0@W@@^[ab1NUm;EeX0
+R20
+31
+Z53 !s108 1323261704.298000
+Z54 !s90 -reportprogress|300|-explicit|-93|../additioneur_picoblaze.ews/design.hdl/interfaces.vhd|
+Z55 !s107 ../additioneur_picoblaze.ews/design.hdl/interfaces.vhd|
+R24
+R25
+Z56 !s100 04EE5OL`SoLdYVUnNXEac1
+Abehaviour
+R13
+R14
+R15
+R16
+Z57 DEx4 work 10 interfaces 0 22 <23=0@W@@^[ab1NUm;EeX0
+l51
+L49
+Z58 V7mjOS8MV0E;3YJU=Vf1@[2
+R20
+31
+R53
+R54
+R55
+R24
+R25
+Z59 !s100 li?4flT03=lX=jfEUV[h:1
+Ekcpsm3
+Z60 w1121842238
+Z61 DPx6 unisim 11 vcomponents 0 22 KifB>;B_9O^HbBl0a<d]R0
+R13
+R14
+R15
+R16
+R7
+Z62 8../kcpsm3.vhd
+Z63 F../kcpsm3.vhd
+l0
+L77
+Z64 Vf_8nS?<N8V[cEJf_eDH2>0
+R20
+31
+Z65 !s108 1323261701.448000
+Z66 !s90 -reportprogress|300|-explicit|-93|../kcpsm3.vhd|
+Z67 !s107 ../kcpsm3.vhd|
+R24
+R25
+Z68 !s100 G1Z[0GD]3Ac11[Pc[Fd:h0
+Alow_level_definition
+R61
+R13
+R14
+R15
+R16
+Z69 DEx4 work 6 kcpsm3 0 22 f_8nS?<N8V[cEJf_eDH2>0
+l279
+L95
+Z70 VD[WRDeMgo3RzZ9ZjAFN0^3
+R20
+31
+R65
+R66
+R67
+R24
+R25
+Z71 !s100 @Fm>ianFZkgLX^edZfNQ<3
+Eprogram
+Z72 w1323258790
+R61
+R13
+R14
+R15
+R16
+R7
+Z73 8../Assembler/PROGRAM.VHD
+Z74 F../Assembler/PROGRAM.VHD
+l0
+L20
+Z75 V?L_jPRAAhhHh@89F0]Yho1
+R20
+31
+Z76 !s108 1323261702.948000
+Z77 !s90 -reportprogress|300|-explicit|-93|../Assembler/PROGRAM.VHD|
+Z78 !s107 ../Assembler/PROGRAM.VHD|
+R24
+R25
+Z79 !s100 jj`6?PK_UZUBK1Tg4Y[Rm3
+Alow_level_definition
+R61
+R13
+R14
+R15
+R16
+Z80 DEx4 work 7 program 0 22 ?L_jPRAAhhHh@89F0]Yho1
+l179
+L26
+Z81 VDF:;>;XBb7E5K9@B_bEai1
+R20
+31
+R76
+R77
+R78
+R24
+R25
+Z82 !s100 TPdPmo1b;5eALQPg5Cl_j0
+Eregistres
+R12
+R13
+R14
+R15
+R16
+R7
+Z83 8../additioneur_picoblaze.ews/design.hdl/registres.vhd
+Z84 F../additioneur_picoblaze.ews/design.hdl/registres.vhd
+l0
+L29
+Z85 VjU8^0l:_BJ^:=hQ=@?O<:2
+R20
+31
+Z86 !s108 1323261703.808000
+Z87 !s90 -reportprogress|300|-explicit|-93|../additioneur_picoblaze.ews/design.hdl/registres.vhd|
+Z88 !s107 ../additioneur_picoblaze.ews/design.hdl/registres.vhd|
+R24
+R25
+Z89 !s100 O1HmH4mI>OHi4B`^7dRNA0
+Abehaviour
+R13
+R14
+R15
+R16
+Z90 DEx4 work 9 registres 0 22 jU8^0l:_BJ^:=hQ=@?O<:2
+l48
+L46
+Z91 VTg1aU=Wa=^CVJTGIYYPEE2
+R20
+31
+R86
+R87
+R88
+R24
+R25
+Z92 !s100 Da>=SlIV?GR]NQEIE6X`H1

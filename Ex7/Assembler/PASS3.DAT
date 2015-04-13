@@ -1,0 +1,156 @@
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;====================================================================================================
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;Additionneur 8 bits
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;Fichier: program.asm
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;Projet: Additioneur
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;Date:  05.11.2009
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;====================================================================================================
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-nombre1
+   OPERAND2-01
+    COMMENT-;adresse du registre nombre1
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-nombre2
+   OPERAND2-02
+    COMMENT-;adresse du registre nombre2
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-resultat
+   OPERAND2-03
+    COMMENT-;adresse du registre resultat1
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-carry_out
+   OPERAND2-04
+    COMMENT-;adresse du registre carry_out
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;====================================================================================================
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; MAIN
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;====================================================================================================
+    ADDRESS-000
+      LABEL-MAIN
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-INPUT
+   OPERAND1-s0
+   OPERAND2-nombre1
+    COMMENT-;lecture nombre1 ,stocke valeur dans registre s0
+    ADDRESS-001
+      LABEL-
+INSTRUCTION-INPUT
+   OPERAND1-s1
+   OPERAND2-nombre2
+    COMMENT-;lecture nombre2 ,stocke valeur dans registre s1
+    ADDRESS-002
+      LABEL-
+INSTRUCTION-ADD
+   OPERAND1-s0
+   OPERAND2-s1
+    COMMENT-;additionne nombre1 et nombre2, resultat dans s0
+    ADDRESS-003
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NC
+   OPERAND2-CLR_CARRY
+    COMMENT-;saut à CLR_CARRY si pas de flag carry
+    ADDRESS-004
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s2
+   OPERAND2-01
+    COMMENT-;set bit 0 du registre S2
+    ADDRESS-005
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-RESULT
+   OPERAND2-
+    COMMENT-;saut a RESULT
+    ADDRESS-006
+      LABEL-CLR_CARRY
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-006
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s2
+   OPERAND2-00
+    COMMENT-;clear bit 0 du registre S2
+    ADDRESS-007
+      LABEL-RESULT
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-007
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s2
+   OPERAND2-carry_out
+    COMMENT-;affiche cary
+    ADDRESS-008
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+   OPERAND2-resultat
+    COMMENT-;affiche resultat
+    ADDRESS-009
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-MAIN
+   OPERAND2-
+    COMMENT-; retour a MAIN

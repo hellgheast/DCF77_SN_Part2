@@ -1,0 +1,256 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a14691221d2fa40d410a842f740000")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Wed Dec 04 15:54:06 2013")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "registres")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1344 896)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "yves.meyer")
+      (CREATED 1257427234 "Thu Nov 05 14:20:34 2009")
+      (MODIFIED 1386168846 "Wed Dec 04 15:54:06 2013")
+    )
+    (PORT
+      (OBID "eprtd9a14691841d2fa40d410a8449840000")
+      (HDL_IDENT
+        (NAME "port_id")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "port_id(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a14691051d2fa40d410a84c9840000")
+      (HDL_IDENT
+        (NAME "write_strobe")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "write_strobe")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a14691851d2fa40d410a844a840000")
+      (HDL_IDENT
+        (NAME "out_port")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "out_port(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a14691ba1d2fa40d410a84ff840000")
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a14691787d2fa40d410a84b8940000")
+      (HDL_IDENT
+        (NAME "resultat")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY 1304 472 1384 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1280 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "resultat(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146918a7d2fa40d410a8479940000")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "carry_out")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1304 280 1384 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1280 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "carry_out")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146917d7d2fa40d410a847a940000")
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a14691221d2fa40d410a843f740000" "behaviour")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a14691221d2fa40d410a843f740000")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "behaviour")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "filed9a146913b8d2fa40d410a84d2a40000")
+        (NAME "behaviour.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behaviour' of entity 'registres'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     carry_out    : out    std_logic;"
+               "--     clk          : in     std_logic;"
+               "--     out_port     : in     std_logic_vector(7 downto 0);"
+               "--     port_id      : in     std_logic_vector(7 downto 0);"
+               "--     reset_n      : in     std_logic;"
+               "--     resultat     : out    std_logic_vector(7 downto 0);"
+               "--     write_strobe : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behaviour of registres is"
+               ""
+               "begin"
+               ""
+               "p1:PROCESS (clk,reset_n)"
+               "BEGIN"
+               "	IF reset_n = '0' THEN"
+               "		 resultat <= (OTHERS => '0');"
+               "		 carry_out <= '0';"
+               "	ELSIF clk'EVENT AND clk = '1' THEN"
+               "		IF WRITE_STROBE = '1' THEN"
+               "			CASE PORT_ID IS"
+               "				WHEN X\"03\" =>	 "
+               "					 resultat <= OUT_PORT;"
+               "				WHEN X\"04\" =>	 "
+               "					 carry_out <=	OUT_PORT(0);"
+               "				WHEN OTHERS => NULL;"
+               "			END CASE;"
+               "		END IF;"
+               "	END IF;"
+               "END PROCESS;"
+               ""
+               "end architecture behaviour ; -- of registres"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

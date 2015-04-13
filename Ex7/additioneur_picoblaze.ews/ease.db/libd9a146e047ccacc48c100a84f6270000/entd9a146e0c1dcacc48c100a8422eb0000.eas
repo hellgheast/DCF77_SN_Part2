@@ -1,0 +1,86 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a146e0c1dcacc48c100a8422eb0000")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "VCOMPONENTS")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Thu Dec 06 14:52:26 2012")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "TOC")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1344 512)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "yves.meyer")
+      (CREATED 1288359196 "Fri Oct 29 15:33:16 2010")
+      (MODIFIED 1354801932 "Thu Dec 06 14:52:12 2012")
+    )
+    (GENERIC
+      (OBID "egend9a146e0c1dcacc48c100a8432eb0000")
+      (HDL_IDENT
+        (NAME "WIDTH")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "time")
+          (DEF_VALUE "100 ns")
+        )
+      )
+      (GEOMETRY 88 88 168 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 232 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 129)
+        (TEXT "WIDTH(100 ns)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a146e0c1dcacc48c100a8442eb0000")
+      (HDL_IDENT
+        (NAME "O")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 2)
+          (DEF_VALUE "'0'")
+        )
+      )
+      (GEOMETRY 1304 344 1384 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1280 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "O")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a185b7a13a0c05c290b5fc17ad41e7" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a185b7a13a0c05c290b5fc17ad41e7")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+    )
+  )
+)
+(END_OF_FILE)

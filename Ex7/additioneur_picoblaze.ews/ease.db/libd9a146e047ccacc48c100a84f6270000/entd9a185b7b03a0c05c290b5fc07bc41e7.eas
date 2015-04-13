@@ -1,0 +1,85 @@
+(DATABASE_VERSION 16)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a185b7b03a0c05c290b5fc07bc41e7")
+    (PROPERTIES
+      (PROPERTY "ComponentDeclaration" "true")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "PackageName" "VCOMPONENTS")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 9")
+      (PROPERTY "STAMP_TIME" "Thu Dec 06 14:52:12 2012")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "7.4")
+    )
+    (HDL_IDENT
+      (NAME "BUFG_LB")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 896 320)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "yves.meyer")
+      (CREATED 1354801931 "Thu Dec 06 14:52:11 2012")
+      (MODIFIED 1354801931 "Thu Dec 06 14:52:11 2012")
+    )
+    (PORT
+      (OBID "eprtd9a185b7b03a0c05c290b5fc17bc41e7")
+      (HDL_IDENT
+        (NAME "CLKOUT")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 856 88 936 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 832 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "CLKOUT")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a185b7b03a0c05c290b5fc27bc41e7")
+      (HDL_IDENT
+        (NAME "CLKIN")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_ulogic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "CLKIN")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a185b7b03a0c05c290b5fc37bc41e7" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a185b7b03a0c05c290b5fc37bc41e7")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+    )
+  )
+)
+(END_OF_FILE)

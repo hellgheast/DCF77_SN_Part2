@@ -1,0 +1,260 @@
+    ADDRESS-000
+      LABEL-
+  FORMATTED-
+  LOGFORMAT-
+INSTRUCTION-
+   OPERAND1-
+  OP1 VALUE-
+   OPERAND2-
+  OP2 VALUE-
+    COMMENT-;====================================================================================================
+    ADDRESS-000
+      LABEL-
+  FORMATTED-
+  LOGFORMAT-
+INSTRUCTION-
+   OPERAND1-
+  OP1 VALUE-
+   OPERAND2-
+  OP2 VALUE-
+    COMMENT-;Additionneur 8 bits
+    ADDRESS-000
+      LABEL-
+  FORMATTED-
+  LOGFORMAT-
+INSTRUCTION-
+   OPERAND1-
+  OP1 VALUE-
+   OPERAND2-
+  OP2 VALUE-
+    COMMENT-;Fichier: program.asm
+    ADDRESS-000
+      LABEL-
+  FORMATTED-
+  LOGFORMAT-
+INSTRUCTION-
+   OPERAND1-
+  OP1 VALUE-
+   OPERAND2-
+  OP2 VALUE-
+    COMMENT-;Projet: Additioneur
+    ADDRESS-000
+      LABEL-
+  FORMATTED-
+  LOGFORMAT-
+INSTRUCTION-
+   OPERAND1-
+  OP1 VALUE-
+   OPERAND2-
+  OP2 VALUE-
+    COMMENT-;Date:  05.11.2009
+    ADDRESS-000
+      LABEL-
+  FORMATTED-
+  LOGFORMAT-
+INSTRUCTION-
+   OPERAND1-
+  OP1 VALUE-
+   OPERAND2-
+  OP2 VALUE-
+    COMMENT-;====================================================================================================
+    ADDRESS-000
+      LABEL-
+  FORMATTED-CONSTANT nombre1, 01
+  LOGFORMAT-CONSTANT nombre1, 01
+INSTRUCTION-CONSTANT
+   OPERAND1-nombre1
+  OP1 VALUE-nombre1
+   OPERAND2-01
+  OP2 VALUE-01
+    COMMENT-;adresse du registre nombre1
+    ADDRESS-000
+      LABEL-
+  FORMATTED-CONSTANT nombre2, 02
+  LOGFORMAT-CONSTANT nombre2, 02
+INSTRUCTION-CONSTANT
+   OPERAND1-nombre2
+  OP1 VALUE-nombre2
+   OPERAND2-02
+  OP2 VALUE-02
+    COMMENT-;adresse du registre nombre2
+    ADDRESS-000
+      LABEL-
+  FORMATTED-CONSTANT resultat, 03
+  LOGFORMAT-CONSTANT resultat, 03
+INSTRUCTION-CONSTANT
+   OPERAND1-resultat
+  OP1 VALUE-resultat
+   OPERAND2-03
+  OP2 VALUE-03
+    COMMENT-;adresse du registre resultat1
+    ADDRESS-000
+      LABEL-
+  FORMATTED-CONSTANT carry_out, 04
+  LOGFORMAT-CONSTANT carry_out, 04
+INSTRUCTION-CONSTANT
+   OPERAND1-carry_out
+  OP1 VALUE-carry_out
+   OPERAND2-04
+  OP2 VALUE-04
+    COMMENT-;adresse du registre carry_out
+    ADDRESS-000
+      LABEL-
+  FORMATTED-
+  LOGFORMAT-
+INSTRUCTION-
+   OPERAND1-
+  OP1 VALUE-
+   OPERAND2-
+  OP2 VALUE-
+    COMMENT-;====================================================================================================
+    ADDRESS-000
+      LABEL-
+  FORMATTED-
+  LOGFORMAT-
+INSTRUCTION-
+   OPERAND1-
+  OP1 VALUE-
+   OPERAND2-
+  OP2 VALUE-
+    COMMENT-; MAIN
+    ADDRESS-000
+      LABEL-
+  FORMATTED-
+  LOGFORMAT-
+INSTRUCTION-
+   OPERAND1-
+  OP1 VALUE-
+   OPERAND2-
+  OP2 VALUE-
+    COMMENT-;====================================================================================================
+    ADDRESS-000
+      LABEL-MAIN
+  FORMATTED-
+  LOGFORMAT-
+INSTRUCTION-
+   OPERAND1-
+  OP1 VALUE-
+   OPERAND2-
+  OP2 VALUE-
+    COMMENT-
+    ADDRESS-000
+      LABEL-
+  FORMATTED-INPUT s0, nombre1
+  LOGFORMAT-INPUT s0, nombre1[01]
+INSTRUCTION-INPUT
+   OPERAND1-s0
+  OP1 VALUE-s0
+   OPERAND2-nombre1
+  OP2 VALUE-01
+    COMMENT-;lecture nombre1 ,stocke valeur dans registre s0
+    ADDRESS-001
+      LABEL-
+  FORMATTED-INPUT s1, nombre2
+  LOGFORMAT-INPUT s1, nombre2[02]
+INSTRUCTION-INPUT
+   OPERAND1-s1
+  OP1 VALUE-s1
+   OPERAND2-nombre2
+  OP2 VALUE-02
+    COMMENT-;lecture nombre2 ,stocke valeur dans registre s1
+    ADDRESS-002
+      LABEL-
+  FORMATTED-ADD s0, s1
+  LOGFORMAT-ADD s0, s1
+INSTRUCTION-ADD
+   OPERAND1-s0
+  OP1 VALUE-s0
+   OPERAND2-s1
+  OP2 VALUE-s1
+    COMMENT-;additionne nombre1 et nombre2, resultat dans s0
+    ADDRESS-003
+      LABEL-
+  FORMATTED-JUMP NC, CLR_CARRY
+  LOGFORMAT-JUMP NC, CLR_CARRY[006]
+INSTRUCTION-JUMP
+   OPERAND1-NC
+  OP1 VALUE-NC
+   OPERAND2-CLR_CARRY
+  OP2 VALUE-006
+    COMMENT-;saut à CLR_CARRY si pas de flag carry
+    ADDRESS-004
+      LABEL-
+  FORMATTED-LOAD s2, 01
+  LOGFORMAT-LOAD s2, 01
+INSTRUCTION-LOAD
+   OPERAND1-s2
+  OP1 VALUE-s2
+   OPERAND2-01
+  OP2 VALUE-01
+    COMMENT-;set bit 0 du registre S2
+    ADDRESS-005
+      LABEL-
+  FORMATTED-JUMP RESULT
+  LOGFORMAT-JUMP RESULT[007]
+INSTRUCTION-JUMP
+   OPERAND1-RESULT
+  OP1 VALUE-007
+   OPERAND2-
+  OP2 VALUE-
+    COMMENT-;saut a RESULT
+    ADDRESS-006
+      LABEL-CLR_CARRY
+  FORMATTED-
+  LOGFORMAT-
+INSTRUCTION-
+   OPERAND1-
+  OP1 VALUE-
+   OPERAND2-
+  OP2 VALUE-
+    COMMENT-
+    ADDRESS-006
+      LABEL-
+  FORMATTED-LOAD s2, 00
+  LOGFORMAT-LOAD s2, 00
+INSTRUCTION-LOAD
+   OPERAND1-s2
+  OP1 VALUE-s2
+   OPERAND2-00
+  OP2 VALUE-00
+    COMMENT-;clear bit 0 du registre S2
+    ADDRESS-007
+      LABEL-RESULT
+  FORMATTED-
+  LOGFORMAT-
+INSTRUCTION-
+   OPERAND1-
+  OP1 VALUE-
+   OPERAND2-
+  OP2 VALUE-
+    COMMENT-
+    ADDRESS-007
+      LABEL-
+  FORMATTED-OUTPUT s2, carry_out
+  LOGFORMAT-OUTPUT s2, carry_out[04]
+INSTRUCTION-OUTPUT
+   OPERAND1-s2
+  OP1 VALUE-s2
+   OPERAND2-carry_out
+  OP2 VALUE-04
+    COMMENT-;affiche cary
+    ADDRESS-008
+      LABEL-
+  FORMATTED-OUTPUT s0, resultat
+  LOGFORMAT-OUTPUT s0, resultat[03]
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+  OP1 VALUE-s0
+   OPERAND2-resultat
+  OP2 VALUE-03
+    COMMENT-;affiche resultat
+    ADDRESS-009
+      LABEL-
+  FORMATTED-JUMP MAIN
+  LOGFORMAT-JUMP MAIN[000]
+INSTRUCTION-JUMP
+   OPERAND1-MAIN
+  OP1 VALUE-000
+   OPERAND2-
+  OP2 VALUE-
+    COMMENT-; retour a MAIN

@@ -1,0 +1,84 @@
+<CONFIGURATION>
+  <sections>
+    <section name="FileEncoding">
+      <key type="string" value="ISO-Latin1" name="InternalEncoding"/>
+      <key type="string" value="ISO-Latin1" name="ExternalEncoding"/>
+    </section>
+    <section name="ObjectSearch">
+      <key type="bool" value="false" name="CaseSensitive"/>
+      <key type="bool" value="false" name="WholeWord"/>
+    </section>
+    <section name="HTML">
+      <key type="bool" value="true" name="StartBrowser"/>
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur.ews/html" name="DirectoryName"/>
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur.ews/html/index.htm" name="Index"/>
+    </section>
+    <section name="Markers">
+      <key type="string" value="design:additioneur_tb:&lt;Internal>" name="CurrentPath"/>
+      <key type="string" value="diagd9a146261a2aacc4c2c0049474730000" name="CurrentDiagram"/>
+      <key type="string" value="entd9a146260a2aacc4c2c00494f3730000" name="HdlOutputObject"/>
+    </section>
+    <section name="DiagramGridVisible">
+      <key type="bool" value="false" name="diagd9a1469135fc2fa40d410a842a540000"/>
+      <key type="bool" value="false" name="diagd9a14691558d2fa40d410a845c940000"/>
+      <key type="bool" value="false" name="diagd9a14691631e2fa40d410a8478c40000"/>
+      <key type="bool" value="false" name="diagd9a14626a40aacc4c2c00494a8330000"/>
+      <key type="bool" value="false" name="diagd9a146261a2aacc4c2c0049474730000"/>
+      <key type="bool" value="true" name="diagd9a146e047ccacc48c100a8407270000"/>
+    </section>
+    <section name="Browser">
+      <key type="string" value="design.interfaces" name="DetailView"/>
+    </section>
+    <section name="DiagramGridFactor">
+      <key type="int" value="0" name="diagd9a1469135fc2fa40d410a842a540000"/>
+    </section>
+    <section name="DatabaseView">
+      <key type="bool" value="true" name="entd9a146913d0d2fa40d410a8483740000"/>
+      <key type="bool" value="true" name="entd9a146f124d5fde4c331949057957e56"/>
+    </section>
+    <section name="TextSearch">
+      <key type="bool" value="false" name="CaseSensitive"/>
+      <key type="bool" value="false" name="WholeWord"/>
+    </section>
+    <section name="GenerationStamps">
+      <key type="string" value="1386771387" name="entd9a14691221d2fa40d410a842f740000"/>
+      <key type="string" value="1386771387" name="archd9a14691221d2fa40d410a843f740000"/>
+      <key type="string" value="1386771387" name="entd9a14691560d2fa40d410a84c7640000"/>
+      <key type="string" value="1386771387" name="archd9a14691560d2fa40d410a84e7640000"/>
+      <key type="string" value="1386771387" name="entd9a1469135fc2fa40d410a840a540000"/>
+      <key type="string" value="1386771387" name="archd9a1469135fc2fa40d410a841a540000"/>
+      <key type="string" value="1288347863" name="entd9a14626a40aacc4c2c0049428330000"/>
+      <key type="string" value="1288347863" name="archd9a14626a40aacc4c2c0049449330000"/>
+      <key type="string" value="1288347883" name="entd9a14626a40aacc4c2c0049438330000"/>
+      <key type="string" value="1386771387" name="entd9a146260a2aacc4c2c0049404730000"/>
+      <key type="string" value="1386771387" name="archd9a146261a2aacc4c2c00494f4730000"/>
+      <key type="string" value="1386771387" name="entd9a146260a2aacc4c2c00494f3730000"/>
+      <key type="string" value="1386771387" name="archd9a146261a2aacc4c2c0049415730000"/>
+    </section>
+    <section name="GeneratedHdlFiles">
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/registres.vhd" name="entd9a14691221d2fa40d410a842f740000"/>
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/registres.vhd" name="archd9a14691221d2fa40d410a843f740000"/>
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/interfaces.vhd" name="entd9a14691560d2fa40d410a84c7640000"/>
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/interfaces.vhd" name="archd9a14691560d2fa40d410a84e7640000"/>
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/additioneur.vhd" name="entd9a1469135fc2fa40d410a840a540000"/>
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/additioneur.vhd" name="archd9a1469135fc2fa40d410a841a540000"/>
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/additioneur_tb.vhd" name="entd9a14626a40aacc4c2c0049428330000"/>
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/additioneur_tb.vhd" name="archd9a14626a40aacc4c2c0049449330000"/>
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/additioneur_stimuli.vhd" name="entd9a14626a40aacc4c2c0049438330000"/>
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/additioneur_stimuli.vhd" name="entd9a146260a2aacc4c2c0049404730000"/>
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/additioneur_stimuli.vhd" name="archd9a146261a2aacc4c2c00494f4730000"/>
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/additioneur_tb.vhd" name="entd9a146260a2aacc4c2c00494f3730000"/>
+      <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/additioneur_tb.vhd" name="archd9a146261a2aacc4c2c0049415730000"/>
+    </section>
+    <section name="SimulatorCompileTimes">
+      <key type="int" value="0" name="design::U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/kcpsm3.vhd"/>
+      <key type="int" value="0" name="design::U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/PROGRAM.VHD"/>
+      <key type="int" value="0" name="design::U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/registres.vhd"/>
+      <key type="int" value="0" name="design::U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/interfaces.vhd"/>
+      <key type="int" value="0" name="design::U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/additioneur.vhd"/>
+      <key type="int" value="1288347864" name="design::U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/additioneur_tb.vhd"/>
+      <key type="int" value="0" name="design::U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur_picoblaze.ews/design.hdl/additioneur_stimuli.vhd"/>
+      <key type="int" value="0" name="design::U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/Assembler/PROGRAM.VHD"/>
+    </section>
+  </sections>
+</CONFIGURATION>
