@@ -14,8 +14,8 @@
       <key type="string" value="U:/Cours/Systemes_Numeriques/SolutionsExercices/Sequentiel/Ex7_PicoBlaze/additioneur.ews/html/index.htm" name="Index"/>
     </section>
     <section name="Markers">
-      <key type="string" value="design:additioneur_tb:&lt;Internal>" name="CurrentPath"/>
-      <key type="string" value="diagd9a146261a2aacc4c2c0049474730000" name="CurrentDiagram"/>
+      <key type="string" value="design:Toplevel:&lt;Internal>/compd9a14691558d2fa40d410a846c940000" name="CurrentPath"/>
+      <key type="string" value="diagd9a1469135fc2fa40d410a842a540000" name="CurrentDiagram"/>
       <key type="string" value="entd9a146260a2aacc4c2c00494f3730000" name="HdlOutputObject"/>
     </section>
     <section name="DiagramGridVisible">
@@ -33,6 +33,7 @@
       <key type="int" value="0" name="diagd9a1469135fc2fa40d410a842a540000"/>
     </section>
     <section name="DatabaseView">
+      <key type="bool" value="true" name="archd9a14691558d2fa40d410a844c940000"/>
       <key type="bool" value="true" name="entd9a146913d0d2fa40d410a8483740000"/>
       <key type="bool" value="true" name="entd9a146f124d5fde4c331949057957e56"/>
     </section>

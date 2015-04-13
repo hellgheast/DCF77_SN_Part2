@@ -15,7 +15,7 @@
     (PROPERTY "PackageFileFormatSpec" "%p.%x")
     (PROPERTY "STAMP_PLATFORM" "PC")
     (PROPERTY "STAMP_REVISION" "Revision 2")
-    (PROPERTY "STAMP_TIME" "Mon Apr 13 14:39:03 2015")
+    (PROPERTY "STAMP_TIME" "Mon Apr 13 14:57:36 2015")
     (PROPERTY "STAMP_TOOL" "Ease")
     (PROPERTY "STAMP_VERSION" "8.0")
     (PROPERTY "VERILOG_VERSION" "Verilog 95")
@@ -29,10 +29,21 @@
     (PROPERTY "VhdlFileFormatCase" "As is")
   )
   (DESIGN "design" "lib914a64204d8bb2550752d74db8861a13")
+  (COMPONENT_LIB "unisim" "lib914a6420739bb2550752d74d99861a13")
   (PACKAGE
     (OBID "pack914a64204d8bb2550752d74d09861a13")
     (LIBRARY "ieee")
     (NAME "std_logic_1164")
+  )
+  (PACKAGE
+    (OBID "pack914a642052dbb2550752d74dcd7c1a13")
+    (LIBRARY "ieee")
+    (NAME "std_logic_arith")
+  )
+  (PACKAGE
+    (OBID "pack914a642052dbb2550752d74ddd7c1a13")
+    (LIBRARY "ieee")
+    (NAME "std_logic_unsigned")
   )
   (PACKAGE_USE
     (PACKAGE_USE

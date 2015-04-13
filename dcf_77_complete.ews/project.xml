@@ -21,9 +21,15 @@
     </section>
     <section name="DiagramGridVisible">
       <key type="bool" value="false" name="diag914a64204d8bb2550752d74dc8861a13"/>
+      <key type="bool" value="true" name="diag914a6420739bb2550752d74da9861a13"/>
+      <key type="bool" value="false" name="diag914a642052dbb2550752d74d92ac1a13"/>
+      <key type="bool" value="false" name="diag914a642052dbb2550752d74dceec1a13"/>
     </section>
-    <section name="DiagramView">
-      <key type="geometry" value="0,0,9162,4265" name="diag914a64204d8bb2550752d74dc8861a13"/>
+    <section name="Browser">
+      <key type="string" value="design.kcpsm3" name="DetailView"/>
+    </section>
+    <section name="DatabaseView">
+      <key type="bool" value="true" name="arch914a642052dbb2550752d74d82ac1a13"/>
     </section>
   </sections>
 </CONFIGURATION>
