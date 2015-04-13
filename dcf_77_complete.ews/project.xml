@@ -1,0 +1,29 @@
+<CONFIGURATION>
+  <sections>
+    <section name="FileEncoding">
+      <key type="string" value="ISO-Latin1" name="InternalEncoding"/>
+      <key type="string" value="ISO-Latin1" name="ExternalEncoding"/>
+    </section>
+    <section name="ObjectSearch">
+      <key type="bool" value="false" name="CaseSensitive"/>
+      <key type="bool" value="false" name="WholeWord"/>
+    </section>
+    <section name="TextSearch">
+      <key type="bool" value="false" name="CaseSensitive"/>
+      <key type="bool" value="false" name="WholeWord"/>
+    </section>
+    <section name="HTML">
+      <key type="bool" value="false" name="StartBrowser"/>
+    </section>
+    <section name="Markers">
+      <key type="string" value="diag914a64204d8bb2550752d74dc8861a13" name="CurrentDiagram"/>
+      <key type="string" value="design:Toplevel:&lt;Internal>" name="CurrentPath"/>
+    </section>
+    <section name="DiagramGridVisible">
+      <key type="bool" value="false" name="diag914a64204d8bb2550752d74dc8861a13"/>
+    </section>
+    <section name="DiagramView">
+      <key type="geometry" value="0,0,9162,4265" name="diag914a64204d8bb2550752d74dc8861a13"/>
+    </section>
+  </sections>
+</CONFIGURATION>
