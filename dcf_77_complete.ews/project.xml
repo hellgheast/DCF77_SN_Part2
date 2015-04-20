@@ -26,19 +26,24 @@
       <key type="bool" value="false" name="diag914a642052dbb2550752d74dceec1a13"/>
       <key type="bool" value="true" name="diag914a64204d2cb2550752d74db31e1a13"/>
       <key type="bool" value="true" name="diag914a6420272e435586b2d74de5f70454"/>
+      <key type="bool" value="false" name="diag914a64200d5f1e450a81d74d0c149e90"/>
     </section>
     <section name="Browser">
       <key type="string" value="design.DCF77_Receiver" name="DetailView"/>
     </section>
     <section name="DiagramGridFactor">
       <key type="int" value="0" name="diag914a64204d2cb2550752d74db31e1a13"/>
+      <key type="int" value="0" name="diag914a6420272e435586b2d74de5f70454"/>
     </section>
     <section name="DatabaseView">
       <key type="bool" value="true" name="arch914a64204d8bb2550752d74de8861a13"/>
+      <key type="bool" value="true" name="lib914a64202a5f1e450a81d74d5b149e90"/>
     </section>
     <section name="DiagramView">
-      <key type="geometry" value="0,0,10202,5617" name="diag914a64204d2cb2550752d74db31e1a13"/>
-      <key type="geometry" value="0,0,10392,5722" name="diag914a64204d8bb2550752d74dc8861a13"/>
+      <key type="geometry" value="0,0,7748,4266" name="diag914a6420272e435586b2d74de5f70454"/>
+      <key type="geometry" value="0,0,7748,4266" name="diag914a64204d8bb2550752d74dc8861a13"/>
+      <key type="geometry" value="0,0,7748,4266" name="diag914a64204d2cb2550752d74db31e1a13"/>
+      <key type="geometry" value="0,0,11624,6399" name="diag914a64200d5f1e450a81d74d0c149e90"/>
     </section>
   </sections>
 </CONFIGURATION>
