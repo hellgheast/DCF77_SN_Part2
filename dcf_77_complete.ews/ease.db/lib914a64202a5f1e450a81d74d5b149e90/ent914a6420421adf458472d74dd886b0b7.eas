@@ -1,0 +1,173 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent914a6420421adf458472d74dd886b0b7")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Apr 20 13:27:24 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "rising_edge_dectection")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1344 576)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1425908004 "Mon Mar 09 14:33:24 2015")
+      (MODIFIED 1429529202 "Mon Apr 20 13:26:42 2015")
+    )
+    (PORT
+      (OBID "eprt914a6420d35adf458472d74d7096b0b7")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420145adf458472d74db096b0b7")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420c55adf458472d74df096b0b7")
+      (HDL_IDENT
+        (NAME "rising_edge_dcf_77")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1304 216 1384 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1280 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "rising_edge_dcf_77")
+      )
+    )
+    (PORT
+      (OBID "eprt914a642023ce60550a62d74d59b08b20")
+      (HDL_IDENT
+        (NAME "dcf_77_s")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "dcf_77_s")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch914a6420421adf458472d74d0986b0b7" "behavioral")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch914a6420421adf458472d74d0986b0b7")
+    (HDL_IDENT
+      (NAME "behavioral")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file914a6420421adf458472d74d1986b0b7")
+        (NAME "behavioral.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavioral' of entity 'rising_edge_dectection'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     clk                : in     std_logic;"
+               "--     dcf_77_s           : in     std_logic;"
+               "--     reset_n            : in     std_logic;"
+               "--     rising_edge_dcf_77 : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behavioral of rising_edge_dectection is"
+               "    "
+               "signal sync1 : std_logic := '0';"
+               ""
+               "begin       "
+               ""
+               "P1:process(clk, reset_n) is"
+               "	begin"
+               "	if reset_n = '0' then"
+               "		--rising_edge_dcf_77 <= '0';"
+               "	elsif (clk = '1' and clk'event) then"
+               "	     sync1 <= dcf_77_s;"
+               "	end if;"
+               "end process;"
+               ""
+               "rising_edge_dcf_77 <= '1' when (dcf_77_s = '1' and sync1 = '0') else '0';"
+               " "
+               "end architecture behavioral ; -- of rising_edge_dectection"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file914a6420272e435586b2d74d97f70454")
+        (NAME "behavioral.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

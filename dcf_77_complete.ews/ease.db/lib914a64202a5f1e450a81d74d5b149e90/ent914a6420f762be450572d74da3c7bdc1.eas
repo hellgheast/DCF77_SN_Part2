@@ -1,0 +1,239 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent914a6420f762be450572d74da3c7bdc1")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Apr 20 13:27:24 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "coutner_ms")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1408 768)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1424696959 "Mon Feb 23 14:09:19 2015")
+      (MODIFIED 1429529202 "Mon Apr 20 13:26:42 2015")
+    )
+    (PORT
+      (OBID "eprt914a6420c172be450572d74d36c7bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64201372be450572d74df6c7bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64203472be450572d74d37c7bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "freq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "freq")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64200672be450572d74d59c7bdc1")
+      (HDL_IDENT
+        (NAME "high_ms_count")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY 1368 344 1448 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1322 398)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "high_ms_count(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420223adf458472d74da986b0b7")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "dcf_77_s")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "dcf_77_s")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420443adf458472d74d1a86b0b7")
+      (HDL_IDENT
+        (NAME "rising_edge_dcf_77")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rising_edge_dcf_77")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch914a6420f762be450572d74dd3c7bdc1" "behavior")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch914a6420f762be450572d74dd3c7bdc1")
+    (HDL_IDENT
+      (NAME "behavior")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file914a6420f762be450572d74de3c7bdc1")
+        (NAME "behavior.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavior' of entity 'coutner_ms'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     clk                : in     std_logic;"
+               "--     dcf_77_s           : in     std_logic;"
+               "--     freq               : in     std_logic;"
+               "--     high_ms_count      : out    std_logic_vector(7 downto 0);"
+               "--     reset_n            : in     std_logic;"
+               "--     rising_edge_dcf_77 : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               "  "
+               "architecture behavior of coutner_ms is"
+               ""
+               "signal counter : std_logic_vector(7 DOWNTO 0); --Signal interne pour compteur"
+               ""
+               "begin "
+               ""
+               "P1:process (clk, reset_n)           "
+               ""
+               "	begin                  "
+               "	"
+               "	if(reset_n = '0') then -- reset asynchrone"
+               "		counter  <= (OTHERS => '0'); "
+               "		"
+               "	elsif(clk'EVENT and clk = '1') then "
+               "	"
+               "		if rising_edge_dcf_77 = '1' then"
+               "		  	counter  <= (OTHERS => '0');      "
+               "		  "
+               "	    elsif freq = '1' and dcf_77_s = '1' then"
+               "			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1); "
+               "		"
+               "		end if; "
+               "		"
+               "	end if;	  "
+               "		"
+               "end process;    "
+               "        "
+               "high_ms_count <= counter;"
+               ""
+               "end architecture behavior ; -- of coutner_ms"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file914a6420272e435586b2d74d37f70454")
+        (NAME "behavior.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

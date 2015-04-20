@@ -1,0 +1,282 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a1860a6bb20155c75009c3b5a1a963")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Apr 20 13:27:24 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "decode_RBG")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 832 896)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1427123126 "Mon Mar 23 16:05:26 2015")
+      (MODIFIED 1429529202 "Mon Apr 20 13:26:42 2015")
+    )
+    (PORT
+      (OBID "eprtd9a1860ad0c20155c75009c37de1a963")
+      (HDL_IDENT
+        (NAME "start")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "start")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860a21c20155c75009c3ede1a963")
+      (HDL_IDENT
+        (NAME "stop")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "stop")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860ae1c20155c75009c35ee1a963")
+      (HDL_IDENT
+        (NAME "bit_count")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "bit_count(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860a9b730155c75009c39ee1a963")
+      (HDL_IDENT
+        (NAME "RBG")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "1" "0")
+          )
+        )
+      )
+      (GEOMETRY 792 152 872 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 768 192)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "RBG(1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1e65bee449155829109c37a475c80")
+      (HDL_IDENT
+        (NAME "getNothing")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "getNothing")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64203f3d72558201d74d4fa3d4f6")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420ef3d72558201d74d8fa3d4f6")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a1860a6bb20155c75009c3e5a1a963" "behavior")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a1860a6bb20155c75009c3e5a1a963")
+    (HDL_IDENT
+      (NAME "behavior")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "filed9a1860a6bb20155c75009c3f5a1a963")
+        (NAME "behavior.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavior' of entity 'decode_RBG'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     RBG        : out    std_logic_vector(1 downto 0);"
+               "--     bit_count  : in     std_logic_vector(5 downto 0);"
+               "--     clk        : in     std_logic;"
+               "--     getNothing : in     std_logic;"
+               "--     reset_n    : in     std_logic;"
+               "--     start      : in     std_logic;"
+               "--     stop       : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behavior of decode_RBG is"
+               "       "
+               "signal getNot    : std_logic;"
+               "signal busyTemp  : std_logic;"
+               "signal readyTemp : std_logic;"
+               ""
+               "begin     "
+               ""
+               "P1 : process(clk,reset_n) IS"
+               "begin"
+               "	if reset_n = '0' then"
+               " 		RBG <= (others => '0');"
+               " 		busyTemp <= '0';"
+               " 		readyTemp <= '0'; "
+               " 		getNot <= '0';"
+               " 		"
+               "	elsif  (clk = '1' AND clk'event) THEN  "
+               "		 "
+               "		-- GETNOTHING --> première priorité "
+               "  	   	if getNothing = '0' then"
+               "  	   		getNot <= '0';"
+               "  	   		"
+               "	   		-- BUSY --> deuxième priorité "
+               "  	   		if stop = '1' then   -- Priorité sur le stop"
+               "  	   			busyTemp <= '0';"
+               "  	   			"
+               "    	   		-- READY --> troisième priorité "
+               "  	   			if stop = '1' and bit_count >= \"111011\" then"
+               "  	   				readyTemp <= '1';"
+               "  	   			else"
+               "  	   				readyTemp <= '0';"
+               "  	   			end if;	   			"
+               "  	   				"
+               "		    elsif start = '1' then   "
+               "  	   			busyTemp <= '1';"
+               "  	   			readyTemp <= '0';"
+               "  	   		end if;"
+               "   	"
+               "  	   	else"
+               "  	   		getNot <= '1'; "
+               "  	   		busyTemp <= '0';"
+               " 			readyTemp <= '0'; "
+               "  	   	end if;"
+               "  	   	  		       "
+               "	end if;"
+               "end process; "
+               ""
+               "RBG <= \"00\" when getNot = '1' and  busyTemp = '0' and readyTemp = '0' else"
+               "	   \"01\" when getNot = '0' and  busyTemp = '1' and readyTemp = '0' else "
+               "	   \"10\" when getNot = '0' and  busyTemp = '0' and readyTemp = '1' else "
+               "	   \"11\";"
+               ""
+               "end architecture behavior ; -- of decode_RBG"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file914a6420272e435586b2d74d47f70454")
+        (NAME "behavior.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

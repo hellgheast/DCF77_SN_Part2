@@ -1,0 +1,209 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent914a64207c002e450a81d74d72249e90")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Apr 20 13:27:24 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "div_freq")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 960 512)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1424097479 "Mon Feb 16 15:37:59 2015")
+      (MODIFIED 1429529202 "Mon Apr 20 13:26:42 2015")
+    )
+    (PORT
+      (OBID "eprt914a64201d002e450a81d74dd2249e90")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64205d002e450a81d74d13249e90")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64204e002e450a81d74d53249e90")
+      (HDL_IDENT
+        (NAME "freq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 920 344 1000 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 896 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "freq")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420de002e450a81d74d93249e90")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "div")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY 920 88 1000 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 902 141)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "div(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1d6fe3a7bb255c38009c3135475c0")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Enable")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY 920 216 1000 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 896 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Enable")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch914a64207c002e450a81d74da2249e90" "behavior")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch914a64207c002e450a81d74da2249e90")
+    (HDL_IDENT
+      (NAME "behavior")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file914a64207c002e450a81d74db2249e90")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavior' of entity 'div_freq'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Enable  : in     std_logic;"
+               "--     clk     : in     std_logic;"
+               "--     div     : in     std_logic_vector(15 downto 0);"
+               "--     freq    : out    std_logic;"
+               "--     reset_n : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behavior of div_freq is"
+               ""
+               "signal counter : std_logic_vector(15 downto 0); "
+               ""
+               "begin"
+               ""
+               "P1:process (clk, reset_n)"
+               "	begin"
+               "	if(reset_n) = '0' then -- reset asynchrone"
+               "		freq <= '0';"
+               "		counter <= (OTHERS => '0');"
+               "	elsif(clk'EVENT and clk = '1') then"
+               "		if (UNSIGNED(counter) = 0 and Enable = '1') then"
+               "			counter <= std_logic_vector(UNSIGNED(div) - 1);"
+               "			freq <= '1';"
+               "		elsif (Enable = '1') then"
+               "			counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) - 1);"
+               "			freq <= '0';"
+               "		end if;"
+               "	end if;		"
+               "end process;"
+               "end architecture behavior ; -- of div_freq"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file914a6420272e435586b2d74d67f70454")
+        (NAME "behavior.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

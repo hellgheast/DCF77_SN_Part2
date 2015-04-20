@@ -1,0 +1,717 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent914a6420f3b1be450572d74dba57bdc1")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Apr 20 13:27:24 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "reg_mem_dcf77")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1600 3520)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1424694079 "Mon Feb 23 13:21:19 2015")
+      (MODIFIED 1429529202 "Mon Apr 20 13:26:42 2015")
+    )
+    (PORT
+      (OBID "eprt914a6420b4b1be450572d74d1b57bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 3288 40 3368)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 3328)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420f4b1be450572d74d5b57bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 3416 40 3496)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 3456)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (PORT
+      (OBID "eprt914a642007b1be450572d74d9b57bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "reg_year")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 2648 40 2728)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2688)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reg_year(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420f7b1be450572d74d0c57bdc1")
+      (HDL_IDENT
+        (NAME "reg_month")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 2520 40 2600)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2560)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reg_month(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420d9b1be450572d74d3667bdc1")
+      (HDL_IDENT
+        (NAME "reg_status")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1624 40 1704)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1664)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reg_status(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420d9b1be450572d74d5667bdc1")
+      (HDL_IDENT
+        (NAME "reg_flags")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "3" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1752 40 1832)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1792)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reg_flags(3:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420d9b1be450572d74d7667bdc1")
+      (HDL_IDENT
+        (NAME "reg_hours")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1880 40 1960)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1920)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reg_hours(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420d9b1be450572d74d9667bdc1")
+      (HDL_IDENT
+        (NAME "reg_minutes")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "6" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 2008 40 2088)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2048)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reg_minutes(6:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420d9b1be450572d74db667bdc1")
+      (HDL_IDENT
+        (NAME "reg_dmonth")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 2200 40 2280)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2240)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reg_dmonth(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420d9b1be450572d74dd667bdc1")
+      (HDL_IDENT
+        (NAME "reg_dweek")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "2" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 2328 40 2408)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2368)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reg_dweek(2:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420afb1be450572d74d6867bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "chip_select")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "chip_select")
+      )
+    )
+    (PORT
+      (OBID "eprt914a642085c1be450572d74da867bdc1")
+      (HDL_IDENT
+        (NAME "data_out")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY 1560 984 1640 1064)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1536 1024)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "data_out(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64200ac1be450572d74de867bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "read")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "read")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420ecc1be450572d74d2967bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "write")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "write")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420a6d1be450572d74d6967bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Adress")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "3" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 792 40 872)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 832)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Adress(3:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64200dd1be450572d74da967bdc1")
+      (HDL_IDENT
+        (NAME "prescaler")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "15" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "prescaler(15:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64204342be450572d74d3ea7bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "data_in")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 920 40 1000)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 960)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "data_in(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860a06930155c75009c3d012a963")
+      (HDL_IDENT
+        (NAME "ParityD")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 3032 40 3112)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 3072)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ParityD")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860a06930155c75009c3f012a963")
+      (HDL_IDENT
+        (NAME "ParityM")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2904 40 2984)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2944)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ParityM")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860a06930155c75009c31112a963")
+      (HDL_IDENT
+        (NAME "ParityH")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 2776 40 2856)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 2816)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "ParityH")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1347ce843a255427209c3e7d0aec1")
+      (HDL_IDENT
+        (NAME "reg_recbits")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 1496 40 1576)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1536)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reg_recbits(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1d6fe8a7bb255c38009c3935475c0")
+      (HDL_IDENT
+        (NAME "Enable")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "Enable")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch914a6420f3b1be450572d74dea57bdc1" "behavior")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch914a6420f3b1be450572d74dea57bdc1")
+    (HDL_IDENT
+      (NAME "behavior")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file914a6420f3b1be450572d74dfa57bdc1")
+        (NAME "behavior.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavior' of entity 'reg_mem_dcf77'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Adress      : in     std_logic_vector(3 downto 0);"
+               "--     Enable      : out    std_logic;"
+               "--     ParityD     : in     std_logic;"
+               "--     ParityH     : in     std_logic;"
+               "--     ParityM     : in     std_logic;"
+               "--     chip_select : in     std_logic;"
+               "--     clk         : in     std_logic;"
+               "--     data_in     : in     std_logic_vector(7 downto 0);"
+               "--     data_out    : out    std_logic_vector(7 downto 0);"
+               "--     prescaler   : out    std_logic_vector(15 downto 0);"
+               "--     read        : in     std_logic;"
+               "--     reg_dmonth  : in     std_logic_vector(5 downto 0);"
+               "--     reg_dweek   : in     std_logic_vector(2 downto 0);"
+               "--     reg_flags   : in     std_logic_vector(3 downto 0);"
+               "--     reg_hours   : in     std_logic_vector(5 downto 0);"
+               "--     reg_minutes : in     std_logic_vector(6 downto 0);"
+               "--     reg_month   : in     std_logic_vector(5 downto 0);"
+               "--     reg_recbits : in     std_logic_vector(5 downto 0);"
+               "--     reg_status  : in     std_logic_vector(7 downto 0);"
+               "--     reg_year    : in     std_logic_vector(7 downto 0);"
+               "--     reset_n     : in     std_logic;"
+               "--     write       : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behavior of reg_mem_dcf77 is"
+               ""
+               "--Déclarations des constantes"
+               "CONSTANT c_rec_bits		: std_logic_vector(3 DOWNTO 0) := \"0001\"; --Adresse 1"
+               "CONSTANT c_status		: std_logic_vector(3 DOWNTO 0) := \"0010\"; --Adresse 2"
+               "CONSTANT c_prescaler_l  : std_logic_vector(3 DOWNTO 0) := \"0011\"; --Adresse 3"
+               "CONSTANT c_prescaler_h	: std_logic_vector(3 DOWNTO 0) := \"0100\"; --Adresse 4"
+               "CONSTANT c_flags		: std_logic_vector(3 DOWNTO 0) := \"0101\"; --Adresse 5"
+               "CONSTANT c_hours		: std_logic_vector(3 DOWNTO 0) := \"0110\"; --Adresse 6"
+               "CONSTANT c_minutes		: std_logic_vector(3 DOWNTO 0) := \"0111\"; --Adresse 7"
+               "CONSTANT c_daymonth		: std_logic_vector(3 DOWNTO 0) := \"1000\"; --Adresse 8"
+               "CONSTANT c_dayweek		: std_logic_vector(3 DOWNTO 0) := \"1001\"; --Adresse 9"
+               "CONSTANT c_month		: std_logic_vector(3 DOWNTO 0) := \"1010\"; --Adresse A"
+               "CONSTANT c_year			: std_logic_vector(3 DOWNTO 0) := \"1011\";"
+               ""
+               "--Déclarations des registres"
+               "signal reg_prescaler 	: std_logic_vector(15 downto 0)	:=x\"0000\";"
+               "                         "
+               "signal en1 : std_logic := '0';  -- Enable pour prescaler (attendre que 16 bits soient chargés)"
+               "signal en2 : std_logic := '0';"
+               ""
+               "signal wr_acc : std_logic;"
+               "signal rd_acc: std_logic;"
+               ""
+               "begin"
+               ""
+               "-- écriture"
+               "P1:PROCESS (clk,reset_n)"
+               "BEGIN"
+               "  IF(reset_n = '0') THEN"
+               "    reg_prescaler 	<= (OTHERS => '0');"
+               "    en1 <= '1';"
+               "    en2 <= '1'; "
+               "    ELSIF (clk'event and clk = '1')THEN"
+               "    IF (wr_acc = '1') THEN"
+               "      CASE Adress IS"
+               "      	WHEN c_prescaler_l => "
+               "      	  	 reg_prescaler(7 downto 0) <= data_in;"
+               "      	  	 en1 <= '1';         "
+               "      	WHEN c_prescaler_h =>"
+               "      		 reg_prescaler(15 downto 8) <= data_in;"
+               "      		 en2 <= '1';"
+               "      	WHEN OTHERS => null;"
+               "      END CASE;"
+               "    END IF;"
+               "  END IF;"
+               "END PROCESS;"
+               ""
+               "--Assignation des sorties"
+               "prescaler <= reg_prescaler;"
+               "   "
+               "--lecture  "
+               "P2:PROCESS (Adress,reg_dmonth,reg_dweek,reg_flags,reg_hours,reg_minutes,reg_month,reg_status,reg_year)"
+               "BEGIN"
+               "  IF rd_acc = '1' THEN"
+               "    data_out <= (OTHERS => '0');"
+               "    CASE Adress IS"
+               "      WHEN c_rec_bits =>"
+               "           data_out <= \"00\"& reg_recbits;     "
+               "      WHEN c_status =>"
+               "      	   data_out <= reg_status;"
+               "      	   data_out(7) <= ParityD xnor reg_status(4);"
+               "      	   data_out(6) <= ParityH xnor reg_status(3);"
+               "      	   data_out(5) <= ParityM xnor reg_status(2);     	   "
+               "      WHEN c_prescaler_l =>"
+               "      	   data_out <= reg_prescaler(7 downto 0);"
+               "      WHEN c_prescaler_h =>"
+               "      	   data_out <= reg_prescaler(15 downto 8);"
+               "      WHEN c_flags =>"
+               "           data_out <= \"0000\"&reg_flags;"
+               "      WHEN c_hours =>"
+               "      	   data_out <= \"00\" & reg_hours;"
+               "      WHEN c_minutes =>"
+               "      	   data_out <= \"0\" & reg_minutes;"
+               "      WHEN c_daymonth =>"
+               "      	   data_out <= \"00\" & reg_dmonth;"
+               "      WHEN c_dayweek =>"
+               "      	   data_out <= \"00000\" & reg_dweek;"
+               "      WHEN c_month =>"
+               "      	   data_out <= \"00\" & reg_month;"
+               "      WHEN c_year => "
+               "      	   data_out <= reg_year;"
+               "      WHEN OTHERS =>"
+               "      		null;  "
+               "      	   "
+               "    END CASE;"
+               "  END IF;                                                                                "
+               "END PROCESS;"
+               ""
+               "--Signaux combinatoire"
+               "wr_acc <= '1' WHEN write = '1' and chip_select = '1' ELSE '0';"
+               "rd_acc <= '1' WHEN read = '1' and chip_select = '1' ELSE '0';"
+               ""
+               "Enable <= '1' WHEN en1 = '1' and en2 = '1' ELSE '0';"
+               ""
+               "end architecture behavior ; -- of reg_mem_dcf77"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file914a6420272e435586b2d74d87f70454")
+        (NAME "behavior.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

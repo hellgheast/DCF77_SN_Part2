@@ -1,0 +1,176 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent914a64201a91be450572d74d9557bdc1")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Apr 20 13:27:24 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "sync_dcf77")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 896 512)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1424693665 "Mon Feb 23 13:14:25 2015")
+      (MODIFIED 1429529202 "Mon Apr 20 13:26:42 2015")
+    )
+    (PORT
+      (OBID "eprt914a64203c91be450572d74d0657bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "dcf_77_in")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 57 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "dcf_77_in")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64208c91be450572d74d4657bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64206d91be450572d74d8657bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64202f91be450572d74dc657bdc1")
+      (HDL_IDENT
+        (NAME "dcf_77_s")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 856 216 936 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 796 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dcf_77_s")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch914a64201a91be450572d74dd557bdc1" "behavior")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch914a64201a91be450572d74dd557bdc1")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "behavior")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file914a64201a91be450572d74de557bdc1")
+        (NAME "behavior.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavior' of entity 'sync_dcf77'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     clk       : in     std_logic;"
+               "--     dcf_77_in : in     std_logic;"
+               "--     dcf_77_s  : out    std_logic;"
+               "--     reset_n   : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behavior of sync_dcf77 is"
+               ""
+               "begin"
+               ""
+               "P1 : PROCESS(clk,reset_n) IS"
+               "BEGIN"
+               "IF reset_n = '0' THEN"
+               "  dcf_77_s <= '0';"
+               "ELSIF  (clk = '1' AND clk'event) THEN"
+               "  dcf_77_s <= dcf_77_in;        -- Synchronisation du signal"
+               "END IF;"
+               "END PROCESS P1;"
+               ""
+               ""
+               "end architecture behavior ; -- of sync_dcf77"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file914a6420eba1be450572d74d9757bdc1")
+        (NAME "behavior.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,237 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent914a6420e723be450572d74db4e7bdc1")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Apr 20 13:27:24 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "counter_nbbits")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1216 768)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1424700030 "Mon Feb 23 15:00:30 2015")
+      (MODIFIED 1429529202 "Mon Apr 20 13:26:42 2015")
+    )
+    (PORT
+      (OBID "eprt914a64205e23be450572d74d25e7bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420de23be450572d74d65e7bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420ff23be450572d74da5e7bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "stop")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "stop")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64205133be450572d74de5e7bdc1")
+      (HDL_IDENT
+        (NAME "bit_count")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY 1176 216 1256 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1152 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "bit_count(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420b1274f450fb2d74dd42172e5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "start")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "start")
+      )
+    )
+    (PORT
+      (OBID "eprt914a642034300155c0e1d74d40243765")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "rising_edge_dcf_77")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "rising_edge_dcf_77")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch914a6420e723be450572d74df4e7bdc1" "behavior")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch914a6420e723be450572d74df4e7bdc1")
+    (HDL_IDENT
+      (NAME "behavior")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file914a6420e723be450572d74d05e7bdc1")
+        (NAME "behavior.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavior' of entity 'counter_nbbits'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     bit_count          : out    std_logic_vector(5 downto 0);"
+               "--     clk                : in     std_logic;"
+               "--     reset_n            : in     std_logic;"
+               "--     rising_edge_dcf_77 : in     std_logic;"
+               "--     start              : in     std_logic;"
+               "--     stop               : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               "   "
+               ""
+               "architecture behavior of counter_nbbits is"
+               ""
+               "signal counter : std_logic_vector(5 DOWNTO 0); --Signal interne pour compteur, BitCount va jusqu'à 60"
+               ""
+               "BEGIN"
+               ""
+               "P1:process (clk, reset_n)"
+               "	begin"
+               "	if(reset_n) = '0' then -- reset asynchrone   "
+               "		counter  <= (OTHERS => '0');"
+               "	elsif(clk'EVENT and clk = '1') then "
+               "		 "
+               "		if start = '1' then"
+               "				counter <= (OTHERS => '0');"
+               "				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);	"
+               "		elsif (rising_edge_dcf_77 = '1') or (stop = '1') then  "
+               "				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
+               "		end if;		"
+               "	end if;		"
+               "end process;         "
+               ""
+               "bit_count <= counter;"
+               ""
+               "end architecture behavior ; -- of counter_nbbits"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file914a6420272e435586b2d74d27f70454")
+        (NAME "behavior.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

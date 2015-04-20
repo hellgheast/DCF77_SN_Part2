@@ -1,0 +1,300 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a1860a11830155c75009c39fe1a963")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Apr 20 13:27:24 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "CheckParity")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1024 1024)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1427126289 "Mon Mar 23 16:58:09 2015")
+      (MODIFIED 1429529202 "Mon Apr 20 13:26:42 2015")
+    )
+    (PORT
+      (OBID "eprtd9a1860af3830155c75009c340f1a963")
+      (HDL_IDENT
+        (NAME "hours")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 24 40 104)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 64)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "hours(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860a24830155c75009c3c0f1a963")
+      (HDL_IDENT
+        (NAME "minutes")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "6" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "minutes(6:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860a58830155c75009c319f1a963")
+      (HDL_IDENT
+        (NAME "dmonth")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "dmonth(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860ab8830155c75009c389f1a963")
+      (HDL_IDENT
+        (NAME "dweek")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "2" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 408 40 488)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 448)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "dweek(2:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860ae8830155c75009c3f9f1a963")
+      (HDL_IDENT
+        (NAME "month")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "month(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860a49830155c75009c36af1a963")
+      (HDL_IDENT
+        (NAME "year")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 664 40 744)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "year(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860abd830155c75009c3aaf1a963")
+      (HDL_IDENT
+        (NAME "ParityD")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 984 280 1064 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 960 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ParityD")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860a0e830155c75009c31bf1a963")
+      (HDL_IDENT
+        (NAME "ParityM")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 984 152 1064 232)
+      (SIDE 1)
+      (LABEL
+        (POSITION 960 192)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ParityM")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860a1e830155c75009c36bf1a963")
+      (HDL_IDENT
+        (NAME "ParityH")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 984 24 1064 104)
+      (SIDE 1)
+      (LABEL
+        (POSITION 960 64)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "ParityH")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a1860a11830155c75009c3cfe1a963" "behavior")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a1860a11830155c75009c3cfe1a963")
+    (HDL_IDENT
+      (NAME "behavior")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "filed9a1860a11830155c75009c3dfe1a963")
+        (NAME "behavior.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavior' of entity 'CheckParity'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     ParityD : out    std_logic;"
+               "--     ParityH : out    std_logic;"
+               "--     ParityM : out    std_logic;"
+               "--     dmonth  : in     std_logic_vector(5 downto 0);"
+               "--     dweek   : in     std_logic_vector(2 downto 0);"
+               "--     hours   : in     std_logic_vector(5 downto 0);"
+               "--     minutes : in     std_logic_vector(6 downto 0);"
+               "--     month   : in     std_logic_vector(5 downto 0);"
+               "--     year    : in     std_logic_vector(7 downto 0));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behavior of CheckParity is"
+               ""
+               "begin          "
+               "                                                                                                 "
+               "-- Un bit de parité paire se trouve en faisant un XOR de chacun des bits de la valeur à tester."
+               ""
+               "ParityM <= minutes(6)  xor minutes(5) xor minutes(4) xor minutes(3) xor minutes(2) xor minutes(1) xor minutes(0);"
+               ""
+               "ParityH <= hours(5) xor hours(4) xor hours(3) xor hours(2) xor hours(1) xor hours(0);"
+               ""
+               "ParityD <= dmonth(5) xor dmonth(4) xor dmonth(3) xor dmonth(2) xor dmonth(1) xor dmonth(0) xor "
+               "		   dweek(2)  xor dweek(1)  xor dweek(0)  xor            "
+               "		   month(5)  xor month(4)  xor month(3)  xor month(2)  xor month(1)  xor month(0)  xor "
+               "		   year(7)   xor year(6)   xor year(5)   xor year(4)   xor year(3)   xor year(2)   xor year(1)   xor year(0);"
+               "		   "
+               ""
+               "end architecture behavior ; -- of CheckParity"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file914a6420272e435586b2d74d07f70454")
+        (NAME "behavior.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

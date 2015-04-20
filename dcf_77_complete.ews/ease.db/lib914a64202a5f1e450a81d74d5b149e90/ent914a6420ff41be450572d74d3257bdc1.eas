@@ -1,0 +1,660 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent914a6420ff41be450572d74d3257bdc1")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Apr 20 13:27:24 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "frame_register")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1472 1472)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1424692479 "Mon Feb 23 12:54:39 2015")
+      (MODIFIED 1429529202 "Mon Apr 20 13:26:42 2015")
+    )
+    (PORT
+      (OBID "eprt914a6420d151be450572d74d9257bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "bit_input")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "bit_input")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420a751be450572d74dd257bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "bit_count")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 280 40 360)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "bit_count(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64208951be450572d74d1357bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1176 40 1256)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1216)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64205461be450572d74d5357bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 1304 40 1384)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 1344)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420dd61be450572d74d9357bdc1")
+      (HDL_IDENT
+        (NAME "reg_status")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY 1432 216 1512 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1408 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "reg_status(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64202171be450572d74dd357bdc1")
+      (HDL_IDENT
+        (NAME "reg_flags")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "3" "0")
+          )
+        )
+      )
+      (GEOMETRY 1432 344 1512 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1408 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "reg_flags(3:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420e971be450572d74d1457bdc1")
+      (HDL_IDENT
+        (NAME "reg_hours")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY 1432 472 1512 552)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1408 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "reg_hours(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64201381be450572d74d5457bdc1")
+      (HDL_IDENT
+        (NAME "reg_minutes")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "6" "0")
+          )
+        )
+      )
+      (GEOMETRY 1432 600 1512 680)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1408 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "reg_minutes(6:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64204581be450572d74d9457bdc1")
+      (HDL_IDENT
+        (NAME "reg_dmonth")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY 1432 792 1512 872)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1408 832)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "reg_dmonth(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420a681be450572d74dd457bdc1")
+      (HDL_IDENT
+        (NAME "reg_dweek")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "2" "0")
+          )
+        )
+      )
+      (GEOMETRY 1432 920 1512 1000)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1408 960)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "reg_dweek(2:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64205b81be450572d74d1557bdc1")
+      (HDL_IDENT
+        (NAME "reg_month")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY 1432 1112 1512 1192)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1408 1152)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "reg_month(5:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64206e81be450572d74d5557bdc1")
+      (HDL_IDENT
+        (NAME "reg_year")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY 1432 1240 1512 1320)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1408 1280)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "reg_year(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a642028a1be450572d74d0757bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "start")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "start")
+      )
+    )
+    (PORT
+      (OBID "eprt914a642058a1be450572d74d4757bdc1")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "stop")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "stop")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1860afea30155c75009c31422a963")
+      (HDL_IDENT
+        (NAME "RBG")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "RBG(1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1242988a8a2550f3209c3d283f770")
+      (HDL_IDENT
+        (NAME "reg_recbits")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "5" "0")
+          )
+        )
+      )
+      (GEOMETRY 1432 88 1512 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1408 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "reg_recbits(5:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch914a6420ff41be450572d74d6257bdc1" "behavior")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch914a6420ff41be450572d74d6257bdc1")
+    (HDL_IDENT
+      (NAME "behavior")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file914a6420ff41be450572d74d7257bdc1")
+        (NAME "behavior.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'behavior' of entity 'frame_register'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     RBG         : in     std_logic_vector(1 downto 0);"
+               "--     bit_count   : in     std_logic_vector(5 downto 0);"
+               "--     bit_input   : in     std_logic;"
+               "--     clk         : in     std_logic;"
+               "--     reg_dmonth  : out    std_logic_vector(5 downto 0);"
+               "--     reg_dweek   : out    std_logic_vector(2 downto 0);"
+               "--     reg_flags   : out    std_logic_vector(3 downto 0);"
+               "--     reg_hours   : out    std_logic_vector(5 downto 0);"
+               "--     reg_minutes : out    std_logic_vector(6 downto 0);"
+               "--     reg_month   : out    std_logic_vector(5 downto 0);"
+               "--     reg_recbits : out    std_logic_vector(5 downto 0);"
+               "--     reg_status  : out    std_logic_vector(7 downto 0);"
+               "--     reg_year    : out    std_logic_vector(7 downto 0);"
+               "--     reset_n     : in     std_logic;"
+               "--     start       : in     std_logic;"
+               "--     stop        : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture behavior of frame_register is"
+               ""
+               "--Déclarations des registres"
+               ""
+               "signal reg_status_l         : std_logic_vector(7 downto 0) 	:=x\"00\"; "
+               "signal reg_prescaler_l     	: std_logic_vector(15 downto 0)	:=x\"0000\";"
+               "signal reg_flags_l        	: std_logic_vector(3 downto 0) 	:=\"0000\";"
+               "signal reg_hours_l        	: std_logic_vector(5 downto 0) 	:=\"000000\";"
+               "signal reg_minutes_l        : std_logic_vector(6 downto 0) 	:=\"0000000\";"
+               "signal reg_dmonth_l        	: std_logic_vector(5 downto 0)  :=\"000000\";"
+               "signal reg_dweek_l        	: std_logic_vector(2 downto 0)  :=\"000\";"
+               "signal reg_month_l        	: std_logic_vector(5 downto 0) 	:=\"000000\";"
+               "signal reg_year_l           : std_logic_vector(7 downto 0)	:=x\"00\";"
+               ""
+               "begin"
+               "     "
+               "process(clk,reset_n)"
+               "begin"
+               "  IF (reset_n = '0') THEN "
+               "  	reg_status_l   <= x\"00\";"
+               "	reg_prescaler_l<= x\"0000\";"
+               "	reg_flags_l    <= \"0000\";"
+               "	reg_hours_l    <= \"000000\";"
+               "	reg_minutes_l  <= \"0000000\";"
+               "	reg_dmonth_l   <= \"000000\";"
+               "	reg_dweek_l    <= \"000\";"
+               "	reg_month_l    <= \"000000\";"
+               "	reg_year_l     <= x\"00\"; "
+               "	"
+               "  ELSIF(clk'event AND clk = '1') THEN"
+               "    CASE unsigned(bit_count) IS "
+               "    "
+               "			WHEN \"010000\" =>    -- 16"
+               "			   	reg_status_l(2) <= bit_input; --A1     "
+               "			   	"
+               "			WHEN \"010001\" =>"
+               "				reg_status_l(0) <= bit_input; --Z1  "
+               "				"
+               "			WHEN \"010010\" =>"
+               "				reg_status_l(1) <= bit_input; --Z2  				"
+               "				"
+               "			WHEN \"010011\" =>                        		"
+               "				reg_status_l(3) <= bit_input; --A2    "
+               "				"
+               "			--WHEN \"10100\" =>;      -- 20               "
+               "			"
+               "			WHEN \"010101\" =>"
+               "				reg_minutes_l(0) <= bit_input; 				  "
+               "				"
+               "			WHEN \"010110\" =>"
+               "				reg_minutes_l(1) <= bit_input;  				"
+               "				"
+               "			WHEN \"010111\" =>"
+               "				reg_minutes_l(2) <= bit_input;  			 "
+               "				"
+               "			WHEN \"011000\" =>"
+               "				reg_minutes_l(3) <= bit_input; "
+               "				 			"
+               "			WHEN \"011001\" =>"
+               "				reg_minutes_l(4) <= bit_input; 				  "
+               "				"
+               "			WHEN \"011010\" =>"
+               "				reg_minutes_l(5) <= bit_input;   "
+               "								"
+               "			WHEN \"011011\" =>"
+               "				reg_minutes_l(6) <= bit_input;  "
+               "				"
+               "			WHEN \"011100\" =>"
+               "				reg_status_l(2) <= bit_input;  "
+               "				"
+               "			WHEN \"011101\" =>"
+               "				reg_hours_l(0) <= bit_input; "
+               "				"
+               "			WHEN \"011110\" =>"
+               "				reg_hours_l(1) <= bit_input; "
+               "				"
+               "			WHEN \"011111\" =>"
+               "				reg_hours_l(2) <= bit_input;  "
+               "				"
+               "			WHEN \"100000\" =>"
+               "				reg_hours_l(3) <= bit_input; "
+               "				"
+               "			WHEN \"100001\" =>"
+               "				reg_hours_l(4) <= bit_input;"
+               "				"
+               "			WHEN \"100010\" =>"
+               "				reg_hours_l(5) <= bit_input;"
+               "				"
+               "			WHEN \"100011\" =>"
+               "				reg_status_l(3) <= bit_input;"
+               "				"
+               "			WHEN \"100100\" =>"
+               "				reg_dmonth_l(0) <= bit_input;"
+               "				"
+               "			WHEN \"100101\" =>"
+               "				reg_dmonth_l(1) <= bit_input;"
+               "				"
+               "			WHEN \"100110\" =>"
+               "				reg_dmonth_l(2) <= bit_input;"
+               "				"
+               "			WHEN \"100111\" =>"
+               "				reg_dmonth_l(3) <= bit_input;"
+               "				"
+               "			WHEN \"101000\" =>"
+               "				reg_dmonth_l(4) <= bit_input;"
+               "				"
+               "			WHEN \"101001\" =>"
+               "				reg_dmonth_l(5) <= bit_input;"
+               "				"
+               "			WHEN \"101010\" =>"
+               "				reg_dweek_l(0)	<= bit_input;"
+               "				"
+               "			WHEN \"101011\" =>"
+               "				reg_dweek_l(1)	<= bit_input; "
+               "				"
+               "			WHEN \"101100\" =>"
+               "				reg_dweek_l(2)	<= bit_input;"
+               "				"
+               "			WHEN \"101101\" =>"
+               "				reg_month_l(0)	<= bit_input;"
+               "				"
+               "			WHEN \"101110\" =>"
+               "				reg_month_l(1)	<= bit_input; "
+               "				"
+               "			WHEN \"101111\" =>"
+               "				reg_month_l(2)	<= bit_input;"
+               "				"
+               "			WHEN \"110000\" =>"
+               "				reg_month_l(3)	<= bit_input; "
+               "				"
+               "			WHEN \"110001\" =>"
+               "				reg_month_l(4)	<= bit_input;"
+               "				"
+               "			WHEN \"110010\" =>"
+               "				reg_year_l(0) 	<= bit_input;"
+               "				"
+               "			WHEN \"110011\" =>"
+               "				reg_year_l(0) 	<= bit_input;"
+               "				"
+               "			WHEN \"110100\" =>"
+               "				reg_year_l(0) 	<= bit_input;"
+               "				"
+               "			WHEN \"110101\" =>"
+               "				reg_year_l(0) 	<= bit_input;"
+               "				"
+               "			WHEN \"110110\" =>"
+               "				reg_year_l(0) 	<= bit_input; "
+               "				"
+               "			WHEN \"110111\" =>"
+               "				reg_year_l(0) 	<= bit_input;"
+               "				"
+               "			WHEN \"111000\" =>"
+               "				reg_year_l(0) 	<= bit_input; "
+               "				"
+               "			WHEN \"111001\" =>"
+               "				reg_year_l(0) 	<= bit_input; "
+               "				"
+               "			WHEN \"111010\" =>"
+               "				reg_status_l(4) <= bit_input;  --Date"
+               "				"
+               "			--WHEN \"110011\" =>;        -- 59"
+               "			"
+               "			WHEN OTHERS =>"
+               "				reg_status_l(1 downto 0) <= RBG;   -- Envoie les informations externes à la trame dans les autres cas."
+               "			"
+               "		"
+               "		END CASE;  "
+               "	END IF;		 "
+               ""
+               "end process;  "
+               ""
+               "reg_recbits <= bit_count;"
+               "reg_dmonth  <= reg_dmonth_l;"
+               "reg_dweek   <= reg_dweek_l;"
+               "reg_flags   <= reg_flags_l;"
+               "reg_hours   <= reg_hours_l;"
+               "reg_minutes <= reg_minutes_l;"
+               "reg_month   <= reg_dmonth_l;"
+               "reg_status  <= reg_status_l;"
+               "reg_year    <= reg_year_l;"
+               ""
+               ""
+               ""
+               ""
+               "end architecture behavior ; -- of frame_register"
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "file914a6420272e435586b2d74d77f70454")
+        (NAME "behavior.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)
