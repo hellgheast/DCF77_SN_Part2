@@ -1,0 +1,2080 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent914a6420478e43554572d74dd26414e7")
+    (PROPERTIES
+      (PROPERTY "HDL_FILENAME" "C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/KCPSM3/VHDL/kcpsm3_int_test.vhd")
+      (PROPERTY "IMPORTED_LAST" "1429530740")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Apr 20 13:52:56 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1055240606")
+    )
+    (HDL_IDENT
+      (NAME "kcpsm3_int_test")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2048 384)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1429530740 "Mon Apr 20 13:52:20 2015")
+      (MODIFIED 1429530741 "Mon Apr 20 13:52:21 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack914a642052dbb2550752d74dcd7c1a13")
+        (LIBRARY "ieee")
+        (NAME "std_logic_arith")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack914a642052dbb2550752d74ddd7c1a13")
+        (LIBRARY "ieee")
+        (NAME "std_logic_unsigned")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420478e43554572d74de26414e7")
+      (HDL_IDENT
+        (NAME "counter")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 88 2088 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "counter(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420478e43554572d74df26414e7")
+      (HDL_IDENT
+        (NAME "waveforms")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY 2008 216 2088 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1984 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "waveforms(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420478e43554572d74d036414e7")
+      (HDL_IDENT
+        (NAME "interrupt_event")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "interrupt_event")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420478e43554572d74d136414e7")
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (ARCH_DECLARATION 1 "arch914a6420478e43554572d74d046414e7" "Behavioral")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch914a6420478e43554572d74d046414e7")
+    (HDL_IDENT
+      (NAME "Behavioral")
+      (USERNAME 1)
+    )
+    (TYPE 1)
+    (SCHEMATIC
+      (OBID "diag914a6420478e43554572d74d146414e7")
+      (SHEETSIZE 0 0 14400 9600)
+      (PORT
+        (OBID "aprt914a6420478e43554572d74d246414e7")
+        (HDL_IDENT
+          (NAME "counter")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic_vector")
+            (MODE 2)
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "7" "0")
+            )
+          )
+        )
+        (GEOMETRY 12760 5592 12840 5672)
+        (SIDE 3)
+        (LABEL
+          (POSITION 12864 5632)
+          (SCALE 96)
+          (COLOR_LINE 0)
+          (SIDE 1)
+          (ALIGNMENT 3)
+          (FORMAT 35)
+          (TEXT "counter(7:0)")
+        )
+        (PORT "eprt914a6420478e43554572d74de26414e7")
+        (CONNECTION
+          (OBID "ncon914a6420478e43554572d74d346414e7")
+          (GEOMETRY 12736 5632 12736 5632)
+          (SIDE 0)
+          (LABEL
+            (POSITION 12736 5600)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 8)
+            (FORMAT 128)
+          )
+        )
+      )
+      (PORT
+        (OBID "aprt914a6420478e43554572d74d446414e7")
+        (HDL_IDENT
+          (NAME "waveforms")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic_vector")
+            (MODE 2)
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "7" "0")
+            )
+          )
+        )
+        (GEOMETRY 12760 5464 12840 5544)
+        (SIDE 3)
+        (LABEL
+          (POSITION 12864 5504)
+          (SCALE 96)
+          (COLOR_LINE 0)
+          (SIDE 1)
+          (ALIGNMENT 3)
+          (FORMAT 35)
+          (TEXT "waveforms(7:0)")
+        )
+        (PORT "eprt914a6420478e43554572d74df26414e7")
+        (CONNECTION
+          (OBID "ncon914a6420478e43554572d74d546414e7")
+          (GEOMETRY 12736 5504 12736 5504)
+          (SIDE 0)
+          (LABEL
+            (POSITION 12736 5472)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 8)
+            (FORMAT 128)
+          )
+        )
+      )
+      (PORT
+        (OBID "aprt914a6420478e43554572d74d646414e7")
+        (HDL_IDENT
+          (NAME "interrupt_event")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic")
+            (MODE 1)
+          )
+        )
+        (GEOMETRY 2584 8664 2664 8744)
+        (SIDE 1)
+        (LABEL
+          (POSITION 2560 8704)
+          (SCALE 96)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 5)
+          (FORMAT 35)
+          (TEXT "interrupt_event")
+        )
+        (PORT "eprt914a6420478e43554572d74d036414e7")
+        (CONNECTION
+          (OBID "ncon914a6420478e43554572d74d746414e7")
+          (GEOMETRY 2688 8704 2688 8704)
+          (SIDE 2)
+          (LABEL
+            (POSITION 2688 8736)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 0)
+            (FORMAT 128)
+          )
+        )
+      )
+      (PORT
+        (OBID "aprt914a6420478e43554572d74d846414e7")
+        (HDL_IDENT
+          (NAME "clk")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic")
+            (MODE 1)
+          )
+        )
+        (GEOMETRY 2584 2456 2664 2536)
+        (SIDE 1)
+        (LABEL
+          (POSITION 2560 2496)
+          (SCALE 96)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 5)
+          (FORMAT 35)
+          (TEXT "clk")
+        )
+        (PORT "eprt914a6420478e43554572d74d136414e7")
+        (CBN
+          (OBID "cbn914a6420478e43554572d74d946414e7")
+          (HDL_IDENT
+            (NAME "clk")
+            (USERNAME 1)
+          )
+          (GEOMETRY 2680 2456 2824 2536)
+          (SIDE 2)
+          (LABEL
+            (POSITION 2880 2496)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 3)
+            (FORMAT 1)
+          )
+          (TYPE 0)
+        )
+        (CONNECTION
+          (OBID "ncon914a6420478e43554572d74da46414e7")
+          (GEOMETRY 2688 2496 2688 2496)
+          (SIDE 2)
+          (LABEL
+            (POSITION 2688 2528)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 0)
+            (FORMAT 128)
+          )
+        )
+      )
+      (COMPONENT
+        (OBID "comp914a6420478e43554572d74db46414e7")
+        (HDL_IDENT
+          (NAME "processor")
+          (USERNAME 1)
+        )
+        (GEOMETRY 7424 5376 9600 6272)
+        (SIDE 0)
+        (LABEL
+          (POSITION 7424 5376)
+          (SCALE 128)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 6)
+          (FORMAT 13)
+          (TEXT "processor:kcpsm3:low_level_definition(B)")
+        )
+        (ENTITY "lib914a64202a5f1e450a81d74d5b149e90" "ent914a64205f4e43554572d74d7ee214e7")
+        (PORT
+          (OBID "cprt914a6420478e43554572d74dc46414e7")
+          (HDL_IDENT
+            (NAME "address")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 2)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "9" "0")
+              )
+            )
+          )
+          (GEOMETRY 9560 5464 9640 5544)
+          (SIDE 1)
+          (LABEL
+            (POSITION 9536 5504)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "address(9:0)")
+          )
+          (PORT "eprt914a64205f4e43554572d74d8ee214e7")
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74dd46414e7")
+            (GEOMETRY 9664 5504 9664 5504)
+            (SIDE 2)
+            (LABEL
+              (POSITION 9664 5536)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt914a6420478e43554572d74de46414e7")
+          (HDL_IDENT
+            (NAME "instruction")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "17" "0")
+              )
+            )
+          )
+          (GEOMETRY 7384 5464 7464 5544)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7488 5504)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "instruction(17:0)")
+          )
+          (PORT "eprt914a64205f4e43554572d74d9ee214e7")
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74df46414e7")
+            (GEOMETRY 7360 5504 7360 5504)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7360 5472)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt914a6420478e43554572d74d056414e7")
+          (HDL_IDENT
+            (NAME "port_id")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 2)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "7" "0")
+              )
+            )
+          )
+          (GEOMETRY 9560 5592 9640 5672)
+          (SIDE 1)
+          (LABEL
+            (POSITION 9536 5632)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "port_id(7:0)")
+          )
+          (PORT "eprt914a64205f4e43554572d74daee214e7")
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d156414e7")
+            (GEOMETRY 9664 5632 9664 5632)
+            (SIDE 2)
+            (LABEL
+              (POSITION 9664 5664)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt914a6420478e43554572d74d256414e7")
+          (HDL_IDENT
+            (NAME "write_strobe")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 9560 5720 9640 5800)
+          (SIDE 1)
+          (LABEL
+            (POSITION 9536 5760)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "write_strobe")
+          )
+          (PORT "eprt914a64205f4e43554572d74dbee214e7")
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d356414e7")
+            (GEOMETRY 9664 5760 9664 5760)
+            (SIDE 2)
+            (LABEL
+              (POSITION 9664 5792)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt914a6420478e43554572d74d456414e7")
+          (HDL_IDENT
+            (NAME "out_port")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 2)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "7" "0")
+              )
+            )
+          )
+          (GEOMETRY 9560 5848 9640 5928)
+          (SIDE 1)
+          (LABEL
+            (POSITION 9536 5888)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "out_port(7:0)")
+          )
+          (PORT "eprt914a64205f4e43554572d74dcee214e7")
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d556414e7")
+            (GEOMETRY 9664 5888 9664 5888)
+            (SIDE 2)
+            (LABEL
+              (POSITION 9664 5920)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt914a6420478e43554572d74d656414e7")
+          (HDL_IDENT
+            (NAME "read_strobe")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 9560 5976 9640 6056)
+          (SIDE 1)
+          (LABEL
+            (POSITION 9536 6016)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "read_strobe")
+          )
+          (PORT "eprt914a64205f4e43554572d74ddee214e7")
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d756414e7")
+            (GEOMETRY 9664 6016 9664 6016)
+            (SIDE 2)
+            (LABEL
+              (POSITION 9664 6048)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt914a6420478e43554572d74d856414e7")
+          (HDL_IDENT
+            (NAME "in_port")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "7" "0")
+              )
+            )
+          )
+          (GEOMETRY 7384 5592 7464 5672)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7488 5632)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "in_port(7:0)")
+          )
+          (PORT "eprt914a64205f4e43554572d74deee214e7")
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d956414e7")
+            (GEOMETRY 7360 5632 7360 5632)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7360 5600)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt914a6420478e43554572d74da56414e7")
+          (HDL_IDENT
+            (NAME "interrupt")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 7384 5720 7464 5800)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7488 5760)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "interrupt")
+          )
+          (PORT "eprt914a64205f4e43554572d74dfee214e7")
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74db56414e7")
+            (GEOMETRY 7360 5760 7360 5760)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7360 5728)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt914a6420478e43554572d74dc56414e7")
+          (HDL_IDENT
+            (NAME "interrupt_ack")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 9560 6104 9640 6184)
+          (SIDE 1)
+          (LABEL
+            (POSITION 9536 6144)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "interrupt_ack")
+          )
+          (PORT "eprt914a64205f4e43554572d74d0fe214e7")
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74dd56414e7")
+            (GEOMETRY 9664 6144 9664 6144)
+            (SIDE 2)
+            (LABEL
+              (POSITION 9664 6176)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt914a6420478e43554572d74de56414e7")
+          (HDL_IDENT
+            (NAME "reset")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 7384 5848 7464 5928)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7488 5888)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "reset")
+          )
+          (PORT "eprt914a64205f4e43554572d74d1fe214e7")
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74df56414e7")
+            (GEOMETRY 7360 5888 7360 5888)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7360 5856)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt914a6420478e43554572d74d066414e7")
+          (HDL_IDENT
+            (NAME "clk")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 7384 5976 7464 6056)
+          (SIDE 3)
+          (LABEL
+            (POSITION 7488 6016)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "clk")
+          )
+          (PORT "eprt914a64205f4e43554572d74d2fe214e7")
+          (CBN
+            (OBID "cbn914a6420478e43554572d74d166414e7")
+            (HDL_IDENT
+              (NAME "clk")
+              (USERNAME 1)
+            )
+            (GEOMETRY 7224 5976 7368 6056)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7168 6016)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 5)
+              (FORMAT 1)
+            )
+            (TYPE 0)
+          )
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d266414e7")
+            (GEOMETRY 7360 6016 7360 6016)
+            (SIDE 0)
+            (LABEL
+              (POSITION 7360 5984)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+      )
+      (COMPONENT
+        (OBID "comp914a6420478e43554572d74d366414e7")
+        (HDL_IDENT
+          (NAME "program")
+          (USERNAME 1)
+        )
+        (GEOMETRY 3712 5376 5888 5760)
+        (SIDE 0)
+        (LABEL
+          (POSITION 3712 5376)
+          (SCALE 128)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 6)
+          (FORMAT 13)
+          (TEXT "program:int_test[X]")
+        )
+        (ENTITY "lib914a64202a5f1e450a81d74d5b149e90" "ent914a6420478e43554572d74de16414e7")
+        (PORT
+          (OBID "cprt914a6420478e43554572d74d466414e7")
+          (HDL_IDENT
+            (NAME "address")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "9" "0")
+              )
+            )
+          )
+          (GEOMETRY 3672 5464 3752 5544)
+          (SIDE 3)
+          (LABEL
+            (POSITION 3776 5504)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "address(9:0)")
+          )
+          (PORT "eprt914a6420478e43554572d74df16414e7")
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d566414e7")
+            (GEOMETRY 3648 5504 3648 5504)
+            (SIDE 0)
+            (LABEL
+              (POSITION 3648 5472)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt914a6420478e43554572d74d666414e7")
+          (HDL_IDENT
+            (NAME "instruction")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 2)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "17" "0")
+              )
+            )
+          )
+          (GEOMETRY 5848 5464 5928 5544)
+          (SIDE 1)
+          (LABEL
+            (POSITION 5824 5504)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "instruction(17:0)")
+          )
+          (PORT "eprt914a6420478e43554572d74d026414e7")
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d766414e7")
+            (GEOMETRY 5952 5504 5952 5504)
+            (SIDE 2)
+            (LABEL
+              (POSITION 5952 5536)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprt914a6420478e43554572d74d866414e7")
+          (HDL_IDENT
+            (NAME "clk")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 3672 5592 3752 5672)
+          (SIDE 3)
+          (LABEL
+            (POSITION 3776 5632)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "clk")
+          )
+          (PORT "eprt914a6420478e43554572d74d126414e7")
+          (CBN
+            (OBID "cbn914a6420478e43554572d74d966414e7")
+            (HDL_IDENT
+              (NAME "clk")
+              (USERNAME 1)
+            )
+            (GEOMETRY 3512 5592 3656 5672)
+            (SIDE 0)
+            (LABEL
+              (POSITION 3456 5632)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 5)
+              (FORMAT 1)
+            )
+            (TYPE 0)
+          )
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74da66414e7")
+            (GEOMETRY 3648 5632 3648 5632)
+            (SIDE 0)
+            (LABEL
+              (POSITION 3648 5600)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+      )
+      (PROCESS
+        (TYPE 1)
+        (OBID "proc914a6420478e43554572d74db66414e7")
+        (HDL_IDENT
+          (NAME "IO_registers")
+          (USERNAME 1)
+        )
+        (GEOMETRY 11392 5376 11712 6016)
+        (SIDE 0)
+        (LABEL
+          (POSITION 11392 5312)
+          (SCALE 128)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 6)
+          (FORMAT 65)
+          (TEXT "IO_registers(V)")
+        )
+        (SENSLIST 1)
+        (PORT
+          (OBID "pprt914a6420478e43554572d74dc66414e7")
+          (PROPERTIES
+            (PROPERTY "SensitivityList" "Yes")
+          )
+          (HDL_IDENT
+            (NAME "clk")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 11352 5464 11432 5544)
+          (SIDE 3)
+          (LABEL
+            (POSITION 11456 5504)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 65539)
+          )
+          (CBN
+            (OBID "cbn914a6420478e43554572d74dd66414e7")
+            (HDL_IDENT
+              (NAME "clk")
+              (USERNAME 1)
+            )
+            (GEOMETRY 11192 5464 11336 5544)
+            (SIDE 0)
+            (LABEL
+              (POSITION 11136 5504)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 5)
+              (FORMAT 1)
+              (TEXT "clk")
+            )
+            (TYPE 0)
+          )
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74de66414e7")
+            (GEOMETRY 11328 5504 11328 5504)
+            (SIDE 0)
+            (LABEL
+              (POSITION 11328 5472)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "pprt914a6420478e43554572d74df66414e7")
+          (HDL_IDENT
+            (NAME "port_id")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "7" "0")
+              )
+            )
+          )
+          (GEOMETRY 11352 5592 11432 5672)
+          (SIDE 3)
+          (LABEL
+            (POSITION 11456 5632)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 65539)
+          )
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d076414e7")
+            (GEOMETRY 11328 5632 11328 5632)
+            (SIDE 0)
+            (LABEL
+              (POSITION 11328 5600)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "pprt914a6420478e43554572d74d176414e7")
+          (HDL_IDENT
+            (NAME "write_strobe")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 11352 5720 11432 5800)
+          (SIDE 3)
+          (LABEL
+            (POSITION 11456 5760)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 65539)
+          )
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d276414e7")
+            (GEOMETRY 11328 5760 11328 5760)
+            (SIDE 0)
+            (LABEL
+              (POSITION 11328 5728)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "pprt914a6420478e43554572d74d376414e7")
+          (HDL_IDENT
+            (NAME "out_port")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "7" "0")
+              )
+            )
+          )
+          (GEOMETRY 11352 5848 11432 5928)
+          (SIDE 3)
+          (LABEL
+            (POSITION 11456 5888)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 65539)
+          )
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d476414e7")
+            (GEOMETRY 11328 5888 11328 5888)
+            (SIDE 0)
+            (LABEL
+              (POSITION 11328 5856)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "pprt914a6420478e43554572d74d576414e7")
+          (HDL_IDENT
+            (NAME "waveforms")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 2)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "7" "0")
+              )
+            )
+          )
+          (GEOMETRY 11672 5464 11752 5544)
+          (SIDE 1)
+          (LABEL
+            (POSITION 11648 5504)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 65539)
+          )
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d676414e7")
+            (GEOMETRY 11776 5504 11776 5504)
+            (SIDE 2)
+            (LABEL
+              (POSITION 11776 5536)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "pprt914a6420478e43554572d74d776414e7")
+          (HDL_IDENT
+            (NAME "counter")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 2)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "7" "0")
+              )
+            )
+          )
+          (GEOMETRY 11672 5592 11752 5672)
+          (SIDE 1)
+          (LABEL
+            (POSITION 11648 5632)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 65539)
+          )
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d876414e7")
+            (GEOMETRY 11776 5632 11776 5632)
+            (SIDE 2)
+            (LABEL
+              (POSITION 11776 5664)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (HDL_FILE
+          (VHDL_FILE
+            (OBID "file914a6420478e43554572d74d976414e7")
+            (NAME "IO_registers.vhd")
+            (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+                   "-- "
+                   "-- Process 'IO_registers' in architecture 'Behavioral' of entity 'kcpsm3_int_test'."
+                   "-- "
+                   "--------------------------------------------------------------------------------"
+                   "-- "
+                   "-- Copy of the interface signals:"
+                   "-- "
+                   "-- clk          : in     std_logic;"
+                   "-- port_id      : in     std_logic_vector(7 downto 0);"
+                   "-- write_strobe : in     std_logic;"
+                   "-- out_port     : in     std_logic_vector(7 downto 0);"
+                   "-- waveforms    : out    std_logic_vector(7 downto 0);"
+                   "-- counter      : out    std_logic_vector(7 downto 0);"
+                   "-- "
+                   "-- EASE/HDL end ----------------------------------------------------------------"
+                   ""
+                   "IO_registers: process (clk) is		-- EASE/HDL sens.list"
+                   "begin"
+                   "  if clk'event and clk='1' then"
+                   ""
+                   "        -- waveform register at address 02"
+                   "        if port_id(1)='1' and write_strobe='1' then"
+                   "          waveforms <= out_port;"
+                   "        end if;"
+                   ""
+                   "        -- Interrupt Counter register at address 04"
+                   "        if port_id(2)='1' and write_strobe='1' then"
+                   "          counter <= out_port;"
+                   "        end if;"
+                   ""
+                   "      end if;"
+                   "end process IO_registers ;"
+                   "")
+          )
+        )
+      )
+      (PROCESS
+        (TYPE 1)
+        (OBID "proc914a6420478e43554572d74da76414e7")
+        (HDL_IDENT
+          (NAME "interrupt_control")
+          (USERNAME 1)
+        )
+        (GEOMETRY 8320 8320 8640 8832)
+        (SIDE 0)
+        (LABEL
+          (POSITION 8320 8256)
+          (SCALE 128)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 6)
+          (FORMAT 65)
+          (TEXT "interrupt_control(V)")
+        )
+        (SENSLIST 1)
+        (PORT
+          (OBID "pprt914a6420478e43554572d74db76414e7")
+          (PROPERTIES
+            (PROPERTY "SensitivityList" "Yes")
+          )
+          (HDL_IDENT
+            (NAME "clk")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 8280 8408 8360 8488)
+          (SIDE 3)
+          (LABEL
+            (POSITION 8384 8448)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 65539)
+          )
+          (CBN
+            (OBID "cbn914a6420478e43554572d74dc76414e7")
+            (HDL_IDENT
+              (NAME "clk")
+              (USERNAME 1)
+            )
+            (GEOMETRY 8120 8408 8264 8488)
+            (SIDE 0)
+            (LABEL
+              (POSITION 8064 8448)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 5)
+              (FORMAT 1)
+              (TEXT "clk")
+            )
+            (TYPE 0)
+          )
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74dd76414e7")
+            (GEOMETRY 8256 8448 8256 8448)
+            (SIDE 0)
+            (LABEL
+              (POSITION 8256 8416)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "pprt914a6420478e43554572d74de76414e7")
+          (HDL_IDENT
+            (NAME "interrupt_ack")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 8280 8536 8360 8616)
+          (SIDE 3)
+          (LABEL
+            (POSITION 8384 8576)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 65539)
+          )
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74df76414e7")
+            (GEOMETRY 8256 8576 8256 8576)
+            (SIDE 0)
+            (LABEL
+              (POSITION 8256 8544)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "pprt914a6420478e43554572d74d086414e7")
+          (HDL_IDENT
+            (NAME "interrupt_event")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 8280 8664 8360 8744)
+          (SIDE 3)
+          (LABEL
+            (POSITION 8384 8704)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 65539)
+          )
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d186414e7")
+            (GEOMETRY 8256 8704 8256 8704)
+            (SIDE 0)
+            (LABEL
+              (POSITION 8256 8672)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "pprt914a6420478e43554572d74d286414e7")
+          (HDL_IDENT
+            (NAME "interrupt")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 3)
+            )
+          )
+          (GEOMETRY 8600 8408 8680 8488)
+          (SIDE 1)
+          (LABEL
+            (POSITION 8576 8448)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 65539)
+          )
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d386414e7")
+            (GEOMETRY 8704 8448 8704 8448)
+            (SIDE 2)
+            (LABEL
+              (POSITION 8704 8480)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (HDL_FILE
+          (VHDL_FILE
+            (OBID "file914a6420478e43554572d74d486414e7")
+            (NAME "interrupt_control.vhd")
+            (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+                   "-- "
+                   "-- Process 'interrupt_control' in architecture 'Behavioral' of entity 'kcpsm3_int_test'."
+                   "-- "
+                   "--------------------------------------------------------------------------------"
+                   "-- "
+                   "-- Copy of the interface signals:"
+                   "-- "
+                   "-- clk             : in     std_logic;"
+                   "-- interrupt_ack   : in     std_logic;"
+                   "-- interrupt_event : in     std_logic;"
+                   "-- interrupt       : inout  std_logic;"
+                   "-- "
+                   "-- EASE/HDL end ----------------------------------------------------------------"
+                   ""
+                   "interrupt_control: process (clk) is		-- EASE/HDL sens.list"
+                   "begin"
+                   "  if clk'event and clk='1' then"
+                   "        if interrupt_ack='1' then"
+                   "          interrupt <= '0';"
+                   "         elsif interrupt_event='1' then"
+                   "          interrupt <= '1';"
+                   "         else"
+                   "          interrupt <= interrupt;"
+                   "        end if;"
+                   "      end if;"
+                   "end process interrupt_control ;"
+                   "")
+          )
+        )
+      )
+      (PROCESS
+        (TYPE 3)
+        (OBID "proc914a6420478e43554572d74d586414e7")
+        (HDL_IDENT
+          (NAME "concurrent0")
+          (USERNAME 1)
+        )
+        (GEOMETRY 4288 4032 4608 4416)
+        (SIDE 0)
+        (LABEL
+          (POSITION 4288 3968)
+          (SCALE 128)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 6)
+          (FORMAT 65)
+          (TEXT "concurrent0(V)")
+        )
+        (SENSLIST 1)
+        (PORT
+          (OBID "pprt914a6420478e43554572d74d686414e7")
+          (HDL_IDENT
+            (NAME "in_port")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 2)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "7" "0")
+              )
+            )
+          )
+          (GEOMETRY 4568 4120 4648 4200)
+          (SIDE 1)
+          (LABEL
+            (POSITION 4544 4160)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 65539)
+          )
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d786414e7")
+            (GEOMETRY 4672 4160 4672 4160)
+            (SIDE 2)
+            (LABEL
+              (POSITION 4672 4192)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "pprt914a6420478e43554572d74d886414e7")
+          (HDL_IDENT
+            (NAME "reset")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 4568 4248 4648 4328)
+          (SIDE 1)
+          (LABEL
+            (POSITION 4544 4288)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 65539)
+          )
+          (CONNECTION
+            (OBID "ncon914a6420478e43554572d74d986414e7")
+            (GEOMETRY 4672 4288 4672 4288)
+            (SIDE 2)
+            (LABEL
+              (POSITION 4672 4320)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (HDL_FILE
+          (VHDL_FILE
+            (OBID "file914a6420478e43554572d74da86414e7")
+            (NAME "concurrent0.vhd")
+            (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+                   "-- "
+                   "-- Concurrent Statement 'concurrent0' in architecture 'Behavioral' of entity 'kcpsm3_int_test'."
+                   "-- "
+                   "--------------------------------------------------------------------------------"
+                   "-- "
+                   "-- Copy of the interface signals:"
+                   "-- "
+                   "-- in_port : out    std_logic_vector(7 downto 0);"
+                   "-- reset   : out    std_logic;"
+                   "-- "
+                   "-- EASE/HDL end ----------------------------------------------------------------"
+                   "in_port <= \"00000000\";"
+                   "reset <= '0';"
+                   "")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420478e43554572d74d236414e7")
+        (HDL_IDENT
+          (NAME "counter")
+          (ATTRIBUTES
+            (TYPE "std_logic_vector")
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "7" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74db86414e7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74dc86414e7")
+          (LABEL
+            (POSITION 12256 5616)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 12736 5632 11776 5632)
+          (PORT
+            (OBID "aprt914a6420478e43554572d74d246414e7")
+            (NAME "counter")
+          )
+          (PORT
+            (OBID "pprt914a6420478e43554572d74d776414e7")
+            (NAME "counter")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420478e43554572d74d336414e7")
+        (HDL_IDENT
+          (NAME "waveforms")
+          (ATTRIBUTES
+            (TYPE "std_logic_vector")
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "7" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74dd86414e7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74de86414e7")
+          (LABEL
+            (POSITION 12256 5488)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 12736 5504 11776 5504)
+          (PORT
+            (OBID "aprt914a6420478e43554572d74d446414e7")
+            (NAME "waveforms")
+          )
+          (PORT
+            (OBID "pprt914a6420478e43554572d74d576414e7")
+            (NAME "waveforms")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420478e43554572d74d436414e7")
+        (HDL_IDENT
+          (NAME "interrupt_event")
+          (ATTRIBUTES
+            (TYPE "std_logic")
+          )
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74df86414e7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d096414e7")
+          (LABEL
+            (POSITION 5472 8688)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 2688 8704 8256 8704)
+          (PORT
+            (OBID "aprt914a6420478e43554572d74d646414e7")
+            (NAME "interrupt_event")
+          )
+          (PORT
+            (OBID "pprt914a6420478e43554572d74d086414e7")
+            (NAME "interrupt_event")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420478e43554572d74d536414e7")
+        (HDL_IDENT
+          (NAME "clk")
+          (ATTRIBUTES
+            (TYPE "std_logic")
+          )
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d196414e7")
+          (CBN 1)
+          (PORT
+            (OBID "aprt914a6420478e43554572d74d846414e7")
+            (NAME "clk")
+          )
+          (PORT
+            (OBID "cprt914a6420478e43554572d74d066414e7")
+            (NAME "clk")
+          )
+          (PORT
+            (OBID "cprt914a6420478e43554572d74d866414e7")
+            (NAME "clk")
+          )
+          (PORT
+            (OBID "pprt914a6420478e43554572d74dc66414e7")
+            (NAME "clk")
+          )
+          (PORT
+            (OBID "pprt914a6420478e43554572d74db76414e7")
+            (NAME "clk")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420478e43554572d74d636414e7")
+        (HDL_IDENT
+          (NAME "address")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic_vector")
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "9" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d296414e7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d396414e7")
+          (LABEL
+            (POSITION 6656 5040)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+            (TEXT "address(9:0)")
+          )
+          (WIRE 9920 5056 3392 5056)
+          (WIRE 9920 5056 9920 5504)
+          (WIRE 9920 5504 9664 5504)
+          (WIRE 3392 5056 3392 5504)
+          (WIRE 3392 5504 3648 5504)
+          (PORT
+            (OBID "cprt914a6420478e43554572d74dc46414e7")
+            (NAME "address")
+          )
+          (PORT
+            (OBID "cprt914a6420478e43554572d74d466414e7")
+            (NAME "address")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420478e43554572d74d736414e7")
+        (HDL_IDENT
+          (NAME "instruction")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic_vector")
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "17" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d496414e7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d596414e7")
+          (LABEL
+            (POSITION 6656 5488)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+            (TEXT "instruction(17:0)")
+          )
+          (WIRE 7360 5504 5952 5504)
+          (PORT
+            (OBID "cprt914a6420478e43554572d74de46414e7")
+            (NAME "instruction")
+          )
+          (PORT
+            (OBID "cprt914a6420478e43554572d74d666414e7")
+            (NAME "instruction")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420478e43554572d74d836414e7")
+        (HDL_IDENT
+          (NAME "port_id")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic_vector")
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "7" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d696414e7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d796414e7")
+          (LABEL
+            (POSITION 10496 5616)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+            (TEXT "port_id(7:0)")
+          )
+          (WIRE 9664 5632 11328 5632)
+          (PORT
+            (OBID "cprt914a6420478e43554572d74d056414e7")
+            (NAME "port_id")
+          )
+          (PORT
+            (OBID "pprt914a6420478e43554572d74df66414e7")
+            (NAME "port_id")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420478e43554572d74d936414e7")
+        (HDL_IDENT
+          (NAME "out_port")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic_vector")
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "7" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d896414e7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d996414e7")
+          (LABEL
+            (POSITION 10496 5872)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+            (TEXT "out_port(7:0)")
+          )
+          (WIRE 9664 5888 11328 5888)
+          (PORT
+            (OBID "cprt914a6420478e43554572d74d456414e7")
+            (NAME "out_port")
+          )
+          (PORT
+            (OBID "pprt914a6420478e43554572d74d376414e7")
+            (NAME "out_port")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420478e43554572d74da36414e7")
+        (HDL_IDENT
+          (NAME "in_port")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic_vector")
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "7" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74da96414e7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74db96414e7")
+          (LABEL
+            (POSITION 5440 4144)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+            (TEXT "in_port(7:0)")
+          )
+          (WIRE 6208 4160 6208 5632)
+          (WIRE 6208 4160 4672 4160)
+          (WIRE 6208 5632 7360 5632)
+          (PORT
+            (OBID "cprt914a6420478e43554572d74d856414e7")
+            (NAME "in_port")
+          )
+          (PORT
+            (OBID "pprt914a6420478e43554572d74d686414e7")
+            (NAME "in_port")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420478e43554572d74db36414e7")
+        (HDL_IDENT
+          (NAME "write_strobe")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic")
+          )
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74dc96414e7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74dd96414e7")
+          (LABEL
+            (POSITION 10496 5744)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+            (TEXT "write_strobe")
+          )
+          (WIRE 9664 5760 11328 5760)
+          (PORT
+            (OBID "cprt914a6420478e43554572d74d256414e7")
+            (NAME "write_strobe")
+          )
+          (PORT
+            (OBID "pprt914a6420478e43554572d74d176414e7")
+            (NAME "write_strobe")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420478e43554572d74dc36414e7")
+        (HDL_IDENT
+          (NAME "read_strobe")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic")
+          )
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74de96414e7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74df96414e7")
+          (LABEL
+            (POSITION 9728 6000)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 6)
+            (FORMAT 4099)
+            (TEXT "read_strobe")
+          )
+          (WIRE 9664 6016 9792 6016)
+          (PORT
+            (OBID "cprt914a6420478e43554572d74d656414e7")
+            (NAME "read_strobe")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420478e43554572d74dd36414e7")
+        (HDL_IDENT
+          (NAME "interrupt")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic")
+            (DEF_VALUE "'0'")
+          )
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d0a6414e7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d1a6414e7")
+          (LABEL
+            (POSITION 8032 6576)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+            (TEXT "interrupt")
+          )
+          (WIRE 7104 6592 8960 6592)
+          (WIRE 7104 6592 7104 5760)
+          (WIRE 7104 5760 7360 5760)
+          (WIRE 8960 6592 8960 8448)
+          (WIRE 8960 8448 8704 8448)
+          (PORT
+            (OBID "cprt914a6420478e43554572d74da56414e7")
+            (NAME "interrupt")
+          )
+          (PORT
+            (OBID "pprt914a6420478e43554572d74d286414e7")
+            (NAME "interrupt")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420478e43554572d74de36414e7")
+        (HDL_IDENT
+          (NAME "interrupt_ack")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic")
+          )
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d2a6414e7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d3a6414e7")
+          (LABEL
+            (POSITION 8960 7984)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+            (TEXT "interrupt_ack")
+          )
+          (WIRE 8000 8000 9920 8000)
+          (WIRE 8000 8000 8000 8576)
+          (WIRE 8000 8576 8256 8576)
+          (WIRE 9920 8000 9920 6144)
+          (WIRE 9920 6144 9664 6144)
+          (PORT
+            (OBID "cprt914a6420478e43554572d74dc56414e7")
+            (NAME "interrupt_ack")
+          )
+          (PORT
+            (OBID "pprt914a6420478e43554572d74de76414e7")
+            (NAME "interrupt_ack")
+          )
+        )
+      )
+      (NET
+        (OBID "net914a6420478e43554572d74df36414e7")
+        (HDL_IDENT
+          (NAME "reset")
+          (USERNAME 1)
+          (ATTRIBUTES
+            (TYPE "std_logic")
+          )
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d4a6414e7")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprt914a6420478e43554572d74d5a6414e7")
+          (LABEL
+            (POSITION 6336 5088)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+            (TEXT "reset")
+          )
+          (WIRE 6272 4288 6272 5888)
+          (WIRE 6272 4288 4672 4288)
+          (WIRE 6272 5888 7360 5888)
+          (PORT
+            (OBID "cprt914a6420478e43554572d74de56414e7")
+            (NAME "reset")
+          )
+          (PORT
+            (OBID "pprt914a6420478e43554572d74d886414e7")
+            (NAME "reset")
+          )
+        )
+      )
+    )
+  )
+)
+(END_OF_FILE)

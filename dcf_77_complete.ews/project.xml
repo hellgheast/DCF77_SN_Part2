@@ -27,6 +27,7 @@
       <key type="bool" value="true" name="diag914a64204d2cb2550752d74db31e1a13"/>
       <key type="bool" value="true" name="diag914a6420272e435586b2d74de5f70454"/>
       <key type="bool" value="false" name="diag914a64200d5f1e450a81d74d0c149e90"/>
+      <key type="bool" value="false" name="diag914a6420578e43554572d74dc4a414e7"/>
     </section>
     <section name="Browser">
       <key type="string" value="design.DCF77_Receiver" name="DetailView"/>
@@ -42,8 +43,9 @@
     <section name="DiagramView">
       <key type="geometry" value="0,0,7748,4266" name="diag914a6420272e435586b2d74de5f70454"/>
       <key type="geometry" value="0,0,7748,4266" name="diag914a64204d8bb2550752d74dc8861a13"/>
-      <key type="geometry" value="0,0,7748,4266" name="diag914a64204d2cb2550752d74db31e1a13"/>
+      <key type="geometry" value="0,0,11623,6399" name="diag914a64204d2cb2550752d74db31e1a13"/>
       <key type="geometry" value="0,0,11624,6399" name="diag914a64200d5f1e450a81d74d0c149e90"/>
+      <key type="geometry" value="0,0,104617,57600" name="diag914a6420578e43554572d74dc4a414e7"/>
     </section>
   </sections>
 </CONFIGURATION>
