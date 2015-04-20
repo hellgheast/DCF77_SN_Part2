@@ -24,12 +24,20 @@
       <key type="bool" value="true" name="diag914a6420739bb2550752d74da9861a13"/>
       <key type="bool" value="false" name="diag914a642052dbb2550752d74d92ac1a13"/>
       <key type="bool" value="false" name="diag914a642052dbb2550752d74dceec1a13"/>
+      <key type="bool" value="true" name="diag914a64204d2cb2550752d74db31e1a13"/>
     </section>
     <section name="Browser">
-      <key type="string" value="design.kcpsm3" name="DetailView"/>
+      <key type="string" value="design.DCF77_Receiver" name="DetailView"/>
+    </section>
+    <section name="DiagramGridFactor">
+      <key type="int" value="0" name="diag914a64204d2cb2550752d74db31e1a13"/>
     </section>
     <section name="DatabaseView">
-      <key type="bool" value="true" name="arch914a642052dbb2550752d74d82ac1a13"/>
+      <key type="bool" value="true" name="arch914a64204d8bb2550752d74de8861a13"/>
+    </section>
+    <section name="DiagramView">
+      <key type="geometry" value="0,0,10202,5617" name="diag914a64204d2cb2550752d74db31e1a13"/>
+      <key type="geometry" value="0,0,10392,5722" name="diag914a64204d8bb2550752d74dc8861a13"/>
     </section>
   </sections>
 </CONFIGURATION>
