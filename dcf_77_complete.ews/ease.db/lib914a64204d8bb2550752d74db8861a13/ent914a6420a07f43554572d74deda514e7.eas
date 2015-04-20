@@ -1,0 +1,224 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent914a6420a07f43554572d74deda514e7")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Apr 20 15:31:20 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "DecodeAdress")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1984 896)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1429534474 "Mon Apr 20 14:54:34 2015")
+      (MODIFIED 1429536258 "Mon Apr 20 15:24:18 2015")
+    )
+    (PORT
+      (OBID "eprt914a6420b17f43554572d74d5ea514e7")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "adress")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "adress(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420b37f43554572d74d9ea514e7")
+      (HDL_IDENT
+        (NAME "dcf_cs")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1944 88 2024 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1920 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dcf_cs")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420947f43554572d74ddea514e7")
+      (HDL_IDENT
+        (NAME "displayblock_cs")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1944 216 2024 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1920 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "displayblock_cs")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64206b7f43554572d74d1fa514e7")
+      (HDL_IDENT
+        (NAME "adress_dcf")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "3" "0")
+          )
+        )
+      )
+      (GEOMETRY 1944 536 2024 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1920 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "adress_dcf(3:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64208c7f43554572d74d5fa514e7")
+      (HDL_IDENT
+        (NAME "adress_displayblock")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "1" "0")
+          )
+        )
+      )
+      (GEOMETRY 1944 664 2024 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1920 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "adress_displayblock(1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420db9f43554572d74df4b514e7")
+      (HDL_IDENT
+        (NAME "write_strobe")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "write_strobe")
+      )
+    )
+    (PORT
+      (OBID "eprt914a642063bf43554572d74d35b514e7")
+      (HDL_IDENT
+        (NAME "uart_tx_cs")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1944 344 2024 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1920 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "uart_tx_cs")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch914a6420a07f43554572d74d2ea514e7" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch914a6420a07f43554572d74d2ea514e7")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file914a6420a07f43554572d74d3ea514e7")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'DecodeAdress'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of DecodeAdress is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of DecodeAdress"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)
