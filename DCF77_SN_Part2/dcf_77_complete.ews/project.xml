@@ -1,0 +1,36 @@
+<CONFIGURATION>
+  <sections>
+    <section name="FileEncoding">
+      <key type="string" value="ISO-Latin1" name="InternalEncoding"/>
+      <key type="string" value="ISO-Latin1" name="ExternalEncoding"/>
+    </section>
+    <section name="ObjectSearch">
+      <key type="bool" value="false" name="CaseSensitive"/>
+      <key type="bool" value="false" name="WholeWord"/>
+    </section>
+    <section name="TextSearch">
+      <key type="bool" value="false" name="CaseSensitive"/>
+      <key type="bool" value="false" name="WholeWord"/>
+    </section>
+    <section name="HTML">
+      <key type="bool" value="false" name="StartBrowser"/>
+    </section>
+    <section name="Markers">
+      <key type="string" value="diag914a64204d2cb2550752d74db31e1a13" name="CurrentDiagram"/>
+      <key type="string" value="design:Toplevel:&lt;Internal>/comp914a64204d2cb2550752d74dc31e1a13" name="CurrentPath"/>
+    </section>
+    <section name="DiagramGridVisible">
+      <key type="bool" value="false" name="diag914a64204d8bb2550752d74dc8861a13"/>
+      <key type="bool" value="true" name="diag914a6420739bb2550752d74da9861a13"/>
+      <key type="bool" value="false" name="diag914a642052dbb2550752d74d92ac1a13"/>
+      <key type="bool" value="false" name="diag914a642052dbb2550752d74dceec1a13"/>
+      <key type="bool" value="false" name="diag914a64204d2cb2550752d74db31e1a13"/>
+    </section>
+    <section name="Browser">
+      <key type="string" value="design.DCF77_Receiver" name="DetailView"/>
+    </section>
+    <section name="DatabaseView">
+      <key type="bool" value="true" name="arch914a642052dbb2550752d74d82ac1a13"/>
+    </section>
+  </sections>
+</CONFIGURATION>
