@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Apr 27 14:45:30 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 27 14:51:38 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1428931284 "Mon Apr 13 15:21:24 2015")
-      (MODIFIED 1430138725 "Mon Apr 27 14:45:25 2015")
+      (MODIFIED 1430139083 "Mon Apr 27 14:51:23 2015")
     )
     (PORT
       (OBID "eprt914a64203f2cb2550752d74df31e1a13")
@@ -2759,16 +2759,34 @@
             (TEXT "clk")
           )
           (PORT "eprt914a6420336f1e450a81d74d2e149e90")
+          (CBN
+            (OBID "cbn914a6420ac03e355cd60d74d5634ec03")
+            (HDL_IDENT
+              (NAME "clk")
+              (USERNAME 1)
+            )
+            (GEOMETRY 8504 1496 8648 1576)
+            (SIDE 0)
+            (LABEL
+              (POSITION 8448 1536)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 5)
+              (FORMAT 1)
+            )
+            (TYPE 0)
+          )
           (CONNECTION
             (OBID "ncon914a6420c1b1e355cd60d74d9183ec03")
             (GEOMETRY 8640 1536 8640 1536)
             (SIDE 0)
             (LABEL
-              (POSITION 8640 1504)
+              (POSITION 8448 1536)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
-              (ALIGNMENT 8)
+              (ALIGNMENT 5)
               (FORMAT 128)
             )
           )
@@ -2794,16 +2812,34 @@
             (TEXT "reset_n")
           )
           (PORT "eprt914a6420346f1e450a81d74d8e149e90")
+          (CBN
+            (OBID "cbn914a6420bc03e355cd60d74d6634ec03")
+            (HDL_IDENT
+              (NAME "reset_n")
+              (USERNAME 1)
+            )
+            (GEOMETRY 8504 1624 8648 1704)
+            (SIDE 0)
+            (LABEL
+              (POSITION 8448 1664)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 5)
+              (FORMAT 1)
+            )
+            (TYPE 0)
+          )
           (CONNECTION
             (OBID "ncon914a6420c1b1e355cd60d74db183ec03")
             (GEOMETRY 8640 1664 8640 1664)
             (SIDE 0)
             (LABEL
-              (POSITION 8640 1632)
+              (POSITION 8448 1664)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
-              (ALIGNMENT 8)
+              (ALIGNMENT 5)
               (FORMAT 128)
             )
           )
@@ -3794,6 +3830,10 @@
             (OBID "cprt914a64206e7f43554572d74dafa514e7")
             (NAME "clk")
           )
+          (PORT
+            (OBID "cprt914a6420c1b1e355cd60d74d8183ec03")
+            (NAME "clk")
+          )
         )
       )
       (NET
@@ -4180,6 +4220,10 @@
           (PORT
             (OBID "cprt914a64203172e355cd60d74d3b24ec03")
             (NAME "input")
+          )
+          (PORT
+            (OBID "cprt914a6420c1b1e355cd60d74da183ec03")
+            (NAME "reset_n")
           )
         )
       )
