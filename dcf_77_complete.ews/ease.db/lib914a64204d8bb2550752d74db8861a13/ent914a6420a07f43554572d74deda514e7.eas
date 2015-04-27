@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Apr 20 15:31:20 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 27 14:08:51 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -13,14 +13,14 @@
       (NAME "DecodeAdress")
       (USERNAME 1)
     )
-    (GEOMETRY 0 0 1984 896)
+    (GEOMETRY 0 0 1984 1088)
     (SIDE 0)
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1429534474 "Mon Apr 20 14:54:34 2015")
-      (MODIFIED 1429536258 "Mon Apr 20 15:24:18 2015")
+      (MODIFIED 1430136531 "Mon Apr 27 14:08:51 2015")
     )
     (PORT
       (OBID "eprt914a6420b17f43554572d74d5ea514e7")
@@ -129,7 +129,7 @@
           (MODE 2)
           (CONSTRAINT
             (DIRECTION 1)
-            (RANGE "1" "0")
+            (RANGE "2" "0")
           )
         )
       )
@@ -142,7 +142,7 @@
         (SIDE 1)
         (ALIGNMENT 5)
         (FORMAT 35)
-        (TEXT "adress_displayblock(1:0)")
+        (TEXT "adress_displayblock(2:0)")
       )
     )
     (PORT
@@ -187,6 +187,30 @@
         (TEXT "uart_tx_cs")
       )
     )
+    (PORT
+      (OBID "eprt914a64208652e355cd60d74dcaf3ec03")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "adress_mux_dcf_test")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1944 792 2024 872)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1920 832)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "adress_mux_dcf_test")
+      )
+    )
     (ARCH_DECLARATION 2 "arch914a6420a07f43554572d74d2ea514e7" "rtl")
   )
   (ARCH_DEFINITION
@@ -208,6 +232,16 @@
                "-- "
                "-- Copy of the interface declaration:"
                "-- "
+               "--   port ("
+               "--     adress              : in     std_logic_vector(7 downto 0);"
+               "--     adress_dcf          : out    std_logic_vector(3 downto 0);"
+               "--     adress_displayblock : out    std_logic_vector(2 downto 0);"
+               "--     adress_mux_dcf_test : out    std_logic;"
+               "--     dcf_cs              : out    std_logic;"
+               "--     displayblock_cs     : out    std_logic;"
+               "--     uart_tx_cs          : out    std_logic;"
+               "--     write_strobe        : in     std_logic);"
+               "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
                ""
                "architecture rtl of DecodeAdress is"
@@ -217,6 +251,11 @@
                "end architecture rtl ; -- of DecodeAdress"
                ""
                "")
+      )
+      (VERILOG_FILE
+        (OBID "file914a6420bcb1e355cd60d74d1583ec03")
+        (NAME "rtl.v")
+        (VALUE "")
       )
     )
   )

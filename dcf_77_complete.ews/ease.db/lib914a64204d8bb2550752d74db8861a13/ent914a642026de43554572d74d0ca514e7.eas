@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Apr 20 15:31:20 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 27 14:08:51 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -13,14 +13,14 @@
       (NAME "DisplayBlock")
       (USERNAME 1)
     )
-    (GEOMETRY 0 0 2304 832)
+    (GEOMETRY 0 0 2304 960)
     (SIDE 0)
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1429532002 "Mon Apr 20 14:13:22 2015")
-      (MODIFIED 1429536574 "Mon Apr 20 15:29:34 2015")
+      (MODIFIED 1430136531 "Mon Apr 27 14:08:51 2015")
     )
     (PORT
       (OBID "eprt914a6420f7de43554572d74d6ca514e7")
@@ -161,7 +161,7 @@
           (MODE 1)
           (CONSTRAINT
             (DIRECTION 1)
-            (RANGE "1" "0")
+            (RANGE "2" "0")
           )
         )
       )
@@ -174,7 +174,7 @@
         (SIDE 3)
         (ALIGNMENT 3)
         (FORMAT 35)
-        (TEXT "adress(1:0)")
+        (TEXT "adress(2:0)")
       )
     )
     (PORT
@@ -189,10 +189,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 536 40 616)
+      (GEOMETRY -40 664 40 744)
       (SIDE 3)
       (LABEL
-        (POSITION 64 576)
+        (POSITION 64 704)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -210,10 +210,10 @@
           (MODE 1)
         )
       )
-      (GEOMETRY -40 664 40 744)
+      (GEOMETRY -40 792 40 872)
       (SIDE 3)
       (LABEL
-        (POSITION 64 704)
+        (POSITION 64 832)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 3)
@@ -277,6 +277,97 @@
         (TEXT "adress_program(9:0)")
       )
     )
+    (PORT
+      (OBID "eprt914a64208812e355cd60d74dc2e3ec03")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "switch")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "1" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 536 40 616)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "switch(1:0)")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64204d32e355cd60d74d39f3ec03")
+      (HDL_IDENT
+        (NAME "FrameComplete")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2264 536 2344 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2240 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "FrameComplete")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420cd32e355cd60d74d79f3ec03")
+      (HDL_IDENT
+        (NAME "FrameIncorrect")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2264 664 2344 744)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2240 704)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "FrameIncorrect")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420df32e355cd60d74db9f3ec03")
+      (HDL_IDENT
+        (NAME "FrameReception")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2264 792 2344 872)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2240 832)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "FrameReception")
+      )
+    )
     (ARCH_DECLARATION 2 "arch914a642026de43554572d74d3ca514e7" "rtl")
   )
   (ARCH_DEFINITION
@@ -298,6 +389,22 @@
                "-- "
                "-- Copy of the interface declaration:"
                "-- "
+               "--   port ("
+               "--     FrameComplete    : out    std_logic;"
+               "--     FrameIncorrect   : out    std_logic;"
+               "--     FrameReception   : out    std_logic;"
+               "--     adress           : in     std_logic_vector(2 downto 0);"
+               "--     adress_program   : in     std_logic_vector(9 downto 0);"
+               "--     bit_count_7_seg  : out    std_logic_vector(7 downto 0);"
+               "--     chip_select      : in     std_logic;"
+               "--     clk              : in     std_logic;"
+               "--     data_in          : in     std_logic_vector(7 downto 0);"
+               "--     debug_leds       : out    std_logic_vector(7 downto 0);"
+               "--     hour_minutes_out : out    std_logic_vector(7 downto 0);"
+               "--     program_counter  : out    std_logic_vector(7 downto 0);"
+               "--     reset_n          : in     std_logic;"
+               "--     switch           : in     std_logic_vector(1 downto 0));"
+               "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
                ""
                "architecture rtl of DisplayBlock is"
@@ -307,6 +414,11 @@
                "end architecture rtl ; -- of DisplayBlock"
                ""
                "")
+      )
+      (VERILOG_FILE
+        (OBID "file914a6420bcb1e355cd60d74d2583ec03")
+        (NAME "rtl.v")
+        (VALUE "")
       )
     )
   )
