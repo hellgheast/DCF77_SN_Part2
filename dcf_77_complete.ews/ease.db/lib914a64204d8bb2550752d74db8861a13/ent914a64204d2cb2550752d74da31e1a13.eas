@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Apr 27 14:51:38 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 27 15:18:39 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1428931284 "Mon Apr 13 15:21:24 2015")
-      (MODIFIED 1430139083 "Mon Apr 27 14:51:23 2015")
+      (MODIFIED 1430140715 "Mon Apr 27 15:18:35 2015")
     )
     (PORT
       (OBID "eprt914a64203f2cb2550752d74df31e1a13")
@@ -1631,10 +1631,10 @@
           (NAME "u2")
           (USERNAME 1)
         )
-        (GEOMETRY 8704 2624 11008 3584)
+        (GEOMETRY 8704 2496 11008 3584)
         (SIDE 0)
         (LABEL
-          (POSITION 8704 2560)
+          (POSITION 8704 2432)
           (SCALE 128)
           (COLOR_LINE 0)
           (SIDE 3)
@@ -2204,6 +2204,41 @@
             )
           )
         )
+        (PORT
+          (OBID "cprt914a64202273e355cd60d74d7734ec03")
+          (HDL_IDENT
+            (NAME "write")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 8664 2520 8744 2600)
+          (SIDE 3)
+          (LABEL
+            (POSITION 8768 2560)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "write")
+          )
+          (PORT "eprt914a64202273e355cd60d74d6734ec03")
+          (CONNECTION
+            (OBID "ncon914a64202273e355cd60d74d8734ec03")
+            (GEOMETRY 8640 2560 8640 2560)
+            (SIDE 0)
+            (LABEL
+              (POSITION 8640 2528)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
       )
       (COMPONENT
         (OBID "comp914a6420a07f43554572d74d0ea514e7")
@@ -2414,41 +2449,6 @@
           )
         )
         (PORT
-          (OBID "cprt914a6420eb9f43554572d74d05b514e7")
-          (HDL_IDENT
-            (NAME "write_strobe")
-            (USERNAME 1)
-            (ATTRIBUTES
-              (MODE 1)
-            )
-          )
-          (GEOMETRY 5400 3032 5480 3112)
-          (SIDE 3)
-          (LABEL
-            (POSITION 5504 3072)
-            (SCALE 96)
-            (COLOR_LINE 0)
-            (SIDE 3)
-            (ALIGNMENT 3)
-            (FORMAT 35)
-            (TEXT "write_strobe")
-          )
-          (PORT "eprt914a6420db9f43554572d74df4b514e7")
-          (CONNECTION
-            (OBID "ncon914a6420eb9f43554572d74d15b514e7")
-            (GEOMETRY 5376 3072 5376 3072)
-            (SIDE 0)
-            (LABEL
-              (POSITION 5376 3040)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 3)
-              (ALIGNMENT 8)
-              (FORMAT 128)
-            )
-          )
-        )
-        (PORT
           (OBID "cprt914a642063bf43554572d74d45b514e7")
           (HDL_IDENT
             (NAME "uart_tx_cs")
@@ -2543,7 +2543,7 @@
           (NAME "u0")
           (USERNAME 1)
         )
-        (GEOMETRY 8704 448 10816 2432)
+        (GEOMETRY 8704 448 10816 2112)
         (SIDE 0)
         (LABEL
           (POSITION 8704 448)
@@ -3306,20 +3306,22 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 5248 3072 5376 3072)
           (WIRE 4864 3072 5248 3072)
           (WIRE 5248 896 5248 3072)
-          (WIRE 5248 896 8640 896)
-          (PORT
-            (OBID "cprt914a6420eb9f43554572d74d05b514e7")
-            (NAME "write_strobe")
-          )
+          (WIRE 8448 896 8640 896)
+          (WIRE 5248 896 8448 896)
+          (WIRE 8448 896 8448 2560)
+          (WIRE 8448 2560 8640 2560)
           (PORT
             (OBID "cprt914a6420115e43554572d74d66a314e7")
             (NAME "write_strobe")
           )
           (PORT
             (OBID "cprt914a6420c1b1e355cd60d74d0183ec03")
+            (NAME "write")
+          )
+          (PORT
+            (OBID "cprt914a64202273e355cd60d74d7734ec03")
             (NAME "write")
           )
         )
@@ -3570,7 +3572,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 11072 2688 11520 2688)
+          (WIRE 11520 2688 11072 2688)
           (PORT
             (OBID "aprt914a6420ab3cb2550752d74d661e1a13")
             (NAME "bit_count_7_seg")
@@ -3606,7 +3608,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 11072 2816 11520 2816)
+          (WIRE 11520 2816 11072 2816)
           (PORT
             (OBID "aprt914a64208e3cb2550752d74dc61e1a13")
             (NAME "hour_minutes_out")
@@ -3642,7 +3644,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 11072 2944 11520 2944)
+          (WIRE 11520 2944 11072 2944)
           (PORT
             (OBID "aprt914a6420250e435586b2d74d83f70454")
             (NAME "debug_leds")
@@ -3679,7 +3681,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 11072 3072 11520 3072)
+          (WIRE 11520 3072 11072 3072)
           (PORT
             (OBID "aprt914a64208bcf43554572d74d4ab514e7")
             (NAME "program_counter")
@@ -3941,7 +3943,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 704 1856 8640 1856)
+          (WIRE 8640 1856 704 1856)
           (PORT
             (OBID "cprt914a6420c1b1e355cd60d74dc183ec03")
             (NAME "dcf_77_in")

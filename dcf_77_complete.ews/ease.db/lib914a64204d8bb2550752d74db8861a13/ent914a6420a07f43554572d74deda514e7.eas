@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Apr 27 14:08:51 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 27 15:18:39 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1429534474 "Mon Apr 20 14:54:34 2015")
-      (MODIFIED 1430136531 "Mon Apr 27 14:08:51 2015")
+      (MODIFIED 1430140719 "Mon Apr 27 15:18:39 2015")
     )
     (PORT
       (OBID "eprt914a6420b17f43554572d74d5ea514e7")
@@ -146,27 +146,6 @@
       )
     )
     (PORT
-      (OBID "eprt914a6420db9f43554572d74df4b514e7")
-      (HDL_IDENT
-        (NAME "write_strobe")
-        (USERNAME 1)
-        (ATTRIBUTES
-          (MODE 1)
-        )
-      )
-      (GEOMETRY -40 216 40 296)
-      (SIDE 3)
-      (LABEL
-        (POSITION 64 256)
-        (SCALE 96)
-        (COLOR_LINE 0)
-        (SIDE 3)
-        (ALIGNMENT 3)
-        (FORMAT 35)
-        (TEXT "write_strobe")
-      )
-    )
-    (PORT
       (OBID "eprt914a642063bf43554572d74d35b514e7")
       (HDL_IDENT
         (NAME "uart_tx_cs")
@@ -239,8 +218,7 @@
                "--     adress_mux_dcf_test : out    std_logic;"
                "--     dcf_cs              : out    std_logic;"
                "--     displayblock_cs     : out    std_logic;"
-               "--     uart_tx_cs          : out    std_logic;"
-               "--     write_strobe        : in     std_logic);"
+               "--     uart_tx_cs          : out    std_logic);"
                "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
                ""

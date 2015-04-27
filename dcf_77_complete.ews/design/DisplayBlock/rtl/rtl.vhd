@@ -20,7 +20,8 @@
 --     hour_minutes_out : out    std_logic_vector(7 downto 0);
 --     program_counter  : out    std_logic_vector(7 downto 0);
 --     reset_n          : in     std_logic;
---     switch           : in     std_logic_vector(1 downto 0));
+--     switch           : in     std_logic_vector(1 downto 0);
+--     write            : in     std_logic);
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
 
