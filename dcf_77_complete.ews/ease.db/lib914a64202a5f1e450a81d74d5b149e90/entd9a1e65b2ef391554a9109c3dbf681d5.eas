@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Apr 20 13:27:24 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 27 13:21:47 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1427718114 "Mon Mar 30 14:21:54 2015")
-      (MODIFIED 1429529202 "Mon Apr 20 13:26:42 2015")
+      (MODIFIED 1430133707 "Mon Apr 27 13:21:47 2015")
     )
     (PORT
       (OBID "eprtd9a1e65b850491554a9109c3ccf681d5")
@@ -177,13 +177,13 @@
                "	     	getNothing <= '0';  "
                "	     	counter  <= (OTHERS => '0');"
                "	     	      	"
-               "	     elsif stop_temp = '1' then	 "
+               "	     elsif stop_temp = '1' and freq = '1' then	 "
                "	         	"
-               "	     counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);   "
-               "	       IF counter > x\"3E8\" then"
-               "	         counter  <= (OTHERS => '0');"
-               "	         getNothing <= '1';"
-               "	       END IF;      "
+               "	     	counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);   "
+               "	       	IF counter >= x\"3E9\" then"
+               "	         	counter  <= (OTHERS => '0');"
+               "	         	getNothing <= '1';"
+               "	       	END IF;      "
                "	     	"
                "         END IF;   "
                "         	"

@@ -35,13 +35,13 @@ P1:process (clk, reset_n)
 	     	getNothing <= '0';  
 	     	counter  <= (OTHERS => '0');
 	     	      	
-	     elsif stop_temp = '1' then	 
+	     elsif stop_temp = '1' and freq = '1' then	 
 	         	
-	     counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);   
-	       IF counter > x"3E8" then
-	         counter  <= (OTHERS => '0');
-	         getNothing <= '1';
-	       END IF;      
+	     	counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);   
+	       	IF counter >= x"3E9" then
+	         	counter  <= (OTHERS => '0');
+	         	getNothing <= '1';
+	       	END IF;      
 	     	
          END IF;   
          	

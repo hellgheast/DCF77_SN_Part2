@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Apr 20 13:27:24 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 27 13:21:47 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1424700030 "Mon Feb 23 15:00:30 2015")
-      (MODIFIED 1429529202 "Mon Apr 20 13:26:42 2015")
+      (MODIFIED 1430133707 "Mon Apr 27 13:21:47 2015")
     )
     (PORT
       (OBID "eprt914a64205e23be450572d74d25e7bdc1")
@@ -212,8 +212,7 @@
                "	elsif(clk'EVENT and clk = '1') then "
                "		 "
                "		if start = '1' then"
-               "				counter <= (OTHERS => '0');"
-               "				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);	"
+               "				counter <= \"000001\"; -- Compteur mis à 1, car le bit 0 est le premier bit, donc 1"
                "		elsif (rising_edge_dcf_77 = '1') or (stop = '1') then  "
                "				counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1);"
                "		end if;		"

@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Apr 20 13:27:24 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 27 13:21:47 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1424694079 "Mon Feb 23 13:21:19 2015")
-      (MODIFIED 1429529202 "Mon Apr 20 13:26:42 2015")
+      (MODIFIED 1430133707 "Mon Apr 27 13:21:47 2015")
     )
     (PORT
       (OBID "eprt914a6420b4b1be450572d74d1b57bdc1")
@@ -638,8 +638,8 @@
                "BEGIN"
                "  IF(reset_n = '0') THEN"
                "    reg_prescaler 	<= (OTHERS => '0');"
-               "    en1 <= '1';"
-               "    en2 <= '1'; "
+               "    en1 <= '0';"
+               "    en2 <= '0'; "
                "    ELSIF (clk'event and clk = '1')THEN"
                "    IF (wr_acc = '1') THEN"
                "      CASE Adress IS"

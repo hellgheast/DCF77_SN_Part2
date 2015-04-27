@@ -19,9 +19,9 @@
 
 architecture behavior of decode_RBG is
        
-signal getNot    : std_logic;
-signal busyTemp  : std_logic;
-signal readyTemp : std_logic;
+signal getNot    : std_logic := '0';
+signal busyTemp  : std_logic := '0';
+signal readyTemp : std_logic := '0';
 
 begin     
 
@@ -29,45 +29,44 @@ P1 : process(clk,reset_n) IS
 begin
 	if reset_n = '0' then
  		RBG <= (others => '0');
+ 		getNot <= '0';
  		busyTemp <= '0';
  		readyTemp <= '0'; 
- 		getNot <= '0';
- 		
-	elsif  (clk = '1' AND clk'event) THEN  
-		 
-		-- GETNOTHING --> première priorité 
-  	   	if getNothing = '0' then
-  	   		getNot <= '0';
-  	   		
-	   		-- BUSY --> deuxième priorité 
-  	   		if stop = '1' then   -- Priorité sur le stop
-  	   			busyTemp <= '0';
-  	   			
-    	   		-- READY --> troisième priorité 
-  	   			if stop = '1' and bit_count >= "111011" then
-  	   				readyTemp <= '1';
-  	   			else
+ 		 		
+	elsif(clk'EVENT and clk = '1')then 
+		if start = '0' then 
+			if getNothing = '1' then
+				readyTemp <= '0';
+				busyTemp <= '0';
+				getNot <= '1';
+				
+			elsif stop = '1' then 
+				busyTemp <= '0';
+				if bit_count >= "111011" then
+  	   				readyTemp <= '1'; 
+  	   			else   
   	   				readyTemp <= '0';
-  	   			end if;	   			
-  	   				
-		    elsif start = '1' then   
-  	   			busyTemp <= '1';
-  	   			readyTemp <= '0';
+  	   			end if;   
+  	   			
   	   		end if;
-   	
-  	   	else
-  	   		getNot <= '1'; 
-  	   		busyTemp <= '0';
- 			readyTemp <= '0'; 
+  	   		 	
+		else
+			getNot <= '0';
+  	   	 	busyTemp <= '1';
+  	   		readyTemp <= '0';
+  	   	
   	   	end if;
-  	   	  		       
+		       
 	end if;
-end process; 
+	
+end process;
 
-RBG <= "00" when getNot = '1' and  busyTemp = '0' and readyTemp = '0' else
-	   "01" when getNot = '0' and  busyTemp = '1' and readyTemp = '0' else 
-	   "10" when getNot = '0' and  busyTemp = '0' and readyTemp = '1' else 
+RBG <= "00" when getNot = '1' 	 else
+	   "01" when busyTemp = '1'  else 
+	   "10" when readyTemp = '1' else 
 	   "11";
+
+
 
 end architecture behavior ; -- of decode_RBG
 

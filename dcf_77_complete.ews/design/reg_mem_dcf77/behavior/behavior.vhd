@@ -63,8 +63,8 @@ P1:PROCESS (clk,reset_n)
 BEGIN
   IF(reset_n = '0') THEN
     reg_prescaler 	<= (OTHERS => '0');
-    en1 <= '1';
-    en2 <= '1'; 
+    en1 <= '0';
+    en2 <= '0'; 
     ELSIF (clk'event and clk = '1')THEN
     IF (wr_acc = '1') THEN
       CASE Adress IS

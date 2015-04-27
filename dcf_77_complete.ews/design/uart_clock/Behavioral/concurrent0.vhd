@@ -1,0 +1,21 @@
+-- EASE/HDL begin --------------------------------------------------------------
+-- 
+-- Concurrent Statement 'concurrent0' in architecture 'Behavioral' of entity 'uart_clock'.
+-- 
+--------------------------------------------------------------------------------
+-- 
+-- Copy of the interface signals:
+-- 
+-- uart_status_port : out    std_logic_vector(7 downto 0);
+-- rx_data_present  : in     std_logic;
+-- rx_full          : in     std_logic;
+-- rx_half_full     : in     std_logic;
+-- tx_full          : in     std_logic;
+-- tx_half_full     : in     std_logic;
+-- write_to_uart    : out    std_logic;
+-- write_strobe     : in     std_logic;
+-- port_id          : in     std_logic_vector(7 downto 0);
+-- 
+-- EASE/HDL end ----------------------------------------------------------------
+uart_status_port <= "000" & rx_data_present & rx_full & rx_half_full & tx_full & tx_half_full ;
+write_to_uart <= write_strobe and port_id(0);
