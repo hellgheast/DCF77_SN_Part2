@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Apr 27 15:18:39 2015")
+      (PROPERTY "STAMP_TIME" "Mon Apr 27 15:24:58 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1428931284 "Mon Apr 13 15:21:24 2015")
-      (MODIFIED 1430140715 "Mon Apr 27 15:18:35 2015")
+      (MODIFIED 1430141092 "Mon Apr 27 15:24:52 2015")
     )
     (PORT
       (OBID "eprt914a64203f2cb2550752d74df31e1a13")
@@ -1281,16 +1281,34 @@
             (TEXT "clk")
           )
           (PORT "eprt914a64205f4e43554572d74d2fe214e7")
+          (CBN
+            (OBID "cbn914a64204a83e355cd60d74de734ec03")
+            (HDL_IDENT
+              (NAME "clk")
+              (USERNAME 1)
+            )
+            (GEOMETRY 2424 3288 2568 3368)
+            (SIDE 0)
+            (LABEL
+              (POSITION 2368 3328)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 5)
+              (FORMAT 1)
+            )
+            (TYPE 0)
+          )
           (CONNECTION
             (OBID "ncon914a6420115e43554572d74d57a314e7")
             (GEOMETRY 2560 3328 2560 3328)
             (SIDE 0)
             (LABEL
-              (POSITION 2560 3296)
+              (POSITION 2368 3328)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
-              (ALIGNMENT 8)
+              (ALIGNMENT 5)
               (FORMAT 128)
             )
           )
@@ -1948,9 +1966,9 @@
           )
           (PORT "eprt914a6420f08f43554572d74ddfa514e7")
           (CBN
-            (OBID "cbn914a6420886053554572d74d80c514e7")
+            (OBID "cbn914a6420b983e355cd60d74dd734ec03")
             (HDL_IDENT
-              (NAME "u2_reset_n")
+              (NAME "reset_n")
               (USERNAME 1)
             )
             (GEOMETRY 8504 3416 8648 3496)
@@ -1962,7 +1980,6 @@
               (SIDE 3)
               (ALIGNMENT 5)
               (FORMAT 1)
-              (TEXT "u2_reset_n")
             )
             (TYPE 0)
           )
@@ -3799,20 +3816,6 @@
         )
       )
       (NET
-        (OBID "net914a6420386053554572d74d20c514e7")
-        (HDL_IDENT
-          (NAME "u2_reset_n")
-        )
-        (PART
-          (OBID "nprt914a6420386053554572d74d40c514e7")
-          (CBN 1)
-          (PORT
-            (OBID "cprt914a6420f08f43554572d74defa514e7")
-            (NAME "reset_n")
-          )
-        )
-      )
-      (NET
         (OBID "net914a6420586053554572d74d50c514e7")
         (HDL_IDENT
           (NAME "clk")
@@ -3834,6 +3837,10 @@
           )
           (PORT
             (OBID "cprt914a6420c1b1e355cd60d74d8183ec03")
+            (NAME "clk")
+          )
+          (PORT
+            (OBID "cprt914a6420115e43554572d74d47a314e7")
             (NAME "clk")
           )
         )
@@ -4225,6 +4232,10 @@
           )
           (PORT
             (OBID "cprt914a6420c1b1e355cd60d74da183ec03")
+            (NAME "reset_n")
+          )
+          (PORT
+            (OBID "cprt914a6420f08f43554572d74defa514e7")
             (NAME "reset_n")
           )
         )
