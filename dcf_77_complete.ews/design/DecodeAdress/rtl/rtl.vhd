@@ -19,7 +19,70 @@
 
 architecture rtl of DecodeAdress is
 
-begin
+                                                           
+signal DCF_select 			: std_logic_vector(3 downto 0) := x"0000";
+signal DisplayBlock_select  : std_logic_vector(3 downto 0) := x"0001";
+signal Mux_select 			: std_logic_vector(3 downto 0) := x"0010";
+signal UART_select 			: std_logic_vector(3 downto 0) := x"0011";
 
+signal Adress_MSB 			: std_logic_vector(3 downto 0);
+
+begin
+     
+	Adress_MSB <= adress(7 downto 4);
+	
+	case Adress_MSB is
+		
+		when DCF_select => 
+			-- Chips Selects
+			dcf_cs <= '1';
+			displayblock_cs <= '0';
+		    uart_tx_cs <= '0';  
+		    
+		    -- Addresses
+		    adress_dcf <= adress(3 downto 0);
+		    adress_mux_dcf_test <= (others => '0');
+		    
+		when DisplayBlock_select => 
+			-- Chips Selects
+			dcf_cs <= '0';
+			displayblock_cs <= '1';
+		    uart_tx_cs <= '0';  
+		    
+		    -- Addresses
+		    adress_displayblock <= adress(2 downto 0); 
+		    adress_mux_dcf_test <= (others => '0');
+		    
+		when Mux_select => 
+			-- Chips Selects
+			dcf_cs <= '0';
+			displayblock_cs <= '0';
+		    uart_tx_cs <= '0';  
+		    
+		    -- Addresses
+	        adress_mux_dcf_test <= adress(1 downto 0);
+	        adress_mux_dcf_test <= (others => '0');
+	        
+		when UART_select => 
+			-- Chips Selects
+			dcf_cs <= '0';
+			displayblock_cs <= '0';
+		    uart_tx_cs <= '1';  
+		    
+		    -- Addresses  
+		    adress_mux_dcf_test <= (others => '0');
+		     
+		when others => 
+			dcf_cs <= '0';
+			displayblock_cs <= '0';
+		    uart_tx_cs <= '0'; 
+		    
+		    adress_dcf 			<= (others => '0'); 
+		    adress_displayblock <= (others => '0');
+		    adress_mux_dcf_test <= (others => '0');
+		    
+		end case;
+		   
+		    
 end architecture rtl ; -- of DecodeAdress
 
