@@ -1,0 +1,16 @@
+-- EASE/HDL begin --------------------------------------------------------------
+-- 
+-- Architecture 'rtl' of entity 'mux_dcf_test'.
+-- 
+--------------------------------------------------------------------------------
+-- 
+-- Copy of the interface declaration:
+-- 
+-- EASE/HDL end ----------------------------------------------------------------
+
+architecture rtl of mux_dcf_test is
+
+begin
+
+end architecture rtl ; -- of mux_dcf_test
+

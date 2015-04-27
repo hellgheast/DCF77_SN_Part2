@@ -10,7 +10,7 @@
 --     adress              : in     std_logic_vector(7 downto 0);
 --     adress_dcf          : out    std_logic_vector(3 downto 0);
 --     adress_displayblock : out    std_logic_vector(2 downto 0);
---     adress_mux_dcf_test : out    std_logic;
+--     adress_mux_dcf_test : out    std_logic_vector(1 downto 0);
 --     dcf_cs              : out    std_logic;
 --     displayblock_cs     : out    std_logic;
 --     uart_tx_cs          : out    std_logic);
