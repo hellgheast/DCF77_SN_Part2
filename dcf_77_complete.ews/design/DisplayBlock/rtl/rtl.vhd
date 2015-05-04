@@ -26,18 +26,17 @@
 -- EASE/HDL end ----------------------------------------------------------------
 
 architecture rtl of DisplayBlock is
-                 
+ 
+constant bit_count_addr 	: std_logic_vector(2 downto 0) := x"000";
+constant hour_min_addr   	: std_logic_vector(2 downto 0) := x"001";
+constant debug_led_addr 	: std_logic_vector(2 downto 0) := x"010";
+constant status_addr  		: std_logic_vector(2 downto 0) := x"011";
+
 signal Reg_bit_count 		: std_logic_vector(7 downto 0);
 signal Reg_hour				: std_logic_vector(7 downto 0); 
 signal Reg_minutes			: std_logic_vector(7 downto 0);
 signal Reg_debug_leds 		: std_logic_vector(7 downto 0);  
-signal Reg_status		 	: std_logic_vector(7 downto 0); 
- 
-signal bit_count_addr 	: std_logic_vector(3 downto 0) := x"000";
-signal hour_min_addr   	: std_logic_vector(3 downto 0) := x"001";
-signal debug_led_addr 	: std_logic_vector(3 downto 0) := x"010";
-signal prog_count_addr 	: std_logic_vector(3 downto 0) := x"011";
-signal status_addr  	: std_logic_vector(3 downto 0) := x"100";
+signal Reg_status		 	: std_logic_vector(7 downto 0);
 
 begin
 
@@ -46,37 +45,56 @@ P1:process(clk, reset_n)
 	begin
      
 	if reset_n = '1' then
-	
-	
+	 	Reg_bit_count   <= (others => '0');
+	 	Reg_hour	    <= (others => '0');
+		Reg_minutes	    <= (others => '0');
+	 	Reg_debug_leds  <= (others => '0');
+	 	Reg_status	    <= (others => '0');
+	    program_counter <= (others => '0');
 	
 	elsif clk'EVENT AND clk = '1' then
+	
 		if chip_select = '1' then 
             
-			program_counter <= adress_program(7 downto 0);
+            if write = '1' then
+            
+				program_counter <= adress_program(7 downto 0);
 			 
-			case adress is
+				case adress is
 			
-				when bit_count_addr => 
-					Reg_debug_leds <= data_in;
+			   		when bit_count_addr => 
+						Reg_debug_leds <= data_in;
 					
-				when hour_min_addr =>
-					if switch = "00" then
-				   		Reg_hour <= data_in;  
-				   	elsif switch = "10" then
-				   	   	Reg_minutes <= data_in;  
+					when hour_min_addr =>
+						if switch = "00" then
+				   			Reg_hour <= data_in;  
+				   		elsif switch = "10" then
+				   	   		Reg_minutes <= data_in;  
 					
-				when debug_led_addr =>
-					Reg_debug_leds <= data_in;					
-					
-				when others =>       
-					null;
+					when debug_led_addr =>
+						Reg_debug_leds <= data_in; 
+						
+					when status_addr =>
+						Reg_status <= data_in;  
+						
+					when others =>       
+						null;
 				
-			end case;
- 	end if; 
+				end case; 
+			end if;
+ 		end if; 
  	
- end process;
+end process;
  
- 					
+bit_count_7_seg	<= Reg_bit_count; 
+debug_leds		<= Reg_debug_leds;
+FrameComplete 	<= Reg_status(0);
+FrameIncorrect 	<= Reg_status(1);
+FrameReception 	<= Reg_status(2);
+
+hour_min_addr	<= Reg_hour when switch = "00" else	
+				   Reg_minutes when switch = "10" else
+				   (others <= '0');						
 		
 	
 	
