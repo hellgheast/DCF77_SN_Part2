@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Apr 27 15:18:39 2015")
+      (PROPERTY "STAMP_TIME" "Mon May 04 13:54:58 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1429532002 "Mon Apr 20 14:13:22 2015")
-      (MODIFIED 1430140719 "Mon Apr 27 15:18:39 2015")
+      (MODIFIED 1430740498 "Mon May 04 13:54:58 2015")
     )
     (PORT
       (OBID "eprt914a6420f7de43554572d74d6ca514e7")
@@ -433,8 +433,60 @@
                "-- EASE/HDL end ----------------------------------------------------------------"
                ""
                "architecture rtl of DisplayBlock is"
+               "                 "
+               "signal Reg_bit_count 		: std_logic_vector(7 downto 0);"
+               "signal Reg_hour				: std_logic_vector(7 downto 0); "
+               "signal Reg_minutes			: std_logic_vector(7 downto 0);"
+               "signal Reg_debug_leds 		: std_logic_vector(7 downto 0);  "
+               "signal Reg_status		 	: std_logic_vector(7 downto 0); "
+               " "
+               "signal bit_count_addr 	: std_logic_vector(3 downto 0) := x\"000\";"
+               "signal hour_min_addr   	: std_logic_vector(3 downto 0) := x\"001\";"
+               "signal debug_led_addr 	: std_logic_vector(3 downto 0) := x\"010\";"
+               "signal prog_count_addr 	: std_logic_vector(3 downto 0) := x\"011\";"
+               "signal status_addr  	: std_logic_vector(3 downto 0) := x\"100\";"
                ""
                "begin"
+               ""
+               "P1:process(clk, reset_n)"
+               ""
+               "	begin"
+               "     "
+               "	if reset_n = '1' then"
+               "	"
+               "	"
+               "	"
+               "	elsif clk'EVENT AND clk = '1' then"
+               "		if chip_select = '1' then "
+               "            "
+               "			program_counter <= adress_program(7 downto 0);"
+               "			 "
+               "			case adress is"
+               "			"
+               "				when bit_count_addr => "
+               "					Reg_debug_leds <= data_in;"
+               "					"
+               "				when hour_min_addr =>"
+               "					if switch = \"00\" then"
+               "				   		Reg_hour <= data_in;  "
+               "				   	elsif switch = \"10\" then"
+               "				   	   	Reg_minutes <= data_in;  "
+               "					"
+               "				when debug_led_addr =>"
+               "					Reg_debug_leds <= data_in;					"
+               "					"
+               "				when others =>       "
+               "					null;"
+               "				"
+               "			end case;"
+               " 	end if; "
+               " 	"
+               " end process;"
+               " "
+               " 					"
+               "		"
+               "	"
+               "	"
                ""
                "end architecture rtl ; -- of DisplayBlock"
                ""
