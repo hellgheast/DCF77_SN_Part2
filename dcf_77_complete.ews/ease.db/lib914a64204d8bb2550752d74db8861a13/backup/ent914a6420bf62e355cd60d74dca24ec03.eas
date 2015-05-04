@@ -1,0 +1,104 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent914a6420bf62e355cd60d74dca24ec03")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon May 04 15:33:56 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "inversor")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 832 320)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1430136571 "Mon Apr 27 14:09:31 2015")
+      (MODIFIED 1430745536 "Mon May 04 15:18:56 2015")
+    )
+    (PORT
+      (OBID "eprt914a64203172e355cd60d74d2b24ec03")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "input")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "input")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420f372e355cd60d74d6b24ec03")
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 792 88 872 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 768 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch914a6420bf62e355cd60d74dfa24ec03" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch914a6420bf62e355cd60d74dfa24ec03")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file914a6420bf62e355cd60d74d0b24ec03")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'inversor'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of inversor is"
+               ""
+               "begin"
+               ""
+               "end architecture rtl ; -- of inversor"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

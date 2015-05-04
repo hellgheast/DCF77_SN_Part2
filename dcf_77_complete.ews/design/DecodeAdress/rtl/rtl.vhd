@@ -20,10 +20,10 @@
 architecture rtl of DecodeAdress is
 
                                                            
-signal DCF_select 			: std_logic_vector(3 downto 0) := x"0000";
-signal DisplayBlock_select  : std_logic_vector(3 downto 0) := x"0001";
-signal Mux_select 			: std_logic_vector(3 downto 0) := x"0010";
-signal UART_select 			: std_logic_vector(3 downto 0) := x"0011";
+constant DCF_select 			: std_logic_vector(3 downto 0) := x"0000";
+constant DisplayBlock_select  : std_logic_vector(3 downto 0) := x"0001";
+constant Mux_select 			: std_logic_vector(3 downto 0) := x"0010";
+constant UART_select 			: std_logic_vector(3 downto 0) := x"0011";
 
 signal Adress_MSB 			: std_logic_vector(3 downto 0);
 
@@ -61,7 +61,6 @@ begin
 		    
 		    -- Addresses
 	        adress_mux_dcf_test <= adress(1 downto 0);
-	        adress_mux_dcf_test <= (others => '0');
 	        
 		when UART_select => 
 			-- Chips Selects

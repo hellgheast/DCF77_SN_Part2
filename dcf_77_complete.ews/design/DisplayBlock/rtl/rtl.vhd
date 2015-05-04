@@ -88,9 +88,9 @@ end process;
  
 bit_count_7_seg	<= Reg_bit_count; 
 debug_leds		<= Reg_debug_leds;
-FrameComplete 	<= Reg_status(0);
-FrameIncorrect 	<= Reg_status(1);
-FrameReception 	<= Reg_status(2);
+FrameComplete 	<= '1' WHEN Reg_status(1 downto 0) = "10" ELSE '0';
+FrameIncorrect 	<= ((Reg_status(2) XOR Reg_status(5)) OR ((Reg_status(3) XOR Reg_status(6))OR (Reg_status(4) XOR Reg_status(7));
+FrameReception 	<= '1' WHEN Reg_status(1 downto 0) = "01" ELSE '0';
 
 hour_min_addr	<= Reg_hour when switch = "00" else	
 				   Reg_minutes when switch = "10" else
