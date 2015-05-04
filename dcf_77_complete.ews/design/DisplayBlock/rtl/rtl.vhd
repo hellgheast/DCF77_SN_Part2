@@ -26,8 +26,60 @@
 -- EASE/HDL end ----------------------------------------------------------------
 
 architecture rtl of DisplayBlock is
+                 
+signal Reg_bit_count 		: std_logic_vector(7 downto 0);
+signal Reg_hour				: std_logic_vector(7 downto 0); 
+signal Reg_minutes			: std_logic_vector(7 downto 0);
+signal Reg_debug_leds 		: std_logic_vector(7 downto 0);  
+signal Reg_status		 	: std_logic_vector(7 downto 0); 
+ 
+signal bit_count_addr 	: std_logic_vector(3 downto 0) := x"000";
+signal hour_min_addr   	: std_logic_vector(3 downto 0) := x"001";
+signal debug_led_addr 	: std_logic_vector(3 downto 0) := x"010";
+signal prog_count_addr 	: std_logic_vector(3 downto 0) := x"011";
+signal status_addr  	: std_logic_vector(3 downto 0) := x"100";
 
 begin
+
+P1:process(clk, reset_n)
+
+	begin
+     
+	if reset_n = '1' then
+	
+	
+	
+	elsif clk'EVENT AND clk = '1' then
+		if chip_select = '1' then 
+            
+			program_counter <= adress_program(7 downto 0);
+			 
+			case adress is
+			
+				when bit_count_addr => 
+					Reg_debug_leds <= data_in;
+					
+				when hour_min_addr =>
+					if switch = "00" then
+				   		Reg_hour <= data_in;  
+				   	elsif switch = "10" then
+				   	   	Reg_minutes <= data_in;  
+					
+				when debug_led_addr =>
+					Reg_debug_leds <= data_in;					
+					
+				when others =>       
+					null;
+				
+			end case;
+ 	end if; 
+ 	
+ end process;
+ 
+ 					
+		
+	
+	
 
 end architecture rtl ; -- of DisplayBlock
 
