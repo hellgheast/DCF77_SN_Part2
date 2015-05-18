@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon May 04 13:54:58 2015")
+      (PROPERTY "STAMP_TIME" "Mon May 04 19:58:00 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1430136188 "Mon Apr 27 14:03:08 2015")
-      (MODIFIED 1430740498 "Mon May 04 13:54:58 2015")
+      (MODIFIED 1430762280 "Mon May 04 19:58:00 2015")
     )
     (PORT
       (OBID "eprt914a64202a52e355cd60d74d6bf3ec03")
@@ -215,10 +215,10 @@
                "begin"
                ""
                "WITH adress_mux_dcf_test SELECT"
-               "	 data_out <= test_vector(7 downto 1) & TEST 		WHEN \"00\","
+               "	 data_out <= data_dcf								WHEN \"00\","
                "	 			 test_vector(7 downto 1) & start_acq 	WHEN \"01\","
                "	 			 test_vector(7 downto 1) & buffer_full 	WHEN \"10\","
-               "	 			 data_dcf								WHEN \"11\","
+               "	 			 test_vector(7 downto 1) & TEST			WHEN \"11\","
                "	 			 x\"FF\"			                        WHEN OTHERS;"
                "	 			 	"
                ""

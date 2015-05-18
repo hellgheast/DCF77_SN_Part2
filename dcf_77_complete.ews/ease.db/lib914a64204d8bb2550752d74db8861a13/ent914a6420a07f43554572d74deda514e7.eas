@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon May 04 13:54:58 2015")
+      (PROPERTY "STAMP_TIME" "Mon May 04 19:58:00 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1429534474 "Mon Apr 20 14:54:34 2015")
-      (MODIFIED 1430740498 "Mon May 04 13:54:58 2015")
+      (MODIFIED 1430762280 "Mon May 04 19:58:00 2015")
     )
     (PORT
       (OBID "eprt914a6420b17f43554572d74d5ea514e7")
@@ -229,10 +229,10 @@
                "architecture rtl of DecodeAdress is"
                ""
                "                                                           "
-               "signal DCF_select 			: std_logic_vector(3 downto 0) := x\"0000\";"
-               "signal DisplayBlock_select  : std_logic_vector(3 downto 0) := x\"0001\";"
-               "signal Mux_select 			: std_logic_vector(3 downto 0) := x\"0010\";"
-               "signal UART_select 			: std_logic_vector(3 downto 0) := x\"0011\";"
+               "constant DCF_select 			: std_logic_vector(3 downto 0) := x\"0000\";"
+               "constant DisplayBlock_select  : std_logic_vector(3 downto 0) := x\"0001\";"
+               "constant Mux_select 			: std_logic_vector(3 downto 0) := x\"0010\";"
+               "constant UART_select 			: std_logic_vector(3 downto 0) := x\"0011\";"
                ""
                "signal Adress_MSB 			: std_logic_vector(3 downto 0);"
                ""
@@ -270,7 +270,6 @@
                "		    "
                "		    -- Addresses"
                "	        adress_mux_dcf_test <= adress(1 downto 0);"
-               "	        adress_mux_dcf_test <= (others => '0');"
                "	        "
                "		when UART_select => "
                "			-- Chips Selects"

@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Apr 27 14:45:30 2015")
+      (PROPERTY "STAMP_TIME" "Mon May 04 19:58:00 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1430136571 "Mon Apr 27 14:09:31 2015")
-      (MODIFIED 1430138641 "Mon Apr 27 14:44:01 2015")
+      (MODIFIED 1430762280 "Mon May 04 19:58:00 2015")
     )
     (PORT
       (OBID "eprt914a64203172e355cd60d74d2b24ec03")
@@ -88,11 +88,17 @@
                "-- "
                "-- Copy of the interface declaration:"
                "-- "
+               "--   port ("
+               "--     input   : in     std_logic;"
+               "--     reset_n : out    std_logic);"
+               "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
                ""
                "architecture rtl of inversor is"
                ""
                "begin"
+               ""
+               "reset_n <= not input;           "
                ""
                "end architecture rtl ; -- of inversor"
                ""
