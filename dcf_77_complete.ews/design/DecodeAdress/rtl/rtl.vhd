@@ -20,68 +20,44 @@
 architecture rtl of DecodeAdress is
 
                                                            
-constant DCF_select 			: std_logic_vector(3 downto 0) := x"0000";
-constant DisplayBlock_select  : std_logic_vector(3 downto 0) := x"0001";
-constant Mux_select 			: std_logic_vector(3 downto 0) := x"0010";
-constant UART_select 			: std_logic_vector(3 downto 0) := x"0011";
+constant DCF_select 			: std_logic_vector(3 downto 0) := "0000";
+constant DisplayBlock_select  	: std_logic_vector(3 downto 0) := "0001";
+constant Mux_select 			: std_logic_vector(3 downto 0) := "0010";
+constant UART_select 			: std_logic_vector(3 downto 0) := "0011";
 
-signal Adress_MSB 			: std_logic_vector(3 downto 0);
+signal Adress_MSB 				: std_logic_vector(3 downto 0);
+signal ChipSelects 				: std_logic_vector(2 downto 0);  -- Bit 0 = uart, bit 1 = display, bit 2 = dcf
 
 begin
      
 	Adress_MSB <= adress(7 downto 4);
 	
-	case Adress_MSB is
+	with Adress_MSB select
+		          
+		ChipSelects			<=  "100" when DCF_select,
+		 			   			"010" when DisplayBlock_select,
+		 			    	   	"001" when UART_select,
+		 			    	   	"000" when others;     
+ 
+	with Adress_MSB select
+
+		adress_dcf 			<= 	adress(3 downto 0) when DCF_select,
+		 			   			"0000" when others;       
+	
+	with Adress_MSB select
+		 		 			    
+		adress_mux_dcf_test <=  adress(1 downto 0) when Mux_select,
+							    "00" when others; 
+							    
+	with Adress_MSB select
 		
-		when DCF_select => 
-			-- Chips Selects
-			dcf_cs <= '1';
-			displayblock_cs <= '0';
-		    uart_tx_cs <= '0';  
-		    
-		    -- Addresses
-		    adress_dcf <= adress(3 downto 0);
-		    adress_mux_dcf_test <= (others => '0');
-		    
-		when DisplayBlock_select => 
-			-- Chips Selects
-			dcf_cs <= '0';
-			displayblock_cs <= '1';
-		    uart_tx_cs <= '0';  
-		    
-		    -- Addresses
-		    adress_displayblock <= adress(2 downto 0); 
-		    adress_mux_dcf_test <= (others => '0');
-		    
-		when Mux_select => 
-			-- Chips Selects
-			dcf_cs <= '0';
-			displayblock_cs <= '0';
-		    uart_tx_cs <= '0';  
-		    
-		    -- Addresses
-	        adress_mux_dcf_test <= adress(1 downto 0);
-	        
-		when UART_select => 
-			-- Chips Selects
-			dcf_cs <= '0';
-			displayblock_cs <= '0';
-		    uart_tx_cs <= '1';  
-		    
-		    -- Addresses  
-		    adress_mux_dcf_test <= (others => '0');
-		     
-		when others => 
-			dcf_cs <= '0';
-			displayblock_cs <= '0';
-		    uart_tx_cs <= '0'; 
-		    
-		    adress_dcf 			<= (others => '0'); 
-		    adress_displayblock <= (others => '0');
-		    adress_mux_dcf_test <= (others => '0');
-		    
-		end case;
-		   
-		    
+		adress_displayblock <=  adress(2 downto 0) when DisplayBlock_select,
+		 						"000" when others;
+		 						
+		 										   		 				   		
+ dcf_cs	 			<= ChipSelects(2);	    
+ displayblock_cs	<= ChipSelects(1);		          
+ uart_tx_cs     	<= ChipSelects(0);
+ 		    
 end architecture rtl ; -- of DecodeAdress
 
