@@ -27,10 +27,11 @@
 
 architecture rtl of DisplayBlock is
  
-constant bit_count_addr 	: std_logic_vector(2 downto 0) := x"000";
-constant hour_min_addr   	: std_logic_vector(2 downto 0) := x"001";
-constant debug_led_addr 	: std_logic_vector(2 downto 0) := x"010";
-constant status_addr  		: std_logic_vector(2 downto 0) := x"011";
+constant bit_count_addr 	: std_logic_vector(2 downto 0) := "000";
+constant hour_addr   		: std_logic_vector(2 downto 0) := "001";
+constant min_addr			: std_logic_vector(2 downto 0) := "010";
+constant debug_led_addr 	: std_logic_vector(2 downto 0) := "011";
+constant status_addr  		: std_logic_vector(2 downto 0) := "100";
 
 signal Reg_bit_count 		: std_logic_vector(7 downto 0);
 signal Reg_hour				: std_logic_vector(7 downto 0); 
@@ -64,13 +65,10 @@ P1:process(clk, reset_n)
 			
 			   		when bit_count_addr => 
 						Reg_debug_leds <= data_in;
-					
-					when hour_min_addr =>
-						if switch = "00" then
-				   			Reg_hour <= data_in;  
-				   		elsif switch = "10" then
-				   	   		Reg_minutes <= data_in;  
-					
+					when hour_addr =>
+						Reg_hour <= data_in;  
+				   	when min_addr =>
+				   		Reg_minutes <= data_in;  
 					when debug_led_addr =>
 						Reg_debug_leds <= data_in; 
 						
@@ -90,12 +88,12 @@ end process;
 bit_count_7_seg	<= Reg_bit_count; 
 debug_leds		<= Reg_debug_leds;
 FrameComplete 	<= '1' WHEN Reg_status(1 downto 0) = "10" ELSE '0';
-FrameIncorrect 	<= ((Reg_status(2) XOR Reg_status(5)) OR ((Reg_status(3) XOR Reg_status(6))OR (Reg_status(4) XOR Reg_status(7));
+FrameIncorrect 	<= (Reg_status(2) XOR Reg_status(5)) OR (Reg_status(3) XOR Reg_status(6))OR (Reg_status(4) XOR Reg_status(7));
 FrameReception 	<= '1' WHEN Reg_status(1 downto 0) = "01" ELSE '0';
 
-hour_min_addr	<= Reg_hour when switch = "00" else	
+hour_minutes_out	<= Reg_hour when switch = "00" else	
 				   Reg_minutes when switch = "10" else
-				   (others <= '0');						
+				   (others => '0');						
 		
 	
 	
