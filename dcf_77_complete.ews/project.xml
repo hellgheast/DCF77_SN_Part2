@@ -16,8 +16,8 @@
       <key type="bool" value="false" name="StartBrowser"/>
     </section>
     <section name="Markers">
-      <key type="string" value="diag914a6420272e435586b2d74de5f70454" name="CurrentDiagram"/>
-      <key type="string" value="design:Toplevel:&lt;Internal>" name="CurrentPath"/>
+      <key type="string" value="diag914a64204d2cb2550752d74db31e1a13" name="CurrentDiagram"/>
+      <key type="string" value="design:Toplevel:&lt;Internal>/comp914a64204d2cb2550752d74dc31e1a13" name="CurrentPath"/>
       <key type="string" value="ent914a64204d2cb2550752d74da31e1a13" name="HdlOutputObject"/>
     </section>
     <section name="DiagramGridVisible">
@@ -46,6 +46,11 @@
       <key type="bool" value="true" name="arch914a64204d2cb2550752d74dd31e1a13"/>
       <key type="bool" value="true" name="arch914a64204d8bb2550752d74de8861a13"/>
       <key type="bool" value="true" name="ent914a6420478e43554572d74de16414e7"/>
+    </section>
+    <section name="DiagramView">
+      <key type="geometry" value="0,0,10282,4265" name="diag914a6420272e435586b2d74de5f70454"/>
+      <key type="geometry" value="0,0,10282,4265" name="diag914a64204d8bb2550752d74dc8861a13"/>
+      <key type="geometry" value="0,0,13018,5401" name="diag914a64204d2cb2550752d74db31e1a13"/>
     </section>
   </sections>
 </CONFIGURATION>

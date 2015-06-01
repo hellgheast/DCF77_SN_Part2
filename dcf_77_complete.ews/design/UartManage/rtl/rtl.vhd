@@ -23,7 +23,7 @@
 
 architecture rtl of UartManage is
        
-signal datas    : std_logic_vector; 
+signal data    : std_logic_vector(7 downto 0); 
 signal busyTemp  : std_logic := '0';
 signal readyTemp : std_logic := '0';
 
@@ -32,7 +32,7 @@ begin
 P1 : process(clk,reset_n) IS
 begin
 	if reset_n = '0' then
- 		datas <= (others => '0');
+ 		data <= (others => '0');
  			 		
 	elsif(clk'EVENT and clk = '1')then 
 		if uart_cs = '1' then    
@@ -44,10 +44,10 @@ begin
 					start_tr <= '1'; -- Enclenche le compteur de Baud      
 					write_buffer <= '0';
 					
-				elsif buffer_full = '0';   
+				elsif buffer_full = '0' then   
                   	start_tr <= '0';
 					write_buffer <= '1'; -- Demande un écriture des entrées FIFO dans le buffer
-			   		data <= data_out;     
+			   		data <= data_in;     
 			   	
 			   	end if;
 			   	
@@ -62,7 +62,7 @@ begin
 	
 end process;
 
-data_out <= datas;
+data_out <= data;
 
 end architecture rtl ; -- of UartManage
 

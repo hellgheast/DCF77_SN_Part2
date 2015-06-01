@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Jun 01 09:28:36 2015")
+      (PROPERTY "STAMP_TIME" "Mon Jun 01 11:53:30 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1433102110 "Sun May 31 21:55:10 2015")
-      (MODIFIED 1433143716 "Mon Jun 01 09:28:36 2015")
+      (MODIFIED 1433152410 "Mon Jun 01 11:53:30 2015")
     )
     (PORT
       (OBID "eprtd9a1a63a1576b6550c9009c35db3b9a7")
@@ -306,7 +306,7 @@
                ""
                "architecture rtl of UartManage is"
                "       "
-               "signal datas    : std_logic_vector; "
+               "signal data    : std_logic_vector(7 downto 0); "
                "signal busyTemp  : std_logic := '0';"
                "signal readyTemp : std_logic := '0';"
                ""
@@ -315,7 +315,7 @@
                "P1 : process(clk,reset_n) IS"
                "begin"
                "	if reset_n = '0' then"
-               " 		datas <= (others => '0');"
+               " 		data <= (others => '0');"
                " 			 		"
                "	elsif(clk'EVENT and clk = '1')then "
                "		if uart_cs = '1' then    "
@@ -327,10 +327,10 @@
                "					start_tr <= '1'; -- Enclenche le compteur de Baud      "
                "					write_buffer <= '0';"
                "					"
-               "				elsif buffer_full = '0';   "
+               "				elsif buffer_full = '0' then   "
                "                  	start_tr <= '0';"
                "					write_buffer <= '1'; -- Demande un écriture des entrées FIFO dans le buffer"
-               "			   		data <= data_out;     "
+               "			   		data <= data_in;     "
                "			   	"
                "			   	end if;"
                "			   	"
@@ -345,7 +345,7 @@
                "	"
                "end process;"
                ""
-               "data_out <= datas;"
+               "data_out <= data;"
                ""
                "end architecture rtl ; -- of UartManage"
                ""

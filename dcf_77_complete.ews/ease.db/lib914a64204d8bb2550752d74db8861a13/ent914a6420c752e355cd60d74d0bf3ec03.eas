@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon May 04 19:58:00 2015")
+      (PROPERTY "STAMP_TIME" "Mon Jun 01 11:53:30 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1430136188 "Mon Apr 27 14:03:08 2015")
-      (MODIFIED 1430762280 "Mon May 04 19:58:00 2015")
+      (MODIFIED 1433152410 "Mon Jun 01 11:53:30 2015")
     )
     (PORT
       (OBID "eprt914a64202a52e355cd60d74d6bf3ec03")
@@ -210,7 +210,7 @@
                ""
                "architecture rtl of mux_dcf_test is"
                ""
-               "signal test_vector std_logic_vector(7 downto 0):=x\"00\";"
+               "signal test_vector : std_logic_vector(7 downto 0):=x\"00\";"
                "             "
                "begin"
                ""
@@ -220,6 +220,7 @@
                "	 			 test_vector(7 downto 1) & buffer_full 	WHEN \"10\","
                "	 			 test_vector(7 downto 1) & TEST			WHEN \"11\","
                "	 			 x\"FF\"			                        WHEN OTHERS;"
+               "	 "
                "	 			 	"
                ""
                ""
