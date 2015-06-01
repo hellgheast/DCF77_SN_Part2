@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Jun 01 14:48:43 2015")
+      (PROPERTY "STAMP_TIME" "Mon Jun 01 15:40:30 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1429532002 "Mon Apr 20 14:13:22 2015")
-      (MODIFIED 1433162923 "Mon Jun 01 14:48:43 2015")
+      (MODIFIED 1433166029 "Mon Jun 01 15:40:29 2015")
     )
     (PORT
       (OBID "eprt914a642088de43554572d74daca514e7")
@@ -35,10 +35,10 @@
           )
         )
       )
-      (GEOMETRY 2264 280 2344 360)
+      (GEOMETRY 2264 88 2344 168)
       (SIDE 1)
       (LABEL
-        (POSITION 2240 320)
+        (POSITION 2240 128)
         (SCALE 96)
         (COLOR_LINE 0)
         (SIDE 1)
@@ -471,9 +471,9 @@
                "FrameIncorrect 	<= (Reg_status(2) XOR Reg_status(5)) OR (Reg_status(3) XOR Reg_status(6))OR (Reg_status(4) XOR Reg_status(7));"
                "FrameReception 	<= '1' WHEN Reg_status(1 downto 0) = \"01\" ELSE '0';"
                ""
-               "time_bc_out		<= Reg_hour when switch(1) = '0' else	"
+               "time_bc_out		<= Reg_bit_count when switch(0) = '1' else"
+               "				   Reg_hour when switch(1) = '0' else	"
                "				   Reg_minutes when switch(1) = '1' else"
-               "				   Reg_bit_count when switch(0) = '1'"
                "				   (others => '0');						"
                "		"
                "	"

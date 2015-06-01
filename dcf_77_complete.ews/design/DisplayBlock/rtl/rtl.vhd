@@ -89,9 +89,9 @@ FrameComplete 	<= '1' WHEN Reg_status(1 downto 0) = "10" ELSE '0';
 FrameIncorrect 	<= (Reg_status(2) XOR Reg_status(5)) OR (Reg_status(3) XOR Reg_status(6))OR (Reg_status(4) XOR Reg_status(7));
 FrameReception 	<= '1' WHEN Reg_status(1 downto 0) = "01" ELSE '0';
 
-time_bc_out		<= Reg_hour when switch(1) = '0' else	
+time_bc_out		<= Reg_bit_count when switch(0) = '1' else
+				   Reg_hour when switch(1) = '0' else	
 				   Reg_minutes when switch(1) = '1' else
-				   Reg_bit_count when switch(0) = '1'
 				   (others => '0');						
 		
 	
