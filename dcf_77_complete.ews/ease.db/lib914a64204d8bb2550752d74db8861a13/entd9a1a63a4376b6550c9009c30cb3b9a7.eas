@@ -1,0 +1,206 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a1a63a4376b6550c9009c30cb3b9a7")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Jun 01 09:37:03 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "BaudRateCounter")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1280 768)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "vincent.meier")
+      (CREATED 1433102132 "Sun May 31 21:55:32 2015")
+      (MODIFIED 1433144223 "Mon Jun 01 09:37:03 2015")
+    )
+    (PORT
+      (OBID "eprtd9a1a63ab376b6550c9009c3acb3b9a7")
+      (HDL_IDENT
+        (NAME "en_16_x_baud")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1240 88 1320 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1216 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "en_16_x_baud")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1a63a0876b6550c9009c390c3b9a7")
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1a63a3876b6550c9009c301c3b9a7")
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1a63a4976b6550c9009c3d1c3b9a7")
+      (HDL_IDENT
+        (NAME "uart_cs")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "uart_cs")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1d6498750c6554d8209c3bea08d03")
+      (HDL_IDENT
+        (NAME "start_tr")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "start_tr")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a1a63a4376b6550c9009c34cb3b9a7" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a1a63a4376b6550c9009c34cb3b9a7")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "filed9a1a63a4376b6550c9009c35cb3b9a7")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'BaudRateCounter'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     clk          : in     std_logic;"
+               "--     en_16_x_baud : out    std_logic;"
+               "--     reset_n      : in     std_logic;"
+               "--     start_tr     : in     std_logic;"
+               "--     uart_cs      : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of BaudRateCounter is"
+               ""
+               "signal counter : std_logic_vector(7 DOWNTO 0); --Signal interne pour compteur"
+               ""
+               "begin "
+               ""
+               "P1:process (clk, reset_n)           "
+               ""
+               "	begin                  "
+               "	"
+               "	if(reset_n = '0') then -- reset asynchrone"
+               "		counter  <= (OTHERS => '0'); "
+               "		"
+               "	elsif(clk'EVENT and clk = '1') then   "
+               "	"
+               "		if uart_cs = '0' then"
+               "		"
+               "		elsif uart_cs = '1' then"
+               "	"
+               "			if start_tr = '0' then"
+               "		  		counter  <= (OTHERS => '0');      "
+               "		  "
+               "	   		elsif start_tr = '1' then"
+               "	   			if counter = 64 then"
+               "	   				counter <= (OTHERS => '0');  "
+               "	   				en_16_x_baud <= '1';  "
+               "	   			else"
+               "					counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1); "
+               "					en_16_x_baud <= '0';"
+               "		"
+               "				end if; "
+               "			end if;"
+               "		end if;	"
+               "	end if;	  "
+               "		"
+               "end process;    "
+               ""
+               "end architecture rtl ; -- of BaudRateCounter"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

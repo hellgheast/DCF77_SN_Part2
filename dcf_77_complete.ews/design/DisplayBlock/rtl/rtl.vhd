@@ -82,7 +82,8 @@ P1:process(clk, reset_n)
 				
 				end case; 
 			end if;
- 		end if; 
+ 		end if;   
+ 	end if;
  	
 end process;
  

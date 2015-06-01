@@ -16,8 +16,9 @@
       <key type="bool" value="false" name="StartBrowser"/>
     </section>
     <section name="Markers">
-      <key type="string" value="diag914a6420578e43554572d74dc4a414e7" name="CurrentDiagram"/>
-      <key type="string" value="design:DCF77_Receiver:&lt;Internal>/comp914a6420115e43554572d74de5a314e7" name="CurrentPath"/>
+      <key type="string" value="diag914a64204d2cb2550752d74db31e1a13" name="CurrentDiagram"/>
+      <key type="string" value="design:Toplevel:&lt;Internal>/comp914a64204d2cb2550752d74dc31e1a13" name="CurrentPath"/>
+      <key type="string" value="ent914a64204d2cb2550752d74da31e1a13" name="HdlOutputObject"/>
     </section>
     <section name="DiagramGridVisible">
       <key type="bool" value="false" name="diag914a64204d8bb2550752d74dc8861a13"/>
@@ -29,6 +30,9 @@
       <key type="bool" value="false" name="diag914a64200d5f1e450a81d74d0c149e90"/>
       <key type="bool" value="false" name="diag914a6420578e43554572d74dc4a414e7"/>
       <key type="bool" value="false" name="diag914a6420578e43554572d74d996514e7"/>
+      <key type="bool" value="false" name="diag914a6420578e43554572d74d53f414e7"/>
+      <key type="bool" value="true" name="diagd9a1a63a6956b6550c9009c3b1b3b9a7"/>
+      <key type="bool" value="false" name="diag914a6420b1102e450a81d74de3249e90"/>
     </section>
     <section name="Browser">
       <key type="string" value="design.DCF77_Receiver" name="DetailView"/>
@@ -36,11 +40,20 @@
     <section name="DiagramGridFactor">
       <key type="int" value="0" name="diag914a64204d2cb2550752d74db31e1a13"/>
       <key type="int" value="0" name="diag914a6420272e435586b2d74de5f70454"/>
+      <key type="int" value="0" name="diagd9a1a63a6956b6550c9009c3b1b3b9a7"/>
     </section>
     <section name="DatabaseView">
       <key type="bool" value="true" name="arch914a64204d2cb2550752d74dd31e1a13"/>
       <key type="bool" value="true" name="arch914a64204d8bb2550752d74de8861a13"/>
       <key type="bool" value="true" name="ent914a6420478e43554572d74de16414e7"/>
+    </section>
+    <section name="DiagramView">
+      <key type="geometry" value="0,0,10282,4265" name="diag914a6420272e435586b2d74de5f70454"/>
+      <key type="geometry" value="0,0,10281,4265" name="diag914a64204d8bb2550752d74dc8861a13"/>
+      <key type="geometry" value="2192,625,14396,5688" name="diag914a64204d2cb2550752d74db31e1a13"/>
+      <key type="geometry" value="0,0,10278,4264" name="diagd9a1a63a6956b6550c9009c3b1b3b9a7"/>
+      <key type="geometry" value="0,0,15426,6400" name="diag914a64200d5f1e450a81d74d0c149e90"/>
+      <key type="geometry" value="0,0,10280,4264" name="diag914a6420b1102e450a81d74de3249e90"/>
     </section>
   </sections>
 </CONFIGURATION>

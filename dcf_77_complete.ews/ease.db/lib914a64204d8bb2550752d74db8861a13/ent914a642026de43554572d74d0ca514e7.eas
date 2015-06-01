@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon May 04 19:58:00 2015")
+      (PROPERTY "STAMP_TIME" "Mon Jun 01 09:39:36 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1429532002 "Mon Apr 20 14:13:22 2015")
-      (MODIFIED 1430762280 "Mon May 04 19:58:00 2015")
+      (MODIFIED 1433144376 "Mon Jun 01 09:39:36 2015")
     )
     (PORT
       (OBID "eprt914a6420f7de43554572d74d6ca514e7")
@@ -489,7 +489,8 @@
                "				"
                "				end case; "
                "			end if;"
-               " 		end if; "
+               " 		end if;   "
+               " 	end if;"
                " 	"
                "end process;"
                " "
