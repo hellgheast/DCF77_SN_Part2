@@ -18,7 +18,7 @@
 
 architecture rtl of mux_dcf_test is
 
-signal test_vector std_logic_vector(7 downto 0):=x"00";
+signal test_vector : std_logic_vector(7 downto 0):=x"00";
              
 begin
 
@@ -28,6 +28,7 @@ WITH adress_mux_dcf_test SELECT
 	 			 test_vector(7 downto 1) & buffer_full 	WHEN "10",
 	 			 test_vector(7 downto 1) & TEST			WHEN "11",
 	 			 x"FF"			                        WHEN OTHERS;
+	 
 	 			 	
 
 
