@@ -16,8 +16,8 @@
       <key type="bool" value="false" name="StartBrowser"/>
     </section>
     <section name="Markers">
-      <key type="string" value="diag914a64204d2cb2550752d74db31e1a13" name="CurrentDiagram"/>
-      <key type="string" value="design:Toplevel:&lt;Internal>/comp914a64204d2cb2550752d74dc31e1a13" name="CurrentPath"/>
+      <key type="string" value="diag914a64200d5f1e450a81d74d0c149e90" name="CurrentDiagram"/>
+      <key type="string" value="design:DCF77_Receiver_tb:behaviour/compd9a1d64906e3c6558e5209c307f21df6/comp914a6420c1b1e355cd60d74d3083ec03" name="CurrentPath"/>
       <key type="string" value="ent914a64204d2cb2550752d74da31e1a13" name="HdlOutputObject"/>
     </section>
     <section name="DiagramGridVisible">
@@ -33,6 +33,7 @@
       <key type="bool" value="false" name="diag914a6420578e43554572d74d53f414e7"/>
       <key type="bool" value="true" name="diagd9a1a63a6956b6550c9009c3b1b3b9a7"/>
       <key type="bool" value="false" name="diag914a6420b1102e450a81d74de3249e90"/>
+      <key type="bool" value="false" name="diagd9a1d64906e3c6558e5209c3c6f21df6"/>
     </section>
     <section name="Browser">
       <key type="string" value="design.DCF77_Receiver" name="DetailView"/>
@@ -41,11 +42,20 @@
       <key type="int" value="0" name="diag914a64204d2cb2550752d74db31e1a13"/>
       <key type="int" value="0" name="diag914a6420272e435586b2d74de5f70454"/>
       <key type="int" value="0" name="diagd9a1a63a6956b6550c9009c3b1b3b9a7"/>
+      <key type="int" value="0" name="diagd9a1d64906e3c6558e5209c3c6f21df6"/>
     </section>
     <section name="DatabaseView">
       <key type="bool" value="true" name="arch914a64204d2cb2550752d74dd31e1a13"/>
       <key type="bool" value="true" name="arch914a64204d8bb2550752d74de8861a13"/>
       <key type="bool" value="true" name="ent914a6420478e43554572d74de16414e7"/>
+    </section>
+    <section name="DiagramView">
+      <key type="geometry" value="0,0,10282,4265" name="diag914a6420272e435586b2d74de5f70454"/>
+      <key type="geometry" value="0,0,10282,4265" name="diag914a64204d8bb2550752d74dc8861a13"/>
+      <key type="geometry" value="0,0,13533,5885" name="diag914a64204d2cb2550752d74db31e1a13"/>
+      <key type="geometry" value="0,0,10282,4265" name="diagd9a1a63a6956b6550c9009c3b1b3b9a7"/>
+      <key type="geometry" value="0,888,8675,4487" name="diagd9a1d64906e3c6558e5209c3c6f21df6"/>
+      <key type="geometry" value="0,0,15425,6708" name="diag914a64200d5f1e450a81d74d0c149e90"/>
     </section>
   </sections>
 </CONFIGURATION>

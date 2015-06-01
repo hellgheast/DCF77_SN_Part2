@@ -1,0 +1,232 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a1d649f384c6558e5209c381031df6")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Jun 01 14:51:23 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "BCD_7Seg_Converter")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1408 896)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "vincent.meier")
+      (CREATED 1433159743 "Mon Jun 01 13:55:43 2015")
+      (MODIFIED 1433163083 "Mon Jun 01 14:51:23 2015")
+    )
+    (PORT
+      (OBID "eprtd9a1d649e584c6558e5209c3f2031df6")
+      (HDL_IDENT
+        (NAME "time_bc_in")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 152 40 232)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 192)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "time_bc_in(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1d6497984c6558e5209c3a3031df6")
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1d6497984c6558e5209c3d3031df6")
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 728 40 808)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 768)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1d6491055c6558e5209c387331df6")
+      (HDL_IDENT
+        (NAME "time_bc_7seg_lsb")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "6" "0")
+          )
+        )
+      )
+      (GEOMETRY 1368 408 1448 488)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 448)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "time_bc_7seg_lsb(6:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a1d6493055c6558e5209c3d7331df6")
+      (HDL_IDENT
+        (NAME "time_bc_7seg_msb")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "6" "0")
+          )
+        )
+      )
+      (GEOMETRY 1368 536 1448 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "time_bc_7seg_msb(6:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a1d649f384c6558e5209c3c1031df6" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a1d649f384c6558e5209c3c1031df6")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "filed9a1d649f384c6558e5209c3d1031df6")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'BCD_7Seg_Converter'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     clk              : in     std_logic;"
+               "--     reset_n          : in     std_logic;"
+               "--     time_bc_7seg_lsb : out    std_logic_vector(6 downto 0);"
+               "--     time_bc_7seg_msb : out    std_logic_vector(6 downto 0);"
+               "--     time_bc_in       : in     std_logic_vector(7 downto 0));"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of BCD_7Seg_Converter is"
+               ""
+               "begin"
+               ""
+               "P1:process(clk, reset_n)"
+               ""
+               "	begin"
+               "     "
+               "     if reset_n = '1' then"
+               "	 	time_7seg_msb   <= (others => '0');"
+               "	 	time_7seg_lsb  <= (others => '0');"
+               "	 	bc_7seg_msb   <= (others => '0');"
+               "	 	bc_7seg_lsb  <= (others => '0');"
+               ""
+               "	elsif clk'EVENT AND clk = '1' then"
+               "     "
+               "    -- Heures et Minutes"
+               "    "
+               "		case  time_bc_in(7 downto 4) is"
+               "			when \"0000\"=> time_7seg_msb <=\"1111110\";  -- '0'"
+               "			when \"0001\"=> time_7seg_msb <=\"0110000\";  -- '1'"
+               "			when \"0010\"=> time_7seg_msb <=\"1101101\";  -- '2'"
+               "			when \"0011\"=> time_7seg_msb <=\"1111001\";  -- '3'"
+               "			when \"0100\"=> time_7seg_msb <=\"0110011\";  -- '4' "
+               "			when \"0101\"=> time_7seg_msb <=\"1011011\";  -- '5'"
+               "			when \"0110\"=> time_7seg_msb <=\"1011111\";  -- '6'"
+               "			when \"0111\"=> time_7seg_msb <=\"1110000\";  -- '7'"
+               "			when \"1000\"=> time_7seg_msb <=\"1111111\";  -- '8'"
+               "			when \"1001\"=> time_7seg_msb <=\"1111011\";  -- '9'"
+               "			when others=> time_7seg_msb <=\"0000000\"; "
+               "		end case;         "
+               "		"
+               "		"
+               "		case  time_bc_in(3 downto 0) is"
+               "			when \"0000\"=> time_7seg_lsb <=\"1111110\";  -- '0'"
+               "			when \"0001\"=> time_7seg_lsb <=\"0110000\";  -- '1'"
+               "			when \"0010\"=> time_7seg_lsb <=\"1101101\";  -- '2'"
+               "			when \"0011\"=> time_7seg_lsb <=\"1111001\";  -- '3'"
+               "			when \"0100\"=> time_7seg_lsb <=\"0110011\";  -- '4' "
+               "			when \"0101\"=> time_7seg_lsb <=\"1011011\";  -- '5'"
+               "			when \"0110\"=> time_7seg_lsb <=\"1011111\";  -- '6'"
+               "			when \"0111\"=> time_7seg_lsb <=\"1110000\";  -- '7'"
+               "			when \"1000\"=> time_7seg_lsb <=\"1111111\";  -- '8'"
+               "			when \"1001\"=> time_7seg_lsb <=\"1111011\";  -- '9'"
+               "			when others=> time_7seg_lsb <=\"0000000\"; "
+               "		end case;         "
+               " "
+               "		"
+               "	end if;"
+               ""
+               "end process;     "
+               "     "
+               "     "
+               "end architecture rtl ; -- of BCD_7Seg_Converter"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

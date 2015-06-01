@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Jun 01 11:47:28 2015")
+      (PROPERTY "STAMP_TIME" "Mon Jun 01 14:48:43 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,37 +20,12 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1429532002 "Mon Apr 20 14:13:22 2015")
-      (MODIFIED 1433152048 "Mon Jun 01 11:47:28 2015")
-    )
-    (PORT
-      (OBID "eprt914a6420f7de43554572d74d6ca514e7")
-      (HDL_IDENT
-        (NAME "bit_count_7_seg")
-        (USERNAME 1)
-        (ATTRIBUTES
-          (MODE 2)
-          (CONSTRAINT
-            (DIRECTION 1)
-            (RANGE "7" "0")
-          )
-        )
-      )
-      (GEOMETRY 2264 152 2344 232)
-      (SIDE 1)
-      (LABEL
-        (POSITION 2240 192)
-        (SCALE 96)
-        (COLOR_LINE 0)
-        (SIDE 1)
-        (ALIGNMENT 5)
-        (FORMAT 35)
-        (TEXT "bit_count_7_seg(7:0)")
-      )
+      (MODIFIED 1433162923 "Mon Jun 01 14:48:43 2015")
     )
     (PORT
       (OBID "eprt914a642088de43554572d74daca514e7")
       (HDL_IDENT
-        (NAME "hour_minutes_out")
+        (NAME "time_bc_out")
         (USERNAME 1)
         (ATTRIBUTES
           (MODE 2)
@@ -69,7 +44,7 @@
         (SIDE 1)
         (ALIGNMENT 5)
         (FORMAT 35)
-        (TEXT "hour_minutes_out(7:0)")
+        (TEXT "time_bc_out(7:0)")
       )
     )
     (PORT
@@ -414,21 +389,20 @@
                "-- Copy of the interface declaration:"
                "-- "
                "--   port ("
-               "--     FrameComplete    : out    std_logic;"
-               "--     FrameIncorrect   : out    std_logic;"
-               "--     FrameReception   : out    std_logic;"
-               "--     adress           : in     std_logic_vector(2 downto 0);"
-               "--     adress_program   : in     std_logic_vector(9 downto 0);"
-               "--     bit_count_7_seg  : out    std_logic_vector(7 downto 0);"
-               "--     chip_select      : in     std_logic;"
-               "--     clk              : in     std_logic;"
-               "--     data_in          : in     std_logic_vector(7 downto 0);"
-               "--     debug_leds       : out    std_logic_vector(7 downto 0);"
-               "--     hour_minutes_out : out    std_logic_vector(7 downto 0);"
-               "--     program_counter  : out    std_logic_vector(7 downto 0);"
-               "--     reset_n          : in     std_logic;"
-               "--     switch           : in     std_logic_vector(1 downto 0);"
-               "--     write            : in     std_logic);"
+               "--     FrameComplete   : out    std_logic;"
+               "--     FrameIncorrect  : out    std_logic;"
+               "--     FrameReception  : out    std_logic;"
+               "--     adress          : in     std_logic_vector(2 downto 0);"
+               "--     adress_program  : in     std_logic_vector(9 downto 0);"
+               "--     chip_select     : in     std_logic;"
+               "--     clk             : in     std_logic;"
+               "--     data_in         : in     std_logic_vector(7 downto 0);"
+               "--     debug_leds      : out    std_logic_vector(7 downto 0);"
+               "--     program_counter : out    std_logic_vector(7 downto 0);"
+               "--     reset_n         : in     std_logic;"
+               "--     switch          : in     std_logic_vector(1 downto 0);"
+               "--     time_bc_out     : out    std_logic_vector(7 downto 0);"
+               "--     write           : in     std_logic);"
                "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
                ""
@@ -491,15 +465,15 @@
                " 	end if;"
                " 	"
                "end process;"
-               " "
-               "bit_count_7_seg	<= Reg_bit_count; "
+               ""
                "debug_leds		<= Reg_debug_leds;"
                "FrameComplete 	<= '1' WHEN Reg_status(1 downto 0) = \"10\" ELSE '0';"
                "FrameIncorrect 	<= (Reg_status(2) XOR Reg_status(5)) OR (Reg_status(3) XOR Reg_status(6))OR (Reg_status(4) XOR Reg_status(7));"
                "FrameReception 	<= '1' WHEN Reg_status(1 downto 0) = \"01\" ELSE '0';"
                ""
-               "hour_minutes_out	<= Reg_hour when switch = \"00\" else	"
-               "				   Reg_minutes when switch = \"10\" else"
+               "time_bc_out		<= Reg_hour when switch(1) = '0' else	"
+               "				   Reg_minutes when switch(1) = '1' else"
+               "				   Reg_bit_count when switch(0) = '1'"
                "				   (others => '0');						"
                "		"
                "	"

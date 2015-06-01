@@ -11,15 +11,15 @@
 --     FrameIncorrect   : in     std_logic;
 --     FrameReception   : in     std_logic;
 --     TEST             : out    std_logic;
+--     bit_count_7_seg  : in     std_logic_vector(7 downto 0);
 --     clk              : out    std_logic;
 --     dcf_77_in        : out    std_logic;
 --     debug_leds       : in     std_logic_vector(7 downto 0);
+--     hour_minutes_out : in     std_logic_vector(7 downto 0);
 --     program_counter  : in     std_logic_vector(7 downto 0);
 --     reset_n          : out    std_logic;
 --     serial_out       : in     std_logic;
---     switch           : out    std_logic_vector(1 downto 0);
---     time_bc_7seg_lsb : in     std_logic_vector(6 downto 0);
---     time_bc_7seg_msb : in     std_logic_vector(6 downto 0));
+--     switch           : out    std_logic_vector(1 downto 0));
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
 
@@ -86,16 +86,6 @@ run: PROCESS
          	ASSERT FALSE REPORT "Etat du signal non correct" SEVERITY WARNING;
 	   END IF;
   END test_vecteur;         
-                       
-   --********** PROCEDURE "test_segment" **********
-  PROCEDURE test_segment(signal_test, value: IN std_logic_vector(6 DOWNTO 0); erreur : IN integer) IS 
-	BEGIN
-	   IF signal_test/= value THEN
-         	mark_error <= '1', '0' AFTER 1 ns;
-         	error_number <= erreur;
-         	ASSERT FALSE REPORT "Etat du signal non correct" SEVERITY WARNING;
-	   END IF;
-  END test_vecteur;
   
   --********** PROCEDURE "DCF_bit" **********
   PROCEDURE DCF_bit(state_bit: IN std_logic) IS 
@@ -167,12 +157,9 @@ BEGIN --debut de la simulation temps t=0ns
 	 DCF_bit('0');
 	 DCF_bit('1');
 	      
-	 -- Test de bitcount et de réception de trame            
- 	 switch <= "01"; -- Choix = Bitcount
- 	  
-	 test_segment(time_bc_7seg_lsb, "0110011", 1); -- bit 14
-	 test_segment(time_bc_7seg_msb, "0110000", 2); -- bit 14 
-	 test_signal(FrameReception, '1', 3);
+	 -- Test de bitcount et de réception de trame    
+	 test_vecteur(bit_count_7_seg, "00001110", 1); -- bit 14 
+	 test_signal(FrameReception, '1', 2);
 	 
 	 -- bits 15-19 (divers)
 	 DCF_bit('0'); -- bit d'appel 
@@ -195,9 +182,8 @@ BEGIN --debut de la simulation temps t=0ns
 	 DCF_bit('0'); -- Parité paire
 	 
 	 -- Test de bitcount et de réception de trame       
-	 test_segment(time_bc_7seg_lsb, "1111111", 4); -- bit 28
-	 test_segment(time_bc_7seg_msb, "1101101", 5); -- bit 28      
-	 test_signal(FrameReception, '1', 6);
+	 test_vecteur(bit_count_7_seg, "00011100", 3); -- bit 28      
+	 test_signal(FrameReception, '1', 4);
 	                 
 	 -- bits 29-35 (heures)
 	 DCF_bit('1');
@@ -217,9 +203,8 @@ BEGIN --debut de la simulation temps t=0ns
 	 DCF_bit('0');
 	 
 	 -- Test de bitcount et de réception de trame       
-	 test_segment(time_bc_7seg_lsb, "0110000", 7); -- bit 41
-	 test_segment(time_bc_7seg_msb, "0110011", 8); -- bit 41   
-	 test_signal(FrameReception, '1', 9);
+	 test_vecteur(bit_count_7_seg, "00101001", 5); -- bit 41   
+	 test_signal(FrameReception, '1', 6);
 	 
 	 -- bits 42-44 (jour de la semaine) : 1 = Lundi, 7 = Dimanche
 	 DCF_bit('1');
@@ -234,9 +219,8 @@ BEGIN --debut de la simulation temps t=0ns
 	 DCF_bit('0');  
 	 
 	 -- Test de bitcount et de réception de trame       
-	 test_segment(time_bc_7seg_lsb, "1111011", 10); -- bit 49
-	 test_segment(time_bc_7seg_msb, "0110011", 11); -- bit 49 
-	 test_signal(FrameReception, '1', 12);
+	 test_vecteur(bit_count_7_seg, "00110001", 7); -- bit 49 
+	 test_signal(FrameReception, '1', 8);
 	 
 	 -- bits 50-57 (année dans le siècle)
 	 DCF_bit('1');
@@ -252,8 +236,8 @@ BEGIN --debut de la simulation temps t=0ns
 	 DCF_end; 	   -- bit de fin de trame, aucune modulation
 	     
 	 -- Test de trame complete et de réception de trame  
-	 test_signal(FrameComplete, '1', 13);   
-	 test_signal(FrameReception, '0', 14);
+	 test_signal(FrameComplete, '1', 9);   
+	 test_signal(FrameReception, '0', 10);
 
 
 
@@ -264,14 +248,12 @@ BEGIN --debut de la simulation temps t=0ns
  	switch <= "00"; -- Choix = minutes                             
  	
  	sim_cycle(1);
- 	test_segment(time_bc_7seg_lsb, "1111110", 15); -- 30 minutes 
-	test_segment(time_bc_7seg_msb, "1111001", 16); -- 30 minutes
+ 	test_vecteur(hour_minutes_out, "00110000", 11) -- 30 minutes; 
  	
  	
  	sim_cycle(1);
- 	switch <= "10"; -- Choix = heures 
- 	test_segment(time_bc_7seg_lsb, "1111001", 17); -- 23 heures;
-	test_segment(time_bc_7seg_msb, "1101101", 18); -- 23 heures;
+ 	switch <= "10"; -- Choix = heures
+ 	test_vecteur(hour_minutes_out, "00100011", 12) -- 23 heures;
      
     
  --	sim_cycle(1);    

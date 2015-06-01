@@ -1,0 +1,16 @@
+-- EASE/HDL begin --------------------------------------------------------------
+-- 
+-- Architecture 'rtl' of entity 'BCD_7Seg_Converter'.
+-- 
+--------------------------------------------------------------------------------
+-- 
+-- Copy of the interface declaration:
+-- 
+-- EASE/HDL end ----------------------------------------------------------------
+
+architecture rtl of BCD_7Seg_Converter is
+
+begin
+
+end architecture rtl ; -- of BCD_7Seg_Converter
+

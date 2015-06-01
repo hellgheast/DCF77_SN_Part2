@@ -7,21 +7,20 @@
 -- Copy of the interface declaration:
 -- 
 --   port (
---     FrameComplete    : out    std_logic;
---     FrameIncorrect   : out    std_logic;
---     FrameReception   : out    std_logic;
---     adress           : in     std_logic_vector(2 downto 0);
---     adress_program   : in     std_logic_vector(9 downto 0);
---     bit_count_7_seg  : out    std_logic_vector(7 downto 0);
---     chip_select      : in     std_logic;
---     clk              : in     std_logic;
---     data_in          : in     std_logic_vector(7 downto 0);
---     debug_leds       : out    std_logic_vector(7 downto 0);
---     hour_minutes_out : out    std_logic_vector(7 downto 0);
---     program_counter  : out    std_logic_vector(7 downto 0);
---     reset_n          : in     std_logic;
---     switch           : in     std_logic_vector(1 downto 0);
---     write            : in     std_logic);
+--     FrameComplete   : out    std_logic;
+--     FrameIncorrect  : out    std_logic;
+--     FrameReception  : out    std_logic;
+--     adress          : in     std_logic_vector(2 downto 0);
+--     adress_program  : in     std_logic_vector(9 downto 0);
+--     chip_select     : in     std_logic;
+--     clk             : in     std_logic;
+--     data_in         : in     std_logic_vector(7 downto 0);
+--     debug_leds      : out    std_logic_vector(7 downto 0);
+--     program_counter : out    std_logic_vector(7 downto 0);
+--     reset_n         : in     std_logic;
+--     switch          : in     std_logic_vector(1 downto 0);
+--     time_bc_out     : out    std_logic_vector(7 downto 0);
+--     write           : in     std_logic);
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
 
@@ -84,15 +83,15 @@ P1:process(clk, reset_n)
  	end if;
  	
 end process;
- 
-bit_count_7_seg	<= Reg_bit_count; 
+
 debug_leds		<= Reg_debug_leds;
 FrameComplete 	<= '1' WHEN Reg_status(1 downto 0) = "10" ELSE '0';
 FrameIncorrect 	<= (Reg_status(2) XOR Reg_status(5)) OR (Reg_status(3) XOR Reg_status(6))OR (Reg_status(4) XOR Reg_status(7));
 FrameReception 	<= '1' WHEN Reg_status(1 downto 0) = "01" ELSE '0';
 
-hour_minutes_out	<= Reg_hour when switch = "00" else	
-				   Reg_minutes when switch = "10" else
+time_bc_out		<= Reg_hour when switch(1) = '0' else	
+				   Reg_minutes when switch(1) = '1' else
+				   Reg_bit_count when switch(0) = '1'
 				   (others => '0');						
 		
 	
