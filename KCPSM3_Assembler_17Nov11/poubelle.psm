@@ -1,0 +1,301 @@
+	; ma premiere poubelle :D
+	; Benjamin & Julian
+	; Version 2322943.11223.9998.5456.4
+	; Date : 20.04.2015
+	;
+	; Declaration des poubelles
+	;
+	;Déclaration des zones mémoires
+	;Une zone mémoire est en haxadécimal (son adresse) !!!
+	CONSTANT SECONDES, 00
+	CONSTANT MINUTES, 01
+	CONSTANT HEURE, 02
+	CONSTANT JOUR_MOIS, 03
+	CONSTANT JOUR_SEM, 04
+	CONSTANT MOIS, 05
+	CONSTANT ANNEE, 06
+	CONSTANT PRESCALER_MSB, 07
+	CONSTANT PRESCALER_LSB, 08
+	CONSTANT STATUS, 09
+	CONSTANT UART_BUFFER, 0A
+	CONSTANT UART_SETTING, 0B
+	CONSTANT HMI_DIGIT0, 0C
+	CONSTANT HMI_DEBUG, 10; 16 en décimal !!!
+	CONSTANT HMI_IO, 11; 17 en décimal !!!
+	
+	;Permet d'assigner un nouveau nom aux 16 registres
+	;COmme ça le programme peut y accéder directement par le nom 
+	;NAMEREG s0, SECONDES   ;used to pass data to and from the UART
+	;NAMEREG s1, MINUTES   ;used to pass data to and from the UART
+	;NAMEREG s2, HEURE   ;used to pass data to and from the UART
+	;NAMEREG s3, JOUR_MOIS   ;used to pass data to and from the UART
+	;NAMEREG s4, JOUR_SEM   ;used to pass data to and from the UART
+	;NAMEREG s5, MOIS   ;used to pass data to and from the UART
+	;NAMEREG s6, ANNEE   ;used to pass data to and from the UART
+	;NAMEREG s7, PRESCALER_MSB   ;used to pass data to and from the UART
+	;NAMEREG s8, PRESCALER_LSB   ;used to pass data to and from the UART
+	;NAMEREG s9, STATUS   ;used to pass data to and from the UART
+	;NAMEREG sA, UART_BUFFER   ;used to pass data to and from the UART
+	;NAMEREG sB, UART_SETTING   ;used to pass data to and from the UART
+	;NAMEREG sC, HMI_DIGIT0   ;used to pass data to and from the UART
+	;NAMEREG sD, HMI_DEBUG   ;used to pass data to and from the UART
+	;NAMEREG sE, HMI_IO   ;used to pass data to and from the UART
+	;NAMEREG sE,    ;used to pass data to and from the UART
+	;NAMEREG sF,    ;used to pass data to and from the UART
+	;
+	;
+	;ASCII table
+	;
+	CONSTANT character_a, 61
+	CONSTANT character_b, 62
+	CONSTANT character_c, 63
+	CONSTANT character_d, 64
+	CONSTANT character_e, 65
+	CONSTANT character_f, 66
+	CONSTANT character_g, 67
+	CONSTANT character_h, 68
+	CONSTANT character_i, 69
+	CONSTANT character_j, 6A
+	CONSTANT character_k, 6B
+	CONSTANT character_l, 6C
+	CONSTANT character_m, 6D
+	CONSTANT character_n, 6E
+	CONSTANT character_o, 6F
+	CONSTANT character_p, 70
+	CONSTANT character_q, 71
+	CONSTANT character_r, 72
+	CONSTANT character_s, 73
+	CONSTANT character_t, 74
+	CONSTANT character_u, 75
+	CONSTANT character_v, 76
+	CONSTANT character_w, 77
+	CONSTANT character_x, 78
+	CONSTANT character_y, 79
+	CONSTANT character_z, 7A
+	CONSTANT character_A, 41
+	CONSTANT character_B, 42
+	CONSTANT character_C, 43
+	CONSTANT character_D, 44
+	CONSTANT character_E, 45
+	CONSTANT character_F, 46
+	CONSTANT character_G, 47
+	CONSTANT character_H, 48
+	CONSTANT character_I, 49
+	CONSTANT character_J, 4A
+	CONSTANT character_K, 4B
+	CONSTANT character_L, 4C
+	CONSTANT character_M, 4D
+	CONSTANT character_N, 4E
+	CONSTANT character_O, 4F
+	CONSTANT character_P, 50
+	CONSTANT character_Q, 51
+	CONSTANT character_R, 52
+	CONSTANT character_S, 53
+	CONSTANT character_T, 54
+	CONSTANT character_U, 55
+	CONSTANT character_V, 56
+	CONSTANT character_W, 57
+	CONSTANT character_X, 58
+	CONSTANT character_Y, 59
+	CONSTANT character_Z, 5A
+	CONSTANT character_0, 30
+	CONSTANT character_1, 31
+	CONSTANT character_2, 32
+	CONSTANT character_3, 33
+	CONSTANT character_4, 34
+	CONSTANT character_5, 35
+	CONSTANT character_6, 36
+	CONSTANT character_7, 37
+	CONSTANT character_8, 38
+	CONSTANT character_9, 39
+	CONSTANT character_colon, 3A
+	CONSTANT character_semi_colon, 3B
+	CONSTANT character_less_than, 3C
+	CONSTANT character_greater_than, 3E
+	CONSTANT character_equals, 3D
+	CONSTANT character_space, 20
+	CONSTANT character_CR, 0D                ;carriage return
+	CONSTANT character_question, 3F          ;'?'
+	CONSTANT character_dollar, 24
+	CONSTANT character_BS, 08                ;Back Space command character
+	; end ASCII table
+	;
+	;
+	; Initialisation de la poubelle
+	;
+cold_start :
+	;Réglage du Prescaler
+	ENABLE INTERRUPT;Activation de l'interruption !
+	LOAD s0, MSB_PRESCALER ; Remplacer MSB_PRescaler par la valeur nécéssaire :)
+	LOAD s1, LSB_PRESCALER ; Remplacer LSB_PRescaler par la valeur nécéssaire :)
+	OUTPUT s0, PRESCALER_MSB
+	OUTPUT s1, PRESCALER_LSB
+	;
+	; Execution de la poubelle
+	; ADDRESS est la commande d'interruption, permet de sauter à une nouvelle adresse en Hexadécimal: 000 -> 3FF
+	; Attention, si on veut utiliser les interrupts, éventuellement un change du Schéma va s'imposer
+	;
+	;OUTPUT permet de balancer des données sur outPort et l'adresse sur PORT_ID
+	;OUTPUT Data, Adress
+	;INPUT permet de lire justement depuis le IP_PORT et de donner l'adresse sur PORT_ID
+	;INPUT Data, Adress
+	;
+	;STORE ET LE FETCH, sont l'équivalent de push, pull dans une pile de 64bytes
+main :
+	; equivalent du main
+	INPUT s0, SECONDES
+	OUTPUT s0, HMI_DEBUG;Pour voir l'avancement du programme
+	LOAD s1, 0;Reset du mini-buffer
+	INPUT s0, STATUS;Lecture du registre Status de IP_DCF77
+	TEST s0,1;Test du premier bit
+	CALL NZ, mets_haut_capte_signal
+	TEST s0, 2
+	CALL Z, Incremente_un;Incrémente deux fois si la trame est incorrecte
+	CALL Incremente_un
+	
+			; demande à l'IP si data ready ?
+				; non ? --> 
+					; allume LED rouge
+					; recommence...
+				; oui ? -->
+					; allume LED verte
+					; lit le registre "seconde"
+					; afficher le registre "seconde"
+					; DILSWITCH ACTIF ?
+						; non ? -->
+							; lit le registre "minute"
+							; affiche le registre "minute"
+						; oui ? -->
+							; lit le registre "heure"
+							; affiche le registre "heure"
+	JUMP main
+	; end prompt
+mets_haut_capte_signal:
+	LOAD s1, 4;Active le clignotement de réception de la trame
+	RETURN
+Incremente_un:
+	ADD s1, 1
+	RETURN
+	;	
+	; Envoie sur l'UART
+	;
+send_to_UART: 
+	INPUT s0, UART_status_port               ;test Tx_FIFO buffer
+	TEST s0, tx_full
+	JUMP Z, UART_write
+	CALL update_time                         ;Perform useful operation whilst waiting
+	JUMP send_to_UART				
+	; end send_to_UART
+	;
+	;
+	; Ecrire sur la communication UART
+	;
+UART_write_Buffer:
+	OUTPUT UART_data, UART_BUFFER
+	RETURN
+UART_send:
+	OUTPUT 01 , UART_SETTING
+	RETURN;Attention, je dépile donc mettre dans la PILE !!!
+	
+	
+send_Time: 
+	LOAD UART_data, character_T
+	CALL send_to_UART
+	LOAD UART_data, character_i
+	CALL send_to_UART
+	LOAD UART_data, character_m
+	CALL send_to_UART
+	LOAD UART_data, character_e
+	CALL send_to_UART
+	LOAD UART_data, character_colon
+	CALL send_to_UART
+	LOAD UART_data, character_space
+	CALL send_to_UART
+	;
+	; on va s'arranger pour recevoir les heures
+	; les convertir en CHAR
+	; on va s'arranger pour recevoir les minutes
+	; les convertir en CHAR
+	; on va s'arranger pour recevoir les secondes
+	; les convertir en CHAR
+	;
+	RETURN
+	; end send_Time
+	; 
+	;
+	; Affichage de la date
+send_Date:
+	LOAD UART_data, character_D
+	CALL send_to_UART
+	LOAD UART_data, character_a
+	CALL send_to_UART
+	LOAD UART_data, character_t
+	CALL send_to_UART
+	LOAD UART_data, character_e
+	CALL send_to_UART
+	LOAD UART_data, character_colon
+	CALL send_to_UART
+	LOAD UART_data, character_space
+	CALL send_to_UART
+	;
+	; on va s'arranger pour recevoir le jour
+	; les convertir en CHAR
+	; on va s'arranger pour recevoir le mois
+	; les convertir en CHAR
+	; on va s'arranger pour recevoir l'année
+	; les convertir en CHAR
+	;
+	RETURN
+	; 
+	;		
+;Attention ceci est un code d'exemple de comment faire, il faudra l'adapter à notre code !!!
+;Au lieu d'avoir une quelconque String dans la mémoire on utilisera le buffer de UART.	
+BDC_to_ASCII:;Utilisation de sF pour la conversion 8 bit
+	time_to_ASCII: 
+	LOAD s2, ?                    ;location for string
+	FETCH s0, (store_pointer)      ;read hours value
+	CALL decimal_to_ASCII          ;convert to ASCII
+	STORE s1, (s2)                 ;write hours to string
+	ADD s2, 01
+	STORE s0, (s2)
+	ADD s2, 01
+	LOAD s0, character_colon                 ;write ':' to string
+	STORE s0, (s2)
+	ADD s2, 01
+	ADD store_pointer, 01                    ;move to minutes
+	FETCH s0, (store_pointer)                ;read minutes value
+	CALL decimal_to_ASCII                    ;convert to ASCII
+	STORE s1, (s2)                           ;write minutes to string
+	ADD s2, 01
+	STORE s0, (s2)
+	ADD s2, 01
+	LOAD s0, character_colon                 ;write ':' to string
+	STORE s0, (s2)
+	ADD s2, 01
+	ADD store_pointer, 01                    ;move to seconds
+	FETCH s0, (store_pointer)                ;read seconds value
+	CALL decimal_to_ASCII                    ;convert to ASCII
+	STORE s1, (s2)                           ;write seconds to string
+	ADD s2, 01
+	STORE s0, (s2)
+	ADD s2, 01
+	LOAD s0, character_CR                    ;finish string with carriage return
+	STORE s0, (s2)
+	RETURN
+;Convertit la décimal en ASCII
+decimal_to_ASCII: 
+	LOAD s1, 30                          ;load 'tens' counter with ASCII for '0'
+test_des_dizaines: ;s0 Contient la valeur à convertir des dizaines
+	ADD s1, 01                           ;increment 'tens' value
+	SUB s0, 0A                           ;try to subtract 10 from the supplied value
+	JUMP NC, test_des_dizaines           ;repeat if subtraction was possible without underflow.
+	SUB s1, 01                           ;'tens' value one less ten due to underflow
+	ADD s0, 3A                           ;restore units value (the remainder) and convert to ASCII
+	RETURN
+	
+JUMP cold_start; END
+Interruption:
+
+RETURNI	ENABLE; Fin de l'interruption et réactivation de l'interuption
+ADRESS 3FF
+JUMP Interruption;Permet de d'aller au vecteur d'interruption !!					
