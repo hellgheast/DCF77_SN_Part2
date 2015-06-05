@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Jun 01 14:58:32 2015")
+      (PROPERTY "STAMP_TIME" "Fri Jun 05 19:20:13 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "vincent.meier")
+      (DESIGNER "mohammed.bensalah")
       (CREATED 1433157216 "Mon Jun 01 13:13:36 2015")
-      (MODIFIED 1433163512 "Mon Jun 01 14:58:32 2015")
+      (MODIFIED 1433524812 "Fri Jun 05 19:20:12 2015")
     )
     (PORT
       (OBID "eprtd9a1d64906e3c6558e5209c325f21df6")
@@ -412,8 +412,6 @@
                "   	switch		<= \"00\"; "
                " 	test 		<= '0';"
                " 	dcf_77_in   <= '0';"
-               "	data_in     <= (OTHERS => 'Z');    "
-               ""
                "  END init;"
                ""
                "  --********** PROCEDURE \"test_signal\" **********"
@@ -444,7 +442,7 @@
                "         	error_number <= erreur;"
                "         	ASSERT FALSE REPORT \"Etat du signal non correct\" SEVERITY WARNING;"
                "	   END IF;"
-               "  END test_vecteur;"
+               "  END test_segment;"
                "  "
                "  --********** PROCEDURE \"DCF_bit\" **********"
                "  PROCEDURE DCF_bit(state_bit: IN std_logic) IS "

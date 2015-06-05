@@ -63,8 +63,6 @@ run: PROCESS
    	switch		<= "00"; 
  	test 		<= '0';
  	dcf_77_in   <= '0';
-	data_in     <= (OTHERS => 'Z');    
-
   END init;
 
   --********** PROCEDURE "test_signal" **********
@@ -95,7 +93,7 @@ run: PROCESS
          	error_number <= erreur;
          	ASSERT FALSE REPORT "Etat du signal non correct" SEVERITY WARNING;
 	   END IF;
-  END test_vecteur;
+  END test_segment;
   
   --********** PROCEDURE "DCF_bit" **********
   PROCEDURE DCF_bit(state_bit: IN std_logic) IS 

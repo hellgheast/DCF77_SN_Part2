@@ -3,16 +3,16 @@
   (ENTITY
     (OBID "entd9a1d6494056c6550c7209c3a6b76542")
     (PROPERTIES
-      (PROPERTY "ExternalFileId" "hdlfd9a1d6494056c6550c7209c396b76542")
-      (PROPERTY "HDL_FILENAME" "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN_Part2/KCPSM3_Assembler_17Nov11/optimus_prime.vhd")
-      (PROPERTY "IMPORTED_LAST" "1433167108")
+      (PROPERTY "ExternalFileId" "hdlf914a64203f5d1755c8a2d74da075db46")
+      (PROPERTY "HDL_FILENAME" "C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/KCPSM3_Assembler_17Nov11/optimus_prime.vhd")
+      (PROPERTY "IMPORTED_LAST" "1433523699")
       (PROPERTY "PORTORDER" "4")
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Jun 01 16:00:30 2015")
+      (PROPERTY "STAMP_TIME" "Fri Jun 05 19:04:11 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
-      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1433167076")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1433166999")
     )
     (HDL_IDENT
       (NAME "optimus_prime")
@@ -23,9 +23,9 @@
     (HDL 1)
     (EXTERNAL 1)
     (OBJSTAMP
-      (DESIGNER "vincent.meier")
+      (DESIGNER "mohammed.bensalah")
       (CREATED 1433167108 "Mon Jun 01 15:58:28 2015")
-      (MODIFIED 1433167230 "Mon Jun 01 16:00:30 2015")
+      (MODIFIED 1433523851 "Fri Jun 05 19:04:11 2015")
     )
     (PACKAGE_USE
       (PACKAGE_USE
@@ -121,10 +121,10 @@
         (TEXT "clk")
       )
     )
-    (ARCH_DECLARATION 2 "archd9a1d6495056c6550c7209c307b76542" "low_level_definition")
+    (ARCH_DECLARATION 2 "arch914a64204f5d1755c8a2d74db075db46" "low_level_definition")
   )
   (ARCH_DEFINITION
-    (OBID "archd9a1d6495056c6550c7209c307b76542")
+    (OBID "arch914a64204f5d1755c8a2d74db075db46")
     (HDL_IDENT
       (NAME "low_level_definition")
       (USERNAME 1)
@@ -132,7 +132,7 @@
     (TYPE 2)
     (HDL_FILE
       (VHDL_FILE
-        (OBID "filed9a1d649e756c6550c7209c3b9b76542")
+        (OBID "file914a6420b86d1755c8a2d74d0775db46")
         (NAME "low_level_definition.vhd")
         (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
                "-- "

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="./isim.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="dcf77_receiver_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/dcf77_receiver_tb/dcf_77_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dcf_77_in</obj_property>
+      <obj_property name="ObjectShortName">dcf_77_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/reset_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/framecomplete" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">framecomplete</obj_property>
+      <obj_property name="ObjectShortName">framecomplete</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/frameincorrect" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">frameincorrect</obj_property>
+      <obj_property name="ObjectShortName">frameincorrect</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/framereception" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">framereception</obj_property>
+      <obj_property name="ObjectShortName">framereception</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/switch" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">switch[1:0]</obj_property>
+      <obj_property name="ObjectShortName">switch[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/serial_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">serial_out</obj_property>
+      <obj_property name="ObjectShortName">serial_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/test" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">test</obj_property>
+      <obj_property name="ObjectShortName">test</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/debug_leds" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">debug_leds[7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_leds[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/program_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">program_counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">program_counter[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/time_bc_7seg_msb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">time_bc_7seg_msb[6:0]</obj_property>
+      <obj_property name="ObjectShortName">time_bc_7seg_msb[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/time_bc_7seg_lsb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">time_bc_7seg_lsb[6:0]</obj_property>
+      <obj_property name="ObjectShortName">time_bc_7seg_lsb[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/stimuli/sim_end" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_end</obj_property>
+      <obj_property name="ObjectShortName">sim_end</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/stimuli/mark_error" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mark_error</obj_property>
+      <obj_property name="ObjectShortName">mark_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/stimuli/error_number" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">error_number</obj_property>
+      <obj_property name="ObjectShortName">error_number</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/stimuli/clk_gen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_gen</obj_property>
+      <obj_property name="ObjectShortName">clk_gen</obj_property>
+   </wvobject>
+</wave_config>

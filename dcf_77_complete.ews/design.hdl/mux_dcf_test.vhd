@@ -4,9 +4,9 @@
 --
 -- Ease library  : design
 -- HDL library   : design
--- Host name     : INF13-MEIERV
--- User name     : vincent.meier
--- Time stamp    : Tue Jun 02 10:12:22 2015
+-- Host name     : INF13-BENSALAHM
+-- User name     : mohammed.bensalah
+-- Time stamp    : Fri Jun 05 19:19:26 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.mux_dcf_test
--- Last modified : Mon Jun 01 11:53:30 2015.
+-- Last modified : Fri Jun 05 19:04:11 2015.
 --------------------------------------------------------------------------------
 
 
@@ -29,15 +29,13 @@ entity mux_dcf_test is
   port (
     TEST                : in     std_logic;
     adress_mux_dcf_test : in     std_logic_vector(1 downto 0);
-    buffer_full         : in     std_logic;
     data_dcf            : in     std_logic_vector(7 downto 0);
-    data_out            : out    std_logic_vector(7 downto 0);
-    start_acq           : in     std_logic);
+    data_out            : out    std_logic_vector(7 downto 0));
 end entity mux_dcf_test;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.mux_dcf_test.rtl
--- Last modified : Mon Jun 01 11:53:30 2015.
+-- Last modified : Fri Jun 05 19:04:11 2015.
 --------------------------------------------------------------------------------
 
 
@@ -48,11 +46,8 @@ signal test_vector : std_logic_vector(7 downto 0):=x"00";
 begin
 
 WITH adress_mux_dcf_test SELECT
-	 data_out <= data_dcf								WHEN "00",
-	 			 test_vector(7 downto 1) & start_acq 	WHEN "01",
-	 			 test_vector(7 downto 1) & buffer_full 	WHEN "10",
-	 			 test_vector(7 downto 1) & TEST			WHEN "11",
-	 			 x"FF"			                        WHEN OTHERS;
+	 data_out <= test_vector(7 downto 1) & TEST 	WHEN "01",
+	 			 data_dcf WHEN OTHERS;
 	 
 	 			 	
 

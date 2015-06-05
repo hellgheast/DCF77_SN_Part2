@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Jun 01 11:53:30 2015")
+      (PROPERTY "STAMP_TIME" "Fri Jun 05 19:04:11 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "vincent.meier")
+      (DESIGNER "mohammed.bensalah")
       (CREATED 1430136188 "Mon Apr 27 14:03:08 2015")
-      (MODIFIED 1433152410 "Mon Jun 01 11:53:30 2015")
+      (MODIFIED 1433523851 "Fri Jun 05 19:04:11 2015")
     )
     (PORT
       (OBID "eprt914a64202a52e355cd60d74d6bf3ec03")
@@ -129,54 +129,6 @@
         (TEXT "data_out(7:0)")
       )
     )
-    (PORT
-      (OBID "eprt914a6420a3e3e355cd60d74d3834ec03")
-      (PROPERTIES
-        (PROPERTY "SensitivityList" "Yes")
-      )
-      (HDL_IDENT
-        (NAME "start_acq")
-        (USERNAME 1)
-        (ATTRIBUTES
-          (MODE 1)
-        )
-      )
-      (GEOMETRY -40 408 40 488)
-      (SIDE 3)
-      (LABEL
-        (POSITION 64 448)
-        (SCALE 96)
-        (COLOR_LINE 0)
-        (SIDE 3)
-        (ALIGNMENT 3)
-        (FORMAT 35)
-        (TEXT "start_acq")
-      )
-    )
-    (PORT
-      (OBID "eprt914a6420d4e3e355cd60d74da834ec03")
-      (PROPERTIES
-        (PROPERTY "SensitivityList" "Yes")
-      )
-      (HDL_IDENT
-        (NAME "buffer_full")
-        (USERNAME 1)
-        (ATTRIBUTES
-          (MODE 1)
-        )
-      )
-      (GEOMETRY -40 536 40 616)
-      (SIDE 3)
-      (LABEL
-        (POSITION 64 576)
-        (SCALE 96)
-        (COLOR_LINE 0)
-        (SIDE 3)
-        (ALIGNMENT 3)
-        (FORMAT 35)
-        (TEXT "buffer_full")
-      )
-    )
     (ARCH_DECLARATION 2 "arch914a6420c752e355cd60d74d3bf3ec03" "rtl")
   )
   (ARCH_DEFINITION
@@ -201,10 +153,8 @@
                "--   port ("
                "--     TEST                : in     std_logic;"
                "--     adress_mux_dcf_test : in     std_logic_vector(1 downto 0);"
-               "--     buffer_full         : in     std_logic;"
                "--     data_dcf            : in     std_logic_vector(7 downto 0);"
-               "--     data_out            : out    std_logic_vector(7 downto 0);"
-               "--     start_acq           : in     std_logic);"
+               "--     data_out            : out    std_logic_vector(7 downto 0));"
                "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
                ""
@@ -215,11 +165,8 @@
                "begin"
                ""
                "WITH adress_mux_dcf_test SELECT"
-               "	 data_out <= data_dcf								WHEN \"00\","
-               "	 			 test_vector(7 downto 1) & start_acq 	WHEN \"01\","
-               "	 			 test_vector(7 downto 1) & buffer_full 	WHEN \"10\","
-               "	 			 test_vector(7 downto 1) & TEST			WHEN \"11\","
-               "	 			 x\"FF\"			                        WHEN OTHERS;"
+               "	 data_out <= test_vector(7 downto 1) & TEST 	WHEN \"01\","
+               "	 			 data_dcf WHEN OTHERS;"
                "	 "
                "	 			 	"
                ""

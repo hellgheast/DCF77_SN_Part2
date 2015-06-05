@@ -4,9 +4,9 @@
 --
 -- Ease library  : design
 -- HDL library   : design
--- Host name     : INF13-MEIERV
--- User name     : vincent.meier
--- Time stamp    : Tue Jun 02 10:12:22 2015
+-- Host name     : INF13-BENSALAHM
+-- User name     : mohammed.bensalah
+-- Time stamp    : Fri Jun 05 19:19:26 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design.DCF77_Receiver
--- Last modified : Mon Jun 01 16:05:54 2015.
+-- Last modified : Fri Jun 05 19:05:33 2015.
 --------------------------------------------------------------------------------
 
 
@@ -44,7 +44,7 @@ end entity DCF77_Receiver;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design.DCF77_Receiver.structure
--- Last modified : Mon Jun 01 16:05:54 2015.
+-- Last modified : Fri Jun 05 19:05:33 2015.
 --------------------------------------------------------------------------------
 
 architecture structure of DCF77_Receiver is
@@ -55,19 +55,18 @@ architecture structure of DCF77_Receiver is
   signal displayblock_cs     : std_logic;
   signal read_strobe         : std_logic;
   signal adress_dcf          : std_logic_vector(3 downto 0);
-  signal adress_displayblock : std_logic_vector(1 downto 0);
   signal signal_int          : std_logic;
   signal in_port             : std_logic_vector(7 downto 0);
   signal data_out            : std_logic_vector(7 downto 0);
   signal u6_reset_n          : std_logic;
-  signal buffer_full         : std_logic;
   signal start_acq           : std_logic;
   signal out_port            : std_logic_vector(7 downto 0);
   signal uart_tx_cs          : std_logic;
   signal u2_hour_minutes_out : std_logic_vector(7 downto 0);
+  signal adress_mux_dcf_test : std_logic_vector(1 downto 0);
+  signal adress_displayblock : std_logic_vector(2 downto 0);
   signal instruction         : std_logic_vector(17 downto 0);
   signal address             : std_logic_vector(9 downto 0);
-  signal adress_mux_dcf_test : std_logic_vector(1 downto 0);
 
   component kcpsm3
     port (
@@ -132,10 +131,8 @@ architecture structure of DCF77_Receiver is
     port (
       TEST                : in     std_logic;
       adress_mux_dcf_test : in     std_logic_vector(1 downto 0);
-      buffer_full         : in     std_logic;
       data_dcf            : in     std_logic_vector(7 downto 0);
-      data_out            : out    std_logic_vector(7 downto 0);
-      start_acq           : in     std_logic);
+      data_out            : out    std_logic_vector(7 downto 0));
   end component mux_dcf_test;
 
   component inversor
@@ -231,10 +228,8 @@ begin
     port map(
       TEST                => TEST,
       adress_mux_dcf_test => adress_mux_dcf_test,
-      buffer_full         => buffer_full,
       data_dcf            => data_out,
-      data_out            => in_port,
-      start_acq           => start_acq);
+      data_out            => in_port);
 
   u6: inversor
     port map(
