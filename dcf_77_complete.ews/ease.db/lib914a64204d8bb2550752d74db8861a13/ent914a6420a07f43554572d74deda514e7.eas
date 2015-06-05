@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Jun 01 11:47:28 2015")
+      (PROPERTY "STAMP_TIME" "Mon Jun 01 16:06:07 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1429534474 "Mon Apr 20 14:54:34 2015")
-      (MODIFIED 1433152048 "Mon Jun 01 11:47:28 2015")
+      (MODIFIED 1433167560 "Mon Jun 01 16:06:00 2015")
     )
     (PORT
       (OBID "eprt914a6420b17f43554572d74d5ea514e7")
@@ -270,6 +270,7 @@
                " 		    "
                "end architecture rtl ; -- of DecodeAdress"
                ""
+               "	"
                "")
       )
       (VERILOG_FILE

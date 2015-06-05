@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Jun 01 15:33:45 2015")
+      (PROPERTY "STAMP_TIME" "Mon Jun 01 16:06:07 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1428931284 "Mon Apr 13 15:21:24 2015")
-      (MODIFIED 1433165588 "Mon Jun 01 15:33:08 2015")
+      (MODIFIED 1433167554 "Mon Jun 01 16:05:54 2015")
     )
     (PORT
       (OBID "eprt914a64203f2cb2550752d74df31e1a13")
@@ -2157,34 +2157,16 @@
             (TEXT "adress_mux_dcf_test(1:0)")
           )
           (PORT "eprt914a64208652e355cd60d74dcaf3ec03")
-          (CBN
-            (OBID "cbn914a64201862e355cd60d74d1a24ec03")
-            (HDL_IDENT
-              (NAME "adress_mux_dcf_test")
-              (USERNAME 1)
-            )
-            (GEOMETRY 7480 3608 7624 3688)
-            (SIDE 0)
-            (LABEL
-              (POSITION 7680 3648)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 1)
-              (ALIGNMENT 3)
-              (FORMAT 1)
-            )
-            (TYPE 0)
-          )
           (CONNECTION
             (OBID "ncon914a64208652e355cd60d74deaf3ec03")
             (GEOMETRY 7488 3648 7488 3648)
             (SIDE 2)
             (LABEL
-              (POSITION 7680 3648)
+              (POSITION 7488 3616)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 1)
-              (ALIGNMENT 3)
+              (ALIGNMENT 6)
               (FORMAT 128)
             )
           )
@@ -2778,34 +2760,16 @@
             (TEXT "adress_mux_dcf_test(1:0)")
           )
           (PORT "eprt914a64203c52e355cd60d74debf3ec03")
-          (CBN
-            (OBID "cbn914a64203862e355cd60d74d3a24ec03")
-            (HDL_IDENT
-              (NAME "adress_mux_dcf_test")
-              (USERNAME 1)
-            )
-            (GEOMETRY 696 3288 840 3368)
-            (SIDE 0)
-            (LABEL
-              (POSITION 640 3328)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 3)
-              (ALIGNMENT 5)
-              (FORMAT 1)
-            )
-            (TYPE 0)
-          )
           (CONNECTION
             (OBID "ncon914a64203c52e355cd60d74d0cf3ec03")
             (GEOMETRY 832 3328 832 3328)
             (SIDE 0)
             (LABEL
-              (POSITION 640 3328)
+              (POSITION 832 3296)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 3)
-              (ALIGNMENT 5)
+              (ALIGNMENT 8)
               (FORMAT 128)
             )
           )
@@ -3578,6 +3542,162 @@
           )
         )
       )
+      (COMPONENT
+        (OBID "compd9a1d6491256c6550c7209c367b76542")
+        (PROPERTIES
+          (PROPERTY "Flip" "1")
+        )
+        (HDL_IDENT
+          (NAME "u8")
+          (USERNAME 1)
+        )
+        (GEOMETRY 2688 3840 4864 4224)
+        (SIDE 0)
+        (LABEL
+          (POSITION 2688 3840)
+          (SCALE 128)
+          (COLOR_LINE 0)
+          (SIDE 3)
+          (ALIGNMENT 6)
+          (FORMAT 13)
+          (TEXT "u8:optimus_prime[X]")
+        )
+        (ENTITY "lib914a64202a5f1e450a81d74d5b149e90" "entd9a1d6494056c6550c7209c3a6b76542")
+        (PORT
+          (OBID "cprtd9a1d6491256c6550c7209c387b76542")
+          (HDL_IDENT
+            (NAME "address")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "9" "0")
+              )
+            )
+          )
+          (GEOMETRY 4824 3928 4904 4008)
+          (SIDE 1)
+          (LABEL
+            (POSITION 4800 3968)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "address(9:0)")
+          )
+          (PORT "eprtd9a1d6494056c6550c7209c3b6b76542")
+          (CONNECTION
+            (OBID "ncond9a1d6491256c6550c7209c397b76542")
+            (GEOMETRY 4928 3968 4928 3968)
+            (SIDE 2)
+            (LABEL
+              (POSITION 4928 4000)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1d6491256c6550c7209c3a7b76542")
+          (HDL_IDENT
+            (NAME "instruction")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic_vector")
+              (MODE 2)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "17" "0")
+              )
+            )
+          )
+          (GEOMETRY 2648 3928 2728 4008)
+          (SIDE 3)
+          (LABEL
+            (POSITION 2752 3968)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "instruction(17:0)")
+          )
+          (PORT "eprtd9a1d6494056c6550c7209c3c6b76542")
+          (CONNECTION
+            (OBID "ncond9a1d6491256c6550c7209c3b7b76542")
+            (GEOMETRY 2624 3968 2624 3968)
+            (SIDE 0)
+            (LABEL
+              (POSITION 2624 3936)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a1d6491256c6550c7209c3c7b76542")
+          (HDL_IDENT
+            (NAME "clk")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (TYPE "std_logic")
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 4824 4056 4904 4136)
+          (SIDE 1)
+          (LABEL
+            (POSITION 4800 4096)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "clk")
+          )
+          (PORT "eprtd9a1d6494056c6550c7209c3d6b76542")
+          (CBN
+            (OBID "cbnd9a1d6497756c6550c7209c3a9b76542")
+            (HDL_IDENT
+              (NAME "clk")
+              (USERNAME 1)
+            )
+            (GEOMETRY 4920 4056 5064 4136)
+            (SIDE 0)
+            (LABEL
+              (POSITION 5120 4096)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 3)
+              (FORMAT 1)
+            )
+            (TYPE 0)
+          )
+          (CONNECTION
+            (OBID "ncond9a1d6491256c6550c7209c3d7b76542")
+            (GEOMETRY 4928 4096 4928 4096)
+            (SIDE 2)
+            (LABEL
+              (POSITION 5120 4096)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 3)
+              (FORMAT 128)
+            )
+          )
+        )
+      )
       (NET
         (OBID "net914a64208edf43554572d74d4bb514e7")
         (HDL_IDENT
@@ -3733,47 +3853,6 @@
         )
       )
       (NET
-        (OBID "net914a642044ff43554572d74dfcb514e7")
-        (HDL_IDENT
-          (NAME "address")
-          (ATTRIBUTES
-            (TYPE "std_logic_vector")
-            (CONSTRAINT
-              (DIRECTION 1)
-              (RANGE "9" "0")
-            )
-          )
-        )
-        (PART
-          (OBID "nprt914a642054ff43554572d74d6db514e7")
-          (CBN 1)
-        )
-        (PART
-          (OBID "nprt914a642044ff43554572d74d0db514e7")
-          (LABEL
-            (POSITION 6592 2416)
-            (SCALE 96)
-            (COLOR_LINE 52)
-            (SIDE 3)
-            (ALIGNMENT 7)
-            (FORMAT 4099)
-          )
-          (WIRE 5184 2368 8000 2368)
-          (WIRE 4864 2816 5184 2816)
-          (WIRE 5184 2368 5184 2816)
-          (WIRE 8000 2368 8000 2816)
-          (WIRE 8000 2816 8640 2816)
-          (PORT
-            (OBID "cprt914a6420115e43554572d74d06a314e7")
-            (NAME "address")
-          )
-          (PORT
-            (OBID "cprt914a642094df43554572d74dbab514e7")
-            (NAME "adress_program")
-          )
-        )
-      )
-      (NET
         (OBID "net914a642006ff43554572d74dadb514e7")
         (HDL_IDENT
           (NAME "read_strobe")
@@ -3900,7 +3979,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 12160 4032 10496 4032)
+          (WIRE 10496 4032 12160 4032)
           (PORT
             (OBID "aprt914a642076ccb2550752d74d971e1a13")
             (NAME "serial_out")
@@ -4019,6 +4098,10 @@
             (OBID "cprtd9a1d6497984c6558e5209c3f3031df6")
             (NAME "clk")
           )
+          (PORT
+            (OBID "cprtd9a1d6491256c6550c7209c3c7b76542")
+            (NAME "clk")
+          )
         )
       )
       (NET
@@ -4042,9 +4125,9 @@
           )
           (WIRE 10880 832 11456 832)
           (WIRE 11456 192 11456 832)
-          (WIRE 11456 192 2368 192)
+          (WIRE 2368 192 11456 192)
           (WIRE 2368 192 2368 3072)
-          (WIRE 2560 3072 2368 3072)
+          (WIRE 2368 3072 2560 3072)
           (PORT
             (OBID "cprt914a6420c1b1e355cd60d74d0283ec03")
             (NAME "signal_int")
@@ -4320,25 +4403,6 @@
         )
       )
       (NET
-        (OBID "net914a64201862e355cd60d74d0a24ec03")
-        (HDL_IDENT
-          (NAME "adress_mux_dcf_test")
-          (USERNAME 1)
-        )
-        (PART
-          (OBID "nprt914a64201862e355cd60d74d2a24ec03")
-          (CBN 1)
-          (PORT
-            (OBID "cprt914a64208652e355cd60d74ddaf3ec03")
-            (NAME "adress_mux_dcf_test")
-          )
-          (PORT
-            (OBID "cprt914a64203c52e355cd60d74dfbf3ec03")
-            (NAME "adress_mux_dcf_test")
-          )
-        )
-      )
-      (NET
         (OBID "net914a64207682e355cd60d74d1c24ec03")
         (HDL_IDENT
           (NAME "reset_n")
@@ -4550,7 +4614,7 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 11520 1216 11264 1216)
+          (WIRE 11264 1216 11520 1216)
           (WIRE 11264 1216 11264 2624)
           (WIRE 11072 2624 11264 2624)
           (PORT
@@ -4588,9 +4652,9 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 12224 2688 11776 2688)
+          (WIRE 11776 2688 12224 2688)
           (WIRE 11776 2112 11776 2688)
-          (WIRE 13120 2112 11776 2112)
+          (WIRE 11776 2112 13120 2112)
           (WIRE 13120 1600 13120 2112)
           (WIRE 13056 1600 13120 1600)
           (PORT
@@ -4628,9 +4692,9 @@
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 12224 2560 11904 2560)
+          (WIRE 11904 2560 12224 2560)
           (WIRE 11904 2240 11904 2560)
-          (WIRE 13248 2240 11904 2240)
+          (WIRE 11904 2240 13248 2240)
           (WIRE 13248 1472 13248 2240)
           (WIRE 13056 1472 13248 1472)
           (PORT
@@ -4640,6 +4704,132 @@
           (PORT
             (OBID "cprtd9a1d6491055c6558e5209c397331df6")
             (NAME "time_bc_7seg_lsb")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1d6491656c6550c7209c3f8b76542")
+        (HDL_IDENT
+          (NAME "instruction")
+          (ATTRIBUTES
+            (TYPE "std_logic_vector")
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "17" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a1d6493656c6550c7209c329b76542")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1d6491656c6550c7209c309b76542")
+          (LABEL
+            (POSITION 2496 3392)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 2560 2816 2432 2816)
+          (WIRE 2432 2816 2432 3968)
+          (WIRE 2432 3968 2624 3968)
+          (PORT
+            (OBID "cprt914a6420115e43554572d74d26a314e7")
+            (NAME "instruction")
+          )
+          (PORT
+            (OBID "cprtd9a1d6491256c6550c7209c3a7b76542")
+            (NAME "instruction")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1d6491756c6550c7209c359b76542")
+        (HDL_IDENT
+          (NAME "address")
+          (ATTRIBUTES
+            (TYPE "std_logic_vector")
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "9" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a1d6491756c6550c7209c369b76542")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1d6491756c6550c7209c379b76542")
+          (LABEL
+            (POSITION 6592 2352)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 4928 3968 5184 3968)
+          (WIRE 5184 3968 5184 2816)
+          (WIRE 4864 2816 5184 2816)
+          (WIRE 5184 2368 5184 2816)
+          (WIRE 5184 2368 8000 2368)
+          (WIRE 8000 2368 8000 2816)
+          (WIRE 8000 2816 8640 2816)
+          (PORT
+            (OBID "cprtd9a1d6491256c6550c7209c387b76542")
+            (NAME "address")
+          )
+          (PORT
+            (OBID "cprt914a6420115e43554572d74d06a314e7")
+            (NAME "address")
+          )
+          (PORT
+            (OBID "cprt914a642094df43554572d74dbab514e7")
+            (NAME "adress_program")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a1d649eb66c6550c7209c343d76542")
+        (HDL_IDENT
+          (NAME "adress_mux_dcf_test")
+          (ATTRIBUTES
+            (CONSTRAINT
+              (DIRECTION 1)
+              (RANGE "1" "0")
+            )
+          )
+        )
+        (PART
+          (OBID "nprtd9a1d6492c66c6550c7209c393d76542")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a1d649eb66c6550c7209c353d76542")
+          (LABEL
+            (POSITION 4128 4272)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 7488 3648 7616 3648)
+          (WIRE 7616 3648 7616 4288)
+          (WIRE 7616 4288 640 4288)
+          (WIRE 640 4288 640 3328)
+          (WIRE 640 3328 832 3328)
+          (PORT
+            (OBID "cprt914a64208652e355cd60d74ddaf3ec03")
+            (NAME "adress_mux_dcf_test")
+          )
+          (PORT
+            (OBID "cprt914a64203c52e355cd60d74dfbf3ec03")
+            (NAME "adress_mux_dcf_test")
           )
         )
       )

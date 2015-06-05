@@ -38,7 +38,7 @@ P1:process (clk, reset_n)
 		  		counter  <= (OTHERS => '0');      
 		  
 	   		elsif start_tr = '1' then
-	   			if counter = 64 then
+	   			if counter = x"16" then -- si = 22
 	   				counter <= (OTHERS => '0');  
 	   				en_16_x_baud <= '1';  
 	   			else

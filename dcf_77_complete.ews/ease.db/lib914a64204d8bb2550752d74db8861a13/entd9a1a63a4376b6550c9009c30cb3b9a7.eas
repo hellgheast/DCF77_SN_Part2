@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Jun 01 09:37:03 2015")
+      (PROPERTY "STAMP_TIME" "Tue Jun 02 10:14:09 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "vincent.meier")
       (CREATED 1433102132 "Sun May 31 21:55:32 2015")
-      (MODIFIED 1433144223 "Mon Jun 01 09:37:03 2015")
+      (MODIFIED 1433232849 "Tue Jun 02 10:14:09 2015")
     )
     (PORT
       (OBID "eprtd9a1a63ab376b6550c9009c3acb3b9a7")
@@ -182,7 +182,7 @@
                "		  		counter  <= (OTHERS => '0');      "
                "		  "
                "	   		elsif start_tr = '1' then"
-               "	   			if counter = 64 then"
+               "	   			if counter = x\"16\" then -- si = 22"
                "	   				counter <= (OTHERS => '0');  "
                "	   				en_16_x_baud <= '1';  "
                "	   			else"
