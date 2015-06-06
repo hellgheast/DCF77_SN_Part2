@@ -160,7 +160,6 @@ init :
 
 	  ;Autorisation des enables
 	  ENABLE INTERRUPT 
-	  OUTPUT REG_TEST,21
 	  INPUT REG_TEST,21
 	  ;Point 1
 	  LOAD REG_TEMP,01
@@ -176,10 +175,10 @@ prescaler_t:
 	  LOAD REG_TEMP,02
 	  OUTPUT REG_TEMP,DSP_DEBUG;
 	
-	  ;Prescaler à la valeur  400 
-	  LOAD 		REG_A,90
+	  ;Prescaler à la valeur  40 
+	  LOAD 		REG_A,40
 	  OUTPUT 	REG_A,DCF_PRSCL ;
-	  LOAD 		REG_A,01
+	  LOAD 		REG_A,00
 	  OUTPUT 	REG_A,DCF_PRSCH ;
 	  JUMP loop
 
