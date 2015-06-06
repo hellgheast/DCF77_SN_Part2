@@ -808,3 +808,84 @@ extern void unisim_a_2125825869_3731405331_init()
 	xsi_register_executes(pe);
 	xsi_register_subprogram_executes(se);
 }
+
+extern void unisim_a_3208337549_3731405331_init()
+{
+	static char *pe[] = {(void *)unisim_a_2125825869_3731405331_p_0};
+	static char *se[] = {(void *)unisim_a_2125825869_3731405331_sub_655425482_2311462793};
+	xsi_register_didat("unisim_a_3208337549_3731405331", "isim/DCF77_Receiver_tb_isim.exe.sim/unisim/a_3208337549_3731405331.didat");
+	xsi_register_executes(pe);
+	xsi_register_subprogram_executes(se);
+}
+
+extern void unisim_a_1093176041_3731405331_init()
+{
+	static char *pe[] = {(void *)unisim_a_2125825869_3731405331_p_0};
+	static char *se[] = {(void *)unisim_a_2125825869_3731405331_sub_655425482_2311462793};
+	xsi_register_didat("unisim_a_1093176041_3731405331", "isim/DCF77_Receiver_tb_isim.exe.sim/unisim/a_1093176041_3731405331.didat");
+	xsi_register_executes(pe);
+	xsi_register_subprogram_executes(se);
+}
+
+extern void unisim_a_2629718892_3731405331_init()
+{
+	static char *pe[] = {(void *)unisim_a_2125825869_3731405331_p_0};
+	static char *se[] = {(void *)unisim_a_2125825869_3731405331_sub_655425482_2311462793};
+	xsi_register_didat("unisim_a_2629718892_3731405331", "isim/DCF77_Receiver_tb_isim.exe.sim/unisim/a_2629718892_3731405331.didat");
+	xsi_register_executes(pe);
+	xsi_register_subprogram_executes(se);
+}
+
+extern void unisim_a_3506866874_3731405331_init()
+{
+	static char *pe[] = {(void *)unisim_a_2125825869_3731405331_p_0};
+	static char *se[] = {(void *)unisim_a_2125825869_3731405331_sub_655425482_2311462793};
+	xsi_register_didat("unisim_a_3506866874_3731405331", "isim/DCF77_Receiver_tb_isim.exe.sim/unisim/a_3506866874_3731405331.didat");
+	xsi_register_executes(pe);
+	xsi_register_subprogram_executes(se);
+}
+
+extern void unisim_a_0900199298_3731405331_init()
+{
+	static char *pe[] = {(void *)unisim_a_2125825869_3731405331_p_0};
+	static char *se[] = {(void *)unisim_a_2125825869_3731405331_sub_655425482_2311462793};
+	xsi_register_didat("unisim_a_0900199298_3731405331", "isim/DCF77_Receiver_tb_isim.exe.sim/unisim/a_0900199298_3731405331.didat");
+	xsi_register_executes(pe);
+	xsi_register_subprogram_executes(se);
+}
+
+extern void unisim_a_0028422682_3731405331_init()
+{
+	static char *pe[] = {(void *)unisim_a_2125825869_3731405331_p_0};
+	static char *se[] = {(void *)unisim_a_2125825869_3731405331_sub_655425482_2311462793};
+	xsi_register_didat("unisim_a_0028422682_3731405331", "isim/DCF77_Receiver_tb_isim.exe.sim/unisim/a_0028422682_3731405331.didat");
+	xsi_register_executes(pe);
+	xsi_register_subprogram_executes(se);
+}
+
+extern void unisim_a_0006958716_3731405331_init()
+{
+	static char *pe[] = {(void *)unisim_a_2125825869_3731405331_p_0};
+	static char *se[] = {(void *)unisim_a_2125825869_3731405331_sub_655425482_2311462793};
+	xsi_register_didat("unisim_a_0006958716_3731405331", "isim/DCF77_Receiver_tb_isim.exe.sim/unisim/a_0006958716_3731405331.didat");
+	xsi_register_executes(pe);
+	xsi_register_subprogram_executes(se);
+}
+
+extern void unisim_a_0587692967_3731405331_init()
+{
+	static char *pe[] = {(void *)unisim_a_2125825869_3731405331_p_0};
+	static char *se[] = {(void *)unisim_a_2125825869_3731405331_sub_655425482_2311462793};
+	xsi_register_didat("unisim_a_0587692967_3731405331", "isim/DCF77_Receiver_tb_isim.exe.sim/unisim/a_0587692967_3731405331.didat");
+	xsi_register_executes(pe);
+	xsi_register_subprogram_executes(se);
+}
+
+extern void unisim_a_2622885206_3731405331_init()
+{
+	static char *pe[] = {(void *)unisim_a_2125825869_3731405331_p_0};
+	static char *se[] = {(void *)unisim_a_2125825869_3731405331_sub_655425482_2311462793};
+	xsi_register_didat("unisim_a_2622885206_3731405331", "isim/DCF77_Receiver_tb_isim.exe.sim/unisim/a_2622885206_3731405331.didat");
+	xsi_register_executes(pe);
+	xsi_register_subprogram_executes(se);
+}

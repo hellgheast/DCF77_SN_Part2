@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sat Jun 06 15:21:56 2015
+-- Time stamp    : Sat Jun 06 17:22:03 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.UartControl
--- Last modified : Sat Jun 06 15:19:53 2015.
+-- Last modified : Sat Jun 06 15:29:36 2015.
 --------------------------------------------------------------------------------
 
 
@@ -37,7 +37,7 @@ end entity UartControl;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.UartControl.structure
--- Last modified : Sat Jun 06 15:19:53 2015.
+-- Last modified : Sat Jun 06 15:29:36 2015.
 --------------------------------------------------------------------------------
 
 architecture structure of UartControl is

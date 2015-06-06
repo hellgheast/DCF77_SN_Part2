@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sat Jun 06 15:21:56 2015
+-- Time stamp    : Sat Jun 06 17:51:45 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.DCF77_Receiver
--- Last modified : Sat Jun 06 15:21:29 2015.
+-- Last modified : Sat Jun 06 17:51:38 2015.
 --------------------------------------------------------------------------------
 
 
@@ -44,7 +44,7 @@ end entity DCF77_Receiver;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.DCF77_Receiver.structure
--- Last modified : Sat Jun 06 15:21:29 2015.
+-- Last modified : Sat Jun 06 17:51:38 2015.
 --------------------------------------------------------------------------------
 
 
@@ -133,21 +133,6 @@ architecture structure of DCF77_Receiver is
       time_bc_in       : in     std_logic_vector(7 downto 0));
   end component BCD_7Seg_Converter;
 
-  component kcpsm3
-    port (
-      address       : out    std_logic_vector(9 downto 0);
-      instruction   : in     std_logic_vector(17 downto 0);
-      port_id       : out    std_logic_vector(7 downto 0);
-      write_strobe  : out    std_logic;
-      out_port      : out    std_logic_vector(7 downto 0);
-      read_strobe   : out    std_logic;
-      in_port       : in     std_logic_vector(7 downto 0);
-      interrupt     : in     std_logic;
-      interrupt_ack : out    std_logic;
-      reset         : in     std_logic;
-      clk           : in     std_logic);
-  end component kcpsm3;
-
   component optimus_prime
     port (
       address     : in     std_logic_vector(9 downto 0);
@@ -169,6 +154,21 @@ architecture structure of DCF77_Receiver is
       start_acq   : out    std_logic;
       write       : in     std_logic);
   end component DCF_77_IP;
+
+  component kcpsm3
+    port (
+      address       : out    std_logic_vector(9 downto 0);
+      instruction   : in     std_logic_vector(17 downto 0);
+      port_id       : out    std_logic_vector(7 downto 0);
+      write_strobe  : out    std_logic;
+      out_port      : out    std_logic_vector(7 downto 0);
+      read_strobe   : out    std_logic;
+      in_port       : in     std_logic_vector(7 downto 0);
+      interrupt     : in     std_logic;
+      interrupt_ack : out    std_logic;
+      reset         : in     std_logic;
+      clk           : in     std_logic);
+  end component kcpsm3;
 
 begin
 
@@ -228,20 +228,6 @@ begin
       time_bc_7seg_msb => time_bc_7seg_msb,
       time_bc_in       => u2_hour_minutes_out);
 
-  u0: kcpsm3
-    port map(
-      address       => address,
-      instruction   => instruction,
-      port_id       => port_id,
-      write_strobe  => write_strobe,
-      out_port      => out_port,
-      read_strobe   => read_strobe,
-      in_port       => in_port,
-      interrupt     => signal_int,
-      interrupt_ack => open,
-      reset         => u6_reset_n,
-      clk           => clk);
-
   u1: optimus_prime
     port map(
       address     => address,
@@ -261,5 +247,19 @@ begin
       signal_int  => signal_int,
       start_acq   => open,
       write       => write_strobe);
+
+  u0: kcpsm3
+    port map(
+      address       => address,
+      instruction   => instruction,
+      port_id       => port_id,
+      write_strobe  => write_strobe,
+      out_port      => out_port,
+      read_strobe   => read_strobe,
+      in_port       => in_port,
+      interrupt     => signal_int,
+      interrupt_ack => open,
+      reset         => u6_reset_n,
+      clk           => clk);
 end architecture structure ; -- of DCF77_Receiver
 

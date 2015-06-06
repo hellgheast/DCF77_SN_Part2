@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sat Jun 06 15:19:56 2015")
+      (PROPERTY "STAMP_TIME" "Sat Jun 06 17:48:18 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1433596478 "Sat Jun 06 15:14:38 2015")
-      (MODIFIED 1433596795 "Sat Jun 06 15:19:55 2015")
+      (MODIFIED 1433605698 "Sat Jun 06 17:48:18 2015")
     )
     (PORT
       (OBID "eprt914a6420e32f2755cf01d74d53c7e6e6")
@@ -481,7 +481,7 @@
                "	ASSERT FALSE REPORT \"la simulation est en cour\" SEVERITY NOTE;"
                ""
                "	--debut des tests"
-               "	 sim_cycle(2); "
+               "	 sim_cycle(20); "
                "	 reset_n <= '1';"
                " "
                "-- PRESCALER ----------------------------------------- "

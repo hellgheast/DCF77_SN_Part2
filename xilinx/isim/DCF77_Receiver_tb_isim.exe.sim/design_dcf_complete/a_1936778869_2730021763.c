@@ -841,7 +841,7 @@ LAB2:    xsi_set_current_line(156, ng0);
 
 LAB5:    xsi_set_current_line(160, ng0);
     t2 = (t0 + 4808);
-    design_dcf_complete_a_1936778869_2730021763_sub_105344256_1881409087(t0, t2, 2);
+    design_dcf_complete_a_1936778869_2730021763_sub_105344256_1881409087(t0, t2, 20);
     xsi_set_current_line(161, ng0);
     t2 = (t0 + 5816);
     t3 = (t2 + 56U);

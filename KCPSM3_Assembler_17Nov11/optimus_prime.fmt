@@ -144,6 +144,7 @@
         init: 
               ;Autorisation des enables
               ENABLE INTERRUPT
+              OUTPUT REG_TEST, 21
               INPUT REG_TEST, 21
               ;Point 1
               LOAD REG_TEMP, 01

@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sat Jun 06 15:21:56 2015
+-- Time stamp    : Sat Jun 06 17:51:45 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.DCF77_Receiver_stimuli
--- Last modified : Sat Jun 06 15:19:55 2015.
+-- Last modified : Sat Jun 06 17:48:18 2015.
 --------------------------------------------------------------------------------
 
 
@@ -44,7 +44,7 @@ end entity DCF77_Receiver_stimuli;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.DCF77_Receiver_stimuli.behaviour
--- Last modified : Sat Jun 06 15:19:55 2015.
+-- Last modified : Sat Jun 06 17:48:18 2015.
 --------------------------------------------------------------------------------
 
 
@@ -157,7 +157,7 @@ BEGIN --debut de la simulation temps t=0ns
 	ASSERT FALSE REPORT "la simulation est en cour" SEVERITY NOTE;
 
 	--debut des tests
-	 sim_cycle(2); 
+	 sim_cycle(20); 
 	 reset_n <= '1';
  
 -- PRESCALER ----------------------------------------- 

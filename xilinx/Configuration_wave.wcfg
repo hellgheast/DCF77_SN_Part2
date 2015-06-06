@@ -18,7 +18,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="24" />
+   <WVObjectSize size="26" />
    <wvobject fp_name="/dcf77_receiver_tb/dcf_77_in" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">dcf_77_in</obj_property>
       <obj_property name="ObjectShortName">dcf_77_in</obj_property>
@@ -70,6 +70,14 @@
    <wvobject fp_name="/dcf77_receiver_tb/dut/port_id" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">port_id[7:0]</obj_property>
       <obj_property name="ObjectShortName">port_id[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/dut/u1/address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">address[9:0]</obj_property>
+      <obj_property name="ObjectShortName">address[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/dut/u1/instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction[17:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[17:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/dcf77_receiver_tb/time_bc_7seg_msb" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">time_bc_7seg_msb[6:0]</obj_property>
