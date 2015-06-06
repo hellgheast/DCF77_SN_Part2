@@ -16,9 +16,9 @@
       <key type="bool" value="false" name="StartBrowser"/>
     </section>
     <section name="Markers">
-      <key type="string" value="diagd9a1d64906e3c6558e5209c3c6f21df6" name="CurrentDiagram"/>
-      <key type="string" value="design:DCF77_Receiver_tb:&lt;Internal>" name="CurrentPath"/>
-      <key type="string" value="entd9a1d64906e3c6558e5209c305f21df6" name="HdlOutputObject"/>
+      <key type="string" value="diagd9a1a63a6956b6550c9009c3b1b3b9a7" name="CurrentDiagram"/>
+      <key type="string" value="design_dcf_complete:DCF77_Receiver:&lt;Internal>/compd9a1a63a6956b6550c9009c3c1b3b9a7" name="CurrentPath"/>
+      <key type="string" value="ent914a6420e32f2755cf01d74d33c7e6e6" name="HdlOutputObject"/>
     </section>
     <section name="DiagramGridVisible">
       <key type="bool" value="false" name="diag914a64204d8bb2550752d74dc8861a13"/>
@@ -35,21 +35,32 @@
       <key type="bool" value="false" name="diag914a6420b1102e450a81d74de3249e90"/>
       <key type="bool" value="false" name="diagd9a1d64906e3c6558e5209c3c6f21df6"/>
       <key type="bool" value="false" name="diag914a64208903be450572d74d06d7bdc1"/>
+      <key type="bool" value="false" name="diag914a6420578e43554572d74d018414e7"/>
+      <key type="bool" value="false" name="diag914a6420578e43554572d74d456514e7"/>
+      <key type="bool" value="false" name="diag914a6420578e43554572d74d147414e7"/>
+      <key type="bool" value="false" name="diag914a6420478e43554572d74dad6414e7"/>
+      <key type="bool" value="false" name="diag914a6420478e43554572d74d146414e7"/>
+      <key type="bool" value="false" name="diag914a6420478e43554572d74dca6414e7"/>
+      <key type="bool" value="false" name="diag914a64202a5f1e450a81d74d6b149e90"/>
+      <key type="bool" value="false" name="diag914a6420bc0f2755cf01d74d56e6e6e6"/>
+      <key type="bool" value="false" name="diag914a6420e32f2755cf01d74df4c7e6e6"/>
+      <key type="bool" value="false" name="diag914a64200c5f2755cf01d74df108e6e6"/>
     </section>
     <section name="Browser">
-      <key type="string" value="design.DCF77_Receiver" name="DetailView"/>
+      <key type="string" value="design.DCF77_Receiver_tb" name="DetailView"/>
     </section>
     <section name="DiagramGridFactor">
       <key type="int" value="0" name="diag914a64204d2cb2550752d74db31e1a13"/>
       <key type="int" value="0" name="diag914a6420272e435586b2d74de5f70454"/>
       <key type="int" value="0" name="diagd9a1a63a6956b6550c9009c3b1b3b9a7"/>
       <key type="int" value="0" name="diagd9a1d64906e3c6558e5209c3c6f21df6"/>
+      <key type="int" value="0" name="diag914a6420578e43554572d74d456514e7"/>
     </section>
     <section name="DatabaseView">
-      <key type="bool" value="true" name="archd9a1d64906e3c6558e5209c3f6f21df6"/>
-      <key type="bool" value="true" name="ent914a64200d7e43554572d74d98a314e7"/>
-      <key type="bool" value="true" name="ent914a6420478e43554572d74d6db314e7"/>
-      <key type="bool" value="true" name="lib914a64204d8bb2550752d74db8861a13"/>
+      <key type="bool" value="true" name="arch914a6420843f2755cf01d74d34d7e6e6"/>
+      <key type="bool" value="true" name="archd9a1a63a6956b6550c9009c3d1b3b9a7"/>
+      <key type="bool" value="true" name="ent914a6420af0f2755cf01d74d1977e6e6"/>
+      <key type="bool" value="true" name="entd9a1a63ae176b6550c9009c3abb3b9a7"/>
     </section>
     <section name="GenerationStamps">
       <key type="string" value="1433524766" name="entd9a1d649f384c6558e5209c381031df6"/>
@@ -62,36 +73,36 @@
       <key type="string" value="1433524766" name="arch914a6420bf62e355cd60d74dfa24ec03"/>
       <key type="string" value="1433524766" name="ent914a6420c752e355cd60d74d0bf3ec03"/>
       <key type="string" value="1433524766" name="arch914a6420c752e355cd60d74d3bf3ec03"/>
-      <key type="string" value="1433524766" name="entd9a1860a11830155c75009c39fe1a963"/>
-      <key type="string" value="1433524766" name="archd9a1860a11830155c75009c3cfe1a963"/>
-      <key type="string" value="1433524766" name="entd9a1860a6bb20155c75009c3b5a1a963"/>
-      <key type="string" value="1433524766" name="archd9a1860a6bb20155c75009c3e5a1a963"/>
-      <key type="string" value="1433524766" name="ent914a6420f3b1be450572d74dba57bdc1"/>
-      <key type="string" value="1433524766" name="arch914a6420f3b1be450572d74dea57bdc1"/>
-      <key type="string" value="1433524766" name="ent914a64201a91be450572d74d9557bdc1"/>
-      <key type="string" value="1433524766" name="arch914a64201a91be450572d74dd557bdc1"/>
-      <key type="string" value="1433524766" name="ent914a6420ff41be450572d74d3257bdc1"/>
-      <key type="string" value="1433524766" name="arch914a6420ff41be450572d74d6257bdc1"/>
-      <key type="string" value="1433524766" name="ent914a6420c44adf458472d74d1d86b0b7"/>
-      <key type="string" value="1433524766" name="arch914a6420c44adf458472d74d4d86b0b7"/>
-      <key type="string" value="1433524766" name="ent914a6420421adf458472d74dd886b0b7"/>
-      <key type="string" value="1433524766" name="arch914a6420421adf458472d74d0986b0b7"/>
-      <key type="string" value="1433524766" name="ent914a6420f762be450572d74da3c7bdc1"/>
-      <key type="string" value="1433524766" name="arch914a6420f762be450572d74dd3c7bdc1"/>
-      <key type="string" value="1433524766" name="entd9a1e65b2ef391554a9109c3dbf681d5"/>
-      <key type="string" value="1433524766" name="archd9a1e65b2ef391554a9109c30cf681d5"/>
-      <key type="string" value="1433524766" name="ent914a6420fe33be450572d74d27e7bdc1"/>
-      <key type="string" value="1433524766" name="arch914a6420fe33be450572d74d67e7bdc1"/>
-      <key type="string" value="1433524766" name="ent914a6420e723be450572d74db4e7bdc1"/>
-      <key type="string" value="1433524766" name="arch914a6420e723be450572d74df4e7bdc1"/>
-      <key type="string" value="1433524766" name="ent914a64208903be450572d74df5d7bdc1"/>
-      <key type="string" value="1433524766" name="arch914a64208903be450572d74d16d7bdc1"/>
-      <key type="string" value="1433524766" name="ent914a6420b1102e450a81d74dd3249e90"/>
-      <key type="string" value="1433524766" name="arch914a6420b1102e450a81d74d14249e90"/>
-      <key type="string" value="1433524766" name="ent914a64207c002e450a81d74d72249e90"/>
-      <key type="string" value="1433524766" name="arch914a64207c002e450a81d74da2249e90"/>
-      <key type="string" value="1433524766" name="ent914a64200d5f1e450a81d74dfb149e90"/>
-      <key type="string" value="1433524766" name="arch914a64200d5f1e450a81d74d2c149e90"/>
+      <key type="string" value="1433596916" name="entd9a1860a11830155c75009c39fe1a963"/>
+      <key type="string" value="1433596916" name="archd9a1860a11830155c75009c3cfe1a963"/>
+      <key type="string" value="1433596916" name="entd9a1860a6bb20155c75009c3b5a1a963"/>
+      <key type="string" value="1433596916" name="archd9a1860a6bb20155c75009c3e5a1a963"/>
+      <key type="string" value="1433596916" name="ent914a6420f3b1be450572d74dba57bdc1"/>
+      <key type="string" value="1433596916" name="arch914a6420f3b1be450572d74dea57bdc1"/>
+      <key type="string" value="1433596916" name="ent914a64201a91be450572d74d9557bdc1"/>
+      <key type="string" value="1433596916" name="arch914a64201a91be450572d74dd557bdc1"/>
+      <key type="string" value="1433596916" name="ent914a6420ff41be450572d74d3257bdc1"/>
+      <key type="string" value="1433596916" name="arch914a6420ff41be450572d74d6257bdc1"/>
+      <key type="string" value="1433596916" name="ent914a6420c44adf458472d74d1d86b0b7"/>
+      <key type="string" value="1433596916" name="arch914a6420c44adf458472d74d4d86b0b7"/>
+      <key type="string" value="1433596916" name="ent914a6420421adf458472d74dd886b0b7"/>
+      <key type="string" value="1433596916" name="arch914a6420421adf458472d74d0986b0b7"/>
+      <key type="string" value="1433596916" name="ent914a6420f762be450572d74da3c7bdc1"/>
+      <key type="string" value="1433596916" name="arch914a6420f762be450572d74dd3c7bdc1"/>
+      <key type="string" value="1433596916" name="entd9a1e65b2ef391554a9109c3dbf681d5"/>
+      <key type="string" value="1433596916" name="archd9a1e65b2ef391554a9109c30cf681d5"/>
+      <key type="string" value="1433596916" name="ent914a6420fe33be450572d74d27e7bdc1"/>
+      <key type="string" value="1433596916" name="arch914a6420fe33be450572d74d67e7bdc1"/>
+      <key type="string" value="1433596916" name="ent914a6420e723be450572d74db4e7bdc1"/>
+      <key type="string" value="1433596916" name="arch914a6420e723be450572d74df4e7bdc1"/>
+      <key type="string" value="1433596916" name="ent914a64208903be450572d74df5d7bdc1"/>
+      <key type="string" value="1433596916" name="arch914a64208903be450572d74d16d7bdc1"/>
+      <key type="string" value="1433596916" name="ent914a6420b1102e450a81d74dd3249e90"/>
+      <key type="string" value="1433596917" name="arch914a6420b1102e450a81d74d14249e90"/>
+      <key type="string" value="1433596917" name="ent914a64207c002e450a81d74d72249e90"/>
+      <key type="string" value="1433596917" name="arch914a64207c002e450a81d74da2249e90"/>
+      <key type="string" value="1433596917" name="ent914a64200d5f1e450a81d74dfb149e90"/>
+      <key type="string" value="1433596917" name="arch914a64200d5f1e450a81d74d2c149e90"/>
       <key type="string" value="1433524766" name="ent914a6420a07f43554572d74deda514e7"/>
       <key type="string" value="1433524766" name="arch914a6420a07f43554572d74d2ea514e7"/>
       <key type="string" value="1433524766" name="ent914a642026de43554572d74d0ca514e7"/>
@@ -104,14 +115,20 @@
       <key type="string" value="1433524766" name="arch914a64200d7e43554572d74dd0b314e7"/>
       <key type="string" value="1433524766" name="ent914a64205f4e43554572d74d7ee214e7"/>
       <key type="string" value="1433524766" name="arch914a64205f4e43554572d74d231314e7"/>
-      <key type="string" value="1433524766" name="entd9a1a63a6956b6550c9009c3a1b3b9a7"/>
-      <key type="string" value="1433524766" name="archd9a1a63a6956b6550c9009c3d1b3b9a7"/>
-      <key type="string" value="1433524766" name="ent914a64204d2cb2550752d74da31e1a13"/>
-      <key type="string" value="1433524766" name="arch914a64204d2cb2550752d74dd31e1a13"/>
-      <key type="string" value="1433524772" name="entd9a1d64906e3c6558e5209c315f21df6"/>
-      <key type="string" value="1433524772" name="archd9a1d64906e3c6558e5209c3d6f21df6"/>
+      <key type="string" value="1433596917" name="entd9a1a63a6956b6550c9009c3a1b3b9a7"/>
+      <key type="string" value="1433596917" name="archd9a1a63a6956b6550c9009c3d1b3b9a7"/>
+      <key type="string" value="1433596917" name="ent914a64204d2cb2550752d74da31e1a13"/>
+      <key type="string" value="1433596917" name="arch914a64204d2cb2550752d74dd31e1a13"/>
+      <key type="string" value="1433593622" name="entd9a1d64906e3c6558e5209c315f21df6"/>
+      <key type="string" value="1433593622" name="archd9a1d64906e3c6558e5209c3d6f21df6"/>
       <key type="string" value="1433524766" name="entd9a1d64906e3c6558e5209c305f21df6"/>
       <key type="string" value="1433524766" name="archd9a1d64906e3c6558e5209c3f6f21df6"/>
+      <key type="string" value="1433596916" name="ent914a6420e32f2755cf01d74d43c7e6e6"/>
+      <key type="string" value="1433596916" name="arch914a6420e32f2755cf01d74d15c7e6e6"/>
+      <key type="string" value="1433596917" name="ent914a6420bc0f2755cf01d74d91c6e6e6"/>
+      <key type="string" value="1433596917" name="arch914a6420bc0f2755cf01d74d46e6e6e6"/>
+      <key type="string" value="1433596917" name="ent914a6420e32f2755cf01d74d33c7e6e6"/>
+      <key type="string" value="1433596917" name="arch914a6420e32f2755cf01d74d35c7e6e6"/>
     </section>
     <section name="GeneratedHdlFiles">
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/BCD_7Seg_Converter.vhd" name="entd9a1d649f384c6558e5209c381031df6"/>
@@ -174,6 +191,12 @@
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DCF77_Receiver_stimuli.vhd" name="archd9a1d64906e3c6558e5209c3d6f21df6"/>
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DCF77_Receiver_tb.vhd" name="entd9a1d64906e3c6558e5209c305f21df6"/>
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DCF77_Receiver_tb.vhd" name="archd9a1d64906e3c6558e5209c3f6f21df6"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DCF77_Receiver_stimuli.vhd" name="ent914a6420e32f2755cf01d74d43c7e6e6"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DCF77_Receiver_stimuli.vhd" name="arch914a6420e32f2755cf01d74d15c7e6e6"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/kcpsm3.vhd" name="ent914a6420bc0f2755cf01d74d91c6e6e6"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/kcpsm3.vhd" name="arch914a6420bc0f2755cf01d74d46e6e6e6"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DCF77_Receiver_tb.vhd" name="ent914a6420e32f2755cf01d74d33c7e6e6"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DCF77_Receiver_tb.vhd" name="arch914a6420e32f2755cf01d74d35c7e6e6"/>
     </section>
     <section name="SimulatorCompileTimes">
       <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/KCPSM3_Assembler_17Nov11/optimus_prime.vhd"/>
@@ -207,6 +230,48 @@
       <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DCF77_Receiver.vhd"/>
       <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DCF77_Receiver_stimuli.vhd"/>
       <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DCF77_Receiver_tb.vhd"/>
+      <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/KCPSM3/VHDL/uart_tx.vhd"/>
+      <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/KCPSM3_Assembler_17Nov11/optimus_prime.vhd"/>
+      <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DCF77_Receiver_stimuli.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/CheckParity.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/decode_RBG.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/reg_mem_dcf77.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/sync_dcf77.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/frame_register.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/counter_ms_oveflow.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/rising_edge_dectection.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/coutner_ms.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/counter_ms_getN.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DecodeStateMachine.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/counter_nbbits.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/decode_block.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/decode_dcf77.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/div_freq.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DCF_77_IP.vhd"/>
+      <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/BCD_7Seg_Converter.vhd"/>
+      <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/BaudRateCounter.vhd"/>
+      <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/UartManage.vhd"/>
+      <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/UartControl.vhd"/>
+      <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/inversor.vhd"/>
+      <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/mux_dcf_test.vhd"/>
+      <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DecodeAdress.vhd"/>
+      <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DisplayBlock.vhd"/>
+      <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/kcpsm3.vhd"/>
+      <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DCF77_Receiver.vhd"/>
+      <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DCF77_Receiver_tb.vhd"/>
+    </section>
+    <section name="DiagramView">
+      <key type="geometry" value="0,0,15426,6400" name="diagd9a1d64906e3c6558e5209c3c6f21df6"/>
+      <key type="geometry" value="3934,0,14400,5953" name="diag914a64204d2cb2550752d74db31e1a13"/>
+      <key type="geometry" value="0,0,15426,6400" name="diag914a64200d5f1e450a81d74d0c149e90"/>
+      <key type="geometry" value="0,0,10281,4265" name="diag914a6420b1102e450a81d74de3249e90"/>
+      <key type="geometry" value="0,0,10280,4264" name="diag914a64208903be450572d74d06d7bdc1"/>
+      <key type="geometry" value="0,0,7499,4265" name="diag914a64202a5f1e450a81d74d6b149e90"/>
+      <key type="geometry" value="0,0,7498,4265" name="diag914a64204d8bb2550752d74dc8861a13"/>
+      <key type="geometry" value="0,0,7498,4264" name="diagd9a1a63a6956b6550c9009c3b1b3b9a7"/>
+      <key type="geometry" value="41447,43136,52249,49280" name="diag914a6420bc0f2755cf01d74d56e6e6e6"/>
+      <key type="geometry" value="0,0,7498,4264" name="diag914a6420e32f2755cf01d74df4c7e6e6"/>
+      <key type="geometry" value="0,0,16879,9599" name="diag914a64200c5f2755cf01d74df108e6e6"/>
     </section>
   </sections>
 </CONFIGURATION>

@@ -15,7 +15,7 @@
 //Command: kcpsm3 optimus_prime.psm
 //Device: Spartan-3, Spartan-3E, Virtex-II, and Virtex-II Pro FPGAs
 //Design Name: optimus_prime
-//Generated 01 Jun 2015 - 15:56:39.
+//Generated 06 Jun 2015 - 16:51:49.
 //Purpose:
 //	optimus_prime verilog program definition.
 //

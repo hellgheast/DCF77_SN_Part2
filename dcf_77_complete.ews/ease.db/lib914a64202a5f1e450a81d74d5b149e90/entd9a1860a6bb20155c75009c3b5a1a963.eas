@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Apr 27 13:21:47 2015")
+      (PROPERTY "STAMP_TIME" "Sat Jun 06 15:05:18 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1427123126 "Mon Mar 23 16:05:26 2015")
-      (MODIFIED 1430133707 "Mon Apr 27 13:21:47 2015")
+      (MODIFIED 1433595437 "Sat Jun 06 14:57:17 2015")
     )
     (PORT
       (OBID "eprtd9a1860ad0c20155c75009c37de1a963")
@@ -217,41 +217,47 @@
                ""
                "architecture behavior of decode_RBG is"
                "       "
-               "signal getNot    : std_logic := '0';"
-               "signal busyTemp  : std_logic := '0';"
-               "signal readyTemp : std_logic := '0';"
+               "--signal getNot    : std_logic := '0';"
+               "--signal busyTemp  : std_logic := '0';"
+               "--signal readyTemp : std_logic := '0';"
+               ""
+               "signal state_bits : std_logic_vector(1 downto 0);"
                ""
                "begin     "
                ""
                "P1 : process(clk,reset_n) IS"
                "begin"
                "	if reset_n = '0' then"
-               " 		RBG <= (others => '0');"
-               " 		getNot <= '0';"
-               " 		busyTemp <= '0';"
-               " 		readyTemp <= '0'; "
+               " 		state_bits <= (others => '0');"
+               " 		--getNot <= '0';"
+               " 		--busyTemp <= '0';"
+               " 		--readyTemp <= '0'; "
                " 		 		"
                "	elsif(clk'EVENT and clk = '1')then "
                "		if start = '0' then "
                "			if getNothing = '1' then"
-               "				readyTemp <= '0';"
-               "				busyTemp <= '0';"
-               "				getNot <= '1';"
+               "				state_bits <= \"00\"; -- GetNothing"
+               "				--readyTemp <= '0';"
+               "				--busyTemp <= '0';"
+               "				--getNot <= '1';"
                "				"
                "			elsif stop = '1' then "
-               "				busyTemp <= '0';"
+               "				--busyTemp <= '0';"
                "				if bit_count >= \"111011\" then"
-               "  	   				readyTemp <= '1'; "
-               "  	   			else   "
-               "  	   				readyTemp <= '0';"
+               "					state_bits <= \"10\"; -- Ready"
+               "  	   				--readyTemp <= '1'; "
+               "  	   			else"
+               "  	   				state_bits <= \"11\"; -- Etat \"indéterminé\"	   			   "
+               "  	   				--readyTemp <= '0';"
                "  	   			end if;   "
                "  	   			"
                "  	   		end if;"
                "  	   		 	"
                "		else"
-               "			getNot <= '0';"
-               "  	   	 	busyTemp <= '1';"
-               "  	   		readyTemp <= '0';"
+               "			state_bits <= \"01\"; -- Busy"
+               "			--getNot <= '0';"
+               "  	   	 	--busyTemp <= '1';"
+               "  	   		--readyTemp <= '0';"
                "  	   	"
                "  	   	end if;"
                "		       "
@@ -259,10 +265,12 @@
                "	"
                "end process;"
                ""
-               "RBG <= \"00\" when getNot = '1' 	 else"
-               "	   \"01\" when busyTemp = '1'  else "
-               "	   \"10\" when readyTemp = '1' else "
-               "	   \"11\";"
+               "RBG <= state_bits;"
+               ""
+               "	   --\"00\" when getNot = '1' and busyTemp = '0' and readyTemp = '0'	else"
+               "	   --\"01\" when busyTemp = '1'	and getNot = '0' and readyTemp = '0' 	else "
+               "	   --\"10\" when readyTemp = '1' and busyTemp = '0' and getNot = '0' 	else "
+               "	   --\"11\";"
                ""
                ""
                ""
@@ -271,7 +279,7 @@
                "")
       )
       (VERILOG_FILE
-        (OBID "file914a6420272e435586b2d74d47f70454")
+        (OBID "file914a6420d2ee2755cf01d74dd966e6e6")
         (NAME "behavior.v")
         (VALUE "")
       )

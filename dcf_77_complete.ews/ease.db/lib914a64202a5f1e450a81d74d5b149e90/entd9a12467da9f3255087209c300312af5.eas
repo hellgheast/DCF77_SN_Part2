@@ -1,0 +1,637 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a12467da9f3255087209c300312af5")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Sat Jun 06 15:05:18 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "DCF_77_IP_stimuli")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 2112 1984)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1428421037 "Tue Apr 07 17:37:17 2015")
+      (MODIFIED 1433595437 "Sat Jun 06 14:57:17 2015")
+    )
+    (PORT
+      (OBID "eprtd9a12467da9f3255087209c310312af5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "read")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2072 280 2152 360)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2048 320)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "read")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a12467da9f3255087209c320312af5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "write")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2072 408 2152 488)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2048 448)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "write")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a12467da9f3255087209c330312af5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "chip_select")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2072 536 2152 616)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2048 576)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "chip_select")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a12467da9f3255087209c340312af5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "data_in")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY 2072 728 2152 808)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2048 768)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "data_in(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a12467da9f3255087209c350312af5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "Adress")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "3" "0")
+          )
+        )
+      )
+      (GEOMETRY 2072 856 2152 936)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2048 896)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Adress(3:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a12467da9f3255087209c360312af5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2072 1048 2152 1128)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2048 1088)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a12467da9f3255087209c370312af5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2072 1176 2152 1256)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2048 1216)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a12467da9f3255087209c380312af5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "dcf_77_in")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 2072 1368 2152 1448)
+      (SIDE 1)
+      (LABEL
+        (POSITION 2048 1408)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "dcf_77_in")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a12467da9f3255087209c390312af5")
+      (HDL_IDENT
+        (NAME "start_acq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "start_acq")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a12467da9f3255087209c3a0312af5")
+      (HDL_IDENT
+        (NAME "signal_int")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "signal_int")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a12467da9f3255087209c3b0312af5")
+      (HDL_IDENT
+        (NAME "data_out")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "data_out(7:0)")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a12467da9f3255087209c391312af5" "structure")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a12467da9f3255087209c391312af5")
+    (PROPERTIES
+      (PROPERTY "DEFAULT_ARCH" "true")
+    )
+    (HDL_IDENT
+      (NAME "structure")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "filed9a12467da9f3255087209c3c1312af5")
+        (NAME "structure.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'structure' of entity 'DCF_77_IP_stimuli'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     Adress      : out    std_logic_vector(3 downto 0);"
+               "--     chip_select : out    std_logic;"
+               "--     clk         : out    std_logic;"
+               "--     data_in     : out    std_logic_vector(7 downto 0);"
+               "--     data_out    : in     std_logic_vector(7 downto 0);"
+               "--     dcf_77_in   : out    std_logic;"
+               "--     read        : out    std_logic;"
+               "--     reset_n     : out    std_logic;"
+               "--     signal_int  : in     std_logic;"
+               "--     start_acq   : in     std_logic;"
+               "--     write       : out    std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               ""
+               ""
+               "architecture structure of DCF_77_IP_stimuli is"
+               ""
+               "--signaux propres au testbench"
+               "SIGNAL sim_end      : BOOLEAN   := FALSE;"
+               "SIGNAL mark_error   : std_logic := '0';"
+               "SIGNAL error_number : INTEGER   :=  0;"
+               "SIGNAL clk_gen      : std_logic := '0';"
+               ""
+               "BEGIN"
+               "--********** PROCESS \"clk_gengen\" **********"
+               "clk_gengen: PROCESS"
+               "  BEGIN"
+               "  IF sim_end = FALSE THEN"
+               "    clk_gen <= '1', '0' AFTER 1 ns;"
+               "    clk     <= '1', '0' AFTER 5 ns, '1' AFTER 17 ns; --commenter si  on teste une fonction combinatoire (pas de clock)"
+               "    wait for 25 ns;"
+               "  ELSE"
+               "    wait;"
+               "  END IF;"
+               "END PROCESS;"
+               ""
+               "--********** PROCESS \"run\" **********"
+               "run: PROCESS"
+               ""
+               "  PROCEDURE sim_cycle(num : IN integer) IS"
+               "  BEGIN"
+               "    FOR index IN 1 TO num LOOP"
+               "      wait until clk_gen'EVENT AND clk_gen = '1';"
+               "    END LOOP;"
+               "  END sim_cycle;"
+               ""
+               "  --********** PROCEDURE \"init\" **********"
+               "  --fixer toutes les entrees du module à tester (DUT)"
+               "  PROCEDURE init IS"
+               "  BEGIN        "
+               "  "
+               "   	reset_n		<= '0';"
+               "   	chip_select	<= '1'; "
+               " 	read 		<= '0';"
+               "	write 		<= '0';"
+               "	dcf_77_in   <= '0';"
+               "	data_in     <= (OTHERS => 'Z');    "
+               ""
+               "  END init;"
+               ""
+               "  --********** PROCEDURE \"test_signal\" **********"
+               "  PROCEDURE test_signal(signal_test, value: IN std_logic; erreur : IN integer) IS "
+               "	BEGIN"
+               "	   IF signal_test/= value THEN"
+               "         	mark_error <= '1', '0' AFTER 1 ns;"
+               "         	error_number <= erreur;"
+               "         	ASSERT FALSE REPORT \"Etat du signal non correct\" SEVERITY WARNING;"
+               "	   END IF;"
+               "  END test_signal;"
+               ""
+               " --********** PROCEDURE \"test_vecteur\" **********"
+               "  PROCEDURE test_vecteur(signal_test, value: IN std_logic_vector(7 DOWNTO 0); erreur : IN integer) IS "
+               "	BEGIN"
+               "	   IF signal_test/= value THEN"
+               "         	mark_error <= '1', '0' AFTER 1 ns;"
+               "         	error_number <= erreur;"
+               "         	ASSERT FALSE REPORT \"Etat du signal non correct\" SEVERITY WARNING;"
+               "	   END IF;"
+               "  END test_vecteur;         "
+               "  "
+               "  --********** PROCEDURE \"DCF_bit\" **********"
+               "  PROCEDURE DCF_bit(state_bit: IN std_logic) IS "
+               "	BEGIN"
+               "	   IF state_bit = '0' THEN"
+               "           	DCF_77_in <= '1', '0' AFTER 2000 us;"
+               "     "
+               "       ELSIF state_bit = '1' THEN"
+               "            DCF_77_in <= '1', '0' AFTER 1000 us;"
+               " "
+               "                       "
+               "	   END IF;"
+               "	   wait for 10000 us;"
+               "	   "
+               "  END DCF_bit;  "
+               "  "
+               "  --********** PROCEDURE \"DCF_bit\" **********"
+               "  PROCEDURE DCF_end IS "
+               "	BEGIN"
+               "        DCF_77_in <= '0';"
+               "      	wait for 10000 us;"
+               "   	"
+               "  END DCF_end;      "
+               "  "
+               "   --********** PROCEDURE \"WRITE_BYTE\" **********"
+               "   PROCEDURE WRITE_BYTE (data_write: IN STD_LOGIC_VECTOR(7 downto 0); adr: IN STD_LOGIC_VECTOR(3 downto 0)) IS"
+               "     BEGIN"
+               "     chip_select <= '1';"
+               "     write <= '1';"
+               "     "
+               "     Adress <= adr;"
+               "     data_in <= data_write;"
+               "     sim_cycle(1);"
+               "     "
+               "     chip_select <= '0';"
+               "     write <= '0';"
+               "     "
+               "     data_in <= (OTHERS => 'Z');"
+               "   END WRITE_BYTE;"
+               "   "
+               "   --********** PROCEDURE \"READ_BYTE\" **********"
+               "   PROCEDURE READ_BYTE(adr: IN STD_LOGIC_VECTOR (3 downto 0); data_await:IN STD_LOGIC_VECTOR(7 downto 0);erreur : IN integer) IS"
+               "   "
+               "   BEGIN"
+               "   "
+               "     chip_select	<= '1';"
+               "     read 		<= '1';"
+               "   "
+               "     Adress <= adr;"
+               "   "
+               "     sim_cycle(1);"
+               "   "
+               "     IF data_await /= data_out THEN"
+               "       mark_error <= '1', '0' AFTER 1 ns;"
+               "       error_number <= erreur;"
+               "       ASSERT FALSE REPORT \"Etat du signal non correct\" SEVERITY WARNING;"
+               "	  END IF;   "
+               "     "
+               "  	 chip_select	<= '0';"
+               "     read 		<= '0';"
+               "     "
+               "     sim_cycle(1);"
+               "     "
+               "   END READ_BYTE;"
+               " "
+               "  "
+               ""
+               ""
+               "BEGIN --debut de la simulation temps t=0ns"
+               ""
+               "	init;  --appel procdure init"
+               "	ASSERT FALSE REPORT \"la simulation est en cour\" SEVERITY NOTE;"
+               ""
+               "	--debut des tests"
+               "	 sim_cycle(2); "
+               "	 reset_n <= '1';"
+               " "
+               "-- PRESCALER ----------------------------------------- "
+               ""
+               "	 -- T = 25ns"
+               "	 -- F = 40 MHz"
+               "	 -- Prescaler = F/1'000 = 40'000 "
+               ""
+               "   	--	Prescaler => 1ms => faire 100 fois plus petit pour 10us  = 400"
+               "	 "
+               "	 "
+               "	WRITE_BYTE(\"10010000\",x\"3\");"
+               "	WRITE_BYTE(\"00000001\",x\"4\");                                             "
+               ""
+               "-- DCF FRAME ----------------------------------------- "
+               " "
+               " DCF_bit('1');    "
+               " DCF_end;     "
+               ""
+               "	 -- bits 0-14 (témoins d'alertes civiles)"
+               "	 DCF_bit('1');  -- bit 0"
+               "	 DCF_bit('0');"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('0');"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('0');"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('0');"
+               "	 DCF_bit('1');"
+               "	  "
+               "	 -- bits 15-19 (divers)"
+               "	 DCF_bit('0'); -- bit d'appel "
+               "	 DCF_bit('0'); -- annonce un basculement été/hiver (A1)	 "
+               "	 DCF_bit('0'); -- bit de décalage horaire (Z1)"
+               "	 DCF_bit('0'); -- bit de décalage horaire (Z2)  "
+               "	 DCF_bit('0'); -- annonce l'ajout de sec. intercalaire (A2)"
+               "	 "
+               "	 -- bit de début du codage du temps"
+               "	 DCF_bit('1'); -- bit 20 toujours à 1"
+               "	       "
+               "	 -- bits 21-28 (minutes)"
+               "	 DCF_bit('0'); "
+               "	 DCF_bit('0');"
+               "	 DCF_bit('0');"
+               "	 DCF_bit('0'); -- 30min BCD -> 0011 0000 -> lsb first "
+               "	 DCF_bit('0');"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('0'); -- Parité paire"
+               "	              "
+               "	 -- bits 29-35 (heures)"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('0'); "
+               "	 DCF_bit('0'); -- 23h BCD -> 0010 0011 -> lsb first"
+               "	 DCF_bit('0');"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('1'); -- Parité paire"
+               "	 "
+               "	 -- bits 36-41 (jour du mois)"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('0');"
+               "	 DCF_bit('0'); -- 19 BCD -> 0001 1001 -> lsb first"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('1'); "
+               "	 DCF_bit('0');"
+               "	 "
+               "	 -- bits 42-44 (jour de la semaine) : 1 = Lundi, 7 = Dimanche"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('1'); -- Dimanche = 7 = 111"
+               "	 DCF_bit('1'); "
+               "	 "
+               "	 -- bits 45-49 (No du mois)"
+               "	 DCF_bit('0');"
+               "	 DCF_bit('0');"
+               "	 DCF_bit('1'); -- Avril = 4 = 0100"
+               "	 DCF_bit('0');"
+               "	 DCF_bit('0');"
+               "	 "
+               "	 -- bits 50-57 (année dans le siècle)"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('0'); "
+               "	 DCF_bit('1');"
+               "	 DCF_bit('0'); -- 15 BCD -> 0001 0101 -> lsb first"
+               "	 DCF_bit('1');"
+               "	 DCF_bit('0');"
+               "	 DCF_bit('0');"
+               "	 DCF_bit('0'); "
+               "	 DCF_bit('1'); -- Parité paire"
+               "    "
+               "	 DCF_end; 	   -- bit de fin de trame, aucune modulation"
+               "	                                                         "
+               "	 "
+               " -- END FRAME TEST -----------------------------------------  "
+               "    "
+               " --	sim_cycle(1);    "
+               " --	test_signal(signal_int,'1', 1 ); -- Error 1 : End of frame is not detected  "
+               " "
+               " -- READ DATAS ---------------------------------------------"
+               "	 "
+               "	 read <= '1'; "
+               "	 "
+               "	 Adress <= x\"6\"; -- Address of Minutes  "
+               "	 sim_cycle(1); "
+               "	 "
+               "	 test_vecteur(data_out, \"00110000\", 2); -- Value of Minutes "
+               "	 sim_cycle(1);	  	  	  	  "
+               "	 "
+               "	 Adress <= x\"7\"; -- Address of Hours "
+               "	 sim_cycle(1);"
+               "	 "
+               "	 test_vecteur(data_out, \"00100011\", 3); -- Value of Hours "
+               "	 sim_cycle(1); "
+               "	 "
+               "	 Adress <= x\"8\"; -- Address of D of Month  "
+               "	 sim_cycle(1); "
+               "	 "
+               "	 test_vecteur(data_out, \"00011001\", 4); -- Value of D of Month  "
+               "	 sim_cycle(1);	  	  	  	  "
+               "	 "
+               "	 Adress <= x\"9\"; -- Address of D of Week "
+               "	 sim_cycle(1);"
+               "	 "
+               "	 test_vecteur(data_out, \"00000111\", 5); -- Value of D of Week"
+               "	 sim_cycle(1);"
+               "     "
+               "     Adress <= x\"A\"; -- Address of Num of Month "
+               "	 sim_cycle(1);"
+               "	 "
+               "	 test_vecteur(data_out, \"00000100\", 6); -- Value of Num of Month "
+               "	 sim_cycle(1);"
+               "     "
+               "     Adress <= x\"B\"; -- Address of Year "
+               "	 sim_cycle(1);"
+               "	 "
+               "	 test_vecteur(data_out, \"00010101\", 6); -- Value of Year "
+               "	 sim_cycle(1);"
+               "	 "
+               "     read <= '0';                     	"
+               " 		 	"
+               ""
+               "	sim_end <= TRUE;"
+               "	wait;"
+               ""
+               "END PROCESS;"
+               ""
+               "end architecture structure ; -- of DCF_77_IP_stimuli"
+               ""
+               ""
+               "")
+      )
+      (VERILOG_FILE
+        (OBID "filed9a1246710bf3255087209c309312af5")
+        (NAME "structure.v")
+        (VALUE "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

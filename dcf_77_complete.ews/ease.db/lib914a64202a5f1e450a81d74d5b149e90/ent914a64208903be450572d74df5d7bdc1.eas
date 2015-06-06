@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Jun 01 15:25:03 2015")
+      (PROPERTY "STAMP_TIME" "Sat Jun 06 15:05:18 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "vincent.meier")
+      (DESIGNER "mohammed.bensalah")
       (CREATED 1424699544 "Mon Feb 23 14:52:24 2015")
-      (MODIFIED 1433164905 "Mon Jun 01 15:21:45 2015")
+      (MODIFIED 1433595437 "Sat Jun 06 14:57:17 2015")
     )
     (PORT
       (OBID "eprt914a64200b03be450572d74d3ed7bdc1")
@@ -389,10 +389,10 @@
             )
           )
         )
-        (GEOMETRY 5592 1560 5672 1640)
+        (GEOMETRY 5720 1560 5800 1640)
         (SIDE 3)
         (LABEL
-          (POSITION 5696 1600)
+          (POSITION 5824 1600)
           (SCALE 96)
           (COLOR_LINE 0)
           (SIDE 1)
@@ -403,10 +403,10 @@
         (PORT "eprt914a6420eb03be450572d74d40e7bdc1")
         (CONNECTION
           (OBID "ncon914a6420eb03be450572d74d60e7bdc1")
-          (GEOMETRY 5568 1600 5568 1600)
+          (GEOMETRY 5696 1600 5696 1600)
           (SIDE 0)
           (LABEL
-            (POSITION 5568 1568)
+            (POSITION 5696 1568)
             (SCALE 96)
             (COLOR_LINE 0)
             (SIDE 3)
@@ -1691,14 +1691,14 @@
         (PART
           (OBID "nprt914a6420fc53be450572d74dace7bdc1")
           (LABEL
-            (POSITION 5440 1584)
+            (POSITION 5504 1584)
             (SCALE 96)
             (COLOR_LINE 52)
             (SIDE 3)
             (ALIGNMENT 7)
             (FORMAT 4099)
           )
-          (WIRE 5568 1600 5312 1600)
+          (WIRE 5312 1600 5696 1600)
           (PORT
             (OBID "aprt914a6420eb03be450572d74d50e7bdc1")
             (NAME "bit_count")

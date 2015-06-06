@@ -18,7 +18,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="17" />
+   <WVObjectSize size="24" />
    <wvobject fp_name="/dcf77_receiver_tb/dcf_77_in" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">dcf_77_in</obj_property>
       <obj_property name="ObjectShortName">dcf_77_in</obj_property>
@@ -26,6 +26,10 @@
    <wvobject fp_name="/dcf77_receiver_tb/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/dut/u8/freq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">freq</obj_property>
+      <obj_property name="ObjectShortName">freq</obj_property>
    </wvobject>
    <wvobject fp_name="/dcf77_receiver_tb/reset_n" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">reset_n</obj_property>
@@ -63,6 +67,10 @@
       <obj_property name="ElementShortName">program_counter[7:0]</obj_property>
       <obj_property name="ObjectShortName">program_counter[7:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/dut/port_id" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">port_id[7:0]</obj_property>
+      <obj_property name="ObjectShortName">port_id[7:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/dcf77_receiver_tb/time_bc_7seg_msb" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">time_bc_7seg_msb[6:0]</obj_property>
       <obj_property name="ObjectShortName">time_bc_7seg_msb[6:0]</obj_property>
@@ -70,6 +78,26 @@
    <wvobject fp_name="/dcf77_receiver_tb/time_bc_7seg_lsb" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">time_bc_7seg_lsb[6:0]</obj_property>
       <obj_property name="ObjectShortName">time_bc_7seg_lsb[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/dut/u8/bit_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bit_count[5:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_count[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u3/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[11:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u3/sec_overflow" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sec_overflow</obj_property>
+      <obj_property name="ObjectShortName">sec_overflow</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u1/dcf_77_s" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dcf_77_s</obj_property>
+      <obj_property name="ObjectShortName">dcf_77_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u1/rising_edge_dcf_77" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rising_edge_dcf_77</obj_property>
+      <obj_property name="ObjectShortName">rising_edge_dcf_77</obj_property>
    </wvobject>
    <wvobject fp_name="/dcf77_receiver_tb/stimuli/sim_end" type="other" db_ref_id="1">
       <obj_property name="ElementShortName">sim_end</obj_property>

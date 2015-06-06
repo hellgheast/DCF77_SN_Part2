@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Apr 20 13:27:24 2015")
+      (PROPERTY "STAMP_TIME" "Sat Jun 06 15:05:18 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -13,14 +13,14 @@
       (NAME "CheckParity")
       (USERNAME 1)
     )
-    (GEOMETRY 0 0 1024 1024)
+    (GEOMETRY 0 0 1024 896)
     (SIDE 0)
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1427126289 "Mon Mar 23 16:58:09 2015")
-      (MODIFIED 1429529202 "Mon Apr 20 13:26:42 2015")
+      (MODIFIED 1433595437 "Sat Jun 06 14:57:17 2015")
     )
     (PORT
       (OBID "eprtd9a1860af3830155c75009c340f1a963")
@@ -290,7 +290,7 @@
                "")
       )
       (VERILOG_FILE
-        (OBID "file914a6420272e435586b2d74d07f70454")
+        (OBID "file914a6420d2ee2755cf01d74d9966e6e6")
         (NAME "behavior.v")
         (VALUE "")
       )

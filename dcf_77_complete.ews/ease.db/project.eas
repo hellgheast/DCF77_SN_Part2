@@ -15,7 +15,7 @@
     (PROPERTY "PackageFileFormatSpec" "%p.%x")
     (PROPERTY "STAMP_PLATFORM" "PC")
     (PROPERTY "STAMP_REVISION" "Revision 2")
-    (PROPERTY "STAMP_TIME" "Mon Apr 20 13:27:24 2015")
+    (PROPERTY "STAMP_TIME" "Sat Jun 06 15:05:18 2015")
     (PROPERTY "STAMP_TOOL" "Ease")
     (PROPERTY "STAMP_VERSION" "8.0")
     (PROPERTY "VERILOG_VERSION" "Verilog 95")
@@ -28,7 +28,7 @@
     (PROPERTY "VhdlExt" "vhd")
     (PROPERTY "VhdlFileFormatCase" "As is")
   )
-  (DESIGN "design" "lib914a64202a5f1e450a81d74d5b149e90")
+  (DESIGN "design_ip_dcf_77" "lib914a64202a5f1e450a81d74d5b149e90")
   (DESIGN "design" "lib914a64204d8bb2550752d74db8861a13")
   (COMPONENT_LIB "unisim" "lib914a6420739bb2550752d74d99861a13")
   (PACKAGE
