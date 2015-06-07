@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sat Jun 06 17:51:45 2015
+-- Time stamp    : Sun Jun 07 13:45:09 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.DCF77_Receiver_stimuli
--- Last modified : Sat Jun 06 17:48:18 2015.
+-- Last modified : Sun Jun 07 13:45:07 2015.
 --------------------------------------------------------------------------------
 
 
@@ -44,7 +44,7 @@ end entity DCF77_Receiver_stimuli;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.DCF77_Receiver_stimuli.behaviour
--- Last modified : Sat Jun 06 17:48:18 2015.
+-- Last modified : Sun Jun 07 13:45:07 2015.
 --------------------------------------------------------------------------------
 
 
@@ -127,7 +127,7 @@ run: PROCESS
 	BEGIN
 	   IF state_bit = '0' THEN
            	--DCF_77_in <= '1', '0' AFTER 2000 us; 
-           	DCF_77_in <= '1', '0' AFTER 2000 ns; 
+           	DCF_77_in <= '1', '0' AFTER 2000 ns;
      
        ELSIF state_bit = '1' THEN
             --DCF_77_in <= '1', '0' AFTER 1000 us; 
@@ -164,9 +164,9 @@ BEGIN --debut de la simulation temps t=0ns
 
 	 -- T = 25ns
 	 -- F = 40 MHz
-	 -- Prescaler = F/10'000 = 4'000 
+	 -- Prescaler = F/1'000 = 40'000 
 
-   	--	Prescaler => 1ms => faire 100 fois plus petit pour 1us  = 40
+   	--	Prescaler => 1ms => faire 100 fois plus petit pour 10us  = 400
 	 
 
                                                      

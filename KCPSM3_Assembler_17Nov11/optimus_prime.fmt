@@ -155,8 +155,8 @@
               ;Point 2
               LOAD REG_TEMP, 02
               OUTPUT REG_TEMP, DSP_DEBUG     ;
-              ;Prescaler à la valeur  40
-              LOAD REG_A, 40
+              ;Prescaler à la valeur  4
+              LOAD REG_A, 04
               OUTPUT REG_A, DCF_PRSCL        ;
               LOAD REG_A, 00
               OUTPUT REG_A, DCF_PRSCH        ;

@@ -102,16 +102,16 @@ run: PROCESS
 	BEGIN
 	   IF state_bit = '0' THEN
            	--DCF_77_in <= '1', '0' AFTER 2000 us; 
-           	DCF_77_in <= '1', '0' AFTER 200 ns;
+           	DCF_77_in <= '1', '0' AFTER 2000 ns;
      
        ELSIF state_bit = '1' THEN
             --DCF_77_in <= '1', '0' AFTER 1000 us; 
-            DCF_77_in <= '1', '0' AFTER 100 ns;
+            DCF_77_in <= '1', '0' AFTER 1000 ns;
  
                        
 	   END IF;
 	   --wait for 10000 us;
-	   wait for 1000 ns;
+	   wait for 10000 ns;
 	   
   END DCF_bit;  
   
@@ -120,7 +120,7 @@ run: PROCESS
 	BEGIN
         DCF_77_in <= '0';
       	--wait for 10000 us;
-      	wait for 1000 ns;
+      	wait for 10000 ns;
    	
   END DCF_end;      
    
