@@ -6,7 +6,7 @@
 -- HDL library   : design_ip_dcf_77
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 13:18:33 2015
+-- Time stamp    : Sun Jun 07 15:15:40 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_ip_dcf_77.decode_block
--- Last modified : Sat Jun 06 14:57:17 2015.
+-- Last modified : Sun Jun 07 15:15:21 2015.
 --------------------------------------------------------------------------------
 
 
@@ -43,7 +43,7 @@ end entity decode_block;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_ip_dcf_77.decode_block.structure
--- Last modified : Sat Jun 06 14:57:17 2015.
+-- Last modified : Sun Jun 07 15:15:21 2015.
 --------------------------------------------------------------------------------
 
 architecture structure of decode_block is

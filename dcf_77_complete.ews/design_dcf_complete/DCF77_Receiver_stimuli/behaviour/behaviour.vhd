@@ -150,6 +150,9 @@ BEGIN --debut de la simulation temps t=0ns
  
  	 DCF_bit('1');    
  	 DCF_end;  
+
+ 	 DCF_bit('1');    
+ 	 DCF_end;  
  	 
  	 -- Test de réception de trame
  	 test_signal(FrameReception, '0', 0);   

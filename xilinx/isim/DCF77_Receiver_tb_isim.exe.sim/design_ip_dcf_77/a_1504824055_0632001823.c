@@ -36,7 +36,7 @@ static void design_ip_dcf_77_a_1504824055_0632001823_p_0(char *t0)
     char *t7;
     char *t8;
 
-LAB0:    xsi_set_current_line(88, ng0);
+LAB0:    xsi_set_current_line(89, ng0);
 
 LAB3:    t1 = (t0 + 2952U);
     t2 = *((char **)t1);
@@ -68,7 +68,7 @@ static void design_ip_dcf_77_a_1504824055_0632001823_p_1(char *t0)
     char *t7;
     char *t8;
 
-LAB0:    xsi_set_current_line(89, ng0);
+LAB0:    xsi_set_current_line(90, ng0);
 
 LAB3:    t1 = (t0 + 3112U);
     t2 = *((char **)t1);

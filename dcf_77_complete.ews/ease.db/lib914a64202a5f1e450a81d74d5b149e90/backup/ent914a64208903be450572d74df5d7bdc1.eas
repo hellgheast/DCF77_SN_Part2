@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Jun 07 14:42:42 2015")
+      (PROPERTY "STAMP_TIME" "Sun Jun 07 15:18:14 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1424699544 "Mon Feb 23 14:52:24 2015")
-      (MODIFIED 1433680959 "Sun Jun 07 14:42:39 2015")
+      (MODIFIED 1433682921 "Sun Jun 07 15:15:21 2015")
     )
     (PORT
       (OBID "eprt914a64200b03be450572d74d3ed7bdc1")
@@ -1404,45 +1404,6 @@
             (SIDE 2)
             (LABEL
               (POSITION 3264 1312)
-              (SCALE 96)
-              (COLOR_LINE 0)
-              (SIDE 1)
-              (ALIGNMENT 0)
-              (FORMAT 128)
-            )
-          )
-        )
-        (PORT
-          (OBID "cprt914a642051c347554bb2d74deef3e1d5")
-          (HDL_IDENT
-            (NAME "debug_state")
-            (USERNAME 1)
-            (ATTRIBUTES
-              (MODE 2)
-              (CONSTRAINT
-                (DIRECTION 1)
-                (RANGE "1" "0")
-              )
-            )
-          )
-          (GEOMETRY 3160 728 3240 808)
-          (SIDE 1)
-          (LABEL
-            (POSITION 3136 768)
-            (SCALE 96)
-            (COLOR_LINE 0)
-            (SIDE 1)
-            (ALIGNMENT 5)
-            (FORMAT 35)
-            (TEXT "debug_state(1:0)")
-          )
-          (PORT "eprt914a642051c347554bb2d74ddef3e1d5")
-          (CONNECTION
-            (OBID "ncon914a642051c347554bb2d74dfef3e1d5")
-            (GEOMETRY 3264 768 3264 768)
-            (SIDE 2)
-            (LABEL
-              (POSITION 3264 800)
               (SCALE 96)
               (COLOR_LINE 0)
               (SIDE 1)

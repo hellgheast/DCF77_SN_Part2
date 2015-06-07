@@ -100,10 +100,6 @@
       <obj_property name="ElementShortName">sec_overflow</obj_property>
       <obj_property name="ObjectShortName">sec_overflow</obj_property>
    </wvobject>
-   <wvobject fp_name="/dcf77_receiver_tb/dut/u8/signal_int" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">signal_int</obj_property>
-      <obj_property name="ObjectShortName">signal_int</obj_property>
-   </wvobject>
    <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u1/dcf_77_s" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">dcf_77_s</obj_property>
       <obj_property name="ObjectShortName">dcf_77_s</obj_property>
@@ -127,5 +123,74 @@
    <wvobject fp_name="/dcf77_receiver_tb/stimuli/clk_gen" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk_gen</obj_property>
       <obj_property name="ObjectShortName">clk_gen</obj_property>
+   </wvobject>
+   <wvobject fp_name="group28" type="group">
+      <obj_property name="label">Decode_state_machine</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/bit_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bit_count[5:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_count[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/u2/debug_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">debug_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">debug_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/dcf_77_s" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dcf_77_s</obj_property>
+         <obj_property name="ObjectShortName">dcf_77_s</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/freq" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">freq</obj_property>
+         <obj_property name="ObjectShortName">freq</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/getnothing" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">getnothing</obj_property>
+         <obj_property name="ObjectShortName">getnothing</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/high_ms_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">high_ms_count[7:0]</obj_property>
+         <obj_property name="ObjectShortName">high_ms_count[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/reset_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_n</obj_property>
+         <obj_property name="ObjectShortName">reset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/rising_edge_dcf_77" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rising_edge_dcf_77</obj_property>
+         <obj_property name="ObjectShortName">rising_edge_dcf_77</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/sec_overflow" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sec_overflow</obj_property>
+         <obj_property name="ObjectShortName">sec_overflow</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/start" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/state_bit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">state_bit</obj_property>
+         <obj_property name="ObjectShortName">state_bit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/stop" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">stop</obj_property>
+         <obj_property name="ObjectShortName">stop</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/start_net" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">start_net</obj_property>
+         <obj_property name="ObjectShortName">start_net</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/stop_net" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">stop_net</obj_property>
+         <obj_property name="ObjectShortName">stop_net</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u1/u2/stop_temp" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">stop_temp</obj_property>
+         <obj_property name="ObjectShortName">stop_temp</obj_property>
+      </wvobject>
    </wvobject>
 </wave_config>

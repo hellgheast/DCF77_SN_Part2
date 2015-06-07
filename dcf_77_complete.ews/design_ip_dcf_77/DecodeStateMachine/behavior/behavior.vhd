@@ -108,7 +108,7 @@ P1:process (clk, reset_n)
 	
 end process;
 		
-stop_temp <= stop_temp_intern;
+stop_temp <= stop_temp_intern; 
 	
 end architecture behavior ; -- of DecodeStateMachine
                      
