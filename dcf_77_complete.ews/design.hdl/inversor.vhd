@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 13:18:33 2015
+-- Time stamp    : Sun Jun 07 17:05:10 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.inversor
--- Last modified : Mon May 04 19:58:00 2015.
+-- Last modified : Sun Jun 07 17:05:02 2015.
 --------------------------------------------------------------------------------
 
 
@@ -27,13 +27,13 @@ use ieee.numeric_std.all;
 
 entity inversor is
   port (
-    input   : in     std_logic;
-    reset_n : out    std_logic);
+    input : in     std_logic;
+    reset : out    std_logic);
 end entity inversor;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.inversor.rtl
--- Last modified : Mon May 04 19:58:00 2015.
+-- Last modified : Sun Jun 07 17:05:02 2015.
 --------------------------------------------------------------------------------
 
 
@@ -41,7 +41,7 @@ architecture rtl of inversor is
 
 begin
 
-reset_n <= not input;           
+reset <= not input;           
 
 end architecture rtl ; -- of inversor
 

@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Jun 01 16:02:34 2015")
+      (PROPERTY "STAMP_TIME" "Sun Jun 07 17:31:54 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "vincent.meier")
+      (DESIGNER "mohammed.bensalah")
       (CREATED 1433159743 "Mon Jun 01 13:55:43 2015")
-      (MODIFIED 1433167354 "Mon Jun 01 16:02:34 2015")
+      (MODIFIED 1433691114 "Sun Jun 07 17:31:54 2015")
     )
     (PORT
       (OBID "eprtd9a1d649e584c6558e5209c3f2031df6")
@@ -177,7 +177,7 @@
                ""
                "	begin"
                "     "
-               "     if reset_n = '1' then"
+               "     if reset_n = '0' then"
                "	 	time_bc_7seg_lsb   <= (others => '0');"
                "	 	time_bc_7seg_msb  <= (others => '0');"
                ""

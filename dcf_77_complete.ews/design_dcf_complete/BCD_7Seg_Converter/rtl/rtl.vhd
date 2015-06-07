@@ -23,7 +23,7 @@ P1:process(clk, reset_n)
 
 	begin
      
-     if reset_n = '1' then
+     if reset_n = '0' then
 	 	time_bc_7seg_lsb   <= (others => '0');
 	 	time_bc_7seg_msb  <= (others => '0');
 

@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Jun 07 14:42:42 2015")
+      (PROPERTY "STAMP_TIME" "Sun Jun 07 16:48:00 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1424700399 "Mon Feb 23 15:06:39 2015")
-      (MODIFIED 1433680962 "Sun Jun 07 14:42:42 2015")
+      (MODIFIED 1433688480 "Sun Jun 07 16:48:00 2015")
     )
     (PORT
       (OBID "eprt914a6420ff33be450572d74d97e7bdc1")
@@ -224,31 +224,6 @@
         (TEXT "stop_temp")
       )
     )
-    (PORT
-      (OBID "eprt914a642051c347554bb2d74ddef3e1d5")
-      (HDL_IDENT
-        (NAME "debug_state")
-        (USERNAME 1)
-        (ATTRIBUTES
-          (MODE 2)
-          (CONSTRAINT
-            (DIRECTION 1)
-            (RANGE "1" "0")
-          )
-        )
-      )
-      (GEOMETRY 1048 280 1128 360)
-      (SIDE 1)
-      (LABEL
-        (POSITION 1024 320)
-        (SCALE 96)
-        (COLOR_LINE 0)
-        (SIDE 1)
-        (ALIGNMENT 5)
-        (FORMAT 35)
-        (TEXT "debug_state(1:0)")
-      )
-    )
     (ARCH_DECLARATION 2 "arch914a6420fe33be450572d74d67e7bdc1" "behavior")
   )
   (ARCH_DEFINITION
@@ -273,7 +248,6 @@
                "--   port ("
                "--     clk           : in     std_logic;"
                "--     dcf_77_s      : in     std_logic;"
-               "--     debug_state   : out    std_logic_vector(1 downto 0);"
                "--     high_ms_count : in     std_logic_vector(7 downto 0);"
                "--     reset_n       : in     std_logic;"
                "--     sec_overflow  : in     std_logic;"
@@ -373,8 +347,7 @@
                "	"
                "end process;"
                "		"
-               "stop_temp <= stop_temp_intern;     "
-               "debug_state <= StateMachine;"
+               "stop_temp <= stop_temp_intern; "
                "	"
                "end architecture behavior ; -- of DecodeStateMachine"
                "                     "

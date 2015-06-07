@@ -18,7 +18,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="17" />
    <wvobject fp_name="/dcf77_receiver_tb/dut/port_id" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">port_id[7:0]</obj_property>
       <obj_property name="ObjectShortName">port_id[7:0]</obj_property>
@@ -192,6 +192,58 @@
    <wvobject fp_name="group58" type="group">
       <obj_property name="label">DCF_IP_COMPLETE</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/dcf77_receiver_tb/dcf_77_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dcf_77_in</obj_property>
+         <obj_property name="ObjectShortName">dcf_77_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/reset_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_n</obj_property>
+         <obj_property name="ObjectShortName">reset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/framecomplete" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">framecomplete</obj_property>
+         <obj_property name="ObjectShortName">framecomplete</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/frameincorrect" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frameincorrect</obj_property>
+         <obj_property name="ObjectShortName">frameincorrect</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/framereception" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">framereception</obj_property>
+         <obj_property name="ObjectShortName">framereception</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/switch" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">switch[1:0]</obj_property>
+         <obj_property name="ObjectShortName">switch[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/serial_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">serial_out</obj_property>
+         <obj_property name="ObjectShortName">serial_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/test" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">test</obj_property>
+         <obj_property name="ObjectShortName">test</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/debug_leds" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">debug_leds[7:0]</obj_property>
+         <obj_property name="ObjectShortName">debug_leds[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/program_counter" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">program_counter[7:0]</obj_property>
+         <obj_property name="ObjectShortName">program_counter[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/time_bc_7seg_lsb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">time_bc_7seg_lsb[6:0]</obj_property>
+         <obj_property name="ObjectShortName">time_bc_7seg_lsb[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/time_bc_7seg_msb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">time_bc_7seg_msb[6:0]</obj_property>
+         <obj_property name="ObjectShortName">time_bc_7seg_msb[6:0]</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject fp_name="group59" type="group">
       <obj_property name="label">KSP&amp;ROM</obj_property>
@@ -199,6 +251,7 @@
       <wvobject fp_name="/dcf77_receiver_tb/dut/u0/address" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">address[9:0]</obj_property>
          <obj_property name="ObjectShortName">address[9:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/dcf77_receiver_tb/dut/u0/instruction" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">instruction[17:0]</obj_property>
@@ -207,6 +260,7 @@
       <wvobject fp_name="/dcf77_receiver_tb/dut/u0/port_id" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">port_id[7:0]</obj_property>
          <obj_property name="ObjectShortName">port_id[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/dcf77_receiver_tb/dut/u0/write_strobe" type="logic" db_ref_id="1">
          <obj_property name="ElementShortName">write_strobe</obj_property>
@@ -234,17 +288,417 @@
          <obj_property name="BkColor">128 128 255</obj_property>
          <obj_property name="TextColor">230 230 230</obj_property>
       </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u1/address" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">address[9:0]</obj_property>
+         <obj_property name="ObjectShortName">address[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u1/instruction" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">instruction[17:0]</obj_property>
+         <obj_property name="ObjectShortName">instruction[17:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u1/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/dcf77_receiver_tb/dut/u1/address" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">address[9:0]</obj_property>
-      <obj_property name="ObjectShortName">address[9:0]</obj_property>
+   <wvobject fp_name="group103" type="group">
+      <obj_property name="label">FRAME_DECODE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/rbg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rbg[1:0]</obj_property>
+         <obj_property name="ObjectShortName">rbg[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/bit_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bit_count[5:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_count[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/bit_input" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">bit_input</obj_property>
+         <obj_property name="ObjectShortName">bit_input</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_dmonth" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_dmonth[5:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_dmonth[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_dweek" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_dweek[2:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_dweek[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_flags" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_flags[3:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_flags[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_hours" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_hours[5:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_hours[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_minutes" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_minutes[6:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_minutes[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_month" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_month[5:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_month[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_recbits" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_recbits[5:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_recbits[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_status" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_status[7:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_status[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_year" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_year[7:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_year[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reset_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_n</obj_property>
+         <obj_property name="ObjectShortName">reset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/start" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/stop" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">stop</obj_property>
+         <obj_property name="ObjectShortName">stop</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_status_l" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_status_l[7:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_status_l[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_prescaler_l" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_prescaler_l[15:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_prescaler_l[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_flags_l" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_flags_l[3:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_flags_l[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_hours_l" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_hours_l[5:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_hours_l[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_minutes_l" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_minutes_l[6:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_minutes_l[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_dmonth_l" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_dmonth_l[5:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_dmonth_l[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_dweek_l" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_dweek_l[2:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_dweek_l[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_month_l" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_month_l[5:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_month_l[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u2/reg_year_l" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_year_l[7:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_year_l[7:0]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/dcf77_receiver_tb/dut/u1/instruction" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">instruction[17:0]</obj_property>
-      <obj_property name="ObjectShortName">instruction[17:0]</obj_property>
+   <wvobject fp_name="group145" type="group">
+      <obj_property name="label">DECODE_ADRESS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u4/adress" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">adress[7:0]</obj_property>
+         <obj_property name="ObjectShortName">adress[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u4/adress_dcf" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">adress_dcf[3:0]</obj_property>
+         <obj_property name="ObjectShortName">adress_dcf[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u4/adress_displayblock" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">adress_displayblock[2:0]</obj_property>
+         <obj_property name="ObjectShortName">adress_displayblock[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u4/adress_mux_dcf_test" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">adress_mux_dcf_test[1:0]</obj_property>
+         <obj_property name="ObjectShortName">adress_mux_dcf_test[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u4/dcf_cs" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dcf_cs</obj_property>
+         <obj_property name="ObjectShortName">dcf_cs</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u4/displayblock_cs" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">displayblock_cs</obj_property>
+         <obj_property name="ObjectShortName">displayblock_cs</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u4/uart_tx_cs" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">uart_tx_cs</obj_property>
+         <obj_property name="ObjectShortName">uart_tx_cs</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u4/adress_msb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">adress_msb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">adress_msb[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u4/chipselects" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">chipselects[2:0]</obj_property>
+         <obj_property name="ObjectShortName">chipselects[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u4/dcf_select" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dcf_select[3:0]</obj_property>
+         <obj_property name="ObjectShortName">dcf_select[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u4/displayblock_select" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">displayblock_select[3:0]</obj_property>
+         <obj_property name="ObjectShortName">displayblock_select[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u4/mux_select" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mux_select[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mux_select[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u4/uart_select" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">uart_select[3:0]</obj_property>
+         <obj_property name="ObjectShortName">uart_select[3:0]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/dcf77_receiver_tb/dut/u1/clk" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
+   <wvobject fp_name="group159" type="group">
+      <obj_property name="label">REG_COMPLETE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/adress" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">adress[3:0]</obj_property>
+         <obj_property name="ObjectShortName">adress[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/chip_select" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">chip_select</obj_property>
+         <obj_property name="ObjectShortName">chip_select</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/data_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/data_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/dcf_77_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dcf_77_in</obj_property>
+         <obj_property name="ObjectShortName">dcf_77_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/read" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read</obj_property>
+         <obj_property name="ObjectShortName">read</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/reset_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_n</obj_property>
+         <obj_property name="ObjectShortName">reset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/signal_int" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">signal_int</obj_property>
+         <obj_property name="ObjectShortName">signal_int</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/start_acq" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">start_acq</obj_property>
+         <obj_property name="ObjectShortName">start_acq</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/write" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write</obj_property>
+         <obj_property name="ObjectShortName">write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/start_acq_net" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">start_acq_net</obj_property>
+         <obj_property name="ObjectShortName">start_acq_net</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/state" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/freq" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">freq</obj_property>
+         <obj_property name="ObjectShortName">freq</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/dcf_77_s" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dcf_77_s</obj_property>
+         <obj_property name="ObjectShortName">dcf_77_s</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/reg_status" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_status[7:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_status[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/reg_flags" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_flags[3:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_flags[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/reg_dweek" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_dweek[2:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_dweek[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/reg_month" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_month[5:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_month[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/reg_year" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_year[7:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_year[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/signal_int_net" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">signal_int_net</obj_property>
+         <obj_property name="ObjectShortName">signal_int_net</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/prescaler" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">prescaler[15:0]</obj_property>
+         <obj_property name="ObjectShortName">prescaler[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/bit_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bit_count[5:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_count[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/reg_hours" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_hours[5:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_hours[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/reg_minutes" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_minutes[6:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_minutes[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/parityh" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">parityh</obj_property>
+         <obj_property name="ObjectShortName">parityh</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/paritym" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">paritym</obj_property>
+         <obj_property name="ObjectShortName">paritym</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/parityd" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">parityd</obj_property>
+         <obj_property name="ObjectShortName">parityd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/getnothing" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">getnothing</obj_property>
+         <obj_property name="ObjectShortName">getnothing</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/rbg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rbg[1:0]</obj_property>
+         <obj_property name="ObjectShortName">rbg[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/reg_recbits" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_recbits[5:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_recbits[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/reg_dmonth" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_dmonth[5:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_dmonth[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/enable" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">enable</obj_property>
+         <obj_property name="ObjectShortName">enable</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group224" type="group">
+      <obj_property name="label">DISPLAYBLOCK</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/framecomplete" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">framecomplete</obj_property>
+         <obj_property name="ObjectShortName">framecomplete</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/frameincorrect" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frameincorrect</obj_property>
+         <obj_property name="ObjectShortName">frameincorrect</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/framereception" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">framereception</obj_property>
+         <obj_property name="ObjectShortName">framereception</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/adress" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">adress[2:0]</obj_property>
+         <obj_property name="ObjectShortName">adress[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/adress_program" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">adress_program[9:0]</obj_property>
+         <obj_property name="ObjectShortName">adress_program[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/chip_select" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">chip_select</obj_property>
+         <obj_property name="ObjectShortName">chip_select</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/data_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/debug_leds" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">debug_leds[7:0]</obj_property>
+         <obj_property name="ObjectShortName">debug_leds[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/program_counter" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">program_counter[7:0]</obj_property>
+         <obj_property name="ObjectShortName">program_counter[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/reset_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_n</obj_property>
+         <obj_property name="ObjectShortName">reset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/switch" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">switch[1:0]</obj_property>
+         <obj_property name="ObjectShortName">switch[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/time_bc_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">time_bc_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">time_bc_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/write" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write</obj_property>
+         <obj_property name="ObjectShortName">write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/reg_bit_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_bit_count[7:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_bit_count[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/reg_hour" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_hour[7:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_hour[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/reg_minutes" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_minutes[7:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_minutes[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/reg_debug_leds" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_debug_leds[7:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_debug_leds[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/reg_status" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">reg_status[7:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_status[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/bit_count_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bit_count_addr[2:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_count_addr[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/hour_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">hour_addr[2:0]</obj_property>
+         <obj_property name="ObjectShortName">hour_addr[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/min_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">min_addr[2:0]</obj_property>
+         <obj_property name="ObjectShortName">min_addr[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/debug_led_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">debug_led_addr[2:0]</obj_property>
+         <obj_property name="ObjectShortName">debug_led_addr[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/status_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">status_addr[2:0]</obj_property>
+         <obj_property name="ObjectShortName">status_addr[2:0]</obj_property>
+      </wvobject>
    </wvobject>
 </wave_config>

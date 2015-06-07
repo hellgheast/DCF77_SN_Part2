@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 16:13:42 2015
+-- Time stamp    : Sun Jun 07 16:48:04 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.DCF77_Receiver_stimuli
--- Last modified : Sun Jun 07 16:13:41 2015.
+-- Last modified : Sun Jun 07 16:48:00 2015.
 --------------------------------------------------------------------------------
 
 
@@ -44,7 +44,7 @@ end entity DCF77_Receiver_stimuli;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.DCF77_Receiver_stimuli.behaviour
--- Last modified : Sun Jun 07 16:13:41 2015.
+-- Last modified : Sun Jun 07 16:48:00 2015.
 --------------------------------------------------------------------------------
 
 
@@ -208,9 +208,9 @@ BEGIN --debut de la simulation temps t=0ns
 	 
 	 -- bits 15-19 (divers)
 	 DCF_bit('0'); -- bit d'appel 
-	 DCF_bit('0'); -- annonce un basculement été/hiver (A1)	 
+	 DCF_bit('1'); -- annonce un basculement été/hiver (A1)	 
 	 DCF_bit('0'); -- bit de décalage horaire (Z1)
-	 DCF_bit('0'); -- bit de décalage horaire (Z2)  
+	 DCF_bit('1'); -- bit de décalage horaire (Z2)  
 	 DCF_bit('0'); -- annonce l'ajout de sec. intercalaire (A2)
 	 
 	 -- bit de début du codage du temps

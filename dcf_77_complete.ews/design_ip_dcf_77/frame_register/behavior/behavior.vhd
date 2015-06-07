@@ -59,16 +59,16 @@ begin
     CASE unsigned(bit_count) IS 
     
 			WHEN "010001" =>    -- 16
-			   	reg_status_l(2) <= bit_input; --A1     
+			   	reg_flags_l(2) <= bit_input; --A1     
 			   	
 			WHEN "010010" =>
-				reg_status_l(0) <= bit_input; --Z1  
+				reg_flags_l(0) <= bit_input; --Z1  
 				
 			WHEN "010011" =>
-				reg_status_l(1) <= bit_input; --Z2  				
+				reg_flags_l(1) <= bit_input; --Z2  				
 				
 			WHEN "010100" =>                        		
-				reg_status_l(3) <= bit_input; --A2    
+				reg_flags_l(3) <= bit_input; --A2    
 				
 			--WHEN "010101" =>;      -- 21               
 			

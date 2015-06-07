@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sat Jun 06 15:05:18 2015")
+      (PROPERTY "STAMP_TIME" "Sun Jun 07 16:48:00 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1424692479 "Mon Feb 23 12:54:39 2015")
-      (MODIFIED 1433595437 "Sat Jun 06 14:57:17 2015")
+      (MODIFIED 1433688480 "Sun Jun 07 16:48:00 2015")
     )
     (PORT
       (OBID "eprt914a6420d151be450572d74d9257bdc1")
@@ -494,16 +494,16 @@
                "    CASE unsigned(bit_count) IS "
                "    "
                "			WHEN \"010001\" =>    -- 16"
-               "			   	reg_status_l(2) <= bit_input; --A1     "
+               "			   	reg_flags_l(2) <= bit_input; --A1     "
                "			   	"
                "			WHEN \"010010\" =>"
-               "				reg_status_l(0) <= bit_input; --Z1  "
+               "				reg_flags_l(0) <= bit_input; --Z1  "
                "				"
                "			WHEN \"010011\" =>"
-               "				reg_status_l(1) <= bit_input; --Z2  				"
+               "				reg_flags_l(1) <= bit_input; --Z2  				"
                "				"
                "			WHEN \"010100\" =>                        		"
-               "				reg_status_l(3) <= bit_input; --A2    "
+               "				reg_flags_l(3) <= bit_input; --A2    "
                "				"
                "			--WHEN \"010101\" =>;      -- 21               "
                "			"
@@ -598,25 +598,25 @@
                "				reg_year_l(0) 	<= bit_input;"
                "				"
                "			WHEN \"110100\" =>"
-               "				reg_year_l(0) 	<= bit_input;"
+               "				reg_year_l(1) 	<= bit_input;"
                "				"
                "			WHEN \"110101\" =>"
-               "				reg_year_l(0) 	<= bit_input;"
+               "				reg_year_l(2) 	<= bit_input;"
                "				"
                "			WHEN \"110110\" =>"
-               "				reg_year_l(0) 	<= bit_input;"
+               "				reg_year_l(3) 	<= bit_input;"
                "				"
                "			WHEN \"110111\" =>"
-               "				reg_year_l(0) 	<= bit_input; "
+               "				reg_year_l(4) 	<= bit_input; "
                "				"
                "			WHEN \"111000\" =>"
-               "				reg_year_l(0) 	<= bit_input;"
+               "				reg_year_l(5) 	<= bit_input;"
                "				"
                "			WHEN \"111001\" =>"
-               "				reg_year_l(0) 	<= bit_input; "
+               "				reg_year_l(6) 	<= bit_input; "
                "				"
                "			WHEN \"111010\" =>"
-               "				reg_year_l(0) 	<= bit_input; "
+               "				reg_year_l(7) 	<= bit_input; "
                "				"
                "			WHEN \"111011\" =>"
                "				reg_status_l(4) <= bit_input;  --Date"
@@ -638,9 +638,10 @@
                "reg_flags   <= reg_flags_l;"
                "reg_hours   <= reg_hours_l;"
                "reg_minutes <= reg_minutes_l;"
-               "reg_month   <= reg_dmonth_l;"
+               "reg_month   <= reg_month_l;"
                "reg_status  <= reg_status_l;"
                "reg_year    <= reg_year_l;"
+               ""
                ""
                ""
                ""

@@ -6,7 +6,7 @@
 -- HDL library   : design_ip_dcf_77
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 16:13:42 2015
+-- Time stamp    : Sun Jun 07 16:48:04 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_ip_dcf_77.frame_register
--- Last modified : Sun Jun 07 16:13:41 2015.
+-- Last modified : Sun Jun 07 16:48:00 2015.
 --------------------------------------------------------------------------------
 
 
@@ -47,7 +47,7 @@ end entity frame_register;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_ip_dcf_77.frame_register.behavior
--- Last modified : Sun Jun 07 16:13:41 2015.
+-- Last modified : Sun Jun 07 16:48:00 2015.
 --------------------------------------------------------------------------------
 
 
@@ -84,16 +84,16 @@ begin
     CASE unsigned(bit_count) IS 
     
 			WHEN "010001" =>    -- 16
-			   	reg_status_l(2) <= bit_input; --A1     
+			   	reg_flags_l(2) <= bit_input; --A1     
 			   	
 			WHEN "010010" =>
-				reg_status_l(0) <= bit_input; --Z1  
+				reg_flags_l(0) <= bit_input; --Z1  
 				
 			WHEN "010011" =>
-				reg_status_l(1) <= bit_input; --Z2  				
+				reg_flags_l(1) <= bit_input; --Z2  				
 				
 			WHEN "010100" =>                        		
-				reg_status_l(3) <= bit_input; --A2    
+				reg_flags_l(3) <= bit_input; --A2    
 				
 			--WHEN "010101" =>;      -- 21               
 			

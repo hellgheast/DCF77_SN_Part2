@@ -84,7 +84,7 @@ END PROCESS;
 prescaler <= reg_prescaler;
    
 --lecture  
-P2:PROCESS (Adress,reg_dmonth,reg_dweek,reg_flags,reg_hours,reg_minutes,reg_month,reg_status,reg_year)
+P2:PROCESS (rd_acc,Adress,reg_dmonth,reg_dweek,reg_flags,reg_hours,reg_minutes,reg_month,reg_status,reg_year)
 BEGIN
   IF rd_acc = '1' THEN
     data_out <= (OTHERS => '0');

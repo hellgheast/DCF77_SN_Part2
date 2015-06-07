@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 13:18:33 2015
+-- Time stamp    : Sun Jun 07 17:05:10 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.DCF77_Receiver
--- Last modified : Sat Jun 06 17:51:38 2015.
+-- Last modified : Sun Jun 07 17:05:01 2015.
 --------------------------------------------------------------------------------
 
 
@@ -44,7 +44,7 @@ end entity DCF77_Receiver;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.DCF77_Receiver.structure
--- Last modified : Sat Jun 06 17:51:38 2015.
+-- Last modified : Sun Jun 07 17:05:01 2015.
 --------------------------------------------------------------------------------
 
 
@@ -110,8 +110,8 @@ architecture structure of DCF77_Receiver is
 
   component inversor
     port (
-      input   : in     std_logic;
-      reset_n : out    std_logic);
+      input : in     std_logic;
+      reset : out    std_logic);
   end component inversor;
 
   component UartControl
@@ -208,8 +208,8 @@ begin
 
   u6: inversor
     port map(
-      input   => reset_n,
-      reset_n => u6_reset_n);
+      input => reset_n,
+      reset => u6_reset_n);
 
   u7: UartControl
     port map(

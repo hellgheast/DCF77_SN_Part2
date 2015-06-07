@@ -183,9 +183,9 @@ BEGIN --debut de la simulation temps t=0ns
 	 
 	 -- bits 15-19 (divers)
 	 DCF_bit('0'); -- bit d'appel 
-	 DCF_bit('0'); -- annonce un basculement été/hiver (A1)	 
+	 DCF_bit('1'); -- annonce un basculement été/hiver (A1)	 
 	 DCF_bit('0'); -- bit de décalage horaire (Z1)
-	 DCF_bit('0'); -- bit de décalage horaire (Z2)  
+	 DCF_bit('1'); -- bit de décalage horaire (Z2)  
 	 DCF_bit('0'); -- annonce l'ajout de sec. intercalaire (A2)
 	 
 	 -- bit de début du codage du temps

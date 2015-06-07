@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 13:18:33 2015
+-- Time stamp    : Sun Jun 07 17:31:59 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.BCD_7Seg_Converter
--- Last modified : Mon Jun 01 16:02:34 2015.
+-- Last modified : Sun Jun 07 17:31:54 2015.
 --------------------------------------------------------------------------------
 
 
@@ -36,7 +36,7 @@ end entity BCD_7Seg_Converter;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.BCD_7Seg_Converter.rtl
--- Last modified : Mon Jun 01 16:02:34 2015.
+-- Last modified : Sun Jun 07 17:31:54 2015.
 --------------------------------------------------------------------------------
 
 
@@ -48,7 +48,7 @@ P1:process(clk, reset_n)
 
 	begin
      
-     if reset_n = '1' then
+     if reset_n = '0' then
 	 	time_bc_7seg_lsb   <= (others => '0');
 	 	time_bc_7seg_msb  <= (others => '0');
 

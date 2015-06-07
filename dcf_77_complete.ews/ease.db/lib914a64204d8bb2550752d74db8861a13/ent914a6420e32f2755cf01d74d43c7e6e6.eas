@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Jun 07 15:13:12 2015")
+      (PROPERTY "STAMP_TIME" "Sun Jun 07 16:48:00 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1433596478 "Sat Jun 06 15:14:38 2015")
-      (MODIFIED 1433682792 "Sun Jun 07 15:13:12 2015")
+      (MODIFIED 1433688480 "Sun Jun 07 16:48:00 2015")
     )
     (PORT
       (OBID "eprt914a6420e32f2755cf01d74d53c7e6e6")
@@ -532,9 +532,9 @@
                "	 "
                "	 -- bits 15-19 (divers)"
                "	 DCF_bit('0'); -- bit d'appel "
-               "	 DCF_bit('0'); -- annonce un basculement été/hiver (A1)	 "
+               "	 DCF_bit('1'); -- annonce un basculement été/hiver (A1)	 "
                "	 DCF_bit('0'); -- bit de décalage horaire (Z1)"
-               "	 DCF_bit('0'); -- bit de décalage horaire (Z2)  "
+               "	 DCF_bit('1'); -- bit de décalage horaire (Z2)  "
                "	 DCF_bit('0'); -- annonce l'ajout de sec. intercalaire (A2)"
                "	 "
                "	 -- bit de début du codage du temps"
@@ -545,9 +545,9 @@
                "	 DCF_bit('0');"
                "	 DCF_bit('0');"
                "	 DCF_bit('0'); -- 30min BCD -> 0011 0000 -> lsb first "
+               "	 DCF_bit('1');"
+               "	 DCF_bit('1');"
                "	 DCF_bit('0');"
-               "	 DCF_bit('1');"
-               "	 DCF_bit('1');"
                "	 DCF_bit('0'); -- Parité paire"
                "	 "
                "	 -- Test de bitcount et de réception de trame       "
@@ -634,8 +634,7 @@
                " --	test_signal(signal_int,'1', 1 ); -- Error 1 : End of frame is not detected  "
                " "
                " -- READ DATAS ---------------------------------------------"
-               "	 "
-               "                  	"
+               "	              	"
                " 		 	"
                ""
                "	sim_end <= TRUE;"

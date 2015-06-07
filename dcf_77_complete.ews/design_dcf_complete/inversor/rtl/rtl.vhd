@@ -7,8 +7,8 @@
 -- Copy of the interface declaration:
 -- 
 --   port (
---     input   : in     std_logic;
---     reset_n : out    std_logic);
+--     input : in     std_logic;
+--     reset : out    std_logic);
 -- 
 -- EASE/HDL end ----------------------------------------------------------------
 
@@ -16,7 +16,7 @@ architecture rtl of inversor is
 
 begin
 
-reset_n <= not input;           
+reset <= not input;           
 
 end architecture rtl ; -- of inversor
 

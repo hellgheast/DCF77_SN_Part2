@@ -207,8 +207,8 @@ loop:
 	  INPUT REG_A,DCF_BITCOUNT
 	  OUTPUT REG_A,DSP_BCOUNT
 	  ;Vérification si l'interruption à eu lieu
-	  TEST REG_Int,01
-	  JUMP NZ,send_uart
+	  ;TEST REG_Int,01
+	  ;JUMP NZ,send_uart
 	  JUMP loop
 	  
 send_uart:

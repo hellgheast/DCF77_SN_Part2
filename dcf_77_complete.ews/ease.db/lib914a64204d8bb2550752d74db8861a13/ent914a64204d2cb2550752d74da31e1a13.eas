@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sat Jun 06 17:51:41 2015")
+      (PROPERTY "STAMP_TIME" "Sun Jun 07 17:05:02 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1428931284 "Mon Apr 13 15:21:24 2015")
-      (MODIFIED 1433605898 "Sat Jun 06 17:51:38 2015")
+      (MODIFIED 1433689501 "Sun Jun 07 17:05:01 2015")
     )
     (PORT
       (OBID "eprt914a64203f2cb2550752d74df31e1a13")
@@ -1967,7 +1967,7 @@
         (PORT
           (OBID "cprt914a6420f372e355cd60d74d7b24ec03")
           (HDL_IDENT
-            (NAME "reset_n")
+            (NAME "reset")
             (USERNAME 1)
             (ATTRIBUTES
               (MODE 2)
@@ -1982,7 +1982,7 @@
             (SIDE 1)
             (ALIGNMENT 5)
             (FORMAT 35)
-            (TEXT "reset_n")
+            (TEXT "reset")
           )
           (PORT "eprt914a6420f372e355cd60d74d6b24ec03")
           (CONNECTION
@@ -4298,7 +4298,7 @@
           (WIRE 2240 3904 2368 3904)
           (PORT
             (OBID "cprt914a6420f372e355cd60d74d7b24ec03")
-            (NAME "reset_n")
+            (NAME "reset")
           )
           (PORT
             (OBID "cprt914a64206f613755cf01d74d5278e6e6")

@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon May 04 19:58:00 2015")
+      (PROPERTY "STAMP_TIME" "Sun Jun 07 17:05:02 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1430136571 "Mon Apr 27 14:09:31 2015")
-      (MODIFIED 1430762280 "Mon May 04 19:58:00 2015")
+      (MODIFIED 1433689502 "Sun Jun 07 17:05:02 2015")
     )
     (PORT
       (OBID "eprt914a64203172e355cd60d74d2b24ec03")
@@ -49,7 +49,7 @@
     (PORT
       (OBID "eprt914a6420f372e355cd60d74d6b24ec03")
       (HDL_IDENT
-        (NAME "reset_n")
+        (NAME "reset")
         (USERNAME 1)
         (ATTRIBUTES
           (MODE 2)
@@ -64,7 +64,7 @@
         (SIDE 1)
         (ALIGNMENT 5)
         (FORMAT 35)
-        (TEXT "reset_n")
+        (TEXT "reset")
       )
     )
     (ARCH_DECLARATION 2 "arch914a6420bf62e355cd60d74dfa24ec03" "rtl")
@@ -89,8 +89,8 @@
                "-- Copy of the interface declaration:"
                "-- "
                "--   port ("
-               "--     input   : in     std_logic;"
-               "--     reset_n : out    std_logic);"
+               "--     input : in     std_logic;"
+               "--     reset : out    std_logic);"
                "-- "
                "-- EASE/HDL end ----------------------------------------------------------------"
                ""
@@ -98,7 +98,7 @@
                ""
                "begin"
                ""
-               "reset_n <= not input;           "
+               "reset <= not input;           "
                ""
                "end architecture rtl ; -- of inversor"
                ""

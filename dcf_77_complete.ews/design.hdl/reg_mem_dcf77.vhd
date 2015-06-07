@@ -6,7 +6,7 @@
 -- HDL library   : design_ip_dcf_77
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 13:18:33 2015
+-- Time stamp    : Sun Jun 07 17:31:59 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_ip_dcf_77.reg_mem_dcf77
--- Last modified : Sat Jun 06 14:57:17 2015.
+-- Last modified : Sun Jun 07 17:31:54 2015.
 --------------------------------------------------------------------------------
 
 
@@ -53,7 +53,7 @@ end entity reg_mem_dcf77;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_ip_dcf_77.reg_mem_dcf77.behavior
--- Last modified : Sat Jun 06 14:57:17 2015.
+-- Last modified : Sun Jun 07 17:31:54 2015.
 --------------------------------------------------------------------------------
 
 
@@ -109,7 +109,7 @@ END PROCESS;
 prescaler <= reg_prescaler;
    
 --lecture  
-P2:PROCESS (Adress,reg_dmonth,reg_dweek,reg_flags,reg_hours,reg_minutes,reg_month,reg_status,reg_year)
+P2:PROCESS (rd_acc,Adress,reg_dmonth,reg_dweek,reg_flags,reg_hours,reg_minutes,reg_month,reg_status,reg_year)
 BEGIN
   IF rd_acc = '1' THEN
     data_out <= (OTHERS => '0');
