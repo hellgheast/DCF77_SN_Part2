@@ -257,6 +257,7 @@
       <wvobject fp_name="/dcf77_receiver_tb/dut/u0/instruction" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">instruction[17:0]</obj_property>
          <obj_property name="ObjectShortName">instruction[17:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/dcf77_receiver_tb/dut/u0/port_id" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">port_id[7:0]</obj_property>
@@ -640,6 +641,7 @@
       <wvobject fp_name="/dcf77_receiver_tb/dut/u2/debug_leds" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">debug_leds[7:0]</obj_property>
          <obj_property name="ObjectShortName">debug_leds[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/dcf77_receiver_tb/dut/u2/program_counter" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">program_counter[7:0]</obj_property>

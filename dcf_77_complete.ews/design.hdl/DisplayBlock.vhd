@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 18:36:58 2015
+-- Time stamp    : Sun Jun 07 20:43:14 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.DisplayBlock
--- Last modified : Sun Jun 07 18:36:47 2015.
+-- Last modified : Sun Jun 07 20:43:13 2015.
 --------------------------------------------------------------------------------
 
 
@@ -45,7 +45,7 @@ end entity DisplayBlock;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.DisplayBlock.rtl
--- Last modified : Sun Jun 07 18:36:47 2015.
+-- Last modified : Sun Jun 07 20:43:13 2015.
 --------------------------------------------------------------------------------
 
 
@@ -112,7 +112,7 @@ end process;
 debug_leds		<= Reg_debug_leds;
 
 FrameComplete 	<= '1' WHEN Reg_status(1 downto 0) = "10" ELSE '0';
-FrameIncorrect 	<= (Reg_status(2) XOR Reg_status(5)) OR (Reg_status(3) XOR Reg_status(6))OR (Reg_status(4) XOR Reg_status(7));
+FrameIncorrect 	<= NOT(Reg_status(7)AND Reg_status(6) AND Reg_status(5));
 FrameReception 	<= '1' WHEN Reg_status(1 downto 0) = "01" ELSE '0';
 
 time_bc_out		<= Reg_bit_count when switch(0) = '1' else
