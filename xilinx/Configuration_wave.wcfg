@@ -18,7 +18,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="17" />
+   <WVObjectSize size="18" />
    <wvobject fp_name="/dcf77_receiver_tb/dut/port_id" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">port_id[7:0]</obj_property>
       <obj_property name="ObjectShortName">port_id[7:0]</obj_property>
@@ -683,6 +683,30 @@
       <wvobject fp_name="/dcf77_receiver_tb/dut/u2/reg_status" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">reg_status[7:0]</obj_property>
          <obj_property name="ObjectShortName">reg_status[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group299" type="group">
+      <obj_property name="label">LATCH</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u7/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u7/reset_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_n</obj_property>
+         <obj_property name="ObjectShortName">reset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u7/start_acq" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">start_acq</obj_property>
+         <obj_property name="ObjectShortName">start_acq</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u7/stop" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">stop</obj_property>
+         <obj_property name="ObjectShortName">stop</obj_property>
+      </wvobject>
+      <wvobject fp_name="/dcf77_receiver_tb/dut/u8/u7/start_acq_latch" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">start_acq_latch</obj_property>
+         <obj_property name="ObjectShortName">start_acq_latch</obj_property>
       </wvobject>
    </wvobject>
 </wave_config>

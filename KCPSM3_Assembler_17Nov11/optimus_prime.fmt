@@ -290,6 +290,7 @@ bcd_to_ascii:
      ascii_9: 
               LOAD REG_B, CHAR_9             ;
               RETURN 
+              JUMP init                      ;
               ADDRESS 2CF
  int_routine: 
               ;Point 4

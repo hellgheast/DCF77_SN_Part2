@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sat Jun 06 15:30:00 2015")
+      (PROPERTY "STAMP_TIME" "Sun Jun 07 22:36:49 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1433101718 "Sun May 31 21:48:38 2015")
-      (MODIFIED 1433597376 "Sat Jun 06 15:29:36 2015")
+      (MODIFIED 1433709408 "Sun Jun 07 22:36:48 2015")
     )
     (PORT
       (OBID "eprtd9a1a63a0b56b6550c9009c322b3b9a7")
@@ -1109,7 +1109,7 @@
         )
       )
       (COMPONENT
-        (OBID "comp914a6420863f2755cf01d74d15d7e6e6")
+        (OBID "compd9a124a815ba47554752d74df3e3b9f4")
         (HDL_IDENT
           (NAME "u0")
           (USERNAME 1)
@@ -1123,11 +1123,11 @@
           (SIDE 3)
           (ALIGNMENT 6)
           (FORMAT 13)
-          (TEXT "u0:uart_tx:macro_level_definition(B)")
+          (TEXT "u0:uart_tx[X]")
         )
-        (ENTITY "lib914a64204d8bb2550752d74db8861a13" "ent914a6420843f2755cf01d74d83d7e6e6")
+        (ENTITY "lib914a64204d8bb2550752d74db8861a13" "entd9a124a8c3ba47554752d74d3bd3b9f4")
         (PORT
-          (OBID "cprt914a6420963f2755cf01d74d35d7e6e6")
+          (OBID "cprtd9a124a815ba47554752d74d14e3b9f4")
           (HDL_IDENT
             (NAME "data_in")
             (USERNAME 1)
@@ -1151,9 +1151,9 @@
             (FORMAT 35)
             (TEXT "data_in(7:0)")
           )
-          (PORT "eprt914a6420843f2755cf01d74d93d7e6e6")
+          (PORT "eprtd9a124a8c3ba47554752d74d4bd3b9f4")
           (CONNECTION
-            (OBID "ncon914a6420963f2755cf01d74d45d7e6e6")
+            (OBID "ncond9a124a815ba47554752d74d24e3b9f4")
             (GEOMETRY 4096 768 4096 768)
             (SIDE 0)
             (LABEL
@@ -1167,7 +1167,7 @@
           )
         )
         (PORT
-          (OBID "cprt914a6420963f2755cf01d74d55d7e6e6")
+          (OBID "cprtd9a124a815ba47554752d74d34e3b9f4")
           (HDL_IDENT
             (NAME "write_buffer")
             (USERNAME 1)
@@ -1187,9 +1187,9 @@
             (FORMAT 35)
             (TEXT "write_buffer")
           )
-          (PORT "eprt914a6420843f2755cf01d74da3d7e6e6")
+          (PORT "eprtd9a124a8c3ba47554752d74d5bd3b9f4")
           (CONNECTION
-            (OBID "ncon914a6420963f2755cf01d74d65d7e6e6")
+            (OBID "ncond9a124a815ba47554752d74d44e3b9f4")
             (GEOMETRY 4096 896 4096 896)
             (SIDE 0)
             (LABEL
@@ -1203,7 +1203,7 @@
           )
         )
         (PORT
-          (OBID "cprt914a6420963f2755cf01d74d75d7e6e6")
+          (OBID "cprtd9a124a815ba47554752d74d54e3b9f4")
           (HDL_IDENT
             (NAME "reset_buffer")
             (USERNAME 1)
@@ -1223,9 +1223,9 @@
             (FORMAT 35)
             (TEXT "reset_buffer")
           )
-          (PORT "eprt914a6420843f2755cf01d74db3d7e6e6")
+          (PORT "eprtd9a124a8c3ba47554752d74d6bd3b9f4")
           (CONNECTION
-            (OBID "ncon914a6420963f2755cf01d74d85d7e6e6")
+            (OBID "ncond9a124a815ba47554752d74d64e3b9f4")
             (GEOMETRY 4096 1024 4096 1024)
             (SIDE 0)
             (LABEL
@@ -1239,7 +1239,7 @@
           )
         )
         (PORT
-          (OBID "cprt914a6420963f2755cf01d74d95d7e6e6")
+          (OBID "cprtd9a124a815ba47554752d74d74e3b9f4")
           (HDL_IDENT
             (NAME "en_16_x_baud")
             (USERNAME 1)
@@ -1259,9 +1259,9 @@
             (FORMAT 35)
             (TEXT "en_16_x_baud")
           )
-          (PORT "eprt914a6420843f2755cf01d74dc3d7e6e6")
+          (PORT "eprtd9a124a8c3ba47554752d74d7bd3b9f4")
           (CONNECTION
-            (OBID "ncon914a6420963f2755cf01d74da5d7e6e6")
+            (OBID "ncond9a124a815ba47554752d74d84e3b9f4")
             (GEOMETRY 4096 1152 4096 1152)
             (SIDE 0)
             (LABEL
@@ -1275,7 +1275,7 @@
           )
         )
         (PORT
-          (OBID "cprt914a6420963f2755cf01d74db5d7e6e6")
+          (OBID "cprtd9a124a815ba47554752d74d94e3b9f4")
           (HDL_IDENT
             (NAME "serial_out")
             (USERNAME 1)
@@ -1295,9 +1295,9 @@
             (FORMAT 35)
             (TEXT "serial_out")
           )
-          (PORT "eprt914a6420843f2755cf01d74dd3d7e6e6")
+          (PORT "eprtd9a124a8c3ba47554752d74d8bd3b9f4")
           (CONNECTION
-            (OBID "ncon914a6420963f2755cf01d74dc5d7e6e6")
+            (OBID "ncond9a124a815ba47554752d74da4e3b9f4")
             (GEOMETRY 5632 768 5632 768)
             (SIDE 2)
             (LABEL
@@ -1311,7 +1311,7 @@
           )
         )
         (PORT
-          (OBID "cprt914a6420963f2755cf01d74dd5d7e6e6")
+          (OBID "cprtd9a124a815ba47554752d74db4e3b9f4")
           (HDL_IDENT
             (NAME "buffer_full")
             (USERNAME 1)
@@ -1331,9 +1331,9 @@
             (FORMAT 35)
             (TEXT "buffer_full")
           )
-          (PORT "eprt914a6420843f2755cf01d74de3d7e6e6")
+          (PORT "eprtd9a124a8c3ba47554752d74d9bd3b9f4")
           (CONNECTION
-            (OBID "ncon914a6420963f2755cf01d74de5d7e6e6")
+            (OBID "ncond9a124a815ba47554752d74dc4e3b9f4")
             (GEOMETRY 5632 896 5632 896)
             (SIDE 2)
             (LABEL
@@ -1347,7 +1347,7 @@
           )
         )
         (PORT
-          (OBID "cprt914a6420963f2755cf01d74df5d7e6e6")
+          (OBID "cprtd9a124a815ba47554752d74dd4e3b9f4")
           (HDL_IDENT
             (NAME "buffer_half_full")
             (USERNAME 1)
@@ -1367,9 +1367,9 @@
             (FORMAT 35)
             (TEXT "buffer_half_full")
           )
-          (PORT "eprt914a6420843f2755cf01d74df3d7e6e6")
+          (PORT "eprtd9a124a8c3ba47554752d74dabd3b9f4")
           (CONNECTION
-            (OBID "ncon914a6420963f2755cf01d74d06d7e6e6")
+            (OBID "ncond9a124a815ba47554752d74de4e3b9f4")
             (GEOMETRY 5632 1024 5632 1024)
             (SIDE 2)
             (LABEL
@@ -1383,7 +1383,7 @@
           )
         )
         (PORT
-          (OBID "cprt914a6420963f2755cf01d74d16d7e6e6")
+          (OBID "cprtd9a124a815ba47554752d74df4e3b9f4")
           (HDL_IDENT
             (NAME "clk")
             (USERNAME 1)
@@ -1403,9 +1403,9 @@
             (FORMAT 35)
             (TEXT "clk")
           )
-          (PORT "eprt914a6420843f2755cf01d74d04d7e6e6")
+          (PORT "eprtd9a124a8c3ba47554752d74dbbd3b9f4")
           (CBN
-            (OBID "cbn914a6420973f2755cf01d74d17d7e6e6")
+            (OBID "cbnd9a124a806ba47554752d74dcce3b9f4")
             (HDL_IDENT
               (NAME "clk")
               (USERNAME 1)
@@ -1423,7 +1423,7 @@
             (TYPE 0)
           )
           (CONNECTION
-            (OBID "ncon914a6420963f2755cf01d74d26d7e6e6")
+            (OBID "ncond9a124a815ba47554752d74d05e3b9f4")
             (GEOMETRY 4096 1280 4096 1280)
             (SIDE 0)
             (LABEL
@@ -1465,7 +1465,7 @@
             (NAME "serial_out")
           )
           (PORT
-            (OBID "cprt914a6420963f2755cf01d74db5d7e6e6")
+            (OBID "cprtd9a124a815ba47554752d74d94e3b9f4")
             (NAME "serial_out")
           )
         )
@@ -1502,7 +1502,7 @@
             (NAME "data_out")
           )
           (PORT
-            (OBID "cprt914a6420963f2755cf01d74d35d7e6e6")
+            (OBID "cprtd9a124a815ba47554752d74d14e3b9f4")
             (NAME "data_in")
           )
         )
@@ -1535,7 +1535,7 @@
             (NAME "reset_buffer")
           )
           (PORT
-            (OBID "cprt914a6420963f2755cf01d74d75d7e6e6")
+            (OBID "cprtd9a124a815ba47554752d74d54e3b9f4")
             (NAME "reset_buffer")
           )
         )
@@ -1570,7 +1570,7 @@
             (NAME "en_16_x_baud")
           )
           (PORT
-            (OBID "cprt914a6420963f2755cf01d74d95d7e6e6")
+            (OBID "cprtd9a124a815ba47554752d74d74e3b9f4")
             (NAME "en_16_x_baud")
           )
         )
@@ -1700,7 +1700,7 @@
             (NAME "clk")
           )
           (PORT
-            (OBID "cprt914a6420963f2755cf01d74d16d7e6e6")
+            (OBID "cprtd9a124a815ba47554752d74df4e3b9f4")
             (NAME "clk")
           )
         )
@@ -1757,7 +1757,7 @@
             (NAME "buffer_full")
           )
           (PORT
-            (OBID "cprt914a6420963f2755cf01d74dd5d7e6e6")
+            (OBID "cprtd9a124a815ba47554752d74db4e3b9f4")
             (NAME "buffer_full")
           )
         )
@@ -1792,7 +1792,7 @@
             (NAME "buffer_half_full")
           )
           (PORT
-            (OBID "cprt914a6420963f2755cf01d74df5d7e6e6")
+            (OBID "cprtd9a124a815ba47554752d74dd4e3b9f4")
             (NAME "buffer_half_full")
           )
         )
@@ -1825,7 +1825,7 @@
             (NAME "write_buffer")
           )
           (PORT
-            (OBID "cprt914a6420963f2755cf01d74d55d7e6e6")
+            (OBID "cprtd9a124a815ba47554752d74d34e3b9f4")
             (NAME "write_buffer")
           )
         )

@@ -6,7 +6,7 @@
 -- HDL library   : design_ip_dcf_77
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 20:13:05 2015
+-- Time stamp    : Sun Jun 07 21:42:28 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_ip_dcf_77.DCF_77_IP
--- Last modified : Sat Jun 06 14:57:17 2015.
+-- Last modified : Sun Jun 07 21:42:15 2015.
 --------------------------------------------------------------------------------
 
 
@@ -42,33 +42,33 @@ end entity DCF_77_IP;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_ip_dcf_77.DCF_77_IP.structure
--- Last modified : Sat Jun 06 14:57:17 2015.
+-- Last modified : Sun Jun 07 21:42:15 2015.
 --------------------------------------------------------------------------------
 
 architecture structure of DCF_77_IP is
 
-  signal start_acq_net  : std_logic;
-  signal state          : std_logic;
-  signal freq           : std_logic;
-  signal dcf_77_s       : std_logic;
-  signal reg_status     : std_logic_vector(7 downto 0);
-  signal reg_flags      : std_logic_vector(3 downto 0);
-  signal reg_dweek      : std_logic_vector(2 downto 0);
-  signal reg_month      : std_logic_vector(5 downto 0);
-  signal reg_year       : std_logic_vector(7 downto 0);
-  signal signal_int_net : std_logic;
-  signal prescaler      : std_logic_vector(15 downto 0);
-  signal bit_count      : std_logic_vector(5 downto 0);
-  signal reg_hours      : std_logic_vector(5 downto 0);
-  signal reg_minutes    : std_logic_vector(6 downto 0);
-  signal ParityH        : std_logic;
-  signal ParityM        : std_logic;
-  signal ParityD        : std_logic;
-  signal getNothing     : std_logic;
-  signal RBG            : std_logic_vector(1 downto 0);
-  signal reg_recbits    : std_logic_vector(5 downto 0);
-  signal reg_dmonth     : std_logic_vector(5 downto 0);
-  signal Enable         : std_logic;
+  signal state         : std_logic;
+  signal freq          : std_logic;
+  signal dcf_77_s      : std_logic;
+  signal reg_status    : std_logic_vector(7 downto 0);
+  signal reg_flags     : std_logic_vector(3 downto 0);
+  signal reg_dweek     : std_logic_vector(2 downto 0);
+  signal reg_month     : std_logic_vector(5 downto 0);
+  signal reg_year      : std_logic_vector(7 downto 0);
+  signal stop          : std_logic;
+  signal prescaler     : std_logic_vector(15 downto 0);
+  signal bit_count     : std_logic_vector(5 downto 0);
+  signal reg_hours     : std_logic_vector(5 downto 0);
+  signal reg_minutes   : std_logic_vector(6 downto 0);
+  signal ParityH       : std_logic;
+  signal ParityM       : std_logic;
+  signal ParityD       : std_logic;
+  signal getNothing    : std_logic;
+  signal RBG           : std_logic_vector(1 downto 0);
+  signal reg_recbits   : std_logic_vector(5 downto 0);
+  signal reg_dmonth    : std_logic_vector(5 downto 0);
+  signal Enable        : std_logic;
+  signal start_acq_net : std_logic;
 
   component div_freq
     port (
@@ -170,9 +170,16 @@ architecture structure of DCF_77_IP is
       year    : in     std_logic_vector(7 downto 0));
   end component CheckParity;
 
+  component amp_int
+    port (
+      clk       : in     std_logic;
+      reset_n   : in     std_logic;
+      start_acq : out    std_logic;
+      stop      : in     std_logic);
+  end component amp_int;
+
 begin
   start_acq <= start_acq_net;
-  signal_int <= signal_int_net;
 
   u0: div_freq
     port map(
@@ -192,7 +199,7 @@ begin
       reset_n    => reset_n,
       start      => start_acq_net,
       state_bit  => state,
-      stop       => signal_int_net);
+      stop       => stop);
 
   u2: frame_register
     port map(
@@ -211,7 +218,7 @@ begin
       reg_year    => reg_year,
       reset_n     => reset_n,
       start       => start_acq_net,
-      stop        => signal_int_net);
+      stop        => stop);
 
   u3: sync_dcf77
     port map(
@@ -253,7 +260,7 @@ begin
       getNothing => getNothing,
       reset_n    => reset_n,
       start      => start_acq_net,
-      stop       => signal_int_net);
+      stop       => stop);
 
   u6: CheckParity
     port map(
@@ -266,5 +273,12 @@ begin
       minutes => reg_minutes,
       month   => reg_month,
       year    => reg_year);
+
+  u7: amp_int
+    port map(
+      clk       => clk,
+      reset_n   => reset_n,
+      start_acq => signal_int,
+      stop      => stop);
 end architecture structure ; -- of DCF_77_IP
 

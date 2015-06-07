@@ -100,7 +100,7 @@ int main(int argc, char **argv)
     design_dcf_complete_a_0550431143_0622287258_init();
     design_dcf_complete_a_3515141664_0632001823_init();
     design_dcf_complete_a_3186406764_1516540902_init();
-    unisim_a_2106051382_0762929208_init();
+    unisim_a_0242196086_0762929208_init();
     design_dcf_complete_a_2471018112_2111220564_init();
     design_ip_dcf_77_a_1078965014_2372691052_init();
     design_ip_dcf_77_a_1373089465_2372691052_init();
@@ -116,6 +116,7 @@ int main(int argc, char **argv)
     design_ip_dcf_77_a_3152274375_2372691052_init();
     design_ip_dcf_77_a_0927493535_2372691052_init();
     design_ip_dcf_77_a_0136892271_2372691052_init();
+    design_ip_dcf_77_a_3686607729_1516540902_init();
     design_ip_dcf_77_a_1330657866_0632001823_init();
     unisim_a_2121384304_3723259517_init();
     unisim_a_2261302797_3723259517_init();

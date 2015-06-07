@@ -1,0 +1,16 @@
+-- EASE/HDL begin --------------------------------------------------------------
+-- 
+-- Architecture 'rtl' of entity 'amp_int'.
+-- 
+--------------------------------------------------------------------------------
+-- 
+-- Copy of the interface declaration:
+-- 
+-- EASE/HDL end ----------------------------------------------------------------
+
+architecture rtl of amp_int is
+
+begin
+
+end architecture rtl ; -- of amp_int
+

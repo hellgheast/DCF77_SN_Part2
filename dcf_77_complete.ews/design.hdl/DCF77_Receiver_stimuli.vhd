@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 20:43:14 2015
+-- Time stamp    : Sun Jun 07 21:36:46 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.DCF77_Receiver_stimuli
--- Last modified : Sun Jun 07 20:43:13 2015.
+-- Last modified : Sun Jun 07 21:22:08 2015.
 --------------------------------------------------------------------------------
 
 
@@ -44,7 +44,7 @@ end entity DCF77_Receiver_stimuli;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.DCF77_Receiver_stimuli.behaviour
--- Last modified : Sun Jun 07 20:43:13 2015.
+-- Last modified : Sun Jun 07 21:22:08 2015.
 --------------------------------------------------------------------------------
 
 

@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 20:43:14 2015
+-- Time stamp    : Sun Jun 07 21:36:46 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.DisplayBlock
--- Last modified : Sun Jun 07 20:43:13 2015.
+-- Last modified : Sun Jun 07 21:22:08 2015.
 --------------------------------------------------------------------------------
 
 
@@ -45,7 +45,7 @@ end entity DisplayBlock;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.DisplayBlock.rtl
--- Last modified : Sun Jun 07 20:43:13 2015.
+-- Last modified : Sun Jun 07 21:22:08 2015.
 --------------------------------------------------------------------------------
 
 

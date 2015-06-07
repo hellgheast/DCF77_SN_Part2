@@ -1,0 +1,173 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "ent914a6420d98947554bb2d74d6cb4e1d5")
+    (PROPERTIES
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Sun Jun 07 21:42:17 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+    )
+    (HDL_IDENT
+      (NAME "amp_int")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 832 448)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 0)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1433704605 "Sun Jun 07 21:16:45 2015")
+      (MODIFIED 1433706137 "Sun Jun 07 21:42:17 2015")
+    )
+    (PORT
+      (OBID "eprt914a6420169947554bb2d74df1c4e1d5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "stop")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "stop")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420b69947554bb2d74d42c4e1d5")
+      (HDL_IDENT
+        (NAME "start_acq")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 792 88 872 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 768 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "start_acq")
+      )
+    )
+    (PORT
+      (OBID "eprt914a6420989947554bb2d74dc2c4e1d5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 53 235)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (PORT
+      (OBID "eprt914a64205c9947554bb2d74d94c4e1d5")
+      (PROPERTIES
+        (PROPERTY "SensitivityList" "Yes")
+      )
+      (HDL_IDENT
+        (NAME "reset_n")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_n")
+      )
+    )
+    (ARCH_DECLARATION 2 "arch914a6420d98947554bb2d74d9cb4e1d5" "rtl")
+  )
+  (ARCH_DEFINITION
+    (OBID "arch914a6420d98947554bb2d74d9cb4e1d5")
+    (HDL_IDENT
+      (NAME "rtl")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "file914a6420d98947554bb2d74dacb4e1d5")
+        (NAME "rtl.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'rtl' of entity 'amp_int'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     clk       : in     std_logic;"
+               "--     reset_n   : in     std_logic;"
+               "--     start_acq : out    std_logic;"
+               "--     stop      : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture rtl of amp_int is"
+               ""
+               "signal signal_int_latch	:std_logic;"
+               ""
+               "begin"
+               ""
+               "process (clk,reset_n)"
+               "begin"
+               "  IF reset_n = '0' THEN"
+               "    signal_int_latch <= '0';    "
+               "  ELSIF clk'EVENT AND clk = '1' THEN"
+               "    signal_int_latch <= stop;"
+               "  END IF;"
+               "end process;"
+               ""
+               "start_acq <= signal_int_latch OR  stop;"
+               ""
+               ""
+               ""
+               "end architecture rtl ; -- of amp_int"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

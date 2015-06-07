@@ -349,7 +349,7 @@ ascii_9:
 RETURN  
 
 
-
+JUMP init;
 	 
 	 
 	 ADDRESS 2CF

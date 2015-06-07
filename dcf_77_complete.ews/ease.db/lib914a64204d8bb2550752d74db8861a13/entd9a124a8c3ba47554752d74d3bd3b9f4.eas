@@ -1,0 +1,274 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a124a8c3ba47554752d74d3bd3b9f4")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlfd9a124a8c3ba47554752d74d2bd3b9f4")
+      (PROPERTY "HDL_FILENAME" "C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/KCPSM3/VHDL/uart_tx.vhd")
+      (PROPERTY "IMPORTED_LAST" "1433709372")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Sun Jun 07 22:36:49 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1070459596")
+    )
+    (HDL_IDENT
+      (NAME "uart_tx")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1408 768)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "mohammed.bensalah")
+      (CREATED 1433709372 "Sun Jun 07 22:36:12 2015")
+      (MODIFIED 1433709402 "Sun Jun 07 22:36:42 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack914a642052dbb2550752d74dcd7c1a13")
+        (LIBRARY "ieee")
+        (NAME "std_logic_arith")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack914a642052dbb2550752d74ddd7c1a13")
+        (LIBRARY "ieee")
+        (NAME "std_logic_unsigned")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack914a6420739bb2550752d74dd9861a13")
+        (LIBRARY "unisim")
+        (NAME "VCOMPONENTS")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a124a8c3ba47554752d74d4bd3b9f4")
+      (HDL_IDENT
+        (NAME "data_in")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "data_in(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a124a8c3ba47554752d74d5bd3b9f4")
+      (HDL_IDENT
+        (NAME "write_buffer")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "write_buffer")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a124a8c3ba47554752d74d6bd3b9f4")
+      (HDL_IDENT
+        (NAME "reset_buffer")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "reset_buffer")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a124a8c3ba47554752d74d7bd3b9f4")
+      (HDL_IDENT
+        (NAME "en_16_x_baud")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "en_16_x_baud")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a124a8c3ba47554752d74d8bd3b9f4")
+      (HDL_IDENT
+        (NAME "serial_out")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 88 1448 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "serial_out")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a124a8c3ba47554752d74d9bd3b9f4")
+      (HDL_IDENT
+        (NAME "buffer_full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 216 1448 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "buffer_full")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a124a8c3ba47554752d74dabd3b9f4")
+      (HDL_IDENT
+        (NAME "buffer_half_full")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1368 344 1448 424)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1344 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "buffer_half_full")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a124a8c3ba47554752d74dbbd3b9f4")
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 600 40 680)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 640)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a124a8c3ba47554752d74d0cd3b9f4" "macro_level_definition")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a124a8c3ba47554752d74d0cd3b9f4")
+    (HDL_IDENT
+      (NAME "macro_level_definition")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "filed9a124a834ba47554752d74de3e3b9f4")
+        (NAME "macro_level_definition.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'macro_level_definition' of entity 'uart_tx'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     data_in          : in     std_logic_vector(7 downto 0);"
+               "--     write_buffer     : in     std_logic;"
+               "--     reset_buffer     : in     std_logic;"
+               "--     en_16_x_baud     : in     std_logic;"
+               "--     serial_out       : out    std_logic;"
+               "--     buffer_full      : out    std_logic;"
+               "--     buffer_half_full : out    std_logic;"
+               "--     clk              : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture macro_level_definition of uart_tx is"
+               ""
+               "begin"
+               ""
+               "end architecture macro_level_definition ; -- of uart_tx"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

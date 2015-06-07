@@ -16,8 +16,8 @@
       <key type="bool" value="false" name="StartBrowser"/>
     </section>
     <section name="Markers">
-      <key type="string" value="diag914a64204d2cb2550752d74db31e1a13" name="CurrentDiagram"/>
-      <key type="string" value="design_dcf_complete:Toplevel:&lt;Internal>/comp914a64204d2cb2550752d74dc31e1a13" name="CurrentPath"/>
+      <key type="string" value="diagd9a1a63a6956b6550c9009c3b1b3b9a7" name="CurrentDiagram"/>
+      <key type="string" value="design_dcf_complete:Toplevel:&lt;Internal>/comp914a64204d2cb2550752d74dc31e1a13/compd9a1a63a6956b6550c9009c3c1b3b9a7" name="CurrentPath"/>
       <key type="string" value="ent914a6420e32f2755cf01d74d33c7e6e6" name="HdlOutputObject"/>
     </section>
     <section name="DiagramGridVisible">
@@ -64,57 +64,55 @@
     </section>
     <section name="DatabaseView">
       <key type="bool" value="true" name="arch914a64204d2cb2550752d74dd31e1a13"/>
-      <key type="bool" value="true" name="arch914a6420843f2755cf01d74d34d7e6e6"/>
-      <key type="bool" value="true" name="arch914a6420c75f2755cf01d74d8fe7e6e6"/>
       <key type="bool" value="true" name="arch914a6420e32f2755cf01d74d35c7e6e6"/>
       <key type="bool" value="true" name="ent914a64207e613755cf01d74dfa68e6e6"/>
       <key type="bool" value="true" name="lib914a64202a5f1e450a81d74d5b149e90"/>
     </section>
     <section name="GenerationStamps">
-      <key type="string" value="1433691119" name="entd9a1d649f384c6558e5209c381031df6"/>
-      <key type="string" value="1433691119" name="archd9a1d649f384c6558e5209c3c1031df6"/>
-      <key type="string" value="1433675914" name="entd9a1a63a4376b6550c9009c30cb3b9a7"/>
-      <key type="string" value="1433675914" name="archd9a1a63a4376b6550c9009c34cb3b9a7"/>
-      <key type="string" value="1433675914" name="entd9a1a63ae176b6550c9009c3abb3b9a7"/>
-      <key type="string" value="1433675914" name="archd9a1a63ae176b6550c9009c3dbb3b9a7"/>
-      <key type="string" value="1433689510" name="ent914a6420bf62e355cd60d74dca24ec03"/>
-      <key type="string" value="1433689510" name="arch914a6420bf62e355cd60d74dfa24ec03"/>
-      <key type="string" value="1433675914" name="ent914a6420c752e355cd60d74d0bf3ec03"/>
-      <key type="string" value="1433675914" name="arch914a6420c752e355cd60d74d3bf3ec03"/>
-      <key type="string" value="1433675914" name="entd9a1860a11830155c75009c39fe1a963"/>
-      <key type="string" value="1433675914" name="archd9a1860a11830155c75009c3cfe1a963"/>
-      <key type="string" value="1433675914" name="entd9a1860a6bb20155c75009c3b5a1a963"/>
-      <key type="string" value="1433675914" name="archd9a1860a6bb20155c75009c3e5a1a963"/>
-      <key type="string" value="1433691119" name="ent914a6420f3b1be450572d74dba57bdc1"/>
-      <key type="string" value="1433691119" name="arch914a6420f3b1be450572d74dea57bdc1"/>
-      <key type="string" value="1433675914" name="ent914a64201a91be450572d74d9557bdc1"/>
-      <key type="string" value="1433675914" name="arch914a64201a91be450572d74dd557bdc1"/>
-      <key type="string" value="1433688484" name="ent914a6420ff41be450572d74d3257bdc1"/>
-      <key type="string" value="1433688484" name="arch914a6420ff41be450572d74d6257bdc1"/>
-      <key type="string" value="1433675914" name="ent914a6420c44adf458472d74d1d86b0b7"/>
-      <key type="string" value="1433675914" name="arch914a6420c44adf458472d74d4d86b0b7"/>
-      <key type="string" value="1433675914" name="ent914a6420421adf458472d74dd886b0b7"/>
-      <key type="string" value="1433675914" name="arch914a6420421adf458472d74d0986b0b7"/>
-      <key type="string" value="1433675914" name="ent914a6420f762be450572d74da3c7bdc1"/>
-      <key type="string" value="1433675914" name="arch914a6420f762be450572d74dd3c7bdc1"/>
-      <key type="string" value="1433675914" name="entd9a1e65b2ef391554a9109c3dbf681d5"/>
-      <key type="string" value="1433675914" name="archd9a1e65b2ef391554a9109c30cf681d5"/>
-      <key type="string" value="1433688484" name="ent914a6420fe33be450572d74d27e7bdc1"/>
-      <key type="string" value="1433688484" name="arch914a6420fe33be450572d74d67e7bdc1"/>
-      <key type="string" value="1433675914" name="ent914a6420e723be450572d74db4e7bdc1"/>
-      <key type="string" value="1433675914" name="arch914a6420e723be450572d74df4e7bdc1"/>
-      <key type="string" value="1433682940" name="ent914a64208903be450572d74df5d7bdc1"/>
-      <key type="string" value="1433682940" name="arch914a64208903be450572d74d16d7bdc1"/>
-      <key type="string" value="1433675914" name="ent914a6420b1102e450a81d74dd3249e90"/>
-      <key type="string" value="1433675914" name="arch914a6420b1102e450a81d74d14249e90"/>
-      <key type="string" value="1433675914" name="ent914a64207c002e450a81d74d72249e90"/>
-      <key type="string" value="1433675914" name="arch914a64207c002e450a81d74da2249e90"/>
-      <key type="string" value="1433675914" name="ent914a64200d5f1e450a81d74dfb149e90"/>
-      <key type="string" value="1433675914" name="arch914a64200d5f1e450a81d74d2c149e90"/>
-      <key type="string" value="1433675914" name="ent914a6420a07f43554572d74deda514e7"/>
-      <key type="string" value="1433675914" name="arch914a6420a07f43554572d74d2ea514e7"/>
-      <key type="string" value="1433693259" name="ent914a642026de43554572d74d0ca514e7"/>
-      <key type="string" value="1433693259" name="arch914a642026de43554572d74d3ca514e7"/>
+      <key type="string" value="1433705806" name="entd9a1d649f384c6558e5209c381031df6"/>
+      <key type="string" value="1433705806" name="archd9a1d649f384c6558e5209c3c1031df6"/>
+      <key type="string" value="1433705806" name="entd9a1a63a4376b6550c9009c30cb3b9a7"/>
+      <key type="string" value="1433705806" name="archd9a1a63a4376b6550c9009c34cb3b9a7"/>
+      <key type="string" value="1433705806" name="entd9a1a63ae176b6550c9009c3abb3b9a7"/>
+      <key type="string" value="1433705806" name="archd9a1a63ae176b6550c9009c3dbb3b9a7"/>
+      <key type="string" value="1433705806" name="ent914a6420bf62e355cd60d74dca24ec03"/>
+      <key type="string" value="1433705806" name="arch914a6420bf62e355cd60d74dfa24ec03"/>
+      <key type="string" value="1433705806" name="ent914a6420c752e355cd60d74d0bf3ec03"/>
+      <key type="string" value="1433705806" name="arch914a6420c752e355cd60d74d3bf3ec03"/>
+      <key type="string" value="1433705806" name="entd9a1860a11830155c75009c39fe1a963"/>
+      <key type="string" value="1433705806" name="archd9a1860a11830155c75009c3cfe1a963"/>
+      <key type="string" value="1433705806" name="entd9a1860a6bb20155c75009c3b5a1a963"/>
+      <key type="string" value="1433705806" name="archd9a1860a6bb20155c75009c3e5a1a963"/>
+      <key type="string" value="1433705806" name="ent914a6420f3b1be450572d74dba57bdc1"/>
+      <key type="string" value="1433705806" name="arch914a6420f3b1be450572d74dea57bdc1"/>
+      <key type="string" value="1433705806" name="ent914a64201a91be450572d74d9557bdc1"/>
+      <key type="string" value="1433705806" name="arch914a64201a91be450572d74dd557bdc1"/>
+      <key type="string" value="1433705806" name="ent914a6420ff41be450572d74d3257bdc1"/>
+      <key type="string" value="1433705806" name="arch914a6420ff41be450572d74d6257bdc1"/>
+      <key type="string" value="1433705806" name="ent914a6420c44adf458472d74d1d86b0b7"/>
+      <key type="string" value="1433705806" name="arch914a6420c44adf458472d74d4d86b0b7"/>
+      <key type="string" value="1433705806" name="ent914a6420421adf458472d74dd886b0b7"/>
+      <key type="string" value="1433705806" name="arch914a6420421adf458472d74d0986b0b7"/>
+      <key type="string" value="1433705806" name="ent914a6420f762be450572d74da3c7bdc1"/>
+      <key type="string" value="1433705806" name="arch914a6420f762be450572d74dd3c7bdc1"/>
+      <key type="string" value="1433705806" name="entd9a1e65b2ef391554a9109c3dbf681d5"/>
+      <key type="string" value="1433705806" name="archd9a1e65b2ef391554a9109c30cf681d5"/>
+      <key type="string" value="1433705806" name="ent914a6420fe33be450572d74d27e7bdc1"/>
+      <key type="string" value="1433705806" name="arch914a6420fe33be450572d74d67e7bdc1"/>
+      <key type="string" value="1433705806" name="ent914a6420e723be450572d74db4e7bdc1"/>
+      <key type="string" value="1433705806" name="arch914a6420e723be450572d74df4e7bdc1"/>
+      <key type="string" value="1433705806" name="ent914a64208903be450572d74df5d7bdc1"/>
+      <key type="string" value="1433705806" name="arch914a64208903be450572d74d16d7bdc1"/>
+      <key type="string" value="1433705806" name="ent914a6420b1102e450a81d74dd3249e90"/>
+      <key type="string" value="1433705806" name="arch914a6420b1102e450a81d74d14249e90"/>
+      <key type="string" value="1433705806" name="ent914a64207c002e450a81d74d72249e90"/>
+      <key type="string" value="1433705806" name="arch914a64207c002e450a81d74da2249e90"/>
+      <key type="string" value="1433706148" name="ent914a64200d5f1e450a81d74dfb149e90"/>
+      <key type="string" value="1433706148" name="arch914a64200d5f1e450a81d74d2c149e90"/>
+      <key type="string" value="1433705806" name="ent914a6420a07f43554572d74deda514e7"/>
+      <key type="string" value="1433705806" name="arch914a6420a07f43554572d74d2ea514e7"/>
+      <key type="string" value="1433705806" name="ent914a642026de43554572d74d0ca514e7"/>
+      <key type="string" value="1433705806" name="arch914a642026de43554572d74d3ca514e7"/>
       <key type="string" value="1433524766" name="ent914a64200d7e43554572d74d98a314e7"/>
       <key type="string" value="1433524766" name="arch914a6420578e43554572d74df08414e7"/>
       <key type="string" value="1433524766" name="ent914a64200d7e43554572d74d49a314e7"/>
@@ -123,26 +121,28 @@
       <key type="string" value="1433524766" name="arch914a64200d7e43554572d74dd0b314e7"/>
       <key type="string" value="1433524766" name="ent914a64205f4e43554572d74d7ee214e7"/>
       <key type="string" value="1433524766" name="arch914a64205f4e43554572d74d231314e7"/>
-      <key type="string" value="1433675914" name="entd9a1a63a6956b6550c9009c3a1b3b9a7"/>
-      <key type="string" value="1433675914" name="archd9a1a63a6956b6550c9009c3d1b3b9a7"/>
-      <key type="string" value="1433689510" name="ent914a64204d2cb2550752d74da31e1a13"/>
-      <key type="string" value="1433689510" name="arch914a64204d2cb2550752d74dd31e1a13"/>
+      <key type="string" value="1433705806" name="entd9a1a63a6956b6550c9009c3a1b3b9a7"/>
+      <key type="string" value="1433705806" name="archd9a1a63a6956b6550c9009c3d1b3b9a7"/>
+      <key type="string" value="1433705806" name="ent914a64204d2cb2550752d74da31e1a13"/>
+      <key type="string" value="1433705806" name="arch914a64204d2cb2550752d74dd31e1a13"/>
       <key type="string" value="1433593622" name="entd9a1d64906e3c6558e5209c315f21df6"/>
       <key type="string" value="1433593622" name="archd9a1d64906e3c6558e5209c3d6f21df6"/>
       <key type="string" value="1433524766" name="entd9a1d64906e3c6558e5209c305f21df6"/>
       <key type="string" value="1433524766" name="archd9a1d64906e3c6558e5209c3f6f21df6"/>
-      <key type="string" value="1433688484" name="ent914a6420e32f2755cf01d74d43c7e6e6"/>
-      <key type="string" value="1433688484" name="arch914a6420e32f2755cf01d74d15c7e6e6"/>
+      <key type="string" value="1433705806" name="ent914a6420e32f2755cf01d74d43c7e6e6"/>
+      <key type="string" value="1433705806" name="arch914a6420e32f2755cf01d74d15c7e6e6"/>
       <key type="string" value="1433596917" name="ent914a6420bc0f2755cf01d74d91c6e6e6"/>
       <key type="string" value="1433596917" name="arch914a6420bc0f2755cf01d74d46e6e6e6"/>
-      <key type="string" value="1433675914" name="ent914a6420e32f2755cf01d74d33c7e6e6"/>
-      <key type="string" value="1433675914" name="arch914a6420e32f2755cf01d74d35c7e6e6"/>
-      <key type="string" value="1433675914" name="ent914a6420405f2755cf01d74d85e7e6e6"/>
-      <key type="string" value="1433675914" name="arch914a6420c75f2755cf01d74d8fe7e6e6"/>
-      <key type="string" value="1433675914" name="ent914a6420405f2755cf01d74d56e7e6e6"/>
-      <key type="string" value="1433675914" name="arch914a6420505f2755cf01d74df6e7e6e6"/>
-      <key type="string" value="1433675914" name="ent914a6420843f2755cf01d74d83d7e6e6"/>
-      <key type="string" value="1433675914" name="arch914a6420843f2755cf01d74d34d7e6e6"/>
+      <key type="string" value="1433705806" name="ent914a6420e32f2755cf01d74d33c7e6e6"/>
+      <key type="string" value="1433705806" name="arch914a6420e32f2755cf01d74d35c7e6e6"/>
+      <key type="string" value="1433705806" name="ent914a6420405f2755cf01d74d85e7e6e6"/>
+      <key type="string" value="1433705806" name="arch914a6420c75f2755cf01d74d8fe7e6e6"/>
+      <key type="string" value="1433705806" name="ent914a6420405f2755cf01d74d56e7e6e6"/>
+      <key type="string" value="1433705806" name="arch914a6420505f2755cf01d74df6e7e6e6"/>
+      <key type="string" value="1433705806" name="ent914a6420843f2755cf01d74d83d7e6e6"/>
+      <key type="string" value="1433705806" name="arch914a6420843f2755cf01d74d34d7e6e6"/>
+      <key type="string" value="1433706148" name="ent914a6420d98947554bb2d74d6cb4e1d5"/>
+      <key type="string" value="1433706148" name="arch914a6420d98947554bb2d74d9cb4e1d5"/>
     </section>
     <section name="GeneratedHdlFiles">
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/BCD_7Seg_Converter.vhd" name="entd9a1d649f384c6558e5209c381031df6"/>
@@ -217,6 +217,8 @@
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/kcuart_tx.vhd" name="arch914a6420505f2755cf01d74df6e7e6e6"/>
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/uart_tx.vhd" name="ent914a6420843f2755cf01d74d83d7e6e6"/>
       <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/uart_tx.vhd" name="arch914a6420843f2755cf01d74d34d7e6e6"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/amp_int.vhd" name="ent914a6420d98947554bb2d74d6cb4e1d5"/>
+      <key type="string" value="C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/amp_int.vhd" name="arch914a6420d98947554bb2d74d9cb4e1d5"/>
     </section>
     <section name="SimulatorCompileTimes">
       <key type="int" value="0" name="design::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/KCPSM3_Assembler_17Nov11/optimus_prime.vhd"/>
@@ -283,19 +285,10 @@
       <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/kcuart_tx.vhd"/>
       <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/uart_tx.vhd"/>
       <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/KCPSM3/VHDL/kcpsm3.vhd"/>
+      <key type="int" value="0" name="design_ip_dcf_77::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/amp_int.vhd"/>
     </section>
     <section name="DiagramView">
-      <key type="geometry" value="4067,0,13723,5401" name="diag914a64204d2cb2550752d74db31e1a13"/>
-      <key type="geometry" value="0,0,7498,4264" name="diag914a6420e32f2755cf01d74df4c7e6e6"/>
-      <key type="geometry" value="0,0,11252,6400" name="diag914a64200d5f1e450a81d74d0c149e90"/>
-      <key type="geometry" value="0,0,7498,4264" name="diag914a6420b1102e450a81d74de3249e90"/>
-      <key type="geometry" value="0,0,7497,4264" name="diag914a64208903be450572d74d06d7bdc1"/>
-      <key type="geometry" value="0,0,7498,4265" name="diagd9a1a63a6956b6550c9009c3b1b3b9a7"/>
-      <key type="geometry" value="0,0,16878,9599" name="diag914a64200c5f2755cf01d74df108e6e6"/>
-      <key type="geometry" value="25622,32808,57485,50929" name="diag914a64200c5f2755cf01d74de108e6e6"/>
-      <key type="geometry" value="0,0,11252,6400" name="diag914a64200c5f2755cf01d74d5208e6e6"/>
-      <key type="geometry" value="0,0,50637,28799" name="diag914a64200c5f2755cf01d74dd108e6e6"/>
-      <key type="geometry" value="0,0,7498,4264" name="diag914a64204d8bb2550752d74dc8861a13"/>
+      <key type="geometry" value="0,0,7499,4265" name="diagd9a1a63a6956b6550c9009c3b1b3b9a7"/>
     </section>
   </sections>
 </CONFIGURATION>
