@@ -44,7 +44,7 @@ P1:process(clk, reset_n)
 
 	begin
      
-	if reset_n = '1' then
+	if reset_n = '0' then
 	 	Reg_bit_count   <= (others => '0');
 	 	Reg_hour	    <= (others => '0');
 		Reg_minutes	    <= (others => '0');
