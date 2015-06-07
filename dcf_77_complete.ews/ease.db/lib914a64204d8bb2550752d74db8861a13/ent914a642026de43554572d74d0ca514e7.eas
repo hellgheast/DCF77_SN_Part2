@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Mon Jun 01 15:40:30 2015")
+      (PROPERTY "STAMP_TIME" "Sun Jun 07 18:36:47 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "vincent.meier")
+      (DESIGNER "mohammed.bensalah")
       (CREATED 1429532002 "Mon Apr 20 14:13:22 2015")
-      (MODIFIED 1433166029 "Mon Jun 01 15:40:29 2015")
+      (MODIFIED 1433695007 "Sun Jun 07 18:36:47 2015")
     )
     (PORT
       (OBID "eprt914a642088de43554572d74daca514e7")
@@ -426,7 +426,7 @@
                ""
                "	begin"
                "     "
-               "	if reset_n = '1' then"
+               "	if reset_n = '0' then"
                "	 	Reg_bit_count   <= (others => '0');"
                "	 	Reg_hour	    <= (others => '0');"
                "		Reg_minutes	    <= (others => '0');"
@@ -445,7 +445,7 @@
                "				case adress is"
                "			"
                "			   		when bit_count_addr => "
-               "						Reg_debug_leds <= data_in;"
+               "						Reg_bit_count <= data_in;"
                "					when hour_addr =>"
                "						Reg_hour <= data_in;  "
                "				   	when min_addr =>"
@@ -467,6 +467,7 @@
                "end process;"
                ""
                "debug_leds		<= Reg_debug_leds;"
+               ""
                "FrameComplete 	<= '1' WHEN Reg_status(1 downto 0) = \"10\" ELSE '0';"
                "FrameIncorrect 	<= (Reg_status(2) XOR Reg_status(5)) OR (Reg_status(3) XOR Reg_status(6))OR (Reg_status(4) XOR Reg_status(7));"
                "FrameReception 	<= '1' WHEN Reg_status(1 downto 0) = \"01\" ELSE '0';"

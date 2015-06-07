@@ -178,6 +178,9 @@
               ;Affichage du bitcount
               INPUT REG_A, DCF_BITCOUNT
               OUTPUT REG_A, DSP_BCOUNT
+              ;Envoi du Status
+              INPUT REG_A, DCF_STATUS
+              OUTPUT REG_A, DSP_STATUS
               ;Vérification si l'interruption à eu lieu
               ;TEST REG_Int,01
               ;JUMP NZ,send_uart

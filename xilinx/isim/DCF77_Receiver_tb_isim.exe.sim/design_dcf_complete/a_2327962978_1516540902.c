@@ -240,7 +240,7 @@ LAB16:    goto LAB14;
 LAB17:    xsi_set_current_line(91, ng0);
     t1 = (t0 + 2152U);
     t10 = *((char **)t1);
-    t1 = (t0 + 7584);
+    t1 = (t0 + 7392);
     t20 = (t1 + 56U);
     t21 = *((char **)t20);
     t22 = (t21 + 56U);
@@ -354,7 +354,7 @@ static void design_dcf_complete_a_2327962978_1516540902_p_2(char *t0)
     char *t21;
     char *t22;
 
-LAB0:    xsi_set_current_line(113, ng0);
+LAB0:    xsi_set_current_line(114, ng0);
     t1 = (t0 + 3912U);
     t2 = *((char **)t1);
     t3 = (7 - 1);
@@ -468,7 +468,7 @@ static void design_dcf_complete_a_2327962978_1516540902_p_3(char *t0)
     char *t52;
     char *t53;
 
-LAB0:    xsi_set_current_line(114, ng0);
+LAB0:    xsi_set_current_line(115, ng0);
 
 LAB3:    t1 = (t0 + 3912U);
     t2 = *((char **)t1);
@@ -563,7 +563,7 @@ static void design_dcf_complete_a_2327962978_1516540902_p_4(char *t0)
     char *t21;
     char *t22;
 
-LAB0:    xsi_set_current_line(115, ng0);
+LAB0:    xsi_set_current_line(116, ng0);
     t1 = (t0 + 3912U);
     t2 = *((char **)t1);
     t3 = (7 - 1);
@@ -674,7 +674,7 @@ static void design_dcf_complete_a_2327962978_1516540902_p_5(char *t0)
     char *t49;
     char *t50;
 
-LAB0:    xsi_set_current_line(117, ng0);
+LAB0:    xsi_set_current_line(118, ng0);
     t1 = (t0 + 2792U);
     t2 = *((char **)t1);
     t3 = (0 - 1);

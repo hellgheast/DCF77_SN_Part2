@@ -127,6 +127,7 @@
       <wvobject fp_name="/dcf77_receiver_tb/dut/u8/reg_recbits" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">reg_recbits[5:0]</obj_property>
          <obj_property name="ObjectShortName">reg_recbits[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/dcf77_receiver_tb/dut/u8/reg_dmonth" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">reg_dmonth[5:0]</obj_property>
@@ -675,30 +676,11 @@
       <wvobject fp_name="/dcf77_receiver_tb/dut/u2/reg_debug_leds" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">reg_debug_leds[7:0]</obj_property>
          <obj_property name="ObjectShortName">reg_debug_leds[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/dcf77_receiver_tb/dut/u2/reg_status" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">reg_status[7:0]</obj_property>
          <obj_property name="ObjectShortName">reg_status[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/bit_count_addr" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">bit_count_addr[2:0]</obj_property>
-         <obj_property name="ObjectShortName">bit_count_addr[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/hour_addr" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">hour_addr[2:0]</obj_property>
-         <obj_property name="ObjectShortName">hour_addr[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/min_addr" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">min_addr[2:0]</obj_property>
-         <obj_property name="ObjectShortName">min_addr[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/debug_led_addr" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">debug_led_addr[2:0]</obj_property>
-         <obj_property name="ObjectShortName">debug_led_addr[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/dcf77_receiver_tb/dut/u2/status_addr" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">status_addr[2:0]</obj_property>
-         <obj_property name="ObjectShortName">status_addr[2:0]</obj_property>
       </wvobject>
    </wvobject>
 </wave_config>

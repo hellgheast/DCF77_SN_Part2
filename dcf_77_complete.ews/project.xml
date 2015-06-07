@@ -16,8 +16,8 @@
       <key type="bool" value="false" name="StartBrowser"/>
     </section>
     <section name="Markers">
-      <key type="string" value="diag914a64200d5f1e450a81d74d0c149e90" name="CurrentDiagram"/>
-      <key type="string" value="design_dcf_complete:Toplevel:&lt;Internal>/comp914a64204d2cb2550752d74dc31e1a13/comp914a6420bb3f2755cf01d74debd7e6e6" name="CurrentPath"/>
+      <key type="string" value="diag914a64204d2cb2550752d74db31e1a13" name="CurrentDiagram"/>
+      <key type="string" value="design_dcf_complete:Toplevel:&lt;Internal>/comp914a64204d2cb2550752d74dc31e1a13" name="CurrentPath"/>
       <key type="string" value="ent914a6420e32f2755cf01d74d33c7e6e6" name="HdlOutputObject"/>
     </section>
     <section name="DiagramGridVisible">
@@ -71,8 +71,8 @@
       <key type="bool" value="true" name="lib914a64202a5f1e450a81d74d5b149e90"/>
     </section>
     <section name="GenerationStamps">
-      <key type="string" value="1433690325" name="entd9a1d649f384c6558e5209c381031df6"/>
-      <key type="string" value="1433690325" name="archd9a1d649f384c6558e5209c3c1031df6"/>
+      <key type="string" value="1433691119" name="entd9a1d649f384c6558e5209c381031df6"/>
+      <key type="string" value="1433691119" name="archd9a1d649f384c6558e5209c3c1031df6"/>
       <key type="string" value="1433675914" name="entd9a1a63a4376b6550c9009c30cb3b9a7"/>
       <key type="string" value="1433675914" name="archd9a1a63a4376b6550c9009c34cb3b9a7"/>
       <key type="string" value="1433675914" name="entd9a1a63ae176b6550c9009c3abb3b9a7"/>
@@ -85,8 +85,8 @@
       <key type="string" value="1433675914" name="archd9a1860a11830155c75009c3cfe1a963"/>
       <key type="string" value="1433675914" name="entd9a1860a6bb20155c75009c3b5a1a963"/>
       <key type="string" value="1433675914" name="archd9a1860a6bb20155c75009c3e5a1a963"/>
-      <key type="string" value="1433690325" name="ent914a6420f3b1be450572d74dba57bdc1"/>
-      <key type="string" value="1433690325" name="arch914a6420f3b1be450572d74dea57bdc1"/>
+      <key type="string" value="1433691119" name="ent914a6420f3b1be450572d74dba57bdc1"/>
+      <key type="string" value="1433691119" name="arch914a6420f3b1be450572d74dea57bdc1"/>
       <key type="string" value="1433675914" name="ent914a64201a91be450572d74d9557bdc1"/>
       <key type="string" value="1433675914" name="arch914a64201a91be450572d74dd557bdc1"/>
       <key type="string" value="1433688484" name="ent914a6420ff41be450572d74d3257bdc1"/>
@@ -113,8 +113,8 @@
       <key type="string" value="1433675914" name="arch914a64200d5f1e450a81d74d2c149e90"/>
       <key type="string" value="1433675914" name="ent914a6420a07f43554572d74deda514e7"/>
       <key type="string" value="1433675914" name="arch914a6420a07f43554572d74d2ea514e7"/>
-      <key type="string" value="1433675914" name="ent914a642026de43554572d74d0ca514e7"/>
-      <key type="string" value="1433675914" name="arch914a642026de43554572d74d3ca514e7"/>
+      <key type="string" value="1433693259" name="ent914a642026de43554572d74d0ca514e7"/>
+      <key type="string" value="1433693259" name="arch914a642026de43554572d74d3ca514e7"/>
       <key type="string" value="1433524766" name="ent914a64200d7e43554572d74d98a314e7"/>
       <key type="string" value="1433524766" name="arch914a6420578e43554572d74df08414e7"/>
       <key type="string" value="1433524766" name="ent914a64200d7e43554572d74d49a314e7"/>
@@ -285,7 +285,7 @@
       <key type="int" value="0" name="design_dcf_complete::C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/KCPSM3/VHDL/kcpsm3.vhd"/>
     </section>
     <section name="DiagramView">
-      <key type="geometry" value="4743,0,14239,5401" name="diag914a64204d2cb2550752d74db31e1a13"/>
+      <key type="geometry" value="4067,0,13723,5401" name="diag914a64204d2cb2550752d74db31e1a13"/>
       <key type="geometry" value="0,0,7498,4264" name="diag914a6420e32f2755cf01d74df4c7e6e6"/>
       <key type="geometry" value="0,0,11252,6400" name="diag914a64200d5f1e450a81d74d0c149e90"/>
       <key type="geometry" value="0,0,7498,4264" name="diag914a6420b1102e450a81d74de3249e90"/>
