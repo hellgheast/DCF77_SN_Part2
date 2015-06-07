@@ -196,9 +196,9 @@ BEGIN --debut de la simulation temps t=0ns
 	 DCF_bit('0');
 	 DCF_bit('0');
 	 DCF_bit('0'); -- 30min BCD -> 0011 0000 -> lsb first 
+	 DCF_bit('1');
+	 DCF_bit('1');
 	 DCF_bit('0');
-	 DCF_bit('1');
-	 DCF_bit('1');
 	 DCF_bit('0'); -- Parité paire
 	 
 	 -- Test de bitcount et de réception de trame       
@@ -285,8 +285,7 @@ BEGIN --debut de la simulation temps t=0ns
  --	test_signal(signal_int,'1', 1 ); -- Error 1 : End of frame is not detected  
  
  -- READ DATAS ---------------------------------------------
-	 
-                  	
+	              	
  		 	
 
 	sim_end <= TRUE;

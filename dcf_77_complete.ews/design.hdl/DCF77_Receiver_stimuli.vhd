@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 15:13:17 2015
+-- Time stamp    : Sun Jun 07 16:13:42 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.DCF77_Receiver_stimuli
--- Last modified : Sun Jun 07 15:13:12 2015.
+-- Last modified : Sun Jun 07 16:13:41 2015.
 --------------------------------------------------------------------------------
 
 
@@ -44,7 +44,7 @@ end entity DCF77_Receiver_stimuli;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.DCF77_Receiver_stimuli.behaviour
--- Last modified : Sun Jun 07 15:13:12 2015.
+-- Last modified : Sun Jun 07 16:13:41 2015.
 --------------------------------------------------------------------------------
 
 
@@ -221,9 +221,9 @@ BEGIN --debut de la simulation temps t=0ns
 	 DCF_bit('0');
 	 DCF_bit('0');
 	 DCF_bit('0'); -- 30min BCD -> 0011 0000 -> lsb first 
+	 DCF_bit('1');
+	 DCF_bit('1');
 	 DCF_bit('0');
-	 DCF_bit('1');
-	 DCF_bit('1');
 	 DCF_bit('0'); -- Parité paire
 	 
 	 -- Test de bitcount et de réception de trame       
@@ -310,8 +310,7 @@ BEGIN --debut de la simulation temps t=0ns
  --	test_signal(signal_int,'1', 1 ); -- Error 1 : End of frame is not detected  
  
  -- READ DATAS ---------------------------------------------
-	 
-                  	
+	              	
  		 	
 
 	sim_end <= TRUE;

@@ -6,7 +6,7 @@
 -- HDL library   : design_ip_dcf_77
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 13:18:33 2015
+-- Time stamp    : Sun Jun 07 16:13:42 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_ip_dcf_77.frame_register
--- Last modified : Sat Jun 06 14:57:17 2015.
+-- Last modified : Sun Jun 07 16:13:41 2015.
 --------------------------------------------------------------------------------
 
 
@@ -47,7 +47,7 @@ end entity frame_register;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_ip_dcf_77.frame_register.behavior
--- Last modified : Sat Jun 06 14:57:17 2015.
+-- Last modified : Sun Jun 07 16:13:41 2015.
 --------------------------------------------------------------------------------
 
 
@@ -188,25 +188,25 @@ begin
 				reg_year_l(0) 	<= bit_input;
 				
 			WHEN "110100" =>
-				reg_year_l(0) 	<= bit_input;
+				reg_year_l(1) 	<= bit_input;
 				
 			WHEN "110101" =>
-				reg_year_l(0) 	<= bit_input;
+				reg_year_l(2) 	<= bit_input;
 				
 			WHEN "110110" =>
-				reg_year_l(0) 	<= bit_input;
+				reg_year_l(3) 	<= bit_input;
 				
 			WHEN "110111" =>
-				reg_year_l(0) 	<= bit_input; 
+				reg_year_l(4) 	<= bit_input; 
 				
 			WHEN "111000" =>
-				reg_year_l(0) 	<= bit_input;
+				reg_year_l(5) 	<= bit_input;
 				
 			WHEN "111001" =>
-				reg_year_l(0) 	<= bit_input; 
+				reg_year_l(6) 	<= bit_input; 
 				
 			WHEN "111010" =>
-				reg_year_l(0) 	<= bit_input; 
+				reg_year_l(7) 	<= bit_input; 
 				
 			WHEN "111011" =>
 				reg_status_l(4) <= bit_input;  --Date
@@ -228,9 +228,10 @@ reg_dweek   <= reg_dweek_l;
 reg_flags   <= reg_flags_l;
 reg_hours   <= reg_hours_l;
 reg_minutes <= reg_minutes_l;
-reg_month   <= reg_dmonth_l;
+reg_month   <= reg_month_l;
 reg_status  <= reg_status_l;
 reg_year    <= reg_year_l;
+
 
 
 
