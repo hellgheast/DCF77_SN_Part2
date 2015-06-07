@@ -679,7 +679,7 @@ LAB4:    t6 = (t2 == (unsigned char)3);
         goto LAB5;
 
 LAB6:
-LAB3:    t12 = (10000 * 1000LL);
+LAB3:    t12 = (100 * 1000000LL);
     xsi_process_wait(t1, t12);
 
 LAB10:    t7 = (t1 + 88U);
@@ -713,7 +713,7 @@ LAB2:    t7 = (t0 + 6008);
     t11 = *((char **)t10);
     *((unsigned char *)t11) = (unsigned char)3;
     xsi_driver_first_trans_delta(t7, 0U, 1, 0LL);
-    t12 = (2000 * 1000LL);
+    t12 = (20 * 1000000LL);
     t13 = (t0 + 6008);
     t14 = (t13 + 56U);
     t15 = *((char **)t14);
@@ -730,7 +730,7 @@ LAB5:    t7 = (t0 + 6008);
     t11 = *((char **)t10);
     *((unsigned char *)t11) = (unsigned char)3;
     xsi_driver_first_trans_delta(t7, 0U, 1, 0LL);
-    t12 = (1000 * 1000LL);
+    t12 = (10 * 1000000LL);
     t13 = (t0 + 6008);
     t14 = (t13 + 56U);
     t15 = *((char **)t14);
@@ -769,7 +769,7 @@ LAB0:    t4 = (t0 + 6008);
     t8 = *((char **)t7);
     *((unsigned char *)t8) = (unsigned char)2;
     xsi_driver_first_trans_fast_port(t4);
-    t9 = (10000 * 1000LL);
+    t9 = (100 * 1000000LL);
     xsi_process_wait(t1, t9);
 
 LAB5:    t4 = (t1 + 88U);

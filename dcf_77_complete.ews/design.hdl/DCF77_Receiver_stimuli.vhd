@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 13:45:09 2015
+-- Time stamp    : Sun Jun 07 13:58:04 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.DCF77_Receiver_stimuli
--- Last modified : Sun Jun 07 13:45:07 2015.
+-- Last modified : Sun Jun 07 13:57:59 2015.
 --------------------------------------------------------------------------------
 
 
@@ -44,7 +44,7 @@ end entity DCF77_Receiver_stimuli;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.DCF77_Receiver_stimuli.behaviour
--- Last modified : Sun Jun 07 13:45:07 2015.
+-- Last modified : Sun Jun 07 13:57:59 2015.
 --------------------------------------------------------------------------------
 
 
@@ -127,16 +127,16 @@ run: PROCESS
 	BEGIN
 	   IF state_bit = '0' THEN
            	--DCF_77_in <= '1', '0' AFTER 2000 us; 
-           	DCF_77_in <= '1', '0' AFTER 2000 ns;
+           	DCF_77_in <= '1', '0' AFTER 20 us;
      
        ELSIF state_bit = '1' THEN
             --DCF_77_in <= '1', '0' AFTER 1000 us; 
-            DCF_77_in <= '1', '0' AFTER 1000 ns;
+            DCF_77_in <= '1', '0' AFTER 10 us;
  
                        
 	   END IF;
 	   --wait for 10000 us;
-	   wait for 10000 ns;
+	   wait for 100 us;
 	   
   END DCF_bit;  
   
@@ -145,7 +145,7 @@ run: PROCESS
 	BEGIN
         DCF_77_in <= '0';
       	--wait for 10000 us;
-      	wait for 10000 ns;
+      	wait for 100 us;
    	
   END DCF_end;      
    

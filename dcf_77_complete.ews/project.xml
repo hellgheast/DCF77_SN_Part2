@@ -16,8 +16,8 @@
       <key type="bool" value="false" name="StartBrowser"/>
     </section>
     <section name="Markers">
-      <key type="string" value="diag914a64204d2cb2550752d74db31e1a13" name="CurrentDiagram"/>
-      <key type="string" value="design_dcf_complete:DCF77_Receiver:&lt;Internal>" name="CurrentPath"/>
+      <key type="string" value="diag914a6420b1102e450a81d74de3249e90" name="CurrentDiagram"/>
+      <key type="string" value="design_dcf_complete:DCF77_Receiver_tb:&lt;Internal>/comp914a6420e32f2755cf01d74d05c7e6e6/comp914a6420bb3f2755cf01d74debd7e6e6/comp914a6420b1102e450a81d74d04249e90" name="CurrentPath"/>
       <key type="string" value="ent914a6420e32f2755cf01d74d33c7e6e6" name="HdlOutputObject"/>
     </section>
     <section name="DiagramGridVisible">
@@ -60,7 +60,9 @@
       <key type="int" value="0" name="diag914a64202a613755cf01d74d6468e6e6"/>
     </section>
     <section name="DatabaseView">
+      <key type="bool" value="true" name="arch914a6420e32f2755cf01d74d35c7e6e6"/>
       <key type="bool" value="true" name="ent914a64207e613755cf01d74dfa68e6e6"/>
+      <key type="bool" value="true" name="lib914a64202a5f1e450a81d74d5b149e90"/>
     </section>
     <section name="GenerationStamps">
       <key type="string" value="1433675914" name="entd9a1d649f384c6558e5209c381031df6"/>
@@ -123,8 +125,8 @@
       <key type="string" value="1433593622" name="archd9a1d64906e3c6558e5209c3d6f21df6"/>
       <key type="string" value="1433524766" name="entd9a1d64906e3c6558e5209c305f21df6"/>
       <key type="string" value="1433524766" name="archd9a1d64906e3c6558e5209c3f6f21df6"/>
-      <key type="string" value="1433675914" name="ent914a6420e32f2755cf01d74d43c7e6e6"/>
-      <key type="string" value="1433675914" name="arch914a6420e32f2755cf01d74d15c7e6e6"/>
+      <key type="string" value="1433677509" name="ent914a6420e32f2755cf01d74d43c7e6e6"/>
+      <key type="string" value="1433677509" name="arch914a6420e32f2755cf01d74d15c7e6e6"/>
       <key type="string" value="1433596917" name="ent914a6420bc0f2755cf01d74d91c6e6e6"/>
       <key type="string" value="1433596917" name="arch914a6420bc0f2755cf01d74d46e6e6e6"/>
       <key type="string" value="1433675914" name="ent914a6420e32f2755cf01d74d33c7e6e6"/>
@@ -278,6 +280,9 @@
     </section>
     <section name="DiagramView">
       <key type="geometry" value="0,0,16878,9599" name="diag914a64204d2cb2550752d74db31e1a13"/>
+      <key type="geometry" value="0,0,7498,4264" name="diag914a6420e32f2755cf01d74df4c7e6e6"/>
+      <key type="geometry" value="0,0,11252,6400" name="diag914a64200d5f1e450a81d74d0c149e90"/>
+      <key type="geometry" value="0,0,7625,4264" name="diag914a6420b1102e450a81d74de3249e90"/>
     </section>
   </sections>
 </CONFIGURATION>

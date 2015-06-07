@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sat Jun 06 17:48:18 2015")
+      (PROPERTY "STAMP_TIME" "Sun Jun 07 13:57:59 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1433596478 "Sat Jun 06 15:14:38 2015")
-      (MODIFIED 1433605698 "Sat Jun 06 17:48:18 2015")
+      (MODIFIED 1433678279 "Sun Jun 07 13:57:59 2015")
     )
     (PORT
       (OBID "eprt914a6420e32f2755cf01d74d53c7e6e6")
@@ -451,16 +451,16 @@
                "	BEGIN"
                "	   IF state_bit = '0' THEN"
                "           	--DCF_77_in <= '1', '0' AFTER 2000 us; "
-               "           	DCF_77_in <= '1', '0' AFTER 200 ns;"
+               "           	DCF_77_in <= '1', '0' AFTER 20 us;"
                "     "
                "       ELSIF state_bit = '1' THEN"
                "            --DCF_77_in <= '1', '0' AFTER 1000 us; "
-               "            DCF_77_in <= '1', '0' AFTER 100 ns;"
+               "            DCF_77_in <= '1', '0' AFTER 10 us;"
                " "
                "                       "
                "	   END IF;"
                "	   --wait for 10000 us;"
-               "	   wait for 1000 ns;"
+               "	   wait for 100 us;"
                "	   "
                "  END DCF_bit;  "
                "  "
@@ -469,7 +469,7 @@
                "	BEGIN"
                "        DCF_77_in <= '0';"
                "      	--wait for 10000 us;"
-               "      	wait for 1000 ns;"
+               "      	wait for 100 us;"
                "   	"
                "  END DCF_end;      "
                "   "
