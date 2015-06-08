@@ -1,0 +1,228 @@
+(DATABASE_VERSION 17)
+(ENTITY_FILE
+  (ENTITY
+    (OBID "entd9a196f3c61557558f4209c3ca33ba14")
+    (PROPERTIES
+      (PROPERTY "ExternalFileId" "hdlfd9a196f3c61557558f4209c3ba33ba14")
+      (PROPERTY "HDL_FILENAME" "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/kcuart_tx.vhd")
+      (PROPERTY "IMPORTED_LAST" "1433751916")
+      (PROPERTY "PORTORDER" "4")
+      (PROPERTY "STAMP_PLATFORM" "PC")
+      (PROPERTY "STAMP_REVISION" "Revision 2")
+      (PROPERTY "STAMP_TIME" "Mon Jun 08 11:53:30 2015")
+      (PROPERTY "STAMP_TOOL" "Ease")
+      (PROPERTY "STAMP_VERSION" "8.0")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1433751682")
+    )
+    (HDL_IDENT
+      (NAME "kcuart_tx")
+      (USERNAME 1)
+    )
+    (GEOMETRY 0 0 1920 640)
+    (SIDE 0)
+    (HDL 1)
+    (EXTERNAL 1)
+    (OBJSTAMP
+      (DESIGNER "vincent.meier")
+      (CREATED 1433751916 "Mon Jun 08 10:25:16 2015")
+      (MODIFIED 1433757210 "Mon Jun 08 11:53:30 2015")
+    )
+    (PACKAGE_USE
+      (PACKAGE_USE
+        (PACKAGE "pack914a642052dbb2550752d74dcd7c1a13")
+        (LIBRARY "ieee")
+        (NAME "std_logic_arith")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack914a642052dbb2550752d74ddd7c1a13")
+        (LIBRARY "ieee")
+        (NAME "std_logic_unsigned")
+        (SUFFIX "ALL")
+      )
+      (PACKAGE_USE
+        (PACKAGE "pack914a6420739bb2550752d74dd9861a13")
+        (LIBRARY "unisim")
+        (NAME "VCOMPONENTS")
+        (SUFFIX "ALL")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a196f3c61557558f4209c3da33ba14")
+      (HDL_IDENT
+        (NAME "data_in")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic_vector")
+          (MODE 1)
+          (CONSTRAINT
+            (DIRECTION 1)
+            (RANGE "7" "0")
+          )
+        )
+      )
+      (GEOMETRY -40 88 40 168)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "data_in(7:0)")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a196f3c61557558f4209c3ea33ba14")
+      (HDL_IDENT
+        (NAME "send_character")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 216 40 296)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "send_character")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a196f3c61557558f4209c3fa33ba14")
+      (HDL_IDENT
+        (NAME "en_16_x_baud")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 344 40 424)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 384)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "en_16_x_baud")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a196f3c61557558f4209c30b33ba14")
+      (HDL_IDENT
+        (NAME "serial_out")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1880 88 1960 168)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 128)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "serial_out")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a196f3c61557558f4209c31b33ba14")
+      (HDL_IDENT
+        (NAME "Tx_complete")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 2)
+        )
+      )
+      (GEOMETRY 1880 216 1960 296)
+      (SIDE 1)
+      (LABEL
+        (POSITION 1856 256)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 1)
+        (ALIGNMENT 5)
+        (FORMAT 35)
+        (TEXT "Tx_complete")
+      )
+    )
+    (PORT
+      (OBID "eprtd9a196f3c61557558f4209c32b33ba14")
+      (HDL_IDENT
+        (NAME "clk")
+        (USERNAME 1)
+        (ATTRIBUTES
+          (TYPE "std_logic")
+          (MODE 1)
+        )
+      )
+      (GEOMETRY -40 472 40 552)
+      (SIDE 3)
+      (LABEL
+        (POSITION 64 512)
+        (SCALE 96)
+        (COLOR_LINE 0)
+        (SIDE 3)
+        (ALIGNMENT 3)
+        (FORMAT 35)
+        (TEXT "clk")
+      )
+    )
+    (ARCH_DECLARATION 2 "archd9a196f3d61557558f4209c37b33ba14" "low_level_definition")
+  )
+  (ARCH_DEFINITION
+    (OBID "archd9a196f3d61557558f4209c37b33ba14")
+    (HDL_IDENT
+      (NAME "low_level_definition")
+      (USERNAME 1)
+    )
+    (TYPE 2)
+    (HDL_FILE
+      (VHDL_FILE
+        (OBID "filed9a196f3a16657558f4209c3e673ba14")
+        (NAME "low_level_definition.vhd")
+        (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
+               "-- "
+               "-- Architecture 'low_level_definition' of entity 'kcuart_tx'."
+               "-- "
+               "--------------------------------------------------------------------------------"
+               "-- "
+               "-- Copy of the interface declaration:"
+               "-- "
+               "--   port ("
+               "--     data_in        : in     std_logic_vector(7 downto 0);"
+               "--     send_character : in     std_logic;"
+               "--     en_16_x_baud   : in     std_logic;"
+               "--     serial_out     : out    std_logic;"
+               "--     Tx_complete    : out    std_logic;"
+               "--     clk            : in     std_logic);"
+               "-- "
+               "-- EASE/HDL end ----------------------------------------------------------------"
+               ""
+               "architecture low_level_definition of kcuart_tx is"
+               ""
+               "begin"
+               ""
+               "end architecture low_level_definition ; -- of kcuart_tx"
+               ""
+               "")
+      )
+    )
+  )
+)
+(END_OF_FILE)

@@ -1,0 +1,76 @@
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe design_dcf_complete.DCF77_Receiver_tb -o DCF77_Receiver_tb_isim.exe 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package vcomponents
+Compiling architecture rtl of entity DisplayBlock [displayblock_default]
+Compiling architecture rtl of entity DecodeAdress [decodeadress_default]
+Compiling architecture rtl of entity mux_dcf_test [mux_dcf_test_default]
+Compiling architecture rtl of entity inversor [inversor_default]
+Compiling architecture rtl of entity UartManage [uartmanage_default]
+Compiling architecture rtl of entity BaudRateCounter [baudratecounter_default]
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture muxcy_v of entity MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity XORCY [xorcy_default]
+Compiling architecture fdre_v of entity FDRE [\FDRE('0')\]
+Compiling architecture lut2_v of entity LUT2 [\LUT2("0000")(0,3)\]
+Compiling architecture mult_and_v of entity MULT_AND [mult_and_default]
+Compiling architecture lut4_v of entity LUT4 [\LUT4("0000000000000000")(0,15)\]
+Compiling architecture muxf5_v of entity MUXF5 [muxf5_default]
+Compiling architecture muxf6_v of entity MUXF6 [muxf6_default]
+Compiling architecture fdrs_v of entity FDRS [\FDRS('0')\]
+Compiling architecture lut3_v of entity LUT3 [\LUT3("00000000")(0,7)\]
+Compiling architecture fde_v of entity FDE [\FDE('0')\]
+Compiling architecture srl16e_v of entity SRL16E [\SRL16E("0000000000000000")(0,15...]
+Compiling architecture fd_v of entity FD [\FD('0')\]
+Compiling architecture low_level_definition of entity kcuart_tx [kcuart_tx_default]
+Compiling architecture fdr_v of entity FDR [\FDR('0')\]
+Compiling architecture low_level_definition of entity bbfifo_16x8 [bbfifo_16x8_default]
+Compiling architecture macro_level_definition of entity uart_tx [uart_tx_default]
+Compiling architecture structure of entity UartControl [uartcontrol_default]
+Compiling architecture rtl of entity BCD_7Seg_Converter [bcd_7seg_converter_default]
+Compiling architecture ramb16_s18_v of entity RAMB16_S18 [\RAMB16_S18("0000000000000000000...]
+Compiling architecture low_level_definition of entity optimus_prime [optimus_prime_default]
+Compiling architecture behavior of entity div_freq [div_freq_default]
+Compiling architecture behavior of entity counter_nbbits [counter_nbbits_default]
+Compiling architecture behavior of entity DecodeStateMachine [decodestatemachine_default]
+Compiling architecture behavior of entity counter_ms_getN [counter_ms_getn_default]
+Compiling architecture structure of entity decode_block [decode_block_default]
+Compiling architecture behavior of entity coutner_ms [coutner_ms_default]
+Compiling architecture behavioral of entity rising_edge_dectection [rising_edge_dectection_default]
+Compiling architecture behavioral of entity counter_ms_oveflow [counter_ms_oveflow_default]
+Compiling architecture structure of entity decode_dcf77 [decode_dcf77_default]
+Compiling architecture behavior of entity frame_register [frame_register_default]
+Compiling architecture behavior of entity sync_dcf77 [sync_dcf77_default]
+Compiling architecture behavior of entity reg_mem_dcf77 [reg_mem_dcf77_default]
+Compiling architecture behavior of entity decode_RBG [decode_rbg_default]
+Compiling architecture behavior of entity CheckParity [checkparity_default]
+Compiling architecture rtl of entity amp_int [amp_int_default]
+Compiling architecture structure of entity DCF_77_IP [dcf_77_ip_default]
+Compiling architecture lut1_v of entity LUT1 [\LUT1("0001")(0,3)\]
+Compiling architecture fds_v of entity FDS [\FDS('1')\]
+Compiling architecture inv_v of entity INV [inv_default]
+Compiling architecture fdrse_v of entity FDRSE [\FDRSE('0')\]
+Compiling architecture ram16x1d_v of entity RAM16X1D [\RAM16X1D("0000000000000000")\]
+Compiling architecture ram64x1s_v of entity RAM64X1S [\RAM64X1S("000000000000000000000...]
+Compiling architecture ram32x1s_v of entity RAM32X1S [\RAM32X1S("000000000000000000000...]
+Compiling architecture low_level_definition of entity kcpsm3 [kcpsm3_default]
+Compiling architecture structure of entity DCF77_Receiver [dcf77_receiver_default]
+Compiling architecture behaviour of entity DCF77_Receiver_stimuli [dcf77_receiver_stimuli_default]
+Compiling architecture behaviour of entity dcf77_receiver_tb
+Time Resolution for simulation is 1ps.
+Waiting for 17 sub-compilation(s) to finish...
+Compiled 187 VHDL Units
+Built simulation executable DCF77_Receiver_tb_isim.exe
+Fuse Memory Usage: 64696 KB
+Fuse CPU Usage: 4789 ms

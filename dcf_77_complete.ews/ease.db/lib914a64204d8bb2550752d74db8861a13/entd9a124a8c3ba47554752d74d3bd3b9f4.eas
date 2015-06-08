@@ -3,16 +3,16 @@
   (ENTITY
     (OBID "entd9a124a8c3ba47554752d74d3bd3b9f4")
     (PROPERTIES
-      (PROPERTY "ExternalFileId" "hdlfd9a124a8c3ba47554752d74d2bd3b9f4")
-      (PROPERTY "HDL_FILENAME" "C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/KCPSM3/VHDL/uart_tx.vhd")
-      (PROPERTY "IMPORTED_LAST" "1433709372")
+      (PROPERTY "ExternalFileId" "hdlfd9a196f3c61557558f4209c35b33ba14")
+      (PROPERTY "HDL_FILENAME" "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/uart_tx.vhd")
+      (PROPERTY "IMPORTED_LAST" "1433751916")
       (PROPERTY "PORTORDER" "4")
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Jun 07 22:36:49 2015")
+      (PROPERTY "STAMP_TIME" "Mon Jun 08 11:53:30 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
-      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1070459596")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1433751682")
     )
     (HDL_IDENT
       (NAME "uart_tx")
@@ -23,9 +23,9 @@
     (HDL 1)
     (EXTERNAL 1)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1433709372 "Sun Jun 07 22:36:12 2015")
-      (MODIFIED 1433709402 "Sun Jun 07 22:36:42 2015")
+      (MODIFIED 1433757210 "Mon Jun 08 11:53:30 2015")
     )
     (PACKAGE_USE
       (PACKAGE_USE
@@ -227,10 +227,10 @@
         (TEXT "clk")
       )
     )
-    (ARCH_DECLARATION 2 "archd9a124a8c3ba47554752d74d0cd3b9f4" "macro_level_definition")
+    (ARCH_DECLARATION 2 "archd9a196f3d61557558f4209c38b33ba14" "macro_level_definition")
   )
   (ARCH_DEFINITION
-    (OBID "archd9a124a8c3ba47554752d74d0cd3b9f4")
+    (OBID "archd9a196f3d61557558f4209c38b33ba14")
     (HDL_IDENT
       (NAME "macro_level_definition")
       (USERNAME 1)
@@ -238,7 +238,7 @@
     (TYPE 2)
     (HDL_FILE
       (VHDL_FILE
-        (OBID "filed9a124a834ba47554752d74de3e3b9f4")
+        (OBID "filed9a196f3a16657558f4209c3f673ba14")
         (NAME "macro_level_definition.vhd")
         (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
                "-- "

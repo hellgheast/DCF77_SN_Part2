@@ -4,9 +4,9 @@
 --
 -- Ease library  : design_dcf_complete
 -- HDL library   : design_dcf_complete
--- Host name     : INF13-BENSALAHM
--- User name     : mohammed.bensalah
--- Time stamp    : Mon Jun 08 02:00:44 2015
+-- Host name     : INF13-MEIERV
+-- User name     : vincent.meier
+-- Time stamp    : Mon Jun 08 15:29:19 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.DCF77_Receiver
--- Last modified : Mon Jun 08 01:58:16 2015.
+-- Last modified : Mon Jun 08 10:29:39 2015.
 --------------------------------------------------------------------------------
 
 
@@ -44,7 +44,7 @@ end entity DCF77_Receiver;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.DCF77_Receiver.structure
--- Last modified : Mon Jun 08 01:58:16 2015.
+-- Last modified : Mon Jun 08 10:29:39 2015.
 --------------------------------------------------------------------------------
 
 

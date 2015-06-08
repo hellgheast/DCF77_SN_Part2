@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/BaudRateCounter.vhd";
+static const char *ng0 = "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/BaudRateCounter.vhd";
 extern char *IEEE_P_1242562249;
 
 char *ieee_p_1242562249_sub_1919365254_1035706684(char *, char *, char *, char *, int );
@@ -91,7 +91,7 @@ LAB2:    xsi_set_current_line(54, ng0);
 LAB5:    xsi_set_current_line(57, ng0);
     t2 = (t0 + 1832U);
     t6 = *((char **)t2);
-    t2 = (t0 + 5832);
+    t2 = (t0 + 5796);
     t13 = 1;
     if (8U == 8U)
         goto LAB13;
@@ -104,7 +104,7 @@ LAB15:    if (t13 != 0)
 LAB12:    xsi_set_current_line(61, ng0);
     t1 = (t0 + 1832U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5796U);
+    t1 = (t0 + 5760U);
     t5 = ieee_p_1242562249_sub_1919365254_1035706684(IEEE_P_1242562249, t21, t2, t1, 1);
     t6 = (t0 + 3392);
     t7 = (t6 + 56U);

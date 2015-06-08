@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sat Jun 06 15:05:18 2015")
+      (PROPERTY "STAMP_TIME" "Mon Jun 08 11:53:30 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1428421037 "Tue Apr 07 17:37:17 2015")
-      (MODIFIED 1433595437 "Sat Jun 06 14:57:17 2015")
+      (MODIFIED 1433752157 "Mon Jun 08 10:29:17 2015")
     )
     (ARCH_DECLARATION 1 "archd9a12467da9f3255087209c3b1312af5" "behaviour")
   )
@@ -40,7 +40,7 @@
           (NAME "dut")
           (USERNAME 1)
         )
-        (GEOMETRY 3648 896 5760 2880)
+        (GEOMETRY 3648 896 5760 2496)
         (SIDE 0)
         (LABEL
           (POSITION 3648 896)

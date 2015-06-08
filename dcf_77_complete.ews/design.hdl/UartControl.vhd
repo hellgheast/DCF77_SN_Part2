@@ -4,9 +4,9 @@
 --
 -- Ease library  : design_dcf_complete
 -- HDL library   : design_dcf_complete
--- Host name     : INF13-BENSALAHM
--- User name     : mohammed.bensalah
--- Time stamp    : Mon Jun 08 00:47:44 2015
+-- Host name     : INF13-MEIERV
+-- User name     : vincent.meier
+-- Time stamp    : Mon Jun 08 15:29:19 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.UartControl
--- Last modified : Mon Jun 08 00:15:04 2015.
+-- Last modified : Mon Jun 08 15:28:48 2015.
 --------------------------------------------------------------------------------
 
 
@@ -38,7 +38,7 @@ end entity UartControl;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.UartControl.structure
--- Last modified : Mon Jun 08 00:15:04 2015.
+-- Last modified : Mon Jun 08 15:28:48 2015.
 --------------------------------------------------------------------------------
 
 architecture structure of UartControl is

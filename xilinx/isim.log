@@ -1,0 +1,17 @@
+ISim log file
+Running: C:\Users\vincent.meier\Documents\GitHub\DCF77_SN_Part2\xilinx\DCF77_Receiver_tb_isim.exe -gui 
+ISim P.49d (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# run 12ms
+Simulator is doing circuit initialization process.
+at 0 ps: Note: la simulation est en cour (/dcf77_receiver_tb/stimuli/).
+Finished circuit initialization process.
+at 1900475 ns, Instance /dcf77_receiver_tb/stimuli/ : Warning: Etat du signal non correct
+at 1900475 ns, Instance /dcf77_receiver_tb/stimuli/ : Warning: Etat du signal non correct
+at 3300475 ns, Instance /dcf77_receiver_tb/stimuli/ : Warning: Etat du signal non correct
+at 4600475 ns, Instance /dcf77_receiver_tb/stimuli/ : Warning: Etat du signal non correct
+at 5400475 ns, Instance /dcf77_receiver_tb/stimuli/ : Warning: Etat du signal non correct
+at 5400475 ns, Instance /dcf77_receiver_tb/stimuli/ : Warning: Etat du signal non correct
+at 6400475 ns, Instance /dcf77_receiver_tb/stimuli/ : Warning: Etat du signal non correct
+at 6400475 ns(1), Instance /dcf77_receiver_tb/stimuli/ : Warning: Etat du signal non correct

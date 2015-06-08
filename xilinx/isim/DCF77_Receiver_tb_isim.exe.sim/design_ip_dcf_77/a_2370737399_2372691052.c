@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/counter_ms_getN.vhd";
+static const char *ng0 = "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/counter_ms_getN.vhd";
 extern char *IEEE_P_1242562249;
 extern char *IEEE_P_2592010699;
 
@@ -149,7 +149,7 @@ LAB10:    xsi_set_current_line(60, ng0);
 LAB13:    xsi_set_current_line(65, ng0);
     t1 = (t0 + 1832U);
     t6 = *((char **)t1);
-    t1 = (t0 + 5808U);
+    t1 = (t0 + 5772U);
     t7 = ieee_p_1242562249_sub_1919365254_1035706684(IEEE_P_1242562249, t15, t6, t1, 1);
     t8 = (t0 + 3456);
     t9 = (t8 + 56U);
@@ -161,7 +161,7 @@ LAB13:    xsi_set_current_line(65, ng0);
     xsi_set_current_line(66, ng0);
     t1 = (t0 + 1832U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5846);
+    t1 = (t0 + 5810);
     t6 = ((IEEE_P_2592010699) + 4024);
     t3 = xsi_vhdl_greaterEqual(t6, t2, 10U, t1, 12U);
     if (t3 != 0)

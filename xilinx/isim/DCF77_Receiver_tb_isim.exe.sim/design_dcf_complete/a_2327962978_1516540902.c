@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DisplayBlock.vhd";
+static const char *ng0 = "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/DisplayBlock.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_1605435078_503743352(char *, unsigned char , unsigned char );
@@ -361,7 +361,7 @@ LAB0:    xsi_set_current_line(114, ng0);
     t4 = (t3 * 1U);
     t5 = (0 + t4);
     t1 = (t2 + t5);
-    t6 = (t0 + 13470);
+    t6 = (t0 + 13342);
     t8 = 1;
     if (2U == 2U)
         goto LAB5;
@@ -521,7 +521,7 @@ LAB0:    xsi_set_current_line(116, ng0);
     t4 = (t3 * 1U);
     t5 = (0 + t4);
     t1 = (t2 + t5);
-    t6 = (t0 + 13472);
+    t6 = (t0 + 13344);
     t8 = 1;
     if (2U == 2U)
         goto LAB5;

@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/div_freq.vhd";
+static const char *ng0 = "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/div_freq.vhd";
 extern char *IEEE_P_1242562249;
 
 unsigned char ieee_p_1242562249_sub_1781507893_1035706684(char *, char *, char *, int );
@@ -101,7 +101,7 @@ LAB2:    xsi_set_current_line(52, ng0);
 LAB5:    xsi_set_current_line(55, ng0);
     t2 = (t0 + 1832U);
     t6 = *((char **)t2);
-    t2 = (t0 + 5736U);
+    t2 = (t0 + 5700U);
     t13 = ieee_p_1242562249_sub_1781507893_1035706684(IEEE_P_1242562249, t6, t2, 0);
     if (t13 == 1)
         goto LAB13;
@@ -131,7 +131,7 @@ LAB7:    t2 = (t0 + 1192U);
 LAB10:    xsi_set_current_line(56, ng0);
     t7 = (t0 + 1352U);
     t9 = *((char **)t7);
-    t7 = (t0 + 5720U);
+    t7 = (t0 + 5684U);
     t17 = ieee_p_1242562249_sub_1919437128_1035706684(IEEE_P_1242562249, t16, t9, t7, 1);
     t18 = (t0 + 3456);
     t19 = (t18 + 56U);
@@ -160,7 +160,7 @@ LAB13:    t7 = (t0 + 1032U);
 LAB16:    xsi_set_current_line(59, ng0);
     t1 = (t0 + 1832U);
     t5 = *((char **)t1);
-    t1 = (t0 + 5736U);
+    t1 = (t0 + 5700U);
     t6 = ieee_p_1242562249_sub_1919437128_1035706684(IEEE_P_1242562249, t16, t5, t1, 1);
     t7 = (t0 + 3456);
     t8 = (t7 + 56U);

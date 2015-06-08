@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/mux_dcf_test.vhd";
+static const char *ng0 = "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN_Part2/dcf_77_complete.ews/design.hdl/mux_dcf_test.vhd";
 extern char *IEEE_P_2592010699;
 
 
@@ -67,12 +67,12 @@ LAB3:    goto *t2;
 LAB2:    xsi_set_current_line(49, ng0);
     t2 = (t0 + 1192U);
     t3 = *((char **)t2);
-    t2 = (t0 + 5796);
+    t2 = (t0 + 5760);
     t5 = xsi_mem_cmp(t2, t3, 2U);
     if (t5 == 1)
         goto LAB5;
 
-LAB8:    t6 = (t0 + 5798);
+LAB8:    t6 = (t0 + 5762);
     t8 = xsi_mem_cmp(t6, t3, 2U);
     if (t8 == 1)
         goto LAB6;

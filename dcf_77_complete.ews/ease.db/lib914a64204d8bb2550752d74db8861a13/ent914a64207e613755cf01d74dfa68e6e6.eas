@@ -4,15 +4,15 @@
     (OBID "ent914a64207e613755cf01d74dfa68e6e6")
     (PROPERTIES
       (PROPERTY "ExternalFileId" "hdlf914a64207e613755cf01d74dea68e6e6")
-      (PROPERTY "HDL_FILENAME" "C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/KCPSM3/VHDL/kcpsm3.vhd")
-      (PROPERTY "IMPORTED_LAST" "1433605864")
+      (PROPERTY "HDL_FILENAME" "C:/Users/vincent.meier/Documents/GitHub/DCF77_SN_Part2/KCPSM3/VHDL/kcpsm3.vhd")
+      (PROPERTY "IMPORTED_LAST" "1433751831")
       (PROPERTY "PORTORDER" "4")
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sat Jun 06 17:51:21 2015")
+      (PROPERTY "STAMP_TIME" "Mon Jun 08 10:24:20 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
-      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1121842238")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1433751680")
     )
     (HDL_IDENT
       (NAME "kcpsm3")
@@ -23,9 +23,9 @@
     (HDL 1)
     (EXTERNAL 1)
     (OBJSTAMP
-      (DESIGNER "mohammed.bensalah")
+      (DESIGNER "vincent.meier")
       (CREATED 1433605863 "Sat Jun 06 17:51:03 2015")
-      (MODIFIED 1433605881 "Sat Jun 06 17:51:21 2015")
+      (MODIFIED 1433751860 "Mon Jun 08 10:24:20 2015")
     )
     (PACKAGE_USE
       (PACKAGE_USE
@@ -309,10 +309,10 @@
         (TEXT "clk")
       )
     )
-    (ARCH_DECLARATION 2 "arch914a64208e613755cf01d74ddb68e6e6" "low_level_definition")
+    (ARCH_DECLARATION 2 "archd9a196f3711557558f4209c31d13ba14" "low_level_definition")
   )
   (ARCH_DEFINITION
-    (OBID "arch914a64208e613755cf01d74ddb68e6e6")
+    (OBID "archd9a196f3711557558f4209c31d13ba14")
     (HDL_IDENT
       (NAME "low_level_definition")
       (USERNAME 1)
@@ -320,7 +320,7 @@
     (TYPE 2)
     (HDL_FILE
       (VHDL_FILE
-        (OBID "file914a64209f613755cf01d74d5878e6e6")
+        (OBID "filed9a196f3431557558f4209c3cf23ba14")
         (NAME "low_level_definition.vhd")
         (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
                "-- "

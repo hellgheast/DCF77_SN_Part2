@@ -4,9 +4,9 @@
 --
 -- Ease library  : design_ip_dcf_77
 -- HDL library   : design_ip_dcf_77
--- Host name     : INF13-BENSALAHM
--- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 21:42:28 2015
+-- Host name     : INF13-MEIERV
+-- User name     : vincent.meier
+-- Time stamp    : Mon Jun 08 15:29:19 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_ip_dcf_77.DCF_77_IP
--- Last modified : Sun Jun 07 21:42:15 2015.
+-- Last modified : Mon Jun 08 10:32:51 2015.
 --------------------------------------------------------------------------------
 
 
@@ -42,7 +42,7 @@ end entity DCF_77_IP;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_ip_dcf_77.DCF_77_IP.structure
--- Last modified : Sun Jun 07 21:42:15 2015.
+-- Last modified : Mon Jun 08 10:32:51 2015.
 --------------------------------------------------------------------------------
 
 architecture structure of DCF_77_IP is
