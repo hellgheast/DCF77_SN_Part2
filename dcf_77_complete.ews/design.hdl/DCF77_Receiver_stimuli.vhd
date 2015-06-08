@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 21:36:46 2015
+-- Time stamp    : Mon Jun 08 02:00:44 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.DCF77_Receiver_stimuli
--- Last modified : Sun Jun 07 21:22:08 2015.
+-- Last modified : Mon Jun 08 02:00:38 2015.
 --------------------------------------------------------------------------------
 
 
@@ -44,7 +44,7 @@ end entity DCF77_Receiver_stimuli;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.DCF77_Receiver_stimuli.behaviour
--- Last modified : Sun Jun 07 21:22:08 2015.
+-- Last modified : Mon Jun 08 02:00:38 2015.
 --------------------------------------------------------------------------------
 
 
@@ -314,7 +314,7 @@ BEGIN --debut de la simulation temps t=0ns
  		 	
   	--Prise en compte de l'interruption et attente
   	
-  	sim_cycle(200);
+  	sim_cycle(2000000);
   
 	sim_end <= TRUE;
 	wait;

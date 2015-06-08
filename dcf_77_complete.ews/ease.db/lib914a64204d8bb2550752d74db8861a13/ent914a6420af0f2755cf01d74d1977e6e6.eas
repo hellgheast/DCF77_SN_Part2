@@ -5,14 +5,14 @@
     (PROPERTIES
       (PROPERTY "ExternalFileId" "hdlf914a6420af0f2755cf01d74d0977e6e6")
       (PROPERTY "HDL_FILENAME" "C:/Users/mohammed.bensalah/Documents/GitHub/DCF77_SN_Part2/KCPSM3_Assembler_17Nov11/optimus_prime.vhd")
-      (PROPERTY "IMPORTED_LAST" "1433703891")
+      (PROPERTY "IMPORTED_LAST" "1433721288")
       (PROPERTY "PORTORDER" "4")
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Jun 07 21:22:08 2015")
+      (PROPERTY "STAMP_TIME" "Mon Jun 08 02:00:38 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
-      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1433703772")
+      (PROPERTY "TIME_MODIFIED_ONIMPORT" "1433721278")
     )
     (HDL_IDENT
       (NAME "optimus_prime")
@@ -25,7 +25,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1433596154 "Sat Jun 06 15:09:14 2015")
-      (MODIFIED 1433704928 "Sun Jun 07 21:22:08 2015")
+      (MODIFIED 1433721638 "Mon Jun 08 02:00:38 2015")
     )
     (PACKAGE_USE
       (PACKAGE_USE
@@ -121,10 +121,10 @@
         (TEXT "clk")
       )
     )
-    (ARCH_DECLARATION 2 "arch914a64203d5947554bb2d74d9aa4e1d5" "low_level_definition")
+    (ARCH_DECLARATION 2 "archd9a124a88c9d47554752d74d9b54b9f4" "low_level_definition")
   )
   (ARCH_DEFINITION
-    (OBID "arch914a64203d5947554bb2d74d9aa4e1d5")
+    (OBID "archd9a124a88c9d47554752d74d9b54b9f4")
     (HDL_IDENT
       (NAME "low_level_definition")
       (USERNAME 1)
@@ -132,7 +132,7 @@
     (TYPE 2)
     (HDL_FILE
       (VHDL_FILE
-        (OBID "file914a64200e9947554bb2d74d75c4e1d5")
+        (OBID "filed9a124a862bd47554752d74d1284b9f4")
         (NAME "low_level_definition.vhd")
         (VALUE "-- EASE/HDL begin --------------------------------------------------------------"
                "-- "

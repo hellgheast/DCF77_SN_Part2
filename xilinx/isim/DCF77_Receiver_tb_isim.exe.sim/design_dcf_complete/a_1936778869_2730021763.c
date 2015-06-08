@@ -1203,7 +1203,7 @@ LAB5:    xsi_set_current_line(160, ng0);
     design_dcf_complete_a_1936778869_2730021763_sub_597199570_1881409087(t0, t2, t21, t3, 18);
     xsi_set_current_line(317, ng0);
     t2 = (t0 + 4808);
-    design_dcf_complete_a_1936778869_2730021763_sub_105344256_1881409087(t0, t2, 200);
+    design_dcf_complete_a_1936778869_2730021763_sub_105344256_1881409087(t0, t2, 2000000);
     xsi_set_current_line(319, ng0);
     t2 = (t0 + 6200);
     t3 = (t2 + 56U);

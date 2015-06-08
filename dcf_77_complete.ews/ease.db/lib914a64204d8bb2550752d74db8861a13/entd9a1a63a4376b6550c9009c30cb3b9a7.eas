@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Tue Jun 02 10:14:09 2015")
+      (PROPERTY "STAMP_TIME" "Mon Jun 08 01:14:22 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -18,9 +18,9 @@
     (HDL 1)
     (EXTERNAL 0)
     (OBJSTAMP
-      (DESIGNER "vincent.meier")
+      (DESIGNER "mohammed.bensalah")
       (CREATED 1433102132 "Sun May 31 21:55:32 2015")
-      (MODIFIED 1433232849 "Tue Jun 02 10:14:09 2015")
+      (MODIFIED 1433718862 "Mon Jun 08 01:14:22 2015")
     )
     (PORT
       (OBID "eprtd9a1a63ab376b6550c9009c3acb3b9a7")
@@ -173,25 +173,14 @@
                "		counter  <= (OTHERS => '0'); "
                "		"
                "	elsif(clk'EVENT and clk = '1') then   "
-               "	"
-               "		if uart_cs = '0' then"
-               "		"
-               "		elsif uart_cs = '1' then"
-               "	"
-               "			if start_tr = '0' then"
-               "		  		counter  <= (OTHERS => '0');      "
-               "		  "
-               "	   		elsif start_tr = '1' then"
-               "	   			if counter = x\"16\" then -- si = 22"
-               "	   				counter <= (OTHERS => '0');  "
-               "	   				en_16_x_baud <= '1';  "
-               "	   			else"
-               "					counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1); "
-               "					en_16_x_baud <= '0';"
-               "		"
-               "				end if; "
-               "			end if;"
-               "		end if;	"
+               "	  if counter = x\"16\" then -- si = 22"
+               "	   	   counter <= (OTHERS => '0');  "
+               "	   	   en_16_x_baud <= '1';  "
+               "	  else"
+               "		   counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1); "
+               "		   en_16_x_baud <= '0';	"
+               "	  end if; "
+               "			"
                "	end if;	  "
                "		"
                "end process;    "

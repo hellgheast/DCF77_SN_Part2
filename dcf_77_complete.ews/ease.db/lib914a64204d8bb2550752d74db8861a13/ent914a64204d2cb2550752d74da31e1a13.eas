@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Jun 07 17:05:02 2015")
+      (PROPERTY "STAMP_TIME" "Mon Jun 08 02:00:38 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1428931284 "Mon Apr 13 15:21:24 2015")
-      (MODIFIED 1433689501 "Sun Jun 07 17:05:01 2015")
+      (MODIFIED 1433721496 "Mon Jun 08 01:58:16 2015")
     )
     (PORT
       (OBID "eprt914a64203f2cb2550752d74df31e1a13")
@@ -1891,6 +1891,41 @@
             )
           )
         )
+        (PORT
+          (OBID "cprtd9a124a8d32c47554752d74d8014b9f4")
+          (HDL_IDENT
+            (NAME "buffer_full_c")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+            )
+          )
+          (GEOMETRY 856 3032 936 3112)
+          (SIDE 3)
+          (LABEL
+            (POSITION 960 3072)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "buffer_full_c")
+          )
+          (PORT "eprtd9a124a8d32c47554752d74d7014b9f4")
+          (CONNECTION
+            (OBID "ncond9a124a8d32c47554752d74d9014b9f4")
+            (GEOMETRY 832 3072 832 3072)
+            (SIDE 0)
+            (LABEL
+              (POSITION 832 3040)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 8)
+              (FORMAT 128)
+            )
+          )
+        )
       )
       (COMPONENT
         (OBID "comp914a6420bf62e355cd60d74dda24ec03")
@@ -2270,6 +2305,41 @@
             )
           )
         )
+        (PORT
+          (OBID "cprtd9a124a8322c47554752d74d2014b9f4")
+          (HDL_IDENT
+            (NAME "buffer_full_c")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 2)
+            )
+          )
+          (GEOMETRY 10392 4120 10472 4200)
+          (SIDE 1)
+          (LABEL
+            (POSITION 10368 4160)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 1)
+            (ALIGNMENT 5)
+            (FORMAT 35)
+            (TEXT "buffer_full_c")
+          )
+          (PORT "eprtd9a124a8322c47554752d74d1014b9f4")
+          (CONNECTION
+            (OBID "ncond9a124a8322c47554752d74d3014b9f4")
+            (GEOMETRY 10496 4160 10496 4160)
+            (SIDE 2)
+            (LABEL
+              (POSITION 10496 4192)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 1)
+              (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
       )
       (COMPONENT
         (OBID "compd9a1d649f384c6558e5209c3a1031df6")
@@ -2508,6 +2578,63 @@
               (COLOR_LINE 0)
               (SIDE 1)
               (ALIGNMENT 0)
+              (FORMAT 128)
+            )
+          )
+        )
+        (PORT
+          (OBID "cprtd9a124a8d8ad47554752d74d0b64b9f4")
+          (HDL_IDENT
+            (NAME "switch")
+            (USERNAME 1)
+            (ATTRIBUTES
+              (MODE 1)
+              (CONSTRAINT
+                (DIRECTION 1)
+                (RANGE "1" "0")
+              )
+            )
+          )
+          (GEOMETRY 11544 1304 11624 1384)
+          (SIDE 3)
+          (LABEL
+            (POSITION 11648 1344)
+            (SCALE 96)
+            (COLOR_LINE 0)
+            (SIDE 3)
+            (ALIGNMENT 3)
+            (FORMAT 35)
+            (TEXT "switch(1:0)")
+          )
+          (PORT "eprtd9a124a8d8ad47554752d74dfa64b9f4")
+          (CBN
+            (OBID "cbnd9a124a819ad47554752d74d3b64b9f4")
+            (HDL_IDENT
+              (NAME "switch")
+              (USERNAME 1)
+            )
+            (GEOMETRY 11384 1304 11528 1384)
+            (SIDE 0)
+            (LABEL
+              (POSITION 11328 1344)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 5)
+              (FORMAT 1)
+            )
+            (TYPE 0)
+          )
+          (CONNECTION
+            (OBID "ncond9a124a8d8ad47554752d74d1b64b9f4")
+            (GEOMETRY 11520 1344 11520 1344)
+            (SIDE 0)
+            (LABEL
+              (POSITION 11328 1344)
+              (SCALE 96)
+              (COLOR_LINE 0)
+              (SIDE 3)
+              (ALIGNMENT 5)
               (FORMAT 128)
             )
           )
@@ -4020,6 +4147,10 @@
         (PART
           (OBID "nprt914a6420cc12e355cd60d74db3e3ec03")
           (CBN 1)
+          (PORT
+            (OBID "cprtd9a124a8d8ad47554752d74d0b64b9f4")
+            (NAME "switch")
+          )
         )
         (PART
           (OBID "nprt914a6420cc12e355cd60d74dc3e3ec03")
@@ -4669,6 +4800,40 @@
           (PORT
             (OBID "cprt914a64206f613755cf01d74d3178e6e6")
             (NAME "address")
+          )
+        )
+      )
+      (NET
+        (OBID "netd9a124a8342c47554752d74db014b9f4")
+        (HDL_IDENT
+          (NAME "buffer_full_c")
+        )
+        (PART
+          (OBID "nprtd9a124a8f42c47554752d74d0114b9f4")
+          (CBN 1)
+        )
+        (PART
+          (OBID "nprtd9a124a8342c47554752d74dc014b9f4")
+          (LABEL
+            (POSITION 5344 4912)
+            (SCALE 96)
+            (COLOR_LINE 52)
+            (SIDE 3)
+            (ALIGNMENT 7)
+            (FORMAT 4099)
+          )
+          (WIRE 10496 4160 10560 4160)
+          (WIRE 10560 4160 10560 4928)
+          (WIRE 10560 4928 128 4928)
+          (WIRE 128 4928 128 3072)
+          (WIRE 128 3072 832 3072)
+          (PORT
+            (OBID "cprtd9a124a8322c47554752d74d2014b9f4")
+            (NAME "buffer_full_c")
+          )
+          (PORT
+            (OBID "cprtd9a124a8d32c47554752d74d8014b9f4")
+            (NAME "buffer_full_c")
           )
         )
       )

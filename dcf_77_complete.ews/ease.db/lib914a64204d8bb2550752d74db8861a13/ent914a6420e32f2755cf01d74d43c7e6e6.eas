@@ -5,7 +5,7 @@
     (PROPERTIES
       (PROPERTY "STAMP_PLATFORM" "PC")
       (PROPERTY "STAMP_REVISION" "Revision 2")
-      (PROPERTY "STAMP_TIME" "Sun Jun 07 21:22:08 2015")
+      (PROPERTY "STAMP_TIME" "Mon Jun 08 02:00:38 2015")
       (PROPERTY "STAMP_TOOL" "Ease")
       (PROPERTY "STAMP_VERSION" "8.0")
     )
@@ -20,7 +20,7 @@
     (OBJSTAMP
       (DESIGNER "mohammed.bensalah")
       (CREATED 1433596478 "Sat Jun 06 15:14:38 2015")
-      (MODIFIED 1433704928 "Sun Jun 07 21:22:08 2015")
+      (MODIFIED 1433721638 "Mon Jun 08 02:00:38 2015")
     )
     (PORT
       (OBID "eprt914a6420e32f2755cf01d74d53c7e6e6")
@@ -638,7 +638,7 @@
                " 		 	"
                "  	--Prise en compte de l'interruption et attente"
                "  	"
-               "  	sim_cycle(200);"
+               "  	sim_cycle(2000000);"
                "  "
                "	sim_end <= TRUE;"
                "	wait;"

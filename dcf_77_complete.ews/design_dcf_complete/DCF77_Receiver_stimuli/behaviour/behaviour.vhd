@@ -289,7 +289,7 @@ BEGIN --debut de la simulation temps t=0ns
  		 	
   	--Prise en compte de l'interruption et attente
   	
-  	sim_cycle(200);
+  	sim_cycle(2000000);
   
 	sim_end <= TRUE;
 	wait;

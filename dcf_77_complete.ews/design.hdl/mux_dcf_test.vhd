@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 21:36:46 2015
+-- Time stamp    : Mon Jun 08 01:14:26 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.mux_dcf_test
--- Last modified : Fri Jun 05 19:04:11 2015.
+-- Last modified : Mon Jun 08 01:14:22 2015.
 --------------------------------------------------------------------------------
 
 
@@ -29,13 +29,14 @@ entity mux_dcf_test is
   port (
     TEST                : in     std_logic;
     adress_mux_dcf_test : in     std_logic_vector(1 downto 0);
+    buffer_full_c       : in     std_logic;
     data_dcf            : in     std_logic_vector(7 downto 0);
     data_out            : out    std_logic_vector(7 downto 0));
 end entity mux_dcf_test;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.mux_dcf_test.rtl
--- Last modified : Fri Jun 05 19:04:11 2015.
+-- Last modified : Mon Jun 08 01:14:22 2015.
 --------------------------------------------------------------------------------
 
 
@@ -46,7 +47,8 @@ signal test_vector : std_logic_vector(7 downto 0):=x"00";
 begin
 
 WITH adress_mux_dcf_test SELECT
-	 data_out <= test_vector(7 downto 1) & TEST 	WHEN "01",
+	 data_out <= test_vector(7 downto 1) & TEST 	     WHEN "01",
+	 			 test_vector(7 downto 1) & buffer_full_c WHEN "10",
 	 			 data_dcf WHEN OTHERS;
 	 
 	 			 	

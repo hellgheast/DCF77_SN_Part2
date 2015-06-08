@@ -29,25 +29,14 @@ P1:process (clk, reset_n)
 		counter  <= (OTHERS => '0'); 
 		
 	elsif(clk'EVENT and clk = '1') then   
-	
-		if uart_cs = '0' then
-		
-		elsif uart_cs = '1' then
-	
-			if start_tr = '0' then
-		  		counter  <= (OTHERS => '0');      
-		  
-	   		elsif start_tr = '1' then
-	   			if counter = x"16" then -- si = 22
-	   				counter <= (OTHERS => '0');  
-	   				en_16_x_baud <= '1';  
-	   			else
-					counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1); 
-					en_16_x_baud <= '0';
-		
-				end if; 
-			end if;
-		end if;	
+	  if counter = x"16" then -- si = 22
+	   	   counter <= (OTHERS => '0');  
+	   	   en_16_x_baud <= '1';  
+	  else
+		   counter <= STD_LOGIC_VECTOR(UNSIGNED(counter) + 1); 
+		   en_16_x_baud <= '0';	
+	  end if; 
+			
 	end if;	  
 		
 end process;    

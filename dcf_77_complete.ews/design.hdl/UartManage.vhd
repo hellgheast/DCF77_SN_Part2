@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 21:36:46 2015
+-- Time stamp    : Mon Jun 08 01:14:26 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.UartManage
--- Last modified : Mon Jun 01 11:53:30 2015.
+-- Last modified : Mon Jun 08 01:14:22 2015.
 --------------------------------------------------------------------------------
 
 
@@ -27,30 +27,25 @@ use ieee.numeric_std.all;
 
 entity UartManage is
   port (
-    buffer_full      : in     std_logic;
-    buffer_half_full : in     std_logic;
-    clk              : in     std_logic;
-    data_in          : in     std_logic_vector(7 downto 0);
-    data_out         : out    std_logic_vector(7 downto 0);
-    reset_buffer     : out    std_logic;
-    reset_n          : in     std_logic;
-    start_tr         : out    std_logic;
-    uart_cs          : in     std_logic;
-    write            : in     std_logic;
-    write_buffer     : out    std_logic);
+    clk          : in     std_logic;
+    data_in      : in     std_logic_vector(7 downto 0);
+    data_out     : out    std_logic_vector(7 downto 0);
+    reset_buffer : out    std_logic;
+    reset_n      : in     std_logic;
+    uart_cs      : in     std_logic;
+    write        : in     std_logic;
+    write_buffer : out    std_logic);
 end entity UartManage;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.UartManage.rtl
--- Last modified : Mon Jun 01 11:53:30 2015.
+-- Last modified : Mon Jun 08 01:14:22 2015.
 --------------------------------------------------------------------------------
 
 
 architecture rtl of UartManage is
        
 signal data    : std_logic_vector(7 downto 0); 
-signal busyTemp  : std_logic := '0';
-signal readyTemp : std_logic := '0';
 
 begin     
 
@@ -58,33 +53,21 @@ P1 : process(clk,reset_n) IS
 begin
 	if reset_n = '0' then
  		data <= (others => '0');
- 			 		
+ 		reset_buffer <= '1';  -- Vide le buffer si l'uart n'est pas sélectionné.           	
+	 		
 	elsif(clk'EVENT and clk = '1')then 
 		if uart_cs = '1' then    
 			reset_buffer <= '0';
-			if write = '1' then       
-			
-				-- Test l'état du buffer
-				if buffer_full = '1' then
-					start_tr <= '1'; -- Enclenche le compteur de Baud      
-					write_buffer <= '0';
-					
-				elsif buffer_full = '0' then   
-                  	start_tr <= '0';
-					write_buffer <= '1'; -- Demande un écriture des entrées FIFO dans le buffer
-			   		data <= data_in;     
-			   	
-			   	end if;
-			   	
-			end if;
-
-		else
-			reset_buffer <= '1';  -- Vide le buffer si l'uart n'est pas sélectionné.           
-			
-  	   	end if;
+			if write = '1' then
+				reset_buffer <= '0';       
+				write_buffer <= '1'; -- Demande un écriture des entrées FIFO dans le buffer
+			   	data <= data_in;       	
+			 end if;
+		else 
+			write_buffer <= '0'; -- Demande un écriture des entrées FIFO dans le buffer
+			  	   	end if;
   
 	end if;
-	
 end process;
 
 data_out <= data;

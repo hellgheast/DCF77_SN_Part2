@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 21:36:46 2015
+-- Time stamp    : Mon Jun 08 00:47:44 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.UartControl
--- Last modified : Sat Jun 06 15:29:36 2015.
+-- Last modified : Mon Jun 08 00:15:04 2015.
 --------------------------------------------------------------------------------
 
 
@@ -27,42 +27,37 @@ use ieee.numeric_std.all;
 
 entity UartControl is
   port (
-    clk        : in     std_logic;
-    data_in    : in     std_logic_vector(7 downto 0);
-    reset_n    : in     std_logic;
-    serial_out : out    std_logic;
-    uart_cs    : in     std_logic;
-    write      : in     std_logic);
+    buffer_full_c : out    std_logic;
+    clk           : in     std_logic;
+    data_in       : in     std_logic_vector(7 downto 0);
+    reset_n       : in     std_logic;
+    serial_out    : out    std_logic;
+    uart_cs       : in     std_logic;
+    write         : in     std_logic);
 end entity UartControl;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.UartControl.structure
--- Last modified : Sat Jun 06 15:29:36 2015.
+-- Last modified : Mon Jun 08 00:15:04 2015.
 --------------------------------------------------------------------------------
 
 architecture structure of UartControl is
 
-  signal data_out         : std_logic_vector(7 downto 0);
-  signal reset_buffer     : std_logic;
-  signal en_16_x_baud     : std_logic;
-  signal buffer_full      : std_logic;
-  signal buffer_half_full : std_logic;
-  signal write_buffer     : std_logic;
-  signal start_tr         : std_logic;
+  signal data_out     : std_logic_vector(7 downto 0);
+  signal reset_buffer : std_logic;
+  signal en_16_x_baud : std_logic;
+  signal write_buffer : std_logic;
 
   component UartManage
     port (
-      buffer_full      : in     std_logic;
-      buffer_half_full : in     std_logic;
-      clk              : in     std_logic;
-      data_in          : in     std_logic_vector(7 downto 0);
-      data_out         : out    std_logic_vector(7 downto 0);
-      reset_buffer     : out    std_logic;
-      reset_n          : in     std_logic;
-      start_tr         : out    std_logic;
-      uart_cs          : in     std_logic;
-      write            : in     std_logic;
-      write_buffer     : out    std_logic);
+      clk          : in     std_logic;
+      data_in      : in     std_logic_vector(7 downto 0);
+      data_out     : out    std_logic_vector(7 downto 0);
+      reset_buffer : out    std_logic;
+      reset_n      : in     std_logic;
+      uart_cs      : in     std_logic;
+      write        : in     std_logic;
+      write_buffer : out    std_logic);
   end component UartManage;
 
   component BaudRateCounter
@@ -90,24 +85,21 @@ begin
 
   u1: UartManage
     port map(
-      buffer_full      => buffer_full,
-      buffer_half_full => buffer_half_full,
-      clk              => clk,
-      data_in          => data_in,
-      data_out         => data_out,
-      reset_buffer     => reset_buffer,
-      reset_n          => reset_n,
-      start_tr         => start_tr,
-      uart_cs          => uart_cs,
-      write            => write,
-      write_buffer     => write_buffer);
+      clk          => clk,
+      data_in      => data_in,
+      data_out     => data_out,
+      reset_buffer => reset_buffer,
+      reset_n      => reset_n,
+      uart_cs      => uart_cs,
+      write        => write,
+      write_buffer => write_buffer);
 
   u2: BaudRateCounter
     port map(
       clk          => clk,
       en_16_x_baud => en_16_x_baud,
       reset_n      => reset_n,
-      start_tr     => start_tr,
+      start_tr     => write_buffer,
       uart_cs      => uart_cs);
 
   u0: uart_tx
@@ -117,8 +109,8 @@ begin
       reset_buffer     => reset_buffer,
       en_16_x_baud     => en_16_x_baud,
       serial_out       => serial_out,
-      buffer_full      => buffer_full,
-      buffer_half_full => buffer_half_full,
+      buffer_full      => buffer_full_c,
+      buffer_half_full => open,
       clk              => clk);
 end architecture structure ; -- of UartControl
 

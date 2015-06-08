@@ -21,10 +21,8 @@ CONSTANT DSP_DEBUG,		13 ;
 CONSTANT DSP_STATUS,	14 ;
 
 ;Adresse du multiplexeur
-CONSTANT M_DCFDATA,		20 ;
-CONSTANT M_STARTACK,	21 ;
-CONSTANT M_BUFULL,		22 ;
-CONSTANT M_TEST,		23 ;
+CONSTANT M_TEST,		21;
+CONSTANT M_BUFULL,		22;
 
 ;Adresse Uart
 CONSTANT UART_ENABLE,	30 ;
@@ -64,6 +62,7 @@ CONSTANT CHAR_GS,			1D;
 CONSTANT CHAR_RS,			1E;
 CONSTANT CHAR_US,			1F;
 CONSTANT CHAR_SPC,			20;
+CONSTANT CHAR_POINT,		2E;
 CONSTANT CHAR_comma,		2C;
 CONSTANT CHAR_0,			30;
 CONSTANT CHAR_1,			31;
@@ -151,6 +150,8 @@ NAMEREG sA,REG_YEAR
 NAMEREG sB,REG_Int
 NAMEREG sC,REG_TEMP
 
+
+
 ;Déclarations des variables
 
 ;Programme principal
@@ -160,7 +161,8 @@ init :
 
 	  ;Autorisation des enables
 	  ENABLE INTERRUPT 
-	  INPUT REG_TEST,21
+	  INPUT REG_TEST,M_TEST
+	  
 	  ;Point 1
 	  LOAD REG_TEMP,01
 	  OUTPUT REG_TEMP,DSP_DEBUG;
@@ -213,82 +215,183 @@ loop:
 	  
 	  
 	  ;Vérification si l'interruption à eu lieu
-	  ;TEST REG_Int,01
-	  ;JUMP NZ,send_uart
+	  TEST REG_Int,01
+	  JUMP NZ,send_uart
 	  JUMP loop
 	  
 send_uart:
 	  
 	  
 	  ;"HEURE : "
-	  LOAD 	 REG_A,CHAR_H;
-	  OUTPUT REG_A,UART_ENABLE;
+	  LOAD 	 REG_B,CHAR_H;
+	  CALL   send_to_UART;
 	  
-	  LOAD   REG_A,CHAR_E;
-	  OUTPUT REG_A,UART_ENABLE;
+	  LOAD   REG_B,CHAR_E;
+	  CALL   send_to_UART;
 	  
-	  LOAD   REG_A,CHAR_U;
-	  OUTPUT REG_A,UART_ENABLE;
-	  
-	  LOAD 	 REG_A,CHAR_R;
-	  OUTPUT REG_A,UART_ENABLE;
-	  
-	  LOAD 	 REG_A,CHAR_E;
-	  OUTPUT REG_A,UART_ENABLE;
-	  
-	  LOAD   REG_A,CHAR_SPC;
-	  OUTPUT REG_A,UART_ENABLE;
-	  
-	  LOAD   REG_A,CHAR_doublepoint;
-	  OUTPUT REG_A,UART_ENABLE;
-	  
-	  LOAD   REG_A,CHAR_SPC;
-	  OUTPUT REG_A,UART_ENABLE;
-	  
+	  LOAD   REG_B,CHAR_U;
+	  CALL   send_to_UART;
+	 
+	  LOAD 	 REG_B,CHAR_R;
+	  CALL   send_to_UART;
+	
+	  LOAD 	 REG_B,CHAR_E;
+	  CALL   send_to_UART;
+	
+	  LOAD   REG_B,CHAR_SPC;
+	  CALL   send_to_UART;
+	
+	  LOAD   REG_B,CHAR_doublepoint;
+	  CALL   send_to_UART;
+	
+	  LOAD   REG_B,CHAR_SPC;
+	  CALL   send_to_UART;
+	
 	  ;ENVOI DE L'HEURE
 	  
 	  ;PREMIER DIGIT
 	  LOAD REG_A,REG_HOUR;
 	  AND REG_A,F0;
-	  CALL bcd_to_ascii;
-	  OUTPUT REG_B,UART_ENABLE;
 	  
+	  ;On shifte de quatre direction la droite
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  
+	  CALL bcd_to_ascii;
+	  CALL   send_to_UART;
+	
 	  ;SECOND DIGIT
 	  LOAD REG_A,REG_HOUR;
 	  AND REG_A,0F;
 	  CALL bcd_to_ascii;
-	  OUTPUT REG_B,UART_ENABLE;
-	  
+	  CALL   send_to_UART;
+	
 	  ;ESPACE 
-	  LOAD   REG_A,CHAR_SPC;
-	  OUTPUT REG_A,UART_ENABLE;
+	  LOAD   REG_B,CHAR_SPC;
+	  CALL   send_to_UART;
 	  ;CARACTERE H
-	  LOAD   REG_A,CHAR_H;
-	  OUTPUT REG_A,UART_ENABLE;
+	  LOAD   REG_B,CHAR_H;
+	  CALL   send_to_UART;
 	  ;ESPACE 
-	  LOAD   REG_A,CHAR_SPC;
-	  OUTPUT REG_A,UART_ENABLE;
-	  
+	  LOAD   REG_B,CHAR_SPC;
+	  CALL   send_to_UART;
+	
 	  ;MINUTES
 	  
 	  ;PREMIER DIGIT
 	  LOAD REG_A,REG_MINUTES;
 	  AND REG_A,F0;
-	  CALL bcd_to_ascii;
-	  OUTPUT REG_B,UART_ENABLE;
 	  
+	  ;On shifte de quatre direction la droite
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  
+	  CALL bcd_to_ascii;
+	  CALL   send_to_UART;
+	
 	  ;SECOND DIGIT
 	  LOAD REG_A,REG_MINUTES;
 	  AND REG_A,0F;
 	  CALL bcd_to_ascii;
-	  OUTPUT REG_B,UART_ENABLE;
+	  CALL   send_to_UART ;
+
+	  ;ESPACE 
+	  LOAD   REG_B,CHAR_SPC;
+	  CALL   send_to_UART;
+
+	  ;Jour
+	  LOAD REG_A,REG_DWEEK
+	  CALL day_to_ascii
+
+	  ;ESPACE 
+	  LOAD   REG_B,CHAR_SPC;
+	  CALL   send_to_UART;
+	  
+	  ;envoi de la DATE
+	  	  
+	  ;PREMIER DIGIT
+	  LOAD REG_A,REG_DMONTH;
+	  AND REG_A,F0;
+	  
+	  ;On shifte de quatre direction la droite
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  
+	  CALL bcd_to_ascii;
+	  CALL send_to_UART;
+	
+	  ;SECOND DIGIT
+	  LOAD REG_A,REG_DMONTH;
+	  AND REG_A,0F;
+	  CALL bcd_to_ascii;
+	  CALL send_to_UART;
+	
+	  ;POINT
+	  LOAD   REG_B,CHAR_POINT;
+	  CALL   send_to_UART;
+	  
+	  ;Numéro du mois
+	  
+	  ;PREMIER DIGIT
+	  LOAD REG_A,REG_MONTH;
+	  AND REG_A,F0;
+	  
+	  ;On shifte de quatre direction la droite
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  
+	  CALL bcd_to_ascii;
+	  CALL send_to_UART;
+	
+	  ;SECOND DIGIT
+	  LOAD REG_A,REG_MONTH;
+	  AND REG_A,0F;
+	  CALL bcd_to_ascii;
+	  CALL send_to_UART;
+	
+	  ;POINT
+	  LOAD   REG_B,CHAR_POINT;
+	  CALL   send_to_UART;
+	
+	  ;Année
+	  ;Envoi de 20xx
+	  LOAD   REG_B,CHAR_2;
+	  CALL   send_to_UART;
+	  
+	  LOAD   REG_B,CHAR_0;
+	  CALL   send_to_UART;
+	  
+	  ;PREMIER DIGIT
+	  LOAD REG_A,REG_YEAR;
+	  AND REG_A,F0;
+	  
+	  ;On shifte de quatre direction la droite
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  SR0 REG_A;
+	  
+	  CALL bcd_to_ascii;
+	  CALL send_to_UART;
+	
+	  ;SECOND DIGIT
+	  LOAD REG_A,REG_YEAR;
+	  AND REG_A,0F;
+	  CALL bcd_to_ascii;
+	  CALL send_to_UART;
 	  
 	  
-	  
-	  
-	  
+	
 	  LOAD REG_Int,00;
-	  JUMP loop
+	  JUMP loop	
 
 	  
 	  ADDRESS 200	
@@ -350,9 +453,157 @@ RETURN
 
 
 JUMP init;
+
+;On utilise le REG_A pour le paramètre et le REG_B pour le résultat
+	 ADDRESS 240
+day_to_ascii:
+	  COMPARE REG_A,01
+	  JUMP Z,ascii_lundi
+	  COMPARE REG_A,02
+	  JUMP Z,ascii_mardi
+	  COMPARE REG_A,03
+	  JUMP Z,ascii_mercredi
+	  COMPARE REG_A,04
+	  JUMP Z,ascii_jeudi
+	  COMPARE REG_A,05
+	  JUMP Z,ascii_vendredi
+	  COMPARE REG_A,06
+	  JUMP Z,ascii_samedi
+	  COMPARE REG_A,07
+	  JUMP Z,ascii_dimanche
+
+ascii_lundi:
+    LOAD REG_B,CHAR_L;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_U;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_N;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_D;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_I;
+	CALL send_to_UART;
+
+	RETURN
+	
+ascii_mardi:
+    LOAD REG_B,CHAR_M;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_A;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_R;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_D;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_I;
+	CALL send_to_UART;
+
+	RETURN
+	
+ascii_mercredi:
+    LOAD REG_B,CHAR_M;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_E;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_R;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_C;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_R;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_E;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_D;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_I;
+	CALL send_to_UART;
+
+	RETURN
+
+ascii_jeudi:
+    LOAD REG_B,CHAR_J;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_E;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_U;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_D;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_I;
+	CALL send_to_UART;
+
+	RETURN
+	
+ascii_vendredi:
+    LOAD REG_B,CHAR_V;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_E;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_N;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_D;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_R;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_E;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_D;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_I;
+	CALL send_to_UART;
+
+	RETURN
+
+ascii_samedi:
+	LOAD REG_B,CHAR_S;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_A;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_M;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_E;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_D;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_I;
+	CALL send_to_UART;
+
+	RETURN
+	
+ascii_dimanche:
+	LOAD REG_B,CHAR_D;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_I;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_M;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_A;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_N;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_C;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_H;
+	CALL send_to_UART;
+	LOAD REG_B,CHAR_E;
+	CALL send_to_UART;
+
+	RETURN
+		
 	 
 	 
-	 ADDRESS 2CF
+	 
+	 ADDRESS 2F0
+send_to_UART: 
+  INPUT REG_TEST, M_BUFULL;
+  TEST REG_TEST,01;
+  JUMP NZ, send_to_UART
+  JUMP UART_write
+UART_write: 
+  OUTPUT REG_B, UART_ENABLE
+  RETURN
+	 
+	 ADDRESS 300
 int_routine:
 
 	;Point 4

@@ -6,7 +6,7 @@
 -- HDL library   : design_dcf_complete
 -- Host name     : INF13-BENSALAHM
 -- User name     : mohammed.bensalah
--- Time stamp    : Sun Jun 07 21:36:46 2015
+-- Time stamp    : Mon Jun 08 02:00:44 2015
 --
 -- Designed by   : 
 -- Company       : 
@@ -16,7 +16,7 @@
 
 --------------------------------------------------------------------------------
 -- Object        : Entity design_dcf_complete.DCF77_Receiver
--- Last modified : Sun Jun 07 17:05:01 2015.
+-- Last modified : Mon Jun 08 01:58:16 2015.
 --------------------------------------------------------------------------------
 
 
@@ -44,7 +44,7 @@ end entity DCF77_Receiver;
 
 --------------------------------------------------------------------------------
 -- Object        : Architecture design_dcf_complete.DCF77_Receiver.structure
--- Last modified : Sun Jun 07 17:05:01 2015.
+-- Last modified : Mon Jun 08 01:58:16 2015.
 --------------------------------------------------------------------------------
 
 
@@ -70,6 +70,7 @@ architecture structure of DCF77_Receiver is
   signal adress_displayblock : std_logic_vector(2 downto 0);
   signal instruction         : std_logic_vector(17 downto 0);
   signal address             : std_logic_vector(9 downto 0);
+  signal buffer_full_c       : std_logic;
 
   component DisplayBlock
     port (
@@ -104,6 +105,7 @@ architecture structure of DCF77_Receiver is
     port (
       TEST                : in     std_logic;
       adress_mux_dcf_test : in     std_logic_vector(1 downto 0);
+      buffer_full_c       : in     std_logic;
       data_dcf            : in     std_logic_vector(7 downto 0);
       data_out            : out    std_logic_vector(7 downto 0));
   end component mux_dcf_test;
@@ -116,18 +118,20 @@ architecture structure of DCF77_Receiver is
 
   component UartControl
     port (
-      clk        : in     std_logic;
-      data_in    : in     std_logic_vector(7 downto 0);
-      reset_n    : in     std_logic;
-      serial_out : out    std_logic;
-      uart_cs    : in     std_logic;
-      write      : in     std_logic);
+      buffer_full_c : out    std_logic;
+      clk           : in     std_logic;
+      data_in       : in     std_logic_vector(7 downto 0);
+      reset_n       : in     std_logic;
+      serial_out    : out    std_logic;
+      uart_cs       : in     std_logic;
+      write         : in     std_logic);
   end component UartControl;
 
   component BCD_7Seg_Converter
     port (
       clk              : in     std_logic;
       reset_n          : in     std_logic;
+      switch           : in     std_logic_vector(1 downto 0);
       time_bc_7seg_lsb : out    std_logic_vector(6 downto 0);
       time_bc_7seg_msb : out    std_logic_vector(6 downto 0);
       time_bc_in       : in     std_logic_vector(7 downto 0));
@@ -203,6 +207,7 @@ begin
     port map(
       TEST                => TEST,
       adress_mux_dcf_test => adress_mux_dcf_test,
+      buffer_full_c       => buffer_full_c,
       data_dcf            => data_out,
       data_out            => in_port);
 
@@ -213,17 +218,19 @@ begin
 
   u7: UartControl
     port map(
-      clk        => clk,
-      data_in    => out_port,
-      reset_n    => reset_n,
-      serial_out => serial_out,
-      uart_cs    => uart_tx_cs,
-      write      => write_strobe);
+      buffer_full_c => buffer_full_c,
+      clk           => clk,
+      data_in       => out_port,
+      reset_n       => reset_n,
+      serial_out    => serial_out,
+      uart_cs       => uart_tx_cs,
+      write         => write_strobe);
 
   u3: BCD_7Seg_Converter
     port map(
       clk              => clk,
       reset_n          => reset_n,
+      switch           => switch,
       time_bc_7seg_lsb => time_bc_7seg_lsb,
       time_bc_7seg_msb => time_bc_7seg_msb,
       time_bc_in       => u2_hour_minutes_out);
